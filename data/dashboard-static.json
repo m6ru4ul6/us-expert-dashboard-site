@@ -1,9 +1,23 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-07T18:12:26+08:00",
+  "generated_at": "2026-07-07T18:17:39+08:00",
   "base_url": "https://m6ru4ul6.github.io/us-expert-dashboard-site",
-  "latest_run_id": 221,
+  "latest_run_id": 222,
   "runs": [
+    {
+      "id": 222,
+      "run_key": "2026-07-07 18:17:38 Asia/Taipei|2026-07-06 18:17:38 Asia/Taipei|2026-07-07 18:17:38 Asia/Taipei",
+      "run_time": "2026-07-07 18:17:38 Asia/Taipei",
+      "window_start": "2026-07-06 18:17:38 Asia/Taipei",
+      "window_end": "2026-07-07 18:17:38 Asia/Taipei",
+      "adopted_count": 0,
+      "paused_activity": "本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。",
+      "market_data_source_json": "{\"primary\": \"Nasdaq public API\", \"prepost\": \"盤前/盤後資料不足\", \"ticker_count\": 0}",
+      "slack_status": null,
+      "slack_http_code": null,
+      "report_md": "[來源檢查]\n- 大叔美股筆記 Uncle Stock Notes：大叔美股筆記 Uncle Stock Notes RSS https://unclestocknotes.substack.com/feed 失敗：HTTP 403；archive https://unclestocknotes.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 也失敗：HTTP 403\n- Skilled Driver：Skilled Driver RSS https://skilleddriver.substack.com/feed 失敗：HTTP 403；archive https://skilleddriver.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 也失敗：HTTP 403\n- Michael M. Chang：Michael M. Chang RSS https://michaelmchang.substack.com/feed 失敗：HTTP 403；archive https://michaelmchang.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 也失敗：HTTP 403\n- 徐老猫 Raycat：徐老猫 Raycat RSS https://raycat.substack.com/feed 失敗：HTTP 403；archive https://raycat.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 也失敗：HTTP 403\n- Activity 摘要：本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。\n- 市場資料：本輪採納內容未出現可確認 ticker，略過市場快篩。\n\n[逐篇摘要]\n- 過去 24 小時核心 RSS 未發現符合時間窗的公開文章。\n[Activity 摘要]\n- 來源狀態：使用者設定暫停\n- 摘要：本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。\n- 明確提到的標的：不適用\n- 我是否需要親自看全文：不適用\n\n[標的快篩]\n- 本輪採納內容未出現可確認美股 ticker，略過市場快篩。\n[今日研究優先級]\n1. 無新內容：過去 24 小時核心 RSS 未發現符合時間窗的公開文章，今日以歷史資料回看為主。\n\n[值得親自讀]\n- 本輪沒有被標記為必讀的公開文章。\n\n內容僅供研究整理，不構成投資建議。\n",
+      "imported_at": "2026-07-07 10:17:38"
+    },
     {
       "id": 221,
       "run_key": "2026-07-07 18:12:25 Asia/Taipei|2026-07-06 18:12:25 Asia/Taipei|2026-07-07 18:12:25 Asia/Taipei",
@@ -11913,6 +11927,48 @@
   ],
   "source_health": [
     {
+      "id": 388,
+      "run_id": 222,
+      "source_name": "大叔美股筆記 Uncle Stock Notes",
+      "status": "大叔美股筆記 Uncle Stock Notes RSS https://unclestocknotes.substack.com/feed 失敗：HTTP 403；archive https://unclestocknotes.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 也失敗：HTTP 403",
+      "details": "大叔美股筆記 Uncle Stock Notes：大叔美股筆記 Uncle Stock Notes RSS https://unclestocknotes.substack.com/feed 失敗：HTTP 403；archive https://unclestocknotes.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 也失敗：HTTP 403"
+    },
+    {
+      "id": 389,
+      "run_id": 222,
+      "source_name": "Skilled Driver",
+      "status": "Skilled Driver RSS https://skilleddriver.substack.com/feed 失敗：HTTP 403；archive https://skilleddriver.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 也失敗：HTTP 403",
+      "details": "Skilled Driver：Skilled Driver RSS https://skilleddriver.substack.com/feed 失敗：HTTP 403；archive https://skilleddriver.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 也失敗：HTTP 403"
+    },
+    {
+      "id": 390,
+      "run_id": 222,
+      "source_name": "Michael M. Chang",
+      "status": "Michael M. Chang RSS https://michaelmchang.substack.com/feed 失敗：HTTP 403；archive https://michaelmchang.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 也失敗：HTTP 403",
+      "details": "Michael M. Chang：Michael M. Chang RSS https://michaelmchang.substack.com/feed 失敗：HTTP 403；archive https://michaelmchang.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 也失敗：HTTP 403"
+    },
+    {
+      "id": 391,
+      "run_id": 222,
+      "source_name": "徐老猫 Raycat",
+      "status": "徐老猫 Raycat RSS https://raycat.substack.com/feed 失敗：HTTP 403；archive https://raycat.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 也失敗：HTTP 403",
+      "details": "徐老猫 Raycat：徐老猫 Raycat RSS https://raycat.substack.com/feed 失敗：HTTP 403；archive https://raycat.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 也失敗：HTTP 403"
+    },
+    {
+      "id": 392,
+      "run_id": 222,
+      "source_name": "Activity 摘要",
+      "status": "本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。",
+      "details": "Activity 摘要：本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。"
+    },
+    {
+      "id": 393,
+      "run_id": 222,
+      "source_name": "市場資料",
+      "status": "本輪採納內容未出現可確認 ticker，略過市場快篩。",
+      "details": "市場資料：本輪採納內容未出現可確認 ticker，略過市場快篩。"
+    },
+    {
       "id": 382,
       "run_id": 221,
       "source_name": "大叔美股筆記 Uncle Stock Notes",
@@ -13364,6 +13420,13 @@
   ],
   "daily_themes": [
     {
+      "id": 131,
+      "run_id": 222,
+      "theme_order": 1,
+      "title": "無新內容",
+      "details": "過去 24 小時核心 RSS 未發現符合時間窗的公開文章，今日以歷史資料回看為主。"
+    },
+    {
       "id": 130,
       "run_id": 221,
       "theme_order": 1,
@@ -13897,6 +13960,77 @@
     }
   ],
   "run_details": {
+    "222": {
+      "run": {
+        "id": 222,
+        "run_key": "2026-07-07 18:17:38 Asia/Taipei|2026-07-06 18:17:38 Asia/Taipei|2026-07-07 18:17:38 Asia/Taipei",
+        "run_time": "2026-07-07 18:17:38 Asia/Taipei",
+        "window_start": "2026-07-06 18:17:38 Asia/Taipei",
+        "window_end": "2026-07-07 18:17:38 Asia/Taipei",
+        "adopted_count": 0,
+        "paused_activity": "本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。",
+        "market_data_source_json": "{\"primary\": \"Nasdaq public API\", \"prepost\": \"盤前/盤後資料不足\", \"ticker_count\": 0}",
+        "slack_status": null,
+        "slack_http_code": null,
+        "report_md": "[來源檢查]\n- 大叔美股筆記 Uncle Stock Notes：大叔美股筆記 Uncle Stock Notes RSS https://unclestocknotes.substack.com/feed 失敗：HTTP 403；archive https://unclestocknotes.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 也失敗：HTTP 403\n- Skilled Driver：Skilled Driver RSS https://skilleddriver.substack.com/feed 失敗：HTTP 403；archive https://skilleddriver.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 也失敗：HTTP 403\n- Michael M. Chang：Michael M. Chang RSS https://michaelmchang.substack.com/feed 失敗：HTTP 403；archive https://michaelmchang.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 也失敗：HTTP 403\n- 徐老猫 Raycat：徐老猫 Raycat RSS https://raycat.substack.com/feed 失敗：HTTP 403；archive https://raycat.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 也失敗：HTTP 403\n- Activity 摘要：本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。\n- 市場資料：本輪採納內容未出現可確認 ticker，略過市場快篩。\n\n[逐篇摘要]\n- 過去 24 小時核心 RSS 未發現符合時間窗的公開文章。\n[Activity 摘要]\n- 來源狀態：使用者設定暫停\n- 摘要：本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。\n- 明確提到的標的：不適用\n- 我是否需要親自看全文：不適用\n\n[標的快篩]\n- 本輪採納內容未出現可確認美股 ticker，略過市場快篩。\n[今日研究優先級]\n1. 無新內容：過去 24 小時核心 RSS 未發現符合時間窗的公開文章，今日以歷史資料回看為主。\n\n[值得親自讀]\n- 本輪沒有被標記為必讀的公開文章。\n\n內容僅供研究整理，不構成投資建議。\n",
+        "imported_at": "2026-07-07 10:17:38"
+      },
+      "articles": [],
+      "market_snapshots": [],
+      "source_health": [
+        {
+          "id": 388,
+          "run_id": 222,
+          "source_name": "大叔美股筆記 Uncle Stock Notes",
+          "status": "大叔美股筆記 Uncle Stock Notes RSS https://unclestocknotes.substack.com/feed 失敗：HTTP 403；archive https://unclestocknotes.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 也失敗：HTTP 403",
+          "details": "大叔美股筆記 Uncle Stock Notes：大叔美股筆記 Uncle Stock Notes RSS https://unclestocknotes.substack.com/feed 失敗：HTTP 403；archive https://unclestocknotes.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 也失敗：HTTP 403"
+        },
+        {
+          "id": 389,
+          "run_id": 222,
+          "source_name": "Skilled Driver",
+          "status": "Skilled Driver RSS https://skilleddriver.substack.com/feed 失敗：HTTP 403；archive https://skilleddriver.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 也失敗：HTTP 403",
+          "details": "Skilled Driver：Skilled Driver RSS https://skilleddriver.substack.com/feed 失敗：HTTP 403；archive https://skilleddriver.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 也失敗：HTTP 403"
+        },
+        {
+          "id": 390,
+          "run_id": 222,
+          "source_name": "Michael M. Chang",
+          "status": "Michael M. Chang RSS https://michaelmchang.substack.com/feed 失敗：HTTP 403；archive https://michaelmchang.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 也失敗：HTTP 403",
+          "details": "Michael M. Chang：Michael M. Chang RSS https://michaelmchang.substack.com/feed 失敗：HTTP 403；archive https://michaelmchang.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 也失敗：HTTP 403"
+        },
+        {
+          "id": 391,
+          "run_id": 222,
+          "source_name": "徐老猫 Raycat",
+          "status": "徐老猫 Raycat RSS https://raycat.substack.com/feed 失敗：HTTP 403；archive https://raycat.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 也失敗：HTTP 403",
+          "details": "徐老猫 Raycat：徐老猫 Raycat RSS https://raycat.substack.com/feed 失敗：HTTP 403；archive https://raycat.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 也失敗：HTTP 403"
+        },
+        {
+          "id": 392,
+          "run_id": 222,
+          "source_name": "Activity 摘要",
+          "status": "本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。",
+          "details": "Activity 摘要：本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。"
+        },
+        {
+          "id": 393,
+          "run_id": 222,
+          "source_name": "市場資料",
+          "status": "本輪採納內容未出現可確認 ticker，略過市場快篩。",
+          "details": "市場資料：本輪採納內容未出現可確認 ticker，略過市場快篩。"
+        }
+      ],
+      "daily_themes": [
+        {
+          "id": 131,
+          "run_id": 222,
+          "theme_order": 1,
+          "title": "無新內容",
+          "details": "過去 24 小時核心 RSS 未發現符合時間窗的公開文章，今日以歷史資料回看為主。"
+        }
+      ]
+    },
     "221": {
       "run": {
         "id": 221,
