@@ -1,0 +1,1801 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-24 每日摘要｜美股專家觀點</title>
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("usExpertTheme");
+        if (saved === "dark" || saved === "light") {
+          document.documentElement.dataset.theme = saved;
+        }
+      } catch (error) {}
+    })();
+  </script>
+  <style>
+    :root {
+      --bg: #f3f5f2;
+      --surface: #ffffff;
+      --surface-soft: #f8faf7;
+      --surface-warm: #fffaf0;
+      --card-bg: rgba(255, 255, 255, 0.96);
+      --topbar-bg: rgba(255, 255, 255, 0.9);
+      --toolbar-bg: rgba(255, 255, 255, 0.92);
+      --input-bg: #ffffff;
+      --hover-bg: #fbfdfc;
+      --track: #e5e9e7;
+      --ink-soft: #2f3d39;
+      --ink: #141b1f;
+      --muted: #657177;
+      --faint: #8a969b;
+      --line: #dde3df;
+      --line-strong: #c7d0cc;
+      --green: #0f766e;
+      --green-dark: #0b5c55;
+      --green-soft: #e6f3ee;
+      --amber: #b76b11;
+      --amber-soft: #fff2c7;
+      --amber-ink: #80500c;
+      --red: #b84a3c;
+      --red-soft: #ffe9e5;
+      --red-ink: #8f382f;
+      --blue: #2e6fa3;
+      --blue-soft: #e7f0f8;
+      --blue-ink: #245a84;
+      --slate: #485763;
+      --chip: #eef2f5;
+      --shadow: 0 22px 58px rgba(29, 39, 44, 0.12);
+      --shadow-soft: 0 10px 26px rgba(29, 39, 44, 0.07);
+      --body-bg:
+        linear-gradient(180deg, rgba(231, 242, 238, 0.95) 0, rgba(246, 247, 242, 0.92) 310px, var(--bg) 100%),
+        linear-gradient(135deg, rgba(46, 111, 163, 0.10), rgba(183, 107, 17, 0.07));
+      color-scheme: light;
+    }
+    html[data-theme="dark"] {
+      --bg: #0d1315;
+      --surface: #151d20;
+      --surface-soft: #11181b;
+      --surface-warm: #221b12;
+      --card-bg: rgba(20, 29, 32, 0.96);
+      --topbar-bg: rgba(14, 20, 22, 0.9);
+      --toolbar-bg: rgba(19, 27, 30, 0.94);
+      --input-bg: #101719;
+      --hover-bg: #182224;
+      --track: #263033;
+      --ink-soft: #d1dad6;
+      --ink: #eef5f2;
+      --muted: #a5b2ad;
+      --faint: #7f8d88;
+      --line: #2b383a;
+      --line-strong: #455255;
+      --green: #3fc0ad;
+      --green-dark: #88ded2;
+      --green-soft: #15352f;
+      --amber: #f1b85d;
+      --amber-soft: #3c2b12;
+      --amber-ink: #f8d08a;
+      --red: #ef8b7b;
+      --red-soft: #3b1d19;
+      --red-ink: #ffb2a8;
+      --blue: #83bce6;
+      --blue-soft: #172b3c;
+      --blue-ink: #b8ddff;
+      --slate: #9ba8ae;
+      --chip: #202a2d;
+      --shadow: 0 22px 58px rgba(0, 0, 0, 0.36);
+      --shadow-soft: 0 10px 26px rgba(0, 0, 0, 0.28);
+      --body-bg:
+        radial-gradient(circle at top left, rgba(63, 192, 173, 0.12), transparent 280px),
+        radial-gradient(circle at 90% 8%, rgba(131, 188, 230, 0.10), transparent 260px),
+        linear-gradient(180deg, #111a1c 0, #0d1315 340px, #0b1012 100%);
+      color-scheme: dark;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--body-bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    a { color: var(--green-dark); text-decoration: none; }
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 12px 22px;
+      border-bottom: 1px solid var(--line);
+      background: var(--topbar-bg);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 10px 32px rgba(31, 44, 50, 0.07);
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-weight: 820;
+      letter-spacing: 0;
+      white-space: nowrap;
+    }
+    .brand::before {
+      content: "";
+      width: 13px;
+      height: 13px;
+      border-radius: 4px;
+      background: var(--red);
+      box-shadow: 15px 0 0 var(--green), 30px 0 0 var(--amber);
+    }
+    nav { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; }
+    nav a {
+      min-height: 34px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      color: var(--muted);
+      font-weight: 650;
+    }
+    nav a.active, nav a:hover { background: var(--green-soft); color: var(--green-dark); }
+    .top-actions { display: flex; align-items: center; gap: 10px; }
+    .theme-toggle {
+      width: auto;
+      min-height: 34px;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--ink);
+      box-shadow: none;
+      font-size: 13px;
+      font-weight: 760;
+      white-space: nowrap;
+    }
+    .theme-toggle:hover { border-color: var(--green); background: var(--surface-soft); }
+    .theme-toggle .theme-icon { width: 16px; text-align: center; }
+    .logout { color: var(--muted); font-size: 13px; }
+    main { max-width: 1240px; margin: 0 auto; padding: 28px 20px 42px; }
+    h1 { margin: 0 0 8px; font-size: 34px; line-height: 1.12; letter-spacing: 0; }
+    h2 { margin: 0; font-size: 18px; letter-spacing: 0; }
+    h3 { margin: 0; font-size: 15px; letter-spacing: 0; }
+    .muted { color: var(--muted); }
+    .faint { color: var(--faint); }
+    .grid { display: grid; gap: 12px; }
+    .stats { grid-template-columns: repeat(4, minmax(0, 1fr)); margin: 16px 0; }
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+      box-shadow: var(--shadow-soft);
+    }
+    .panel, .stat-card, .priority-card, .article-card, .ticker-card, .author-card, .source-card, .mini-card {
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow-soft);
+    }
+    .stat-card { padding: 14px; min-height: 92px; position: relative; overflow: hidden; }
+    .stat-card::after {
+      content: "";
+      position: absolute;
+      inset: auto 14px 0 14px;
+      height: 3px;
+      border-radius: 999px 999px 0 0;
+      background: var(--green);
+      opacity: 0.8;
+    }
+    .stat-card.warn::after { background: var(--amber); }
+    .stat-card.info::after { background: var(--blue); }
+    .stat-card.danger::after { background: var(--red); }
+    .stat-label { color: var(--muted); font-size: 12px; font-weight: 740; }
+    .stat-value { font-size: 28px; font-weight: 840; margin-top: 5px; letter-spacing: 0; }
+    .stat-note { color: var(--faint); font-size: 12px; margin-top: 3px; }
+    .page-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 16px;
+    }
+    .page-kicker {
+      color: var(--green-dark);
+      font-size: 12px;
+      font-weight: 820;
+      margin-bottom: 6px;
+    }
+    .page-subtitle { max-width: 760px; color: var(--muted); }
+    .run-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .count-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 6px 13px;
+      border-radius: 999px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      color: var(--green-dark);
+      font-weight: 780;
+      white-space: nowrap;
+      box-shadow: var(--shadow-soft);
+    }
+    .dashboard-grid { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(320px, 0.75fr); gap: 16px; align-items: start; }
+    .section-stack { display: grid; gap: 14px; }
+    .section-head { display: flex; justify-content: space-between; gap: 12px; align-items: center; margin: 24px 0 12px; }
+    .section-note { color: var(--muted); font-size: 13px; }
+    .priority-list { display: grid; gap: 10px; }
+    .priority-card { padding: 15px; display: grid; gap: 6px; border-left: 4px solid var(--green); }
+    .priority-card .rank { color: var(--green-dark); font-size: 12px; font-weight: 820; }
+    .queue-list, .source-list, .timeline-list { display: grid; gap: 10px; }
+    .queue-card, .mini-card { padding: 13px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); }
+    .queue-title { color: var(--ink); font-weight: 780; display: inline-block; margin-bottom: 5px; }
+    .queue-meta { display: flex; flex-wrap: wrap; gap: 7px; color: var(--muted); font-size: 13px; }
+    .queue-summary { color: var(--ink-soft); margin-top: 8px; }
+    .ticker-radar { display: grid; gap: 10px; }
+    .ticker-card { padding: 14px; display: grid; gap: 12px; position: relative; overflow: hidden; }
+    .ticker-card::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 4px; background: var(--green); }
+    .ticker-card.warn::before { background: var(--amber); }
+    .ticker-card.danger::before { background: var(--red); }
+    .ticker-card.info::before { background: var(--blue); }
+    .ticker-card.muted::before { background: var(--line-strong); }
+    .ticker-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .ticker-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+    .ticker-symbol { font-size: 20px; font-weight: 850; color: var(--ink); }
+    .ticker-meta { color: var(--muted); font-size: 12px; margin-top: 2px; }
+    .metrics-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+    .metric { border: 1px solid var(--line); border-radius: 8px; padding: 9px; background: var(--surface-soft); min-width: 0; }
+    .metric-label { color: var(--muted); font-size: 11px; font-weight: 740; }
+    .metric-value { display: block; margin-top: 3px; font-weight: 800; color: var(--ink); overflow-wrap: anywhere; }
+    .metric-value.missing { color: var(--faint); font-weight: 680; }
+    .position-track { height: 8px; border-radius: 999px; background: var(--track); overflow: hidden; }
+    .position-fill { height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--blue), var(--green)); width: var(--bar, 0%); }
+    .condition-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .condition { border-top: 1px solid var(--line); padding-top: 10px; color: var(--ink-soft); }
+    .condition-label { color: var(--muted); font-size: 11px; font-weight: 800; margin-bottom: 4px; }
+    .toolbar {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(126px, 1fr));
+      gap: 10px;
+      align-items: end;
+      margin: 12px 0 12px;
+      padding: 14px;
+      background: var(--toolbar-bg);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow-soft);
+    }
+    .filter-toggle { display: none; }
+    .filter-actions { display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: end; }
+    .quick-filters, .active-filters { display: flex; flex-wrap: wrap; gap: 7px; margin: 10px 0 14px; }
+    label { display: grid; gap: 5px; color: var(--muted); font-size: 12px; font-weight: 650; }
+    input, select, button {
+      width: 100%;
+      min-height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--input-bg);
+      color: var(--ink);
+      padding: 7px 9px;
+      font: inherit;
+    }
+    input:focus, select:focus {
+      outline: 2px solid rgba(17, 120, 111, 0.20);
+      border-color: rgba(17, 120, 111, 0.55);
+    }
+    button {
+      background: var(--green);
+      border-color: var(--green);
+      color: #fff;
+      font-weight: 720;
+      cursor: pointer;
+      box-shadow: 0 10px 22px rgba(17, 120, 111, 0.16);
+    }
+    button:hover { background: var(--green-dark); border-color: var(--green-dark); }
+    .theme-toggle {
+      width: auto;
+      min-height: 34px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--surface);
+      border-color: var(--line);
+      color: var(--ink);
+      box-shadow: none;
+    }
+    .theme-toggle:hover { background: var(--surface-soft); border-color: var(--green); }
+    .secondary-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 7px 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      color: var(--ink);
+      background: var(--surface);
+      font-weight: 650;
+    }
+    .button-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 7px 12px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      color: var(--green-dark);
+      background: var(--surface);
+      font-weight: 760;
+      white-space: nowrap;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+    }
+    th, td { padding: 10px; border-bottom: 1px solid var(--line); vertical-align: top; text-align: left; }
+    th { color: var(--muted); font-size: 12px; font-weight: 760; background: var(--surface-soft); }
+    tbody tr:hover { background: var(--hover-bg); }
+    tr:last-child td { border-bottom: 0; }
+    .chips { display: flex; flex-wrap: wrap; gap: 5px; }
+    .chip { display: inline-flex; align-items: center; min-height: 24px; border-radius: 999px; padding: 2px 8px; background: var(--chip); color: var(--ink-soft); font-size: 12px; font-weight: 720; border: 1px solid transparent; }
+    .chip.good, .chip.strong { background: var(--green-soft); color: var(--green-dark); }
+    .chip.warn { background: var(--amber-soft); color: var(--amber-ink); }
+    .chip.danger { background: var(--red-soft); color: var(--red-ink); }
+    .chip.info { background: var(--blue-soft); color: var(--blue-ink); }
+    .chip.muted { background: var(--surface-soft); color: var(--muted); }
+    .chip.ticker { background: var(--chip); color: var(--ink); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 800; }
+    a.chip:hover, .button-link:hover { border-color: var(--green); }
+    .article-title { font-weight: 800; color: var(--ink); }
+    .summary { max-width: 560px; color: var(--ink-soft); }
+    .article-feed { display: grid; gap: 12px; }
+    .article-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(250px, 0.36fr);
+      gap: 18px;
+      padding: 16px;
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+    }
+    .article-card::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 5px;
+      background: var(--green);
+    }
+    .article-card.warn::before { background: var(--amber); }
+    .article-card.danger::before { background: var(--red); }
+    .article-card.info::before { background: var(--blue); }
+    .article-card.muted::before { background: var(--line-strong); }
+    .article-card:hover {
+      border-color: rgba(17, 120, 111, 0.34);
+      box-shadow: var(--shadow);
+      transform: translateY(-1px);
+      transition: transform 140ms ease, box-shadow 140ms ease, border-color 140ms ease;
+    }
+    .article-main { min-width: 0; padding-left: 4px; }
+    .article-side {
+      display: grid;
+      align-content: start;
+      gap: 10px;
+      padding-left: 14px;
+      border-left: 1px solid var(--line);
+    }
+    .article-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 7px 0 10px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .article-summary { color: var(--ink-soft); max-width: 760px; }
+    .side-label {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 760;
+      text-transform: uppercase;
+    }
+    .side-value { font-weight: 680; }
+    .read-note { color: var(--ink-soft); font-size: 13px; }
+    .read-note.compact { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    .authors-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .author-card { padding: 15px; display: grid; gap: 12px; }
+    .author-top { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+    .author-name { font-size: 17px; font-weight: 820; color: var(--ink); }
+    .author-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+    .source-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 16px 0; }
+    .source-card { padding: 14px; display: grid; gap: 8px; }
+    .source-title { font-size: 13px; color: var(--muted); font-weight: 760; }
+    .source-value { font-size: 18px; font-weight: 840; }
+    .health-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr); gap: 16px; align-items: start; }
+    .source-item { padding: 13px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); display: grid; gap: 7px; }
+    .timeline-item { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+    .timeline-item:last-child { border-bottom: 0; }
+    .empty { text-align: center; color: var(--muted); padding: 28px; }
+    .login-wrap { min-height: 100vh; display: grid; place-items: center; padding: 20px; }
+    .login-box { width: min(420px, 100%); }
+    .error { background: var(--red-soft); color: var(--red); border: 1px solid var(--line); padding: 10px; border-radius: 6px; margin-bottom: 12px; }
+    .notice { background: var(--surface-soft); border: 1px solid var(--line); padding: 10px; border-radius: 6px; margin: 12px 0; color: var(--ink-soft); }
+    .share-box { display: grid; gap: 5px; margin: 12px 0 0; }
+    .share-url { display: block; overflow-wrap: anywhere; color: var(--green-dark); font-weight: 700; }
+    .report-pre {
+      margin: 12px 0 0;
+      padding: 14px;
+      max-height: 520px;
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface-soft);
+      color: var(--ink-soft);
+      white-space: pre-wrap;
+      font: 13px/1.55 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .article-points { margin: 9px 0 0; padding-left: 18px; color: var(--ink-soft); }
+    .article-points li + li { margin-top: 4px; }
+    .run-list { display: grid; gap: 10px; }
+    .run-card { padding: 14px; display: flex; justify-content: space-between; gap: 14px; align-items: flex-start; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); box-shadow: var(--shadow-soft); }
+    .run-card-main { min-width: 0; display: grid; gap: 6px; }
+    .run-title { color: var(--ink); font-weight: 820; font-size: 16px; }
+    .run-card-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 7px; }
+    @media (max-width: 900px) {
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .toolbar { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .topbar { align-items: flex-start; flex-direction: column; }
+      .top-actions { width: 100%; justify-content: space-between; }
+      .dashboard-grid, .health-grid { grid-template-columns: 1fr; }
+      .ticker-grid, .authors-grid, .source-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .article-card { grid-template-columns: 1fr; }
+      .article-side { border-left: 0; border-top: 1px solid var(--line); padding-left: 0; padding-top: 12px; }
+      .page-head { align-items: flex-start; flex-direction: column; }
+    }
+    @media (max-width: 640px) {
+      main { padding: 14px; }
+      h1 { font-size: 28px; }
+      .topbar { gap: 10px; padding: 12px 14px; }
+      nav { justify-content: flex-start; width: 100%; }
+      .top-actions { order: 3; }
+      .stats, .ticker-grid, .authors-grid, .source-grid, .metrics-row, .condition-grid { grid-template-columns: 1fr; }
+      .filter-toggle { display: inline-flex; width: auto; margin: 4px 0 10px; background: var(--green); border-color: var(--green); color: #fff; }
+      .toolbar { display: none; grid-template-columns: 1fr; margin-top: 0; }
+      .toolbar.open { display: grid; }
+      .filter-actions { grid-template-columns: 1fr; }
+      table { display: block; overflow-x: auto; }
+      .article-card { padding: 14px; }
+      .article-side { gap: 8px; }
+      .read-note.compact { -webkit-line-clamp: 2; }
+      .run-card { display: grid; }
+      .run-card-actions { justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">美股專家觀點</div>
+    <nav><a class="" href="/us-expert-dashboard-site/">今日</a><a class="active" href="/us-expert-dashboard-site/runs">每日</a><a class="" href="/us-expert-dashboard-site/articles">文章庫</a><a class="" href="/us-expert-dashboard-site/tickers">標的</a><a class="" href="/us-expert-dashboard-site/authors">作者</a><a class="" href="/us-expert-dashboard-site/sources">來源</a></nav>
+    <div class="top-actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="切換暗黑模式">
+        <span class="theme-icon" data-theme-icon>◐</span>
+        <span data-theme-label>暗黑</span>
+      </button>
+      <span class="logout">開發模式</span>
+    </div>
+  </header>
+  <main>
+    <div class="page-head">
+      <div>
+        <div class="page-kicker">每日固定頁</div>
+        <h1>2026-06-24 美股專家觀點摘要</h1>
+        <div class="page-subtitle">時間窗 2026-06-23 20:01:28 Asia/Taipei 至 2026-06-24 20:01:28 Asia/Taipei。付費牆文章只採公開可見內容，不推測隱藏段落。</div>
+        <div class="run-meta">
+          <span class="chip info">執行 2026-06-24 20:01:28 Asia/Taipei</span>
+          <span class="chip info">Slack delivered</span>
+        </div>
+        <div class="share-box">
+          <div class="side-label">固定連結</div>
+          <a class="share-url" href="https://m6ru4ul6.github.io/us-expert-dashboard-site/runs/204/">https://m6ru4ul6.github.io/us-expert-dashboard-site/runs/204/</a>
+        </div>
+      </div>
+      <div class="run-card-actions">
+        <a class="button-link" href="/us-expert-dashboard-site/runs">所有每日摘要</a>
+        <a class="button-link" href="/us-expert-dashboard-site/articles?start=2026-06-23&amp;end=2026-06-24">本輪文章</a>
+      </div>
+    </div>
+    <div class="grid stats">
+      <div class="stat-card"><div class="stat-label">本輪文章</div><div class="stat-value">4</div><div class="stat-note">2 位作者</div></div>
+      <div class="stat-card danger"><div class="stat-label">需要親讀</div><div class="stat-value">4</div><div class="stat-note">優先打開原文</div></div>
+      <div class="stat-card info"><div class="stat-label">追蹤標的</div><div class="stat-value">24</div><div class="stat-note">含市場快篩</div></div>
+      <div class="stat-card warn"><div class="stat-label">全文可讀</div><div class="stat-value">0</div><div class="stat-note">其餘只看公開面</div></div>
+    </div>
+    <section class="section-stack">
+      <div class="section-head"><div><h2>今日研究優先級</h2><div class="section-note">從本輪完整報告解析而來。</div></div></div>
+      <div class="priority-list">
+        <article class="priority-card">
+          <div class="rank">重點 1</div>
+          <h3>AI 電力瓶頸受惠鏈</h3>
+          <div class="muted">Raycat 的公開 preview 把電力/電網/散熱視為 AI 基建真正瓶頸，優先觀察 VRT、GEV、PWR、BWXT 是否延續相對強勢。</div>
+        </article>
+        
+        <article class="priority-card">
+          <div class="rank">重點 2</div>
+          <h3>半導體擁擠交易是否只是洗籌</h3>
+          <div class="muted">Uncle 認為 6/23 更像程式拋售、產業邏輯未壞，搭配 Raycat 引用的美銀 28% CAGR 論點，觀察 AMAT、KLAC、LRCX、MKSI、MU 能否止跌再轉強。</div>
+        </article>
+        
+        <article class="priority-card">
+          <div class="rank">重點 3</div>
+          <h3>核電與 SMR 要分開看</h3>
+          <div class="muted">Raycat 把核電、燃料與 SMR 同列受惠，但 OKLO、SMR 距 20 日高點仍遠，先用 CEG、CCJ、BWXT 的相對強弱判斷主線是否真的擴散。</div>
+        </article>
+        </div>
+      <div class="section-head"><div><h2>逐篇摘要</h2><div class="section-note">Slack 不再塞全文；完整逐篇內容集中在這裡。</div></div></div>
+      <div class="article-feed">
+            <article class="article-card danger">
+              <div class="article-main">
+                <a class="article-title" href="https://unclestocknotes.substack.com/p/260623-substack" target="_blank" rel="noreferrer">每日重點 260623 Substack 大叔留言重點</a>
+                <div class="article-meta">
+                  <span>Uncle Stock Notes</span>
+                  <span>2026-06-24 10:47 Asia/Taipei</span>
+                </div>
+                <ul class="article-points"><li>作者先聲明這是當日聊天紀錄整理，沒有提到的股票不代表看空，只是本輪未談到。</li><li>公開 preview 的核心訊號是資金極度集中在半導體，市場站隊過度單一。</li><li>作者沒有把這種擁擠直接解讀為大盤要立刻轉空，而是提醒擁擠交易的脆弱性。</li><li>只要半導體出現一點壞消息，資金過度集中就可能放大價格震盪。</li><li>作者對 6/23 盤勢的直觀判斷較偏向程式交易拋售，而不是產業邏輯突然反轉。</li><li>Nasdaq 指數已開始收斂，但費半仍在跌，顯示壓力集中在晶片鏈。</li><li>這種被動去槓桿反而可能形成黃金坑，而非結構性空頭起點。</li><li>作者明確強調：即便短線震盪，半導體與 AI 產業邏輯本身沒有改變。</li></ul>
+              </div>
+              <aside class="article-side">
+                <div class="chips">
+                  <span class="chip warn">付費牆預覽</span>
+                  <span class="chip info">觀望</span>
+                  <span class="chip info">短線</span>
+                </div>
+                <div>
+                  <div class="side-label">操作</div>
+                  <div class="side-value">觀望</div>
+                </div>
+                <div>
+                  <div class="side-label">標的</div>
+                  <div class="chips"><span class="chip muted">未明確</span></div>
+                </div>
+                <div>
+                  <div class="side-label">親讀</div>
+                  <div class="chips"><span class="chip danger">需要</span></div>
+                  <div class="read-note">公開 preview 只有風格與盤面判讀，若全文有隱藏個股留言才是真正可操作部分。</div>
+                </div>
+              </aside>
+            </article>
+            
+            <article class="article-card danger">
+              <div class="article-main">
+                <a class="article-title" href="https://unclestocknotes.substack.com/p/20260622" target="_blank" rel="noreferrer">週報 2026.06.22</a>
+                <div class="article-meta">
+                  <span>Uncle Stock Notes</span>
+                  <span>2026-06-23 23:50 Asia/Taipei</span>
+                </div>
+                <ul class="article-points"><li>公開頁只暴露標題與資料區間，確認這是一篇回顧 2026.06.15-06.21 的週報。</li><li>文章在公開頁被標示為 Paid，未取得任何可用的公司級 preview 文字。</li><li>目前可合法確認的資訊只有時間範圍，無法知道作者本週最重視的標的與排序。</li><li>也無法確認本篇是否延續對半導體、AI 或總經節奏的主線判斷。</li><li>因此本篇只能列為待補讀來源，不能從標題推導任何實際操作結論。</li></ul>
+              </div>
+              <aside class="article-side">
+                <div class="chips">
+                  <span class="chip warn">付費牆預覽</span>
+                  <span class="chip info">無明確立場</span>
+                  <span class="chip info">未明確</span>
+                </div>
+                <div>
+                  <div class="side-label">操作</div>
+                  <div class="side-value">無明確建議</div>
+                </div>
+                <div>
+                  <div class="side-label">標的</div>
+                  <div class="chips"><span class="chip muted">未明確</span></div>
+                </div>
+                <div>
+                  <div class="side-label">親讀</div>
+                  <div class="chips"><span class="chip danger">需要</span></div>
+                  <div class="read-note">公開頁幾乎沒有內容；若能取得全文，才知道一週配置框架與重點標的。</div>
+                </div>
+              </aside>
+            </article>
+            
+            <article class="article-card danger">
+              <div class="article-main">
+                <a class="article-title" href="https://raycat.substack.com/p/4ai" target="_blank" rel="noreferrer">有老黄佐证，这4只AI能源股还有足够后劲</a>
+                <div class="article-meta">
+                  <span>徐老猫 Raycat</span>
+                  <span>2026-06-24 16:05 Asia/Taipei</span>
+                </div>
+                <ul class="article-points"><li>作者把黃仁勳在德州對 AI 能源瓶頸的發言視為高信號驗證，而不是一般新聞噪音。</li><li>第一層論點是 AI 正把 NVIDIA 從賣單一 GPU 推向賣完整 AI 系統，且更多產能落在亞利桑那與德州。</li><li>第二層論點是電力才是整個 AI 基建擴張的真正瓶頸，美國長期處於能源生產停滯狀態。</li><li>作者把資料中心形容為新的工業設施、電力是新的石油，認為缺電將形成多年期結構性需求缺口。</li><li>公開 preview 已明確點到受惠鏈包含基荷核電、鈾燃料與核服務、SMR、電網電氣化、資料中心電力與散熱。</li><li>可見例子包括 CEG、VST、CCJ、BWXT、OKLO、SMR、ETN、GEV、PWR、HUBB、VRT。</li><li>作者的估值觀點很直接：這條 AI 能源鏈仍未被股價正確反映長線前景。</li><li>但標題所稱「四檔」真正主推名單在付費段落後面，公開 preview 只看得到產業地圖與例子清單。</li></ul>
+              </div>
+              <aside class="article-side">
+                <div class="chips">
+                  <span class="chip warn">付費牆預覽</span>
+                  <span class="chip info">偏多</span>
+                  <span class="chip info">中長期</span>
+                </div>
+                <div>
+                  <div class="side-label">操作</div>
+                  <div class="side-value">回檔買</div>
+                </div>
+                <div>
+                  <div class="side-label">標的</div>
+                  <div class="chips"><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=BWXT">BWXT</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=CCJ">CCJ</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=CEG">CEG</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=ETN">ETN</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=GEV">GEV</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=HUBB">HUBB</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=NVDA">NVDA</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=OKLO">OKLO</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=PWR">PWR</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=SMR">SMR</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=VRT">VRT</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=VST">VST</a></div>
+                </div>
+                <div>
+                  <div class="side-label">親讀</div>
+                  <div class="chips"><span class="chip danger">需要</span></div>
+                  <div class="read-note">標題說有四檔，但公開 preview 只有整條供應鏈例子；若不補讀，無法知道真正主推名單。</div>
+                </div>
+              </aside>
+            </article>
+            
+            <article class="article-card danger">
+              <div class="article-main">
+                <a class="article-title" href="https://raycat.substack.com/p/ai-e75" target="_blank" rel="noreferrer">AI交易中最被低估的看涨信号</a>
+                <div class="article-meta">
+                  <span>徐老猫 Raycat</span>
+                  <span>2026-06-24 11:24 Asia/Taipei</span>
+                </div>
+                <ul class="article-points"><li>作者把當日回檔定義為典型的「先賣再問為什麼」，而不是基本面轉壞。</li><li>公開 preview 直接否定幾個常見空方解釋：不是盈餘不及預期，也不是宏觀衝擊、地緣升級或聯準會意外。</li><li>作者反而強調中東局勢緩和、PMI 穩健，以及 AI 利多消息沒有中斷。</li><li>核心結論是：如果能分辨價格波動與基本面，這種非基本面拋售反而值得提高注意力。</li><li>作者接著要談核能與量子技術的白宮政策含義，但具體政策推導在付費段落之後。</li><li>公開頁已揭露美銀把 2030 年半導體 TAM 上調到 2.7 兆美元，對應 2025 起 28% CAGR。</li><li>作者把這解讀成 AI 晶片生態系統的結構性重估，而不是幾家龍頭的短期調升。</li><li>公開 preview 點名的供應鏈公司包括 Axcelis、Advanced Energy、Altera、Applied Materials、Arm、Credo、Intel、KLA、Lam Research、MKS Instruments、Marvell、Micron、Teradyne。</li><li>作者認為大型機構共識正在慢慢跟上 AI 超級週期，投資關鍵是先看對方向與產業層級，而不是執著單一猜價。</li></ul>
+              </div>
+              <aside class="article-side">
+                <div class="chips">
+                  <span class="chip warn">付費牆預覽</span>
+                  <span class="chip info">偏多</span>
+                  <span class="chip info">波段</span>
+                </div>
+                <div>
+                  <div class="side-label">操作</div>
+                  <div class="side-value">回檔買</div>
+                </div>
+                <div>
+                  <div class="side-label">標的</div>
+                  <div class="chips"><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=ACLS">ACLS</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=AEIS">AEIS</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=AMAT">AMAT</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=ARM">ARM</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=CRDO">CRDO</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=INTC">INTC</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=KLAC">KLAC</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=LRCX">LRCX</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=MKSI">MKSI</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=MRVL">MRVL</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=MU">MU</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=TER">TER</a></div>
+                </div>
+                <div>
+                  <div class="side-label">親讀</div>
+                  <div class="chips"><span class="chip danger">需要</span></div>
+                  <div class="read-note">白宮核能/量子政策與供應鏈排序應在付費段落；只看 preview 無法判斷哪幾檔最優先。</div>
+                </div>
+              </aside>
+            </article>
+            </div>
+      <div class="section-head"><div><h2>標的快篩</h2><div class="section-note">研究級分類，不代表自動下單訊號。</div></div></div>
+      <div class="ticker-grid">
+            <article class="ticker-card danger">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=ARM">ARM</a>
+                  <div class="ticker-meta">市場 pre｜Jun 23, 2026, 4:00 PM EDT</div>
+                </div>
+                <span class="chip danger">先避開</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$366.39</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-7.56%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-19.07%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.84</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 81%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>先等高波動收斂、再出現明確止跌結構，否則不適合追逐主題反彈。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若反彈無法延續且再次放量破底，則代表波動仍遠大於可研究邊界。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card danger">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=OKLO">OKLO</a>
+                  <div class="ticker-meta">市場 pre｜Jun 23, 2026, 4:00 PM EDT</div>
+                </div>
+                <span class="chip danger">先避開</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$57.19</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-0.45%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-22.57%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.69</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 77%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>先等波動收斂、至少連兩日不再破低，再重新評估是否回到可研究節奏。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若再次急跌、量價失衡或波動繼續放大，就不屬於可控的主線布局範圍。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card danger">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=SMR">SMR</a>
+                  <div class="ticker-meta">市場 pre｜Jun 23, 2026, 4:00 PM EDT</div>
+                </div>
+                <span class="chip danger">先避開</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$10.86</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+9.81%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-24.06%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.82</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 76%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>先等波動收斂、至少連兩日不再破低，再重新評估是否回到可研究節奏。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若再次急跌、量價失衡或波動繼續放大，就不屬於可控的主線布局範圍。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=AMAT">AMAT</a>
+                  <div class="ticker-meta">市場 pre｜Jun 23, 2026, 4:00 PM EDT</div>
+                </div>
+                <span class="chip good">可列入開倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$585.88</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+3.11%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-8.62%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.22</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 91%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>下一交易日若能在半導體回檔後守住 6/23 低點，並伴隨量能維持在近 20 日均量附近，代表產業重估敘事仍有效。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若半導體再出現放量下殺、跌破 6/23 低點，則 Uncle 提醒的擁擠交易風險仍在主導。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=BWXT">BWXT</a>
+                  <div class="ticker-meta">市場 pre｜Jun 23, 2026, 4:00 PM EDT</div>
+                </div>
+                <span class="chip good">可列入開倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$209.89</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+6.58%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-2.55%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.09</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 97%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>下一交易日若能延續盤前強勢、守住 6/23 日內低點，且量能不弱於近 20 日均量，可視為 AI 電力鏈主線仍在擴散。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若盤前走強後開高走低，並跌破 6/23 低點或整個能源鏈同步轉弱，則本輪結構性主線暫不成立。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=CCJ">CCJ</a>
+                  <div class="ticker-meta">市場 pre｜Jun 23, 2026, 4:00 PM EDT</div>
+                </div>
+                <span class="chip good">可列入開倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$108.89</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+0.94%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-10.96%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.13</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 89%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>下一交易日若能延續盤前強勢、守住 6/23 日內低點，且量能不弱於近 20 日均量，可視為 AI 電力鏈主線仍在擴散。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若盤前走強後開高走低，並跌破 6/23 低點或整個能源鏈同步轉弱，則本輪結構性主線暫不成立。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=GEV">GEV</a>
+                  <div class="ticker-meta">市場 pre｜Jun 23, 2026, 4:00 PM EDT</div>
+                </div>
+                <span class="chip good">可列入開倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$1,034.98</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+5.36%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-9.37%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.14</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 91%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>下一交易日若能延續盤前強勢、守住 6/23 日內低點，且量能不弱於近 20 日均量，可視為 AI 電力鏈主線仍在擴散。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若盤前走強後開高走低，並跌破 6/23 低點或整個能源鏈同步轉弱，則本輪結構性主線暫不成立。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=KLAC">KLAC</a>
+                  <div class="ticker-meta">市場 pre｜Jun 23, 2026, 4:00 PM EDT</div>
+                </div>
+                <span class="chip good">可列入開倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$244.49</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+3.02%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-9.41%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.34</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 91%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>下一交易日若能在半導體回檔後守住 6/23 低點，並伴隨量能維持在近 20 日均量附近，代表產業重估敘事仍有效。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若半導體再出現放量下殺、跌破 6/23 低點，則 Uncle 提醒的擁擠交易風險仍在主導。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=LRCX">LRCX</a>
+                  <div class="ticker-meta">市場 pre｜Jun 23, 2026, 4:00 PM EDT</div>
+                </div>
+                <span class="chip good">可列入開倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$371.33</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+0.54%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-9.38%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.30</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 91%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>下一交易日若能在半導體回檔後守住 6/23 低點，並伴隨量能維持在近 20 日均量附近，代表產業重估敘事仍有效。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若半導體再出現放量下殺、跌破 6/23 低點，則 Uncle 提醒的擁擠交易風險仍在主導。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=MKSI">MKSI</a>
+                  <div class="ticker-meta">市場 pre｜Jun 23, 2026, 4:00 PM EDT</div>
+                </div>
+                <span class="chip good">可列入開倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$389.17</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+6.24%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-7.69%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.42</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 92%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>下一交易日若能在半導體回檔後守住 6/23 低點，並伴隨量能維持在近 20 日均量附近，代表產業重估敘事仍有效。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若半導體再出現放量下殺、跌破 6/23 低點，則 Uncle 提醒的擁擠交易風險仍在主導。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=PWR">PWR</a>
+                  <div class="ticker-meta">市場 pre｜Jun 23, 2026, 4:00 PM EDT</div>
+                </div>
+                <span class="chip good">可列入開倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$702.29</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-2.36%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-6.20%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.41</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 94%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>下一交易日若能延續盤前強勢、守住 6/23 日內低點，且量能不弱於近 20 日均量，可視為 AI 電力鏈主線仍在擴散。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若盤前走強後開高走低，並跌破 6/23 低點或整個能源鏈同步轉弱，則本輪結構性主線暫不成立。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=TER">TER</a>
+                  <div class="ticker-meta">市場 pre｜Jun 23, 2026, 4:00 PM EDT</div>
+                </div>
+                <span class="chip good">可列入開倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$420.12</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+2.63%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-8.51%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.55</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 91%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>下一交易日若能在半導體回檔後守住 6/23 低點，並伴隨量能維持在近 20 日均量附近，代表產業重估敘事仍有效。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若半導體再出現放量下殺、跌破 6/23 低點，則 Uncle 提醒的擁擠交易風險仍在主導。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=VRT">VRT</a>
+                  <div class="ticker-meta">市場 pre｜Jun 23, 2026, 4:00 PM EDT</div>
+                </div>
+                <span class="chip good">可列入開倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$318.32</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+6.25%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-11.22%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.61</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 89%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>下一交易日若能延續盤前強勢、守住 6/23 日內低點，且量能不弱於近 20 日均量，可視為 AI 電力鏈主線仍在擴散。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若盤前走強後開高走低，並跌破 6/23 低點或整個能源鏈同步轉弱，則本輪結構性主線暫不成立。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card warn">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=CRDO">CRDO</a>
+                  <div class="ticker-meta">市場 pre｜Jun 23, 2026, 4:00 PM EDT</div>
+                </div>
+                <span class="chip warn">等回檔，不追高</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$272.00</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+13.72%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-11.88%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.05</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 88%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>等 5 日強彈後回測不破，再觀察是否重新放量轉強，才算風險報酬比改善。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若高位震盪轉成放量回落，表示本輪只是情緒修復而非可持續趨勢。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card warn">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=INTC">INTC</a>
+                  <div class="ticker-meta">市場 pre｜Jun 23, 2026, 4:00 PM EDT</div>
+                </div>
+                <span class="chip warn">等回檔，不追高</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$132.28</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+13.01%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-6.48%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.97</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 94%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>等 5 日強彈後回測不破，再觀察是否重新放量轉強，才算風險報酬比改善。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若高位震盪轉成放量回落，表示本輪只是情緒修復而非可持續趨勢。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card warn">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=MU">MU</a>
+                  <div class="ticker-meta">市場 pre｜Jun 23, 2026, 4:00 PM EDT</div>
+                </div>
+                <span class="chip warn">等回檔，不追高</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$1,051.77</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+3.04%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-13.33%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.04</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 87%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>等 5 日強彈後回測不破，再觀察是否重新放量轉強，才算風險報酬比改善。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若高位震盪轉成放量回落，表示本輪只是情緒修復而非可持續趨勢。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=ACLS">ACLS</a>
+                  <div class="ticker-meta">市場 pre｜Jun 23, 2026, 4:00 PM EDT</div>
+                </div>
+                <span class="chip good">僅適合原持股續抱或加倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$171.06</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-3.27%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-11.72%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.95</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 88%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>若產業股沒有再被擁擠交易拖累、價格守住 6/23 低點，可維持主線持股觀察。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若半導體板塊再度集體失守低點，則不宜把類股邏輯直接外推到個股。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=AEIS">AEIS</a>
+                  <div class="ticker-meta">市場 pre｜Jun 23, 2026, 4:00 PM EDT</div>
+                </div>
+                <span class="chip good">僅適合原持股續抱或加倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$364.96</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+4.14%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-6.37%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.82</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 94%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>若產業股沒有再被擁擠交易拖累、價格守住 6/23 低點，可維持主線持股觀察。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若半導體板塊再度集體失守低點，則不宜把類股邏輯直接外推到個股。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=CEG">CEG</a>
+                  <div class="ticker-meta">市場 pre｜Jun 23, 2026, 4:00 PM EDT</div>
+                </div>
+                <span class="chip good">僅適合原持股續抱或加倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$270.26</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+0.84%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-12.95%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.77</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 87%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>若回測 6/23 區間低點不破、相對大盤續強，可視為既有主題趨勢仍健康。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若失守 6/23 低點且相對強弱轉差，代表主題資金並未擴散到個股層級。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=ETN">ETN</a>
+                  <div class="ticker-meta">市場 pre｜Jun 23, 2026, 4:00 PM EDT</div>
+                </div>
+                <span class="chip good">僅適合原持股續抱或加倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$405.28</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-0.60%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-7.20%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.99</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 93%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>若回測 6/23 區間低點不破、相對大盤續強，可視為既有主題趨勢仍健康。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若失守 6/23 低點且相對強弱轉差，代表主題資金並未擴散到個股層級。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=HUBB">HUBB</a>
+                  <div class="ticker-meta">市場 pre｜Jun 23, 2026, 4:00 PM EDT</div>
+                </div>
+                <span class="chip good">僅適合原持股續抱或加倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$509.96</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+1.45%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-5.46%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.97</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 95%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>若回測 6/23 區間低點不破、相對大盤續強，可視為既有主題趨勢仍健康。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若失守 6/23 低點且相對強弱轉差，代表主題資金並未擴散到個股層級。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=MRVL">MRVL</a>
+                  <div class="ticker-meta">市場 pre｜Jun 23, 2026, 4:00 PM EDT</div>
+                </div>
+                <span class="chip good">僅適合原持股續抱或加倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$279.04</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+0.13%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-15.41%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.63</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 85%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>若產業股沒有再被擁擠交易拖累、價格守住 6/23 低點，可維持主線持股觀察。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若半導體板塊再度集體失守低點，則不宜把類股邏輯直接外推到個股。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=NVDA">NVDA</a>
+                  <div class="ticker-meta">市場 pre｜Jun 23, 2026, 4:00 PM EDT</div>
+                </div>
+                <span class="chip good">僅適合原持股續抱或加倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$200.04</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-3.55%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-13.88%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.90</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 86%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>若產業股沒有再被擁擠交易拖累、價格守住 6/23 低點，可維持主線持股觀察。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若半導體板塊再度集體失守低點，則不宜把類股邏輯直接外推到個股。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=VST">VST</a>
+                  <div class="ticker-meta">市場 pre｜Jun 23, 2026, 4:00 PM EDT</div>
+                </div>
+                <span class="chip good">僅適合原持股續抱或加倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$162.39</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+2.38%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-4.76%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.81</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 95%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>若回測 6/23 區間低點不破、相對大盤續強，可視為既有主題趨勢仍健康。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若失守 6/23 低點且相對強弱轉差，代表主題資金並未擴散到個股層級。</div>
+              </div>
+            </article>
+            </div>
+      <div class="section-head"><div><h2>來源檢查</h2><div class="section-note">用來判斷本輪資料可信度與限制。</div></div></div>
+      <div class="source-list">
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>Uncle Stock Notes RSS</h3>
+            <span class="chip warn">HTTP 200；24 小時內 2 篇新文；兩篇皆補抓公開頁成功，但來源狀態均為付費牆/僅公開預覽。</span>
+          </div>
+          <div class="muted">Uncle Stock Notes RSS：HTTP 200；24 小時內 2 篇新文；兩篇皆補抓公開頁成功，但來源狀態均為付費牆/僅公開預覽。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>Skilled Driver RSS</h3>
+            <span class="chip info">HTTP 200；24 小時內無新文章。</span>
+          </div>
+          <div class="muted">Skilled Driver RSS：HTTP 200；24 小時內無新文章。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>Michael M. Chang RSS</h3>
+            <span class="chip info">HTTP 200；24 小時內無新文章。</span>
+          </div>
+          <div class="muted">Michael M. Chang RSS：HTTP 200；24 小時內無新文章。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>Raycat RSS</h3>
+            <span class="chip warn">HTTP 200；24 小時內 2 篇新文；兩篇皆補抓公開頁成功，但來源狀態均為付費牆/僅公開預覽。</span>
+          </div>
+          <div class="muted">Raycat RSS：HTTP 200；24 小時內 2 篇新文；兩篇皆補抓公開頁成功，但來源狀態均為付費牆/僅公開預覽。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>補充 Substack 公開搜尋</h3>
+            <span class="chip info">未找到可確認在本輪時間窗內且公開可讀的其他美股作者新文。</span>
+          </div>
+          <div class="muted">補充 Substack 公開搜尋：未找到可確認在本輪時間窗內且公開可讀的其他美股作者新文。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>市場資料</h3>
+            <span class="chip info">Yahoo chart API 測試於 NVDA 回 429；本輪改用 StockAnalysis history 頁面 fresh 抓取 24 檔價格、盤前/盤後、近 20 日高點與量能。</span>
+          </div>
+          <div class="muted">市場資料：Yahoo chart API 測試於 NVDA 回 429；本輪改用 StockAnalysis history 頁面 fresh 抓取 24 檔價格、盤前/盤後、近 20 日高點與量能。</div>
+        </article>
+        </div>
+      <details class="mini-card">
+        <summary><strong>完整 Markdown 報告</strong></summary>
+        <pre class="report-pre">[來源檢查]
+- Uncle Stock Notes RSS：HTTP 200；24 小時內 2 篇新文；兩篇皆補抓公開頁成功，但來源狀態均為付費牆/僅公開預覽。
+- Skilled Driver RSS：HTTP 200；24 小時內無新文章。
+- Michael M. Chang RSS：HTTP 200；24 小時內無新文章。
+- Raycat RSS：HTTP 200；24 小時內 2 篇新文；兩篇皆補抓公開頁成功，但來源狀態均為付費牆/僅公開預覽。
+- 補充 Substack 公開搜尋：未找到可確認在本輪時間窗內且公開可讀的其他美股作者新文。
+- 市場資料：Yahoo chart API 測試於 NVDA 回 429；本輪改用 StockAnalysis history 頁面 fresh 抓取 24 檔價格、盤前/盤後、近 20 日高點與量能。
+
+[逐篇摘要]
+1. Uncle Stock Notes｜每日重點 260623 Substack 大叔留言重點
+- 作者：Uncle Stock Notes
+- 來源：Substack 文章
+- 標題：每日重點 260623 Substack 大叔留言重點
+- 發布時間：2026-06-24 10:47 Asia/Taipei
+- 來源狀態：付費牆/僅公開預覽
+- 連結：https://unclestocknotes.substack.com/p/260623-substack
+- 立場：觀望
+- 時間框架：短線
+- 摘要：
+  1. 作者先聲明這是當日聊天紀錄整理，沒有提到的股票不代表看空，只是本輪未談到。
+  2. 公開 preview 的核心訊號是資金極度集中在半導體，市場站隊過度單一。
+  3. 作者沒有把這種擁擠直接解讀為大盤要立刻轉空，而是提醒擁擠交易的脆弱性。
+  4. 只要半導體出現一點壞消息，資金過度集中就可能放大價格震盪。
+  5. 作者對 6/23 盤勢的直觀判斷較偏向程式交易拋售，而不是產業邏輯突然反轉。
+  6. Nasdaq 指數已開始收斂，但費半仍在跌，顯示壓力集中在晶片鏈。
+  7. 這種被動去槓桿反而可能形成黃金坑，而非結構性空頭起點。
+  8. 作者明確強調：即便短線震盪，半導體與 AI 產業邏輯本身沒有改變。
+- 明確提到的標的：未明確
+- 明確提到的族群：半導體、AI 基建
+- 催化因素：半導體擁擠交易、程式交易拋售、資金集中導致的短線去風險
+- 操作建議：觀望
+- 風險或保留條件：若半導體再出現負面消息，擁擠交易可能擴大成更深的連鎖賣壓。
+- 我是否需要親自讀原文：需要，公開 preview 只有風格與盤面判讀，若全文有隱藏個股留言才是真正可操作部分。
+
+2. Uncle Stock Notes｜週報 2026.06.22
+- 作者：Uncle Stock Notes
+- 來源：Substack 文章
+- 標題：週報 2026.06.22
+- 發布時間：2026-06-23 23:50 Asia/Taipei
+- 來源狀態：付費牆/僅公開預覽
+- 連結：https://unclestocknotes.substack.com/p/20260622
+- 立場：無明確立場
+- 時間框架：未明確
+- 摘要：
+  1. 公開頁只暴露標題與資料區間，確認這是一篇回顧 2026.06.15-06.21 的週報。
+  2. 文章在公開頁被標示為 Paid，未取得任何可用的公司級 preview 文字。
+  3. 目前可合法確認的資訊只有時間範圍，無法知道作者本週最重視的標的與排序。
+  4. 也無法確認本篇是否延續對半導體、AI 或總經節奏的主線判斷。
+  5. 因此本篇只能列為待補讀來源，不能從標題推導任何實際操作結論。
+- 明確提到的標的：未明確
+- 明確提到的族群：未明確
+- 催化因素：未明確
+- 操作建議：無明確建議
+- 風險或保留條件：公開資訊過少，若直接根據標題臆測週報內容，容易錯判作者真正排序。
+- 我是否需要親自讀原文：需要，公開頁幾乎沒有內容；若能取得全文，才知道一週配置框架與重點標的。
+
+3. Raycat｜有老黄佐证，这4只AI能源股还有足够后劲
+- 作者：Raycat
+- 來源：Substack 文章
+- 標題：有老黄佐证，这4只AI能源股还有足够后劲
+- 發布時間：2026-06-24 16:05 Asia/Taipei
+- 來源狀態：付費牆/僅公開預覽
+- 連結：https://raycat.substack.com/p/4ai
+- 立場：偏多
+- 時間框架：中長期
+- 摘要：
+  1. 作者把黃仁勳在德州對 AI 能源瓶頸的發言視為高信號驗證，而不是一般新聞噪音。
+  2. 第一層論點是 AI 正把 NVIDIA 從賣單一 GPU 推向賣完整 AI 系統，且更多產能落在亞利桑那與德州。
+  3. 第二層論點是電力才是整個 AI 基建擴張的真正瓶頸，美國長期處於能源生產停滯狀態。
+  4. 作者把資料中心形容為新的工業設施、電力是新的石油，認為缺電將形成多年期結構性需求缺口。
+  5. 公開 preview 已明確點到受惠鏈包含基荷核電、鈾燃料與核服務、SMR、電網電氣化、資料中心電力與散熱。
+  6. 可見例子包括 CEG、VST、CCJ、BWXT、OKLO、SMR、ETN、GEV、PWR、HUBB、VRT。
+  7. 作者的估值觀點很直接：這條 AI 能源鏈仍未被股價正確反映長線前景。
+  8. 但標題所稱「四檔」真正主推名單在付費段落後面，公開 preview 只看得到產業地圖與例子清單。
+- 明確提到的標的：NVDA、CEG、VST、CCJ、BWXT、OKLO、SMR、ETN、GEV、PWR、HUBB、VRT
+- 明確提到的族群：AI 基建、核電、鈾燃料與核服務、SMR、電網電氣化、資料中心電力與散熱
+- 催化因素：黃仁勳德州發言、美國製造回流、AI 導致的電力瓶頸與電網投資週期
+- 操作建議：回檔買
+- 風險或保留條件：公開頁沒有揭露最終四檔名單與排序，且能源鏈只是主題框架，個股分化風險仍高。
+- 我是否需要親自讀原文：需要，標題說有四檔，但公開 preview 只有整條供應鏈例子；若不補讀，無法知道真正主推名單。
+
+4. Raycat｜AI交易中最被低估的看涨信号
+- 作者：Raycat
+- 來源：Substack 文章
+- 標題：AI交易中最被低估的看涨信号
+- 發布時間：2026-06-24 11:24 Asia/Taipei
+- 來源狀態：付費牆/僅公開預覽
+- 連結：https://raycat.substack.com/p/ai-e75
+- 立場：偏多
+- 時間框架：波段
+- 摘要：
+  1. 作者把當日回檔定義為典型的「先賣再問為什麼」，而不是基本面轉壞。
+  2. 公開 preview 直接否定幾個常見空方解釋：不是盈餘不及預期，也不是宏觀衝擊、地緣升級或聯準會意外。
+  3. 作者反而強調中東局勢緩和、PMI 穩健，以及 AI 利多消息沒有中斷。
+  4. 核心結論是：如果能分辨價格波動與基本面，這種非基本面拋售反而值得提高注意力。
+  5. 作者接著要談核能與量子技術的白宮政策含義，但具體政策推導在付費段落之後。
+  6. 公開頁已揭露美銀把 2030 年半導體 TAM 上調到 2.7 兆美元，對應 2025 起 28% CAGR。
+  7. 作者把這解讀成 AI 晶片生態系統的結構性重估，而不是幾家龍頭的短期調升。
+  8. 公開 preview 點名的供應鏈公司包括 Axcelis、Advanced Energy、Altera、Applied Materials、Arm、Credo、Intel、KLA、Lam Research、MKS Instruments、Marvell、Micron、Teradyne。
+  9. 作者認為大型機構共識正在慢慢跟上 AI 超級週期，投資關鍵是先看對方向與產業層級，而不是執著單一猜價。
+- 明確提到的標的：ACLS、AEIS、Altera（ticker 不確定）、AMAT、ARM、CRDO、INTC、KLAC、LRCX、MKSI、MRVL、MU、TER
+- 明確提到的族群：AI 半導體供應鏈、核能、量子科技
+- 催化因素：非基本面拋售後的再評價、白宮核能/量子政策、美銀上調半導體 TAM 與供應鏈目標
+- 操作建議：回檔買
+- 風險或保留條件：公開頁只看到宏觀與籃子層級論點，沒有公司級排序與倉位規劃，容易誤把主題看多當成全面買進。
+- 我是否需要親自讀原文：需要，白宮核能/量子政策與供應鏈排序應在付費段落；只看 preview 無法判斷哪幾檔最優先。
+
+[Activity 摘要]
+- 本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。
+- 來源狀態：使用者設定暫停
+- 明確提到的標的：不適用
+- 我是否需要親自看全文：不適用
+
+[標的快篩]
+補充說明：Raycat 的兩篇公開頁多數只揭露籃子層級名單與產業框架，以下快篩以公開 preview 可見內容 + fresh 市場資料做研究分流，不把籃子提及誤寫成公司級深論。
+1. VRT
+- 公司：Vertiv
+- 最新可得價格：318.32（regular close；Jun 23, 2026, 4:00 PM EDT）
+- 盤前/盤後：Pre-market 324.54，較 regular close +1.95%（資料時間 Jun 24, 2026, 8:06 AM EDT）
+- 5日漲跌幅：+6.25%
+- 近20日高點：358.54
+- 目前價格距20日高點幅度：-11.22%
+- 最新成交量：10,235,969
+- 20日均量 / 量能相對狀態：6,341,222 / 1.61x
+- 作者角度-財報趨勢：作者未明確提到。
+- 作者角度-估值：作者認為 AI 能源鏈仍未被股價正確反映前景。
+- 作者角度-產業趨勢：AI 建設速度快於電力基建，電力/散熱/電網瓶頸形成多年結構性需求。
+- 作者角度-機構觀點：Raycat 以黃仁勳對 AI 能源瓶頸的公開發言作為高信號驗證。
+- 研究級分類：可列入開倉觀察
+- 下一交易日確認條件：下一交易日若能延續盤前強勢、守住 6/23 日內低點，且量能不弱於近 20 日均量，可視為 AI 電力鏈主線仍在擴散。
+- 失效條件：若盤前走強後開高走低，並跌破 6/23 低點或整個能源鏈同步轉弱，則本輪結構性主線暫不成立。
+
+2. GEV
+- 公司：GE Vernova
+- 最新可得價格：1034.98（regular close；Jun 23, 2026, 4:00 PM EDT）
+- 盤前/盤後：Pre-market 1055.00，較 regular close +1.93%（資料時間 Jun 24, 2026, 8:03 AM EDT）
+- 5日漲跌幅：+5.36%
+- 近20日高點：1142.00
+- 目前價格距20日高點幅度：-9.37%
+- 最新成交量：3,687,646
+- 20日均量 / 量能相對狀態：3,236,455 / 1.14x
+- 作者角度-財報趨勢：作者未明確提到。
+- 作者角度-估值：作者認為 AI 能源鏈仍未被股價正確反映前景。
+- 作者角度-產業趨勢：AI 建設速度快於電力基建，電力/散熱/電網瓶頸形成多年結構性需求。
+- 作者角度-機構觀點：Raycat 以黃仁勳對 AI 能源瓶頸的公開發言作為高信號驗證。
+- 研究級分類：可列入開倉觀察
+- 下一交易日確認條件：下一交易日若能延續盤前強勢、守住 6/23 日內低點，且量能不弱於近 20 日均量，可視為 AI 電力鏈主線仍在擴散。
+- 失效條件：若盤前走強後開高走低，並跌破 6/23 低點或整個能源鏈同步轉弱，則本輪結構性主線暫不成立。
+
+3. BWXT
+- 公司：BWX Technologies
+- 最新可得價格：209.89（regular close；Jun 23, 2026, 4:00 PM EDT）
+- 盤前/盤後：Pre-market 211.00，較 regular close +0.53%（資料時間 Jun 24, 2026, 7:41 AM EDT）
+- 5日漲跌幅：+6.58%
+- 近20日高點：215.38
+- 目前價格距20日高點幅度：-2.55%
+- 最新成交量：1,145,272
+- 20日均量 / 量能相對狀態：1,048,523 / 1.09x
+- 作者角度-財報趨勢：作者未明確提到。
+- 作者角度-估值：作者認為 AI 能源鏈仍未被股價正確反映前景。
+- 作者角度-產業趨勢：AI 建設速度快於電力基建，電力/散熱/電網瓶頸形成多年結構性需求。
+- 作者角度-機構觀點：Raycat 以黃仁勳對 AI 能源瓶頸的公開發言作為高信號驗證。
+- 研究級分類：可列入開倉觀察
+- 下一交易日確認條件：下一交易日若能延續盤前強勢、守住 6/23 日內低點，且量能不弱於近 20 日均量，可視為 AI 電力鏈主線仍在擴散。
+- 失效條件：若盤前走強後開高走低，並跌破 6/23 低點或整個能源鏈同步轉弱，則本輪結構性主線暫不成立。
+
+4. PWR
+- 公司：Quanta Services
+- 最新可得價格：702.29（regular close；Jun 23, 2026, 4:00 PM EDT）
+- 盤前/盤後：Pre-market 710.00，較 regular close +1.10%（資料時間 Jun 24, 2026, 8:06 AM EDT）
+- 5日漲跌幅：-2.36%
+- 近20日高點：748.69
+- 目前價格距20日高點幅度：-6.20%
+- 最新成交量：1,648,097
+- 20日均量 / 量能相對狀態：1,170,797 / 1.41x
+- 作者角度-財報趨勢：作者未明確提到。
+- 作者角度-估值：作者認為 AI 能源鏈仍未被股價正確反映前景。
+- 作者角度-產業趨勢：AI 建設速度快於電力基建，電力/散熱/電網瓶頸形成多年結構性需求。
+- 作者角度-機構觀點：Raycat 以黃仁勳對 AI 能源瓶頸的公開發言作為高信號驗證。
+- 研究級分類：可列入開倉觀察
+- 下一交易日確認條件：下一交易日若能延續盤前強勢、守住 6/23 日內低點，且量能不弱於近 20 日均量，可視為 AI 電力鏈主線仍在擴散。
+- 失效條件：若盤前走強後開高走低，並跌破 6/23 低點或整個能源鏈同步轉弱，則本輪結構性主線暫不成立。
+
+5. CEG
+- 公司：Constellation Energy
+- 最新可得價格：270.26（regular close；Jun 23, 2026, 4:00 PM EDT）
+- 盤前/盤後：Pre-market 272.00，較 regular close +0.64%（資料時間 Jun 24, 2026, 8:05 AM EDT）
+- 5日漲跌幅：+0.84%
+- 近20日高點：310.45
+- 目前價格距20日高點幅度：-12.95%
+- 最新成交量：3,347,392
+- 20日均量 / 量能相對狀態：4,322,187 / 0.77x
+- 作者角度-財報趨勢：作者未明確提到。
+- 作者角度-估值：作者認為 AI 能源鏈仍未被股價正確反映前景。
+- 作者角度-產業趨勢：AI 建設速度快於電力基建，電力/散熱/電網瓶頸形成多年結構性需求。
+- 作者角度-機構觀點：Raycat 以黃仁勳對 AI 能源瓶頸的公開發言作為高信號驗證。
+- 研究級分類：僅適合原持股續抱或加倉觀察
+- 下一交易日確認條件：若回測 6/23 區間低點不破、相對大盤續強，可視為既有主題趨勢仍健康。
+- 失效條件：若失守 6/23 低點且相對強弱轉差，代表主題資金並未擴散到個股層級。
+
+6. VST
+- 公司：Vistra
+- 最新可得價格：162.39（regular close；Jun 23, 2026, 4:00 PM EDT）
+- 盤前/盤後：Pre-market 163.00，較 regular close +0.38%（資料時間 Jun 24, 2026, 8:01 AM EDT）
+- 5日漲跌幅：+2.38%
+- 近20日高點：170.50
+- 目前價格距20日高點幅度：-4.76%
+- 最新成交量：3,748,607
+- 20日均量 / 量能相對狀態：4,652,351 / 0.81x
+- 作者角度-財報趨勢：作者未明確提到。
+- 作者角度-估值：作者認為 AI 能源鏈仍未被股價正確反映前景。
+- 作者角度-產業趨勢：AI 建設速度快於電力基建，電力/散熱/電網瓶頸形成多年結構性需求。
+- 作者角度-機構觀點：Raycat 以黃仁勳對 AI 能源瓶頸的公開發言作為高信號驗證。
+- 研究級分類：僅適合原持股續抱或加倉觀察
+- 下一交易日確認條件：若回測 6/23 區間低點不破、相對大盤續強，可視為既有主題趨勢仍健康。
+- 失效條件：若失守 6/23 低點且相對強弱轉差，代表主題資金並未擴散到個股層級。
+
+7. CCJ
+- 公司：Cameco
+- 最新可得價格：108.89（regular close；Jun 23, 2026, 4:00 PM EDT）
+- 盤前/盤後：Pre-market 110.00，較 regular close +1.02%（資料時間 Jun 24, 2026, 7:57 AM EDT）
+- 5日漲跌幅：+0.94%
+- 近20日高點：122.30
+- 目前價格距20日高點幅度：-10.96%
+- 最新成交量：3,707,214
+- 20日均量 / 量能相對狀態：3,273,252 / 1.13x
+- 作者角度-財報趨勢：作者未明確提到。
+- 作者角度-估值：作者認為 AI 能源鏈仍未被股價正確反映前景。
+- 作者角度-產業趨勢：AI 建設速度快於電力基建，電力/散熱/電網瓶頸形成多年結構性需求。
+- 作者角度-機構觀點：Raycat 以黃仁勳對 AI 能源瓶頸的公開發言作為高信號驗證。
+- 研究級分類：可列入開倉觀察
+- 下一交易日確認條件：下一交易日若能延續盤前強勢、守住 6/23 日內低點，且量能不弱於近 20 日均量，可視為 AI 電力鏈主線仍在擴散。
+- 失效條件：若盤前走強後開高走低，並跌破 6/23 低點或整個能源鏈同步轉弱，則本輪結構性主線暫不成立。
+
+8. ETN
+- 公司：Eaton
+- 最新可得價格：405.28（regular close；Jun 23, 2026, 4:00 PM EDT）
+- 盤前/盤後：Pre-market 409.00，較 regular close +0.92%（資料時間 Jun 24, 2026, 7:49 AM EDT）
+- 5日漲跌幅：-0.60%
+- 近20日高點：436.74
+- 目前價格距20日高點幅度：-7.20%
+- 最新成交量：2,443,173
+- 20日均量 / 量能相對狀態：2,466,760 / 0.99x
+- 作者角度-財報趨勢：作者未明確提到。
+- 作者角度-估值：作者認為 AI 能源鏈仍未被股價正確反映前景。
+- 作者角度-產業趨勢：AI 建設速度快於電力基建，電力/散熱/電網瓶頸形成多年結構性需求。
+- 作者角度-機構觀點：Raycat 以黃仁勳對 AI 能源瓶頸的公開發言作為高信號驗證。
+- 研究級分類：僅適合原持股續抱或加倉觀察
+- 下一交易日確認條件：若回測 6/23 區間低點不破、相對大盤續強，可視為既有主題趨勢仍健康。
+- 失效條件：若失守 6/23 低點且相對強弱轉差，代表主題資金並未擴散到個股層級。
+
+9. HUBB
+- 公司：Hubbell
+- 最新可得價格：509.96（regular close；Jun 23, 2026, 4:00 PM EDT）
+- 盤前/盤後：盤前/盤後資料不足
+- 5日漲跌幅：+1.45%
+- 近20日高點：539.40
+- 目前價格距20日高點幅度：-5.46%
+- 最新成交量：666,959
+- 20日均量 / 量能相對狀態：689,363 / 0.97x
+- 作者角度-財報趨勢：作者未明確提到。
+- 作者角度-估值：作者認為 AI 能源鏈仍未被股價正確反映前景。
+- 作者角度-產業趨勢：AI 建設速度快於電力基建，電力/散熱/電網瓶頸形成多年結構性需求。
+- 作者角度-機構觀點：Raycat 以黃仁勳對 AI 能源瓶頸的公開發言作為高信號驗證。
+- 研究級分類：僅適合原持股續抱或加倉觀察
+- 下一交易日確認條件：若回測 6/23 區間低點不破、相對大盤續強，可視為既有主題趨勢仍健康。
+- 失效條件：若失守 6/23 低點且相對強弱轉差，代表主題資金並未擴散到個股層級。
+
+10. OKLO
+- 公司：Oklo
+- 最新可得價格：57.19（regular close；Jun 23, 2026, 4:00 PM EDT）
+- 盤前/盤後：Pre-market 58.16，較 regular close +1.70%（資料時間 Jun 24, 2026, 8:05 AM EDT）
+- 5日漲跌幅：-0.45%
+- 近20日高點：73.86
+- 目前價格距20日高點幅度：-22.57%
+- 最新成交量：9,228,990
+- 20日均量 / 量能相對狀態：13,292,172 / 0.69x
+- 作者角度-財報趨勢：作者未明確提到。
+- 作者角度-估值：作者認為 AI 能源鏈仍未被股價正確反映前景。
+- 作者角度-產業趨勢：AI 建設速度快於電力基建，電力/散熱/電網瓶頸形成多年結構性需求。
+- 作者角度-機構觀點：Raycat 以黃仁勳對 AI 能源瓶頸的公開發言作為高信號驗證。
+- 研究級分類：先避開
+- 下一交易日確認條件：先等波動收斂、至少連兩日不再破低，再重新評估是否回到可研究節奏。
+- 失效條件：若再次急跌、量價失衡或波動繼續放大，就不屬於可控的主線布局範圍。
+
+11. SMR
+- 公司：NuScale / SMR
+- 最新可得價格：10.86（regular close；Jun 23, 2026, 4:00 PM EDT）
+- 盤前/盤後：Pre-market 11.02，較 regular close +1.47%（資料時間 Jun 24, 2026, 8:06 AM EDT）
+- 5日漲跌幅：+9.81%
+- 近20日高點：14.30
+- 目前價格距20日高點幅度：-24.06%
+- 最新成交量：31,618,289
+- 20日均量 / 量能相對狀態：38,359,829 / 0.82x
+- 作者角度-財報趨勢：作者未明確提到。
+- 作者角度-估值：作者認為 AI 能源鏈仍未被股價正確反映前景。
+- 作者角度-產業趨勢：AI 建設速度快於電力基建，電力/散熱/電網瓶頸形成多年結構性需求。
+- 作者角度-機構觀點：Raycat 以黃仁勳對 AI 能源瓶頸的公開發言作為高信號驗證。
+- 研究級分類：先避開
+- 下一交易日確認條件：先等波動收斂、至少連兩日不再破低，再重新評估是否回到可研究節奏。
+- 失效條件：若再次急跌、量價失衡或波動繼續放大，就不屬於可控的主線布局範圍。
+
+12. NVDA
+- 公司：NVIDIA
+- 最新可得價格：200.04（regular close；Jun 23, 2026, 4:00 PM EDT）
+- 盤前/盤後：Pre-market 201.36，較 regular close +0.66%（資料時間 Jun 24, 2026, 8:06 AM EDT）
+- 5日漲跌幅：-3.55%
+- 近20日高點：232.28
+- 目前價格距20日高點幅度：-13.88%
+- 最新成交量：153,080,079
+- 20日均量 / 量能相對狀態：170,823,343 / 0.90x
+- 作者角度-財報趨勢：作者未明確提到。
+- 作者角度-估值：作者未明確提到。
+- 作者角度-產業趨勢：AI 系統需求仍強，但半導體交易已出現擁擠與短線去風險。
+- 作者角度-機構觀點：黃仁勳發言驗證 AI 電力需求；Uncle 則提醒半導體擁擠交易風險。
+- 研究級分類：僅適合原持股續抱或加倉觀察
+- 下一交易日確認條件：若產業股沒有再被擁擠交易拖累、價格守住 6/23 低點，可維持主線持股觀察。
+- 失效條件：若半導體板塊再度集體失守低點，則不宜把類股邏輯直接外推到個股。
+
+13. AMAT
+- 公司：Applied Materials
+- 最新可得價格：585.88（regular close；Jun 23, 2026, 4:00 PM EDT）
+- 盤前/盤後：Pre-market 593.38，較 regular close +1.28%（資料時間 Jun 24, 2026, 8:06 AM EDT）
+- 5日漲跌幅：+3.11%
+- 近20日高點：641.18
+- 目前價格距20日高點幅度：-8.62%
+- 最新成交量：11,987,698
+- 20日均量 / 量能相對狀態：9,860,986 / 1.22x
+- 作者角度-財報趨勢：作者明確表示這次下跌不是因為盈餘不及預期。
+- 作者角度-估值：作者引用美銀把 2030 半導體 TAM 上調到 2.7 兆美元，視為結構性重估。
+- 作者角度-產業趨勢：AI 晶片需求到 2030 年 CAGR 可達 28%，供應鏈不是短週期反彈，而是整體重評價。
+- 作者角度-機構觀點：作者引用美銀對 AI 半導體供應鏈多家公司上調目標與評價。
+- 研究級分類：可列入開倉觀察
+- 下一交易日確認條件：下一交易日若能在半導體回檔後守住 6/23 低點，並伴隨量能維持在近 20 日均量附近，代表產業重估敘事仍有效。
+- 失效條件：若半導體再出現放量下殺、跌破 6/23 低點，則 Uncle 提醒的擁擠交易風險仍在主導。
+
+14. KLAC
+- 公司：KLA
+- 最新可得價格：244.49（regular close；Jun 23, 2026, 4:00 PM EDT）
+- 盤前/盤後：Pre-market 246.80，較 regular close +0.94%（資料時間 Jun 24, 2026, 8:04 AM EDT）
+- 5日漲跌幅：+3.02%
+- 近20日高點：269.90
+- 目前價格距20日高點幅度：-9.41%
+- 最新成交量：17,896,668
+- 20日均量 / 量能相對狀態：13,377,201 / 1.34x
+- 作者角度-財報趨勢：作者明確表示這次下跌不是因為盈餘不及預期。
+- 作者角度-估值：作者引用美銀把 2030 半導體 TAM 上調到 2.7 兆美元，視為結構性重估。
+- 作者角度-產業趨勢：AI 晶片需求到 2030 年 CAGR 可達 28%，供應鏈不是短週期反彈，而是整體重評價。
+- 作者角度-機構觀點：作者引用美銀對 AI 半導體供應鏈多家公司上調目標與評價。
+- 研究級分類：可列入開倉觀察
+- 下一交易日確認條件：下一交易日若能在半導體回檔後守住 6/23 低點，並伴隨量能維持在近 20 日均量附近，代表產業重估敘事仍有效。
+- 失效條件：若半導體再出現放量下殺、跌破 6/23 低點，則 Uncle 提醒的擁擠交易風險仍在主導。
+
+15. LRCX
+- 公司：Lam Research
+- 最新可得價格：371.33（regular close；Jun 23, 2026, 4:00 PM EDT）
+- 盤前/盤後：Pre-market 375.98，較 regular close +1.25%（資料時間 Jun 24, 2026, 8:03 AM EDT）
+- 5日漲跌幅：+0.54%
+- 近20日高點：409.75
+- 目前價格距20日高點幅度：-9.38%
+- 最新成交量：15,330,747
+- 20日均量 / 量能相對狀態：11,771,383 / 1.30x
+- 作者角度-財報趨勢：作者明確表示這次下跌不是因為盈餘不及預期。
+- 作者角度-估值：作者引用美銀把 2030 半導體 TAM 上調到 2.7 兆美元，視為結構性重估。
+- 作者角度-產業趨勢：AI 晶片需求到 2030 年 CAGR 可達 28%，供應鏈不是短週期反彈，而是整體重評價。
+- 作者角度-機構觀點：作者引用美銀對 AI 半導體供應鏈多家公司上調目標與評價。
+- 研究級分類：可列入開倉觀察
+- 下一交易日確認條件：下一交易日若能在半導體回檔後守住 6/23 低點，並伴隨量能維持在近 20 日均量附近，代表產業重估敘事仍有效。
+- 失效條件：若半導體再出現放量下殺、跌破 6/23 低點，則 Uncle 提醒的擁擠交易風險仍在主導。
+
+16. MKSI
+- 公司：MKS Instruments
+- 最新可得價格：389.17（regular close；Jun 23, 2026, 4:00 PM EDT）
+- 盤前/盤後：Pre-market 396.20，較 regular close +1.81%（資料時間 Jun 24, 2026, 7:49 AM EDT）
+- 5日漲跌幅：+6.24%
+- 近20日高點：421.58
+- 目前價格距20日高點幅度：-7.69%
+- 最新成交量：1,609,794
+- 20日均量 / 量能相對狀態：1,130,196 / 1.42x
+- 作者角度-財報趨勢：作者明確表示這次下跌不是因為盈餘不及預期。
+- 作者角度-估值：作者引用美銀把 2030 半導體 TAM 上調到 2.7 兆美元，視為結構性重估。
+- 作者角度-產業趨勢：AI 晶片需求到 2030 年 CAGR 可達 28%，供應鏈不是短週期反彈，而是整體重評價。
+- 作者角度-機構觀點：作者引用美銀對 AI 半導體供應鏈多家公司上調目標與評價。
+- 研究級分類：可列入開倉觀察
+- 下一交易日確認條件：下一交易日若能在半導體回檔後守住 6/23 低點，並伴隨量能維持在近 20 日均量附近，代表產業重估敘事仍有效。
+- 失效條件：若半導體再出現放量下殺、跌破 6/23 低點，則 Uncle 提醒的擁擠交易風險仍在主導。
+
+17. TER
+- 公司：Teradyne
+- 最新可得價格：420.12（regular close；Jun 23, 2026, 4:00 PM EDT）
+- 盤前/盤後：Pre-market 425.00，較 regular close +1.16%（資料時間 Jun 24, 2026, 8:01 AM EDT）
+- 5日漲跌幅：+2.63%
+- 近20日高點：459.19
+- 目前價格距20日高點幅度：-8.51%
+- 最新成交量：7,300,861
+- 20日均量 / 量能相對狀態：4,700,369 / 1.55x
+- 作者角度-財報趨勢：作者明確表示這次下跌不是因為盈餘不及預期。
+- 作者角度-估值：作者引用美銀把 2030 半導體 TAM 上調到 2.7 兆美元，視為結構性重估。
+- 作者角度-產業趨勢：AI 晶片需求到 2030 年 CAGR 可達 28%，供應鏈不是短週期反彈，而是整體重評價。
+- 作者角度-機構觀點：作者引用美銀對 AI 半導體供應鏈多家公司上調目標與評價。
+- 研究級分類：可列入開倉觀察
+- 下一交易日確認條件：下一交易日若能在半導體回檔後守住 6/23 低點，並伴隨量能維持在近 20 日均量附近，代表產業重估敘事仍有效。
+- 失效條件：若半導體再出現放量下殺、跌破 6/23 低點，則 Uncle 提醒的擁擠交易風險仍在主導。
+
+18. ACLS
+- 公司：Axcelis
+- 最新可得價格：171.06（regular close；Jun 23, 2026, 4:00 PM EDT）
+- 盤前/盤後：Pre-market 174.99，較 regular close +2.30%（資料時間 Jun 24, 2026, 7:31 AM EDT）
+- 5日漲跌幅：-3.27%
+- 近20日高點：193.78
+- 目前價格距20日高點幅度：-11.72%
+- 最新成交量：561,964
+- 20日均量 / 量能相對狀態：593,031 / 0.95x
+- 作者角度-財報趨勢：作者明確表示這次下跌不是因為盈餘不及預期。
+- 作者角度-估值：作者引用美銀把 2030 半導體 TAM 上調到 2.7 兆美元，視為結構性重估。
+- 作者角度-產業趨勢：AI 晶片需求到 2030 年 CAGR 可達 28%，供應鏈不是短週期反彈，而是整體重評價。
+- 作者角度-機構觀點：作者引用美銀對 AI 半導體供應鏈多家公司上調目標與評價。
+- 研究級分類：僅適合原持股續抱或加倉觀察
+- 下一交易日確認條件：若產業股沒有再被擁擠交易拖累、價格守住 6/23 低點，可維持主線持股觀察。
+- 失效條件：若半導體板塊再度集體失守低點，則不宜把類股邏輯直接外推到個股。
+
+19. AEIS
+- 公司：Advanced Energy
+- 最新可得價格：364.96（regular close；Jun 23, 2026, 4:00 PM EDT）
+- 盤前/盤後：盤前/盤後資料不足
+- 5日漲跌幅：+4.14%
+- 近20日高點：389.79
+- 目前價格距20日高點幅度：-6.37%
+- 最新成交量：777,295
+- 20日均量 / 量能相對狀態：951,418 / 0.82x
+- 作者角度-財報趨勢：作者明確表示這次下跌不是因為盈餘不及預期。
+- 作者角度-估值：作者引用美銀把 2030 半導體 TAM 上調到 2.7 兆美元，視為結構性重估。
+- 作者角度-產業趨勢：AI 晶片需求到 2030 年 CAGR 可達 28%，供應鏈不是短週期反彈，而是整體重評價。
+- 作者角度-機構觀點：作者引用美銀對 AI 半導體供應鏈多家公司上調目標與評價。
+- 研究級分類：僅適合原持股續抱或加倉觀察
+- 下一交易日確認條件：若產業股沒有再被擁擠交易拖累、價格守住 6/23 低點，可維持主線持股觀察。
+- 失效條件：若半導體板塊再度集體失守低點，則不宜把類股邏輯直接外推到個股。
+
+20. CRDO
+- 公司：Credo
+- 最新可得價格：272.00（regular close；Jun 23, 2026, 4:00 PM EDT）
+- 盤前/盤後：Pre-market 279.45，較 regular close +2.74%（資料時間 Jun 24, 2026, 8:04 AM EDT）
+- 5日漲跌幅：+13.72%
+- 近20日高點：308.67
+- 目前價格距20日高點幅度：-11.88%
+- 最新成交量：10,315,720
+- 20日均量 / 量能相對狀態：9,859,655 / 1.05x
+- 作者角度-財報趨勢：作者明確表示這次下跌不是因為盈餘不及預期。
+- 作者角度-估值：作者引用美銀把 2030 半導體 TAM 上調到 2.7 兆美元，視為結構性重估。
+- 作者角度-產業趨勢：AI 晶片需求到 2030 年 CAGR 可達 28%，供應鏈不是短週期反彈，而是整體重評價。
+- 作者角度-機構觀點：作者引用美銀對 AI 半導體供應鏈多家公司上調目標與評價。
+- 研究級分類：等回檔，不追高
+- 下一交易日確認條件：等 5 日強彈後回測不破，再觀察是否重新放量轉強，才算風險報酬比改善。
+- 失效條件：若高位震盪轉成放量回落，表示本輪只是情緒修復而非可持續趨勢。
+
+21. INTC
+- 公司：Intel
+- 最新可得價格：132.28（regular close；Jun 23, 2026, 4:00 PM EDT）
+- 盤前/盤後：Pre-market 134.46，較 regular close +1.65%（資料時間 Jun 24, 2026, 8:05 AM EDT）
+- 5日漲跌幅：+13.01%
+- 近20日高點：141.45
+- 目前價格距20日高點幅度：-6.48%
+- 最新成交量：130,760,868
+- 20日均量 / 量能相對狀態：134,531,208 / 0.97x
+- 作者角度-財報趨勢：作者明確表示這次下跌不是因為盈餘不及預期。
+- 作者角度-估值：作者引用美銀把 2030 半導體 TAM 上調到 2.7 兆美元，視為結構性重估。
+- 作者角度-產業趨勢：AI 晶片需求到 2030 年 CAGR 可達 28%，供應鏈不是短週期反彈，而是整體重評價。
+- 作者角度-機構觀點：作者引用美銀對 AI 半導體供應鏈多家公司上調目標與評價。
+- 研究級分類：等回檔，不追高
+- 下一交易日確認條件：等 5 日強彈後回測不破，再觀察是否重新放量轉強，才算風險報酬比改善。
+- 失效條件：若高位震盪轉成放量回落，表示本輪只是情緒修復而非可持續趨勢。
+
+22. MU
+- 公司：Micron
+- 最新可得價格：1051.77（regular close；Jun 23, 2026, 4:00 PM EDT）
+- 盤前/盤後：Pre-market 1104.10，較 regular close +4.98%（資料時間 Jun 24, 2026, 8:06 AM EDT）
+- 5日漲跌幅：+3.04%
+- 近20日高點：1213.56
+- 目前價格距20日高點幅度：-13.33%
+- 最新成交量：58,201,137
+- 20日均量 / 量能相對狀態：55,964,312 / 1.04x
+- 作者角度-財報趨勢：作者明確表示這次下跌不是因為盈餘不及預期。
+- 作者角度-估值：作者引用美銀把 2030 半導體 TAM 上調到 2.7 兆美元，視為結構性重估。
+- 作者角度-產業趨勢：AI 晶片需求到 2030 年 CAGR 可達 28%，供應鏈不是短週期反彈，而是整體重評價。
+- 作者角度-機構觀點：作者引用美銀對 AI 半導體供應鏈多家公司上調目標與評價。
+- 研究級分類：等回檔，不追高
+- 下一交易日確認條件：等 5 日強彈後回測不破，再觀察是否重新放量轉強，才算風險報酬比改善。
+- 失效條件：若高位震盪轉成放量回落，表示本輪只是情緒修復而非可持續趨勢。
+
+23. MRVL
+- 公司：Marvell
+- 最新可得價格：279.04（regular close；Jun 23, 2026, 4:00 PM EDT）
+- 盤前/盤後：Pre-market 285.42，較 regular close +2.29%（資料時間 Jun 24, 2026, 8:07 AM EDT）
+- 5日漲跌幅：+0.13%
+- 近20日高點：329.88
+- 目前價格距20日高點幅度：-15.41%
+- 最新成交量：45,966,911
+- 20日均量 / 量能相對狀態：73,311,541 / 0.63x
+- 作者角度-財報趨勢：作者明確表示這次下跌不是因為盈餘不及預期。
+- 作者角度-估值：作者引用美銀把 2030 半導體 TAM 上調到 2.7 兆美元，視為結構性重估。
+- 作者角度-產業趨勢：AI 晶片需求到 2030 年 CAGR 可達 28%，供應鏈不是短週期反彈，而是整體重評價。
+- 作者角度-機構觀點：作者引用美銀對 AI 半導體供應鏈多家公司上調目標與評價。
+- 研究級分類：僅適合原持股續抱或加倉觀察
+- 下一交易日確認條件：若產業股沒有再被擁擠交易拖累、價格守住 6/23 低點，可維持主線持股觀察。
+- 失效條件：若半導體板塊再度集體失守低點，則不宜把類股邏輯直接外推到個股。
+
+24. ARM
+- 公司：Arm
+- 最新可得價格：366.39（regular close；Jun 23, 2026, 4:00 PM EDT）
+- 盤前/盤後：Pre-market 381.44，較 regular close +4.11%（資料時間 Jun 24, 2026, 8:06 AM EDT）
+- 5日漲跌幅：-7.56%
+- 近20日高點：452.70
+- 目前價格距20日高點幅度：-19.07%
+- 最新成交量：10,849,064
+- 20日均量 / 量能相對狀態：12,979,383 / 0.84x
+- 作者角度-財報趨勢：作者明確表示這次下跌不是因為盈餘不及預期。
+- 作者角度-估值：作者引用美銀把 2030 半導體 TAM 上調到 2.7 兆美元，視為結構性重估。
+- 作者角度-產業趨勢：AI 晶片需求到 2030 年 CAGR 可達 28%，供應鏈不是短週期反彈，而是整體重評價。
+- 作者角度-機構觀點：作者引用美銀對 AI 半導體供應鏈多家公司上調目標與評價。
+- 研究級分類：先避開
+- 下一交易日確認條件：先等高波動收斂、再出現明確止跌結構，否則不適合追逐主題反彈。
+- 失效條件：若反彈無法延續且再次放量破底，則代表波動仍遠大於可研究邊界。
+
+補充：Altera 為作者明確提到的公司名稱，但本輪未確認到可直接交易的公開 ticker，因此標示為 ticker 不確定，未做價格快篩。
+
+[今日研究優先級]
+1. AI 電力瓶頸受惠鏈：Raycat 的公開 preview 把電力/電網/散熱視為 AI 基建真正瓶頸，優先觀察 VRT、GEV、PWR、BWXT 是否延續相對強勢。
+2. 半導體擁擠交易是否只是洗籌：Uncle 認為 6/23 更像程式拋售、產業邏輯未壞，搭配 Raycat 引用的美銀 28% CAGR 論點，觀察 AMAT、KLAC、LRCX、MKSI、MU 能否止跌再轉強。
+3. 核電與 SMR 要分開看：Raycat 把核電、燃料與 SMR 同列受惠，但 OKLO、SMR 距 20 日高點仍遠，先用 CEG、CCJ、BWXT 的相對強弱判斷主線是否真的擴散。
+
+[值得親自讀]
+1. Raycat｜有老黄佐证，这4只AI能源股还有足够后劲：補看目的是真正四檔名單與排序；看完要決定電力鏈要聚焦核電、電網還是散熱。
+2. Raycat｜AI交易中最被低估的看涨信号：補看目的在白宮核能/量子政策與公司級排序；看完要決定半導體該追設備、材料還是互連。
+3. Uncle Stock Notes｜每日重點 260623 Substack 大叔留言重點：補看目的在隱藏的個股留言；看完要決定半導體回檔是觀察名單擴張還是只當短線風險提醒。
+4. Uncle Stock Notes｜週報 2026.06.22：補看目的在一週配置框架；看完要決定哪些標的該升級到下週核心研究清單。
+
+內容僅供研究整理，不構成投資建議。
+</pre>
+      </details>
+    </section>
+    </main>
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var button = document.querySelector("[data-theme-toggle]");
+      var label = document.querySelector("[data-theme-label]");
+      var icon = document.querySelector("[data-theme-icon]");
+      function currentTheme() {
+        return root.dataset.theme === "dark" ? "dark" : "light";
+      }
+      function render() {
+        var theme = currentTheme();
+        if (label) label.textContent = theme === "dark" ? "淺色" : "暗黑";
+        if (icon) icon.textContent = theme === "dark" ? "☼" : "◐";
+        if (button) button.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
+      }
+      if (button) {
+        button.addEventListener("click", function () {
+          var next = currentTheme() === "dark" ? "light" : "dark";
+          root.dataset.theme = next;
+          try { localStorage.setItem("usExpertTheme", next); } catch (error) {}
+          render();
+        });
+      }
+      render();
+    })();
+  </script>
+</body>
+</html>

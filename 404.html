@@ -1,0 +1,817 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>今日總覽｜美股專家觀點</title>
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("usExpertTheme");
+        if (saved === "dark" || saved === "light") {
+          document.documentElement.dataset.theme = saved;
+        }
+      } catch (error) {}
+    })();
+  </script>
+  <style>
+    :root {
+      --bg: #f3f5f2;
+      --surface: #ffffff;
+      --surface-soft: #f8faf7;
+      --surface-warm: #fffaf0;
+      --card-bg: rgba(255, 255, 255, 0.96);
+      --topbar-bg: rgba(255, 255, 255, 0.9);
+      --toolbar-bg: rgba(255, 255, 255, 0.92);
+      --input-bg: #ffffff;
+      --hover-bg: #fbfdfc;
+      --track: #e5e9e7;
+      --ink-soft: #2f3d39;
+      --ink: #141b1f;
+      --muted: #657177;
+      --faint: #8a969b;
+      --line: #dde3df;
+      --line-strong: #c7d0cc;
+      --green: #0f766e;
+      --green-dark: #0b5c55;
+      --green-soft: #e6f3ee;
+      --amber: #b76b11;
+      --amber-soft: #fff2c7;
+      --amber-ink: #80500c;
+      --red: #b84a3c;
+      --red-soft: #ffe9e5;
+      --red-ink: #8f382f;
+      --blue: #2e6fa3;
+      --blue-soft: #e7f0f8;
+      --blue-ink: #245a84;
+      --slate: #485763;
+      --chip: #eef2f5;
+      --shadow: 0 22px 58px rgba(29, 39, 44, 0.12);
+      --shadow-soft: 0 10px 26px rgba(29, 39, 44, 0.07);
+      --body-bg:
+        linear-gradient(180deg, rgba(231, 242, 238, 0.95) 0, rgba(246, 247, 242, 0.92) 310px, var(--bg) 100%),
+        linear-gradient(135deg, rgba(46, 111, 163, 0.10), rgba(183, 107, 17, 0.07));
+      color-scheme: light;
+    }
+    html[data-theme="dark"] {
+      --bg: #0d1315;
+      --surface: #151d20;
+      --surface-soft: #11181b;
+      --surface-warm: #221b12;
+      --card-bg: rgba(20, 29, 32, 0.96);
+      --topbar-bg: rgba(14, 20, 22, 0.9);
+      --toolbar-bg: rgba(19, 27, 30, 0.94);
+      --input-bg: #101719;
+      --hover-bg: #182224;
+      --track: #263033;
+      --ink-soft: #d1dad6;
+      --ink: #eef5f2;
+      --muted: #a5b2ad;
+      --faint: #7f8d88;
+      --line: #2b383a;
+      --line-strong: #455255;
+      --green: #3fc0ad;
+      --green-dark: #88ded2;
+      --green-soft: #15352f;
+      --amber: #f1b85d;
+      --amber-soft: #3c2b12;
+      --amber-ink: #f8d08a;
+      --red: #ef8b7b;
+      --red-soft: #3b1d19;
+      --red-ink: #ffb2a8;
+      --blue: #83bce6;
+      --blue-soft: #172b3c;
+      --blue-ink: #b8ddff;
+      --slate: #9ba8ae;
+      --chip: #202a2d;
+      --shadow: 0 22px 58px rgba(0, 0, 0, 0.36);
+      --shadow-soft: 0 10px 26px rgba(0, 0, 0, 0.28);
+      --body-bg:
+        radial-gradient(circle at top left, rgba(63, 192, 173, 0.12), transparent 280px),
+        radial-gradient(circle at 90% 8%, rgba(131, 188, 230, 0.10), transparent 260px),
+        linear-gradient(180deg, #111a1c 0, #0d1315 340px, #0b1012 100%);
+      color-scheme: dark;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--body-bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    a { color: var(--green-dark); text-decoration: none; }
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 12px 22px;
+      border-bottom: 1px solid var(--line);
+      background: var(--topbar-bg);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 10px 32px rgba(31, 44, 50, 0.07);
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-weight: 820;
+      letter-spacing: 0;
+      white-space: nowrap;
+    }
+    .brand::before {
+      content: "";
+      width: 13px;
+      height: 13px;
+      border-radius: 4px;
+      background: var(--red);
+      box-shadow: 15px 0 0 var(--green), 30px 0 0 var(--amber);
+    }
+    nav { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; }
+    nav a {
+      min-height: 34px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      color: var(--muted);
+      font-weight: 650;
+    }
+    nav a.active, nav a:hover { background: var(--green-soft); color: var(--green-dark); }
+    .top-actions { display: flex; align-items: center; gap: 10px; }
+    .theme-toggle {
+      width: auto;
+      min-height: 34px;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--ink);
+      box-shadow: none;
+      font-size: 13px;
+      font-weight: 760;
+      white-space: nowrap;
+    }
+    .theme-toggle:hover { border-color: var(--green); background: var(--surface-soft); }
+    .theme-toggle .theme-icon { width: 16px; text-align: center; }
+    .logout { color: var(--muted); font-size: 13px; }
+    main { max-width: 1240px; margin: 0 auto; padding: 28px 20px 42px; }
+    h1 { margin: 0 0 8px; font-size: 34px; line-height: 1.12; letter-spacing: 0; }
+    h2 { margin: 0; font-size: 18px; letter-spacing: 0; }
+    h3 { margin: 0; font-size: 15px; letter-spacing: 0; }
+    .muted { color: var(--muted); }
+    .faint { color: var(--faint); }
+    .grid { display: grid; gap: 12px; }
+    .stats { grid-template-columns: repeat(4, minmax(0, 1fr)); margin: 16px 0; }
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+      box-shadow: var(--shadow-soft);
+    }
+    .panel, .stat-card, .priority-card, .article-card, .ticker-card, .author-card, .source-card, .mini-card {
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow-soft);
+    }
+    .stat-card { padding: 14px; min-height: 92px; position: relative; overflow: hidden; }
+    .stat-card::after {
+      content: "";
+      position: absolute;
+      inset: auto 14px 0 14px;
+      height: 3px;
+      border-radius: 999px 999px 0 0;
+      background: var(--green);
+      opacity: 0.8;
+    }
+    .stat-card.warn::after { background: var(--amber); }
+    .stat-card.info::after { background: var(--blue); }
+    .stat-card.danger::after { background: var(--red); }
+    .stat-label { color: var(--muted); font-size: 12px; font-weight: 740; }
+    .stat-value { font-size: 28px; font-weight: 840; margin-top: 5px; letter-spacing: 0; }
+    .stat-note { color: var(--faint); font-size: 12px; margin-top: 3px; }
+    .page-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 16px;
+    }
+    .page-kicker {
+      color: var(--green-dark);
+      font-size: 12px;
+      font-weight: 820;
+      margin-bottom: 6px;
+    }
+    .page-subtitle { max-width: 760px; color: var(--muted); }
+    .run-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .count-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 6px 13px;
+      border-radius: 999px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      color: var(--green-dark);
+      font-weight: 780;
+      white-space: nowrap;
+      box-shadow: var(--shadow-soft);
+    }
+    .dashboard-grid { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(320px, 0.75fr); gap: 16px; align-items: start; }
+    .section-stack { display: grid; gap: 14px; }
+    .section-head { display: flex; justify-content: space-between; gap: 12px; align-items: center; margin: 24px 0 12px; }
+    .section-note { color: var(--muted); font-size: 13px; }
+    .priority-list { display: grid; gap: 10px; }
+    .priority-card { padding: 15px; display: grid; gap: 6px; border-left: 4px solid var(--green); }
+    .priority-card .rank { color: var(--green-dark); font-size: 12px; font-weight: 820; }
+    .queue-list, .source-list, .timeline-list { display: grid; gap: 10px; }
+    .queue-card, .mini-card { padding: 13px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); }
+    .queue-title { color: var(--ink); font-weight: 780; display: inline-block; margin-bottom: 5px; }
+    .queue-meta { display: flex; flex-wrap: wrap; gap: 7px; color: var(--muted); font-size: 13px; }
+    .queue-summary { color: var(--ink-soft); margin-top: 8px; }
+    .ticker-radar { display: grid; gap: 10px; }
+    .ticker-card { padding: 14px; display: grid; gap: 12px; position: relative; overflow: hidden; }
+    .ticker-card::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 4px; background: var(--green); }
+    .ticker-card.warn::before { background: var(--amber); }
+    .ticker-card.danger::before { background: var(--red); }
+    .ticker-card.info::before { background: var(--blue); }
+    .ticker-card.muted::before { background: var(--line-strong); }
+    .ticker-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .ticker-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+    .ticker-symbol { font-size: 20px; font-weight: 850; color: var(--ink); }
+    .ticker-meta { color: var(--muted); font-size: 12px; margin-top: 2px; }
+    .metrics-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+    .metric { border: 1px solid var(--line); border-radius: 8px; padding: 9px; background: var(--surface-soft); min-width: 0; }
+    .metric-label { color: var(--muted); font-size: 11px; font-weight: 740; }
+    .metric-value { display: block; margin-top: 3px; font-weight: 800; color: var(--ink); overflow-wrap: anywhere; }
+    .metric-value.missing { color: var(--faint); font-weight: 680; }
+    .position-track { height: 8px; border-radius: 999px; background: var(--track); overflow: hidden; }
+    .position-fill { height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--blue), var(--green)); width: var(--bar, 0%); }
+    .condition-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .condition { border-top: 1px solid var(--line); padding-top: 10px; color: var(--ink-soft); }
+    .condition-label { color: var(--muted); font-size: 11px; font-weight: 800; margin-bottom: 4px; }
+    .toolbar {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(126px, 1fr));
+      gap: 10px;
+      align-items: end;
+      margin: 12px 0 12px;
+      padding: 14px;
+      background: var(--toolbar-bg);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow-soft);
+    }
+    .filter-toggle { display: none; }
+    .filter-actions { display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: end; }
+    .quick-filters, .active-filters { display: flex; flex-wrap: wrap; gap: 7px; margin: 10px 0 14px; }
+    label { display: grid; gap: 5px; color: var(--muted); font-size: 12px; font-weight: 650; }
+    input, select, button {
+      width: 100%;
+      min-height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--input-bg);
+      color: var(--ink);
+      padding: 7px 9px;
+      font: inherit;
+    }
+    input:focus, select:focus {
+      outline: 2px solid rgba(17, 120, 111, 0.20);
+      border-color: rgba(17, 120, 111, 0.55);
+    }
+    button {
+      background: var(--green);
+      border-color: var(--green);
+      color: #fff;
+      font-weight: 720;
+      cursor: pointer;
+      box-shadow: 0 10px 22px rgba(17, 120, 111, 0.16);
+    }
+    button:hover { background: var(--green-dark); border-color: var(--green-dark); }
+    .theme-toggle {
+      width: auto;
+      min-height: 34px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--surface);
+      border-color: var(--line);
+      color: var(--ink);
+      box-shadow: none;
+    }
+    .theme-toggle:hover { background: var(--surface-soft); border-color: var(--green); }
+    .secondary-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 7px 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      color: var(--ink);
+      background: var(--surface);
+      font-weight: 650;
+    }
+    .button-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 7px 12px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      color: var(--green-dark);
+      background: var(--surface);
+      font-weight: 760;
+      white-space: nowrap;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+    }
+    th, td { padding: 10px; border-bottom: 1px solid var(--line); vertical-align: top; text-align: left; }
+    th { color: var(--muted); font-size: 12px; font-weight: 760; background: var(--surface-soft); }
+    tbody tr:hover { background: var(--hover-bg); }
+    tr:last-child td { border-bottom: 0; }
+    .chips { display: flex; flex-wrap: wrap; gap: 5px; }
+    .chip { display: inline-flex; align-items: center; min-height: 24px; border-radius: 999px; padding: 2px 8px; background: var(--chip); color: var(--ink-soft); font-size: 12px; font-weight: 720; border: 1px solid transparent; }
+    .chip.good, .chip.strong { background: var(--green-soft); color: var(--green-dark); }
+    .chip.warn { background: var(--amber-soft); color: var(--amber-ink); }
+    .chip.danger { background: var(--red-soft); color: var(--red-ink); }
+    .chip.info { background: var(--blue-soft); color: var(--blue-ink); }
+    .chip.muted { background: var(--surface-soft); color: var(--muted); }
+    .chip.ticker { background: var(--chip); color: var(--ink); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 800; }
+    a.chip:hover, .button-link:hover { border-color: var(--green); }
+    .article-title { font-weight: 800; color: var(--ink); }
+    .summary { max-width: 560px; color: var(--ink-soft); }
+    .article-feed { display: grid; gap: 12px; }
+    .article-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(250px, 0.36fr);
+      gap: 18px;
+      padding: 16px;
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+    }
+    .article-card::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 5px;
+      background: var(--green);
+    }
+    .article-card.warn::before { background: var(--amber); }
+    .article-card.danger::before { background: var(--red); }
+    .article-card.info::before { background: var(--blue); }
+    .article-card.muted::before { background: var(--line-strong); }
+    .article-card:hover {
+      border-color: rgba(17, 120, 111, 0.34);
+      box-shadow: var(--shadow);
+      transform: translateY(-1px);
+      transition: transform 140ms ease, box-shadow 140ms ease, border-color 140ms ease;
+    }
+    .article-main { min-width: 0; padding-left: 4px; }
+    .article-side {
+      display: grid;
+      align-content: start;
+      gap: 10px;
+      padding-left: 14px;
+      border-left: 1px solid var(--line);
+    }
+    .article-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 7px 0 10px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .article-summary { color: var(--ink-soft); max-width: 760px; }
+    .side-label {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 760;
+      text-transform: uppercase;
+    }
+    .side-value { font-weight: 680; }
+    .read-note { color: var(--ink-soft); font-size: 13px; }
+    .read-note.compact { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    .authors-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .author-card { padding: 15px; display: grid; gap: 12px; }
+    .author-top { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+    .author-name { font-size: 17px; font-weight: 820; color: var(--ink); }
+    .author-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+    .source-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 16px 0; }
+    .source-card { padding: 14px; display: grid; gap: 8px; }
+    .source-title { font-size: 13px; color: var(--muted); font-weight: 760; }
+    .source-value { font-size: 18px; font-weight: 840; }
+    .health-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr); gap: 16px; align-items: start; }
+    .source-item { padding: 13px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); display: grid; gap: 7px; }
+    .timeline-item { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+    .timeline-item:last-child { border-bottom: 0; }
+    .empty { text-align: center; color: var(--muted); padding: 28px; }
+    .login-wrap { min-height: 100vh; display: grid; place-items: center; padding: 20px; }
+    .login-box { width: min(420px, 100%); }
+    .error { background: var(--red-soft); color: var(--red); border: 1px solid var(--line); padding: 10px; border-radius: 6px; margin-bottom: 12px; }
+    .notice { background: var(--surface-soft); border: 1px solid var(--line); padding: 10px; border-radius: 6px; margin: 12px 0; color: var(--ink-soft); }
+    .share-box { display: grid; gap: 5px; margin: 12px 0 0; }
+    .share-url { display: block; overflow-wrap: anywhere; color: var(--green-dark); font-weight: 700; }
+    .report-pre {
+      margin: 12px 0 0;
+      padding: 14px;
+      max-height: 520px;
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface-soft);
+      color: var(--ink-soft);
+      white-space: pre-wrap;
+      font: 13px/1.55 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .article-points { margin: 9px 0 0; padding-left: 18px; color: var(--ink-soft); }
+    .article-points li + li { margin-top: 4px; }
+    .run-list { display: grid; gap: 10px; }
+    .run-card { padding: 14px; display: flex; justify-content: space-between; gap: 14px; align-items: flex-start; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); box-shadow: var(--shadow-soft); }
+    .run-card-main { min-width: 0; display: grid; gap: 6px; }
+    .run-title { color: var(--ink); font-weight: 820; font-size: 16px; }
+    .run-card-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 7px; }
+    @media (max-width: 900px) {
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .toolbar { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .topbar { align-items: flex-start; flex-direction: column; }
+      .top-actions { width: 100%; justify-content: space-between; }
+      .dashboard-grid, .health-grid { grid-template-columns: 1fr; }
+      .ticker-grid, .authors-grid, .source-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .article-card { grid-template-columns: 1fr; }
+      .article-side { border-left: 0; border-top: 1px solid var(--line); padding-left: 0; padding-top: 12px; }
+      .page-head { align-items: flex-start; flex-direction: column; }
+    }
+    @media (max-width: 640px) {
+      main { padding: 14px; }
+      h1 { font-size: 28px; }
+      .topbar { gap: 10px; padding: 12px 14px; }
+      nav { justify-content: flex-start; width: 100%; }
+      .top-actions { order: 3; }
+      .stats, .ticker-grid, .authors-grid, .source-grid, .metrics-row, .condition-grid { grid-template-columns: 1fr; }
+      .filter-toggle { display: inline-flex; width: auto; margin: 4px 0 10px; background: var(--green); border-color: var(--green); color: #fff; }
+      .toolbar { display: none; grid-template-columns: 1fr; margin-top: 0; }
+      .toolbar.open { display: grid; }
+      .filter-actions { grid-template-columns: 1fr; }
+      table { display: block; overflow-x: auto; }
+      .article-card { padding: 14px; }
+      .article-side { gap: 8px; }
+      .read-note.compact { -webkit-line-clamp: 2; }
+      .run-card { display: grid; }
+      .run-card-actions { justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">美股專家觀點</div>
+    <nav><a class="active" href="/us-expert-dashboard-site/">今日</a><a class="" href="/us-expert-dashboard-site/runs">每日</a><a class="" href="/us-expert-dashboard-site/articles">文章庫</a><a class="" href="/us-expert-dashboard-site/tickers">標的</a><a class="" href="/us-expert-dashboard-site/authors">作者</a><a class="" href="/us-expert-dashboard-site/sources">來源</a></nav>
+    <div class="top-actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="切換暗黑模式">
+        <span class="theme-icon" data-theme-icon>◐</span>
+        <span data-theme-label>暗黑</span>
+      </button>
+      <span class="logout">開發模式</span>
+    </div>
+  </header>
+  <main>
+    <div class="page-head">
+      <div>
+        <div class="page-kicker">今日作戰室</div>
+        <h1>美股專家觀點總覽</h1>
+        <div class="page-subtitle">把今天的文章、標的、親讀優先級與資料品質整理在同一個研究工作台。</div>
+        <div class="run-meta">
+          <span class="chip info">執行 2026-07-06 20:01:38 Asia/Taipei</span>
+          <span class="chip muted">時間窗 2026-07-05 20:01:38 Asia/Taipei 至 2026-07-06 20:01:38 Asia/Taipei</span>
+          <span class="chip warn">1 項需留意</span>
+        </div>
+      </div>
+      <div class="run-card-actions">
+        <a class="button-link" href="/us-expert-dashboard-site/runs/218">查看完整摘要</a>
+        <a class="button-link" href="/us-expert-dashboard-site/articles?start=2026-07-05&amp;end=2026-07-06">查看本輪文章</a>
+      </div>
+    </div>
+    
+    <div class="grid stats">
+      <div class="stat-card"><div class="stat-label">本輪文章</div><div class="stat-value">8</div><div class="stat-note">6 位作者</div></div>
+      <div class="stat-card danger"><div class="stat-label">需要親讀</div><div class="stat-value">6</div><div class="stat-note">優先打開原文</div></div>
+      <div class="stat-card info"><div class="stat-label">追蹤標的</div><div class="stat-value">20</div><div class="stat-note">含市場快篩</div></div>
+      <div class="stat-card warn"><div class="stat-label">全文可讀</div><div class="stat-value">1</div><div class="stat-note">其餘只看公開面</div></div>
+    </div>
+    
+    <div class="dashboard-grid">
+      <section class="section-stack">
+        <div class="section-head">
+          <div><h2>今天最該看的 3 件事</h2><div class="section-note">由最新報告解析出的主題優先級。</div></div>
+        </div>
+        <div class="priority-list">
+        <article class="priority-card">
+          <div class="rank">重點 1</div>
+          <h3>Meta Compute / NeoCloud 恐慌是否過度</h3>
+          <div class="muted">Michael M. Chang 與 FundaAI 都認為本輪不是 AI 需求崩塌，而是舊/新 GPU、現貨/期貨算力、NeoCloud 訂單風險的重新定價；優先追 META、CRWV、NBIS、NVDA。</div>
+        </article>
+        
+        <article class="priority-card">
+          <div class="rank">重點 2</div>
+          <h3>CXL 與記憶體成本壓力</h3>
+          <div class="muted">Damnang 把 hyperscaler 記憶體 capex 占比上升、Meta Vistara、Microsoft CXL preview 串起來；研究重點是 CXL 是否補推理容量瓶頸，而不是立即替代 HBM。</div>
+        </article>
+        
+        <article class="priority-card">
+          <div class="rank">重點 3</div>
+          <h3>半導體瓶頸從矽轉向電力與設備</h3>
+          <div class="muted">SEMIVISION 指出台灣 AI 半導體競爭力受電力系統限制，FundaAI 點名 AMAT / ASML 是長期半導體投資受惠者；這是中長期供應鏈研究，而非短線買點。</div>
+        </article>
+        </div>
+        <div class="section-head">
+          <div><h2>親讀文章隊列</h2><div class="section-note">優先顯示需要親讀、全文可讀與高資訊密度文章。</div></div>
+          <a class="button-link" href="/us-expert-dashboard-site/articles?read=%E9%9C%80%E8%A6%81">只看需要親讀</a>
+        </div>
+        <div class="queue-list">
+        <article class="queue-card">
+          <a class="queue-title" href="https://unclestocknotes.substack.com/p/260703-substack" target="_blank" rel="noreferrer">每日重點 260703 Substack 大叔留言重點</a>
+          <div class="queue-meta">
+            <span>大叔美股筆記 Uncle Stock Notes</span>
+            <span>2026-07-05 22:44 Asia/Taipei</span>
+          </div>
+          <div class="quick-filters">
+            <span class="chip warn">付費牆預覽</span>
+            <span class="chip danger">需要</span>
+            <span class="chip info">觀望</span>
+          </div>
+          <div class="chips"><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=ON">ON</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=SYNA">SYNA</a></div>
+          <div class="queue-summary">作者把先進封裝重要性放在產業趨勢段落，要求讀者仔細讀其相關文章。</div>
+        </article>
+        
+        <article class="queue-card">
+          <a class="queue-title" href="https://michaelmchang.substack.com/p/meta-ai-323" target="_blank" rel="noreferrer">Meta 是否成為 AI 資本支出的最大變數（下）</a>
+          <div class="queue-meta">
+            <span>Michael M. Chang</span>
+            <span>2026-07-06 12:02 Asia/Taipei</span>
+          </div>
+          <div class="quick-filters">
+            <span class="chip warn">付費牆預覽</span>
+            <span class="chip danger">需要</span>
+            <span class="chip info">中性偏多</span>
+          </div>
+          <div class="chips"><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=GOOGL">GOOGL</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=META">META</a></div>
+          <div class="queue-summary">作者主張這不是系統性拋售，而是產業鏈內部重新定價。</div>
+        </article>
+        
+        <article class="queue-card">
+          <a class="queue-title" href="https://michaelmchang.substack.com/p/meta-ai" target="_blank" rel="noreferrer">Meta 是否成為 AI 資本支出的最大變數（上）</a>
+          <div class="queue-meta">
+            <span>Michael M. Chang</span>
+            <span>2026-07-06 12:00 Asia/Taipei</span>
+          </div>
+          <div class="quick-filters">
+            <span class="chip warn">付費牆預覽</span>
+            <span class="chip danger">需要</span>
+            <span class="chip info">中性偏多</span>
+          </div>
+          <div class="chips"><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=AMAT">AMAT</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=COHR">COHR</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=CRWV">CRWV</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=GLW">GLW</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=GOOGL">GOOGL</a></div>
+          <div class="queue-summary">Meta 建立出售 AI 算力的雲端基礎設施業務，被市場解讀成算力可能不再稀缺。</div>
+        </article>
+        
+        <article class="queue-card">
+          <a class="queue-title" href="https://damnang2.substack.com/p/the-memory-crisis-can-cxl-be-the" target="_blank" rel="noreferrer">The Memory Crisis: Can CXL Be the Answer?</a>
+          <div class="queue-meta">
+            <span>Damnang</span>
+            <span>2026-07-06 10:55 Asia/Taipei</span>
+          </div>
+          <div class="quick-filters">
+            <span class="chip warn">付費牆預覽</span>
+            <span class="chip danger">需要</span>
+            <span class="chip info">中性偏多</span>
+          </div>
+          <div class="chips"><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=AMZN">AMZN</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=ARM">ARM</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=CXL">CXL</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=GOOGL">GOOGL</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=INTC">INTC</a></div>
+          <div class="queue-summary">作者指出 hyperscalers 的記憶體 capex 占比從 2023-2024 年約 8% 估計升到 2026 年約 30%，記憶體從配角變成 AI 基建成本核心。</div>
+        </article>
+        
+        <article class="queue-card">
+          <a class="queue-title" href="https://fundaai.substack.com/p/weeklymeta-neocloud-fears-overdone" target="_blank" rel="noreferrer">Weekly|Meta NeoCloud Fears Overdone, Key AI Narrative Shifts, GPU Spot Price Noise, SPCX xAI Economics</a>
+          <div class="queue-meta">
+            <span>FundaAI</span>
+            <span>2026-07-06 08:32 Asia/Taipei</span>
+          </div>
+          <div class="quick-filters">
+            <span class="chip warn">付費牆預覽</span>
+            <span class="chip danger">需要</span>
+            <span class="chip info">偏多但警惕短線波動</span>
+          </div>
+          <div class="chips"><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=AMAT">AMAT</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=ASML">ASML</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=META">META</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=SPCX">SPCX</a></div>
+          <div class="queue-summary">作者認為市場把 Meta 可能商業化剩餘 AI compute 解讀為 compute glut，是過度悲觀。</div>
+        </article>
+        
+        <article class="queue-card">
+          <a class="queue-title" href="https://tspasemiconductor.substack.com/p/taiwans-next-semiconductor-bottleneck" target="_blank" rel="noreferrer">Taiwan’s Next Semiconductor Bottleneck Is Not Silicon. It Is Power.</a>
+          <div class="queue-meta">
+            <span>SEMIVISION</span>
+            <span>2026-07-06 11:51 Asia/Taipei</span>
+          </div>
+          <div class="quick-filters">
+            <span class="chip good">全文</span>
+            <span class="chip danger">需要</span>
+            <span class="chip info">中長期偏多但有基礎設施瓶頸</span>
+          </div>
+          <div class="chips"><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=ARM">ARM</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=INTC">INTC</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=NVDA">NVDA</a></div>
+          <div class="queue-summary">作者把台灣半導體競爭力從製程、封裝與人才，擴展到電力系統是否能跟上 AI 時代需求。</div>
+        </article>
+        </div>
+      </section>
+      <aside class="section-stack">
+        <div class="section-head">
+          <div><h2>標的雷達</h2><div class="section-note">研究級分類，不代表自動下單訊號。</div></div>
+        </div>
+        <div class="ticker-radar">
+            <article class="ticker-card danger">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=CRWV">CRWV</a>
+                  <div class="ticker-meta">市場 Pre-Market</div>
+                </div>
+                <span class="chip danger">先避開</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$84.30</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-15.36%</span></div>
+                <div class="metric"><div class="metric-label">距高點</div><span class="metric-value ">-30.90%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.0499168159538148</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 69%"></div></div>
+              <div class="condition"><div class="condition-label">確認條件</div>需看到 CRWV 停止弱於 AI semis，且市場重新區分舊 GPU 外售與新 GPU 租賃稀缺。</div>
+            </article>
+            
+            <article class="ticker-card danger">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=NBIS">NBIS</a>
+                  <div class="ticker-meta">市場 Pre-Market</div>
+                </div>
+                <span class="chip danger">先避開</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$222.48</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-10.27%</span></div>
+                <div class="metric"><div class="metric-label">距高點</div><span class="metric-value ">-25.81%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.3524610285994845</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 74%"></div></div>
+              <div class="condition"><div class="condition-label">確認條件</div>需看到 NBIS 與 CRWV 同步止跌，且 NeoCloud 訂單風險被市場重新定價完成。</div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=AMAT">AMAT</a>
+                  <div class="ticker-meta">市場 Pre-Market</div>
+                </div>
+                <span class="chip good">可列入開倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$633.31</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-3.80%</span></div>
+                <div class="metric"><div class="metric-label">距高點</div><span class="metric-value ">-14.38%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.1508935218356109</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 86%"></div></div>
+              <div class="condition"><div class="condition-label">確認條件</div>下一交易日若設備股反彈不落後 SOX，且 AMAT 守住最新 regular close，可列入回檔研究。</div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=ASML">ASML</a>
+                  <div class="ticker-meta">市場 Pre-Market</div>
+                </div>
+                <span class="chip good">可列入開倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$1,845.04</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-1.41%</span></div>
+                <div class="metric"><div class="metric-label">距高點</div><span class="metric-value ">-7.75%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.1209526950802813</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 92%"></div></div>
+              <div class="condition"><div class="condition-label">確認條件</div>若 ASML 守住最新 regular close 且設備股反彈延續，可列入回檔研究。</div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=META">META</a>
+                  <div class="ticker-meta">市場 Pre-Market</div>
+                </div>
+                <span class="chip good">可列入開倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$591.53</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+5.93%</span></div>
+                <div class="metric"><div class="metric-label">距高點</div><span class="metric-value ">-7.92%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.103781528543552</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 92%"></div></div>
+              <div class="condition"><div class="condition-label">確認條件</div>下一交易日守住最新 regular close，且 CRWV/NBIS 賣壓收斂，代表 compute glut 恐慌降溫。</div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=ON">ON</a>
+                  <div class="ticker-meta">市場 Pre-Market</div>
+                </div>
+                <span class="chip good">可列入開倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$94.30</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+0.63%</span></div>
+                <div class="metric"><div class="metric-label">距高點</div><span class="metric-value ">-29.88%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.054367402554945</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 70%"></div></div>
+              <div class="condition"><div class="condition-label">確認條件</div>下一交易日 ON 能維持 pre-market 強度，且市場對 ON/SYNA 交易不再擴大折價。</div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=MU">MU</a>
+                  <div class="ticker-meta">市場 Pre-Market</div>
+                </div>
+                <span class="chip good">僅適合原持股續抱或加倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$1,008.47</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-13.84%</span></div>
+                <div class="metric"><div class="metric-label">距高點</div><span class="metric-value ">-19.64%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.0438640549561666</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 80%"></div></div>
+              <div class="condition"><div class="condition-label">確認條件</div>需看到記憶體股不再受 Meta compute headline 拖累，且 CXL 不被市場解讀為 HBM 需求替代。</div>
+            </article>
+            </div>
+        <div class="mini-card">
+          <h3>資料品質</h3>
+          <div class="quick-filters">
+            <span class="chip warn">1 項需留意</span>
+            <span class="chip info">Slack delivered</span>
+          </div>
+          <div class="muted">付費牆文章只顯示公開預覽；隱藏內容不推測、不補結論。</div>
+          <div style="margin-top:10px"><a class="button-link" href="/us-expert-dashboard-site/sources">查看來源健康</a></div>
+        </div>
+      </aside>
+    </div>
+    </main>
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var button = document.querySelector("[data-theme-toggle]");
+      var label = document.querySelector("[data-theme-label]");
+      var icon = document.querySelector("[data-theme-icon]");
+      function currentTheme() {
+        return root.dataset.theme === "dark" ? "dark" : "light";
+      }
+      function render() {
+        var theme = currentTheme();
+        if (label) label.textContent = theme === "dark" ? "淺色" : "暗黑";
+        if (icon) icon.textContent = theme === "dark" ? "☼" : "◐";
+        if (button) button.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
+      }
+      if (button) {
+        button.addEventListener("click", function () {
+          var next = currentTheme() === "dark" ? "light" : "dark";
+          root.dataset.theme = next;
+          try { localStorage.setItem("usExpertTheme", next); } catch (error) {}
+          render();
+        });
+      }
+      render();
+    })();
+  </script>
+</body>
+</html>

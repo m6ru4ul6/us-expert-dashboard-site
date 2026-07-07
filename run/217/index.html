@@ -1,0 +1,1042 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-07-05 每日摘要｜美股專家觀點</title>
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("usExpertTheme");
+        if (saved === "dark" || saved === "light") {
+          document.documentElement.dataset.theme = saved;
+        }
+      } catch (error) {}
+    })();
+  </script>
+  <style>
+    :root {
+      --bg: #f3f5f2;
+      --surface: #ffffff;
+      --surface-soft: #f8faf7;
+      --surface-warm: #fffaf0;
+      --card-bg: rgba(255, 255, 255, 0.96);
+      --topbar-bg: rgba(255, 255, 255, 0.9);
+      --toolbar-bg: rgba(255, 255, 255, 0.92);
+      --input-bg: #ffffff;
+      --hover-bg: #fbfdfc;
+      --track: #e5e9e7;
+      --ink-soft: #2f3d39;
+      --ink: #141b1f;
+      --muted: #657177;
+      --faint: #8a969b;
+      --line: #dde3df;
+      --line-strong: #c7d0cc;
+      --green: #0f766e;
+      --green-dark: #0b5c55;
+      --green-soft: #e6f3ee;
+      --amber: #b76b11;
+      --amber-soft: #fff2c7;
+      --amber-ink: #80500c;
+      --red: #b84a3c;
+      --red-soft: #ffe9e5;
+      --red-ink: #8f382f;
+      --blue: #2e6fa3;
+      --blue-soft: #e7f0f8;
+      --blue-ink: #245a84;
+      --slate: #485763;
+      --chip: #eef2f5;
+      --shadow: 0 22px 58px rgba(29, 39, 44, 0.12);
+      --shadow-soft: 0 10px 26px rgba(29, 39, 44, 0.07);
+      --body-bg:
+        linear-gradient(180deg, rgba(231, 242, 238, 0.95) 0, rgba(246, 247, 242, 0.92) 310px, var(--bg) 100%),
+        linear-gradient(135deg, rgba(46, 111, 163, 0.10), rgba(183, 107, 17, 0.07));
+      color-scheme: light;
+    }
+    html[data-theme="dark"] {
+      --bg: #0d1315;
+      --surface: #151d20;
+      --surface-soft: #11181b;
+      --surface-warm: #221b12;
+      --card-bg: rgba(20, 29, 32, 0.96);
+      --topbar-bg: rgba(14, 20, 22, 0.9);
+      --toolbar-bg: rgba(19, 27, 30, 0.94);
+      --input-bg: #101719;
+      --hover-bg: #182224;
+      --track: #263033;
+      --ink-soft: #d1dad6;
+      --ink: #eef5f2;
+      --muted: #a5b2ad;
+      --faint: #7f8d88;
+      --line: #2b383a;
+      --line-strong: #455255;
+      --green: #3fc0ad;
+      --green-dark: #88ded2;
+      --green-soft: #15352f;
+      --amber: #f1b85d;
+      --amber-soft: #3c2b12;
+      --amber-ink: #f8d08a;
+      --red: #ef8b7b;
+      --red-soft: #3b1d19;
+      --red-ink: #ffb2a8;
+      --blue: #83bce6;
+      --blue-soft: #172b3c;
+      --blue-ink: #b8ddff;
+      --slate: #9ba8ae;
+      --chip: #202a2d;
+      --shadow: 0 22px 58px rgba(0, 0, 0, 0.36);
+      --shadow-soft: 0 10px 26px rgba(0, 0, 0, 0.28);
+      --body-bg:
+        radial-gradient(circle at top left, rgba(63, 192, 173, 0.12), transparent 280px),
+        radial-gradient(circle at 90% 8%, rgba(131, 188, 230, 0.10), transparent 260px),
+        linear-gradient(180deg, #111a1c 0, #0d1315 340px, #0b1012 100%);
+      color-scheme: dark;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--body-bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    a { color: var(--green-dark); text-decoration: none; }
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 12px 22px;
+      border-bottom: 1px solid var(--line);
+      background: var(--topbar-bg);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 10px 32px rgba(31, 44, 50, 0.07);
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-weight: 820;
+      letter-spacing: 0;
+      white-space: nowrap;
+    }
+    .brand::before {
+      content: "";
+      width: 13px;
+      height: 13px;
+      border-radius: 4px;
+      background: var(--red);
+      box-shadow: 15px 0 0 var(--green), 30px 0 0 var(--amber);
+    }
+    nav { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; }
+    nav a {
+      min-height: 34px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      color: var(--muted);
+      font-weight: 650;
+    }
+    nav a.active, nav a:hover { background: var(--green-soft); color: var(--green-dark); }
+    .top-actions { display: flex; align-items: center; gap: 10px; }
+    .theme-toggle {
+      width: auto;
+      min-height: 34px;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--ink);
+      box-shadow: none;
+      font-size: 13px;
+      font-weight: 760;
+      white-space: nowrap;
+    }
+    .theme-toggle:hover { border-color: var(--green); background: var(--surface-soft); }
+    .theme-toggle .theme-icon { width: 16px; text-align: center; }
+    .logout { color: var(--muted); font-size: 13px; }
+    main { max-width: 1240px; margin: 0 auto; padding: 28px 20px 42px; }
+    h1 { margin: 0 0 8px; font-size: 34px; line-height: 1.12; letter-spacing: 0; }
+    h2 { margin: 0; font-size: 18px; letter-spacing: 0; }
+    h3 { margin: 0; font-size: 15px; letter-spacing: 0; }
+    .muted { color: var(--muted); }
+    .faint { color: var(--faint); }
+    .grid { display: grid; gap: 12px; }
+    .stats { grid-template-columns: repeat(4, minmax(0, 1fr)); margin: 16px 0; }
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+      box-shadow: var(--shadow-soft);
+    }
+    .panel, .stat-card, .priority-card, .article-card, .ticker-card, .author-card, .source-card, .mini-card {
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow-soft);
+    }
+    .stat-card { padding: 14px; min-height: 92px; position: relative; overflow: hidden; }
+    .stat-card::after {
+      content: "";
+      position: absolute;
+      inset: auto 14px 0 14px;
+      height: 3px;
+      border-radius: 999px 999px 0 0;
+      background: var(--green);
+      opacity: 0.8;
+    }
+    .stat-card.warn::after { background: var(--amber); }
+    .stat-card.info::after { background: var(--blue); }
+    .stat-card.danger::after { background: var(--red); }
+    .stat-label { color: var(--muted); font-size: 12px; font-weight: 740; }
+    .stat-value { font-size: 28px; font-weight: 840; margin-top: 5px; letter-spacing: 0; }
+    .stat-note { color: var(--faint); font-size: 12px; margin-top: 3px; }
+    .page-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 16px;
+    }
+    .page-kicker {
+      color: var(--green-dark);
+      font-size: 12px;
+      font-weight: 820;
+      margin-bottom: 6px;
+    }
+    .page-subtitle { max-width: 760px; color: var(--muted); }
+    .run-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .count-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 6px 13px;
+      border-radius: 999px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      color: var(--green-dark);
+      font-weight: 780;
+      white-space: nowrap;
+      box-shadow: var(--shadow-soft);
+    }
+    .dashboard-grid { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(320px, 0.75fr); gap: 16px; align-items: start; }
+    .section-stack { display: grid; gap: 14px; }
+    .section-head { display: flex; justify-content: space-between; gap: 12px; align-items: center; margin: 24px 0 12px; }
+    .section-note { color: var(--muted); font-size: 13px; }
+    .priority-list { display: grid; gap: 10px; }
+    .priority-card { padding: 15px; display: grid; gap: 6px; border-left: 4px solid var(--green); }
+    .priority-card .rank { color: var(--green-dark); font-size: 12px; font-weight: 820; }
+    .queue-list, .source-list, .timeline-list { display: grid; gap: 10px; }
+    .queue-card, .mini-card { padding: 13px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); }
+    .queue-title { color: var(--ink); font-weight: 780; display: inline-block; margin-bottom: 5px; }
+    .queue-meta { display: flex; flex-wrap: wrap; gap: 7px; color: var(--muted); font-size: 13px; }
+    .queue-summary { color: var(--ink-soft); margin-top: 8px; }
+    .ticker-radar { display: grid; gap: 10px; }
+    .ticker-card { padding: 14px; display: grid; gap: 12px; position: relative; overflow: hidden; }
+    .ticker-card::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 4px; background: var(--green); }
+    .ticker-card.warn::before { background: var(--amber); }
+    .ticker-card.danger::before { background: var(--red); }
+    .ticker-card.info::before { background: var(--blue); }
+    .ticker-card.muted::before { background: var(--line-strong); }
+    .ticker-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .ticker-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+    .ticker-symbol { font-size: 20px; font-weight: 850; color: var(--ink); }
+    .ticker-meta { color: var(--muted); font-size: 12px; margin-top: 2px; }
+    .metrics-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+    .metric { border: 1px solid var(--line); border-radius: 8px; padding: 9px; background: var(--surface-soft); min-width: 0; }
+    .metric-label { color: var(--muted); font-size: 11px; font-weight: 740; }
+    .metric-value { display: block; margin-top: 3px; font-weight: 800; color: var(--ink); overflow-wrap: anywhere; }
+    .metric-value.missing { color: var(--faint); font-weight: 680; }
+    .position-track { height: 8px; border-radius: 999px; background: var(--track); overflow: hidden; }
+    .position-fill { height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--blue), var(--green)); width: var(--bar, 0%); }
+    .condition-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .condition { border-top: 1px solid var(--line); padding-top: 10px; color: var(--ink-soft); }
+    .condition-label { color: var(--muted); font-size: 11px; font-weight: 800; margin-bottom: 4px; }
+    .toolbar {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(126px, 1fr));
+      gap: 10px;
+      align-items: end;
+      margin: 12px 0 12px;
+      padding: 14px;
+      background: var(--toolbar-bg);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow-soft);
+    }
+    .filter-toggle { display: none; }
+    .filter-actions { display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: end; }
+    .quick-filters, .active-filters { display: flex; flex-wrap: wrap; gap: 7px; margin: 10px 0 14px; }
+    label { display: grid; gap: 5px; color: var(--muted); font-size: 12px; font-weight: 650; }
+    input, select, button {
+      width: 100%;
+      min-height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--input-bg);
+      color: var(--ink);
+      padding: 7px 9px;
+      font: inherit;
+    }
+    input:focus, select:focus {
+      outline: 2px solid rgba(17, 120, 111, 0.20);
+      border-color: rgba(17, 120, 111, 0.55);
+    }
+    button {
+      background: var(--green);
+      border-color: var(--green);
+      color: #fff;
+      font-weight: 720;
+      cursor: pointer;
+      box-shadow: 0 10px 22px rgba(17, 120, 111, 0.16);
+    }
+    button:hover { background: var(--green-dark); border-color: var(--green-dark); }
+    .theme-toggle {
+      width: auto;
+      min-height: 34px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--surface);
+      border-color: var(--line);
+      color: var(--ink);
+      box-shadow: none;
+    }
+    .theme-toggle:hover { background: var(--surface-soft); border-color: var(--green); }
+    .secondary-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 7px 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      color: var(--ink);
+      background: var(--surface);
+      font-weight: 650;
+    }
+    .button-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 7px 12px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      color: var(--green-dark);
+      background: var(--surface);
+      font-weight: 760;
+      white-space: nowrap;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+    }
+    th, td { padding: 10px; border-bottom: 1px solid var(--line); vertical-align: top; text-align: left; }
+    th { color: var(--muted); font-size: 12px; font-weight: 760; background: var(--surface-soft); }
+    tbody tr:hover { background: var(--hover-bg); }
+    tr:last-child td { border-bottom: 0; }
+    .chips { display: flex; flex-wrap: wrap; gap: 5px; }
+    .chip { display: inline-flex; align-items: center; min-height: 24px; border-radius: 999px; padding: 2px 8px; background: var(--chip); color: var(--ink-soft); font-size: 12px; font-weight: 720; border: 1px solid transparent; }
+    .chip.good, .chip.strong { background: var(--green-soft); color: var(--green-dark); }
+    .chip.warn { background: var(--amber-soft); color: var(--amber-ink); }
+    .chip.danger { background: var(--red-soft); color: var(--red-ink); }
+    .chip.info { background: var(--blue-soft); color: var(--blue-ink); }
+    .chip.muted { background: var(--surface-soft); color: var(--muted); }
+    .chip.ticker { background: var(--chip); color: var(--ink); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 800; }
+    a.chip:hover, .button-link:hover { border-color: var(--green); }
+    .article-title { font-weight: 800; color: var(--ink); }
+    .summary { max-width: 560px; color: var(--ink-soft); }
+    .article-feed { display: grid; gap: 12px; }
+    .article-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(250px, 0.36fr);
+      gap: 18px;
+      padding: 16px;
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+    }
+    .article-card::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 5px;
+      background: var(--green);
+    }
+    .article-card.warn::before { background: var(--amber); }
+    .article-card.danger::before { background: var(--red); }
+    .article-card.info::before { background: var(--blue); }
+    .article-card.muted::before { background: var(--line-strong); }
+    .article-card:hover {
+      border-color: rgba(17, 120, 111, 0.34);
+      box-shadow: var(--shadow);
+      transform: translateY(-1px);
+      transition: transform 140ms ease, box-shadow 140ms ease, border-color 140ms ease;
+    }
+    .article-main { min-width: 0; padding-left: 4px; }
+    .article-side {
+      display: grid;
+      align-content: start;
+      gap: 10px;
+      padding-left: 14px;
+      border-left: 1px solid var(--line);
+    }
+    .article-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 7px 0 10px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .article-summary { color: var(--ink-soft); max-width: 760px; }
+    .side-label {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 760;
+      text-transform: uppercase;
+    }
+    .side-value { font-weight: 680; }
+    .read-note { color: var(--ink-soft); font-size: 13px; }
+    .read-note.compact { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    .authors-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .author-card { padding: 15px; display: grid; gap: 12px; }
+    .author-top { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+    .author-name { font-size: 17px; font-weight: 820; color: var(--ink); }
+    .author-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+    .source-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 16px 0; }
+    .source-card { padding: 14px; display: grid; gap: 8px; }
+    .source-title { font-size: 13px; color: var(--muted); font-weight: 760; }
+    .source-value { font-size: 18px; font-weight: 840; }
+    .health-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr); gap: 16px; align-items: start; }
+    .source-item { padding: 13px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); display: grid; gap: 7px; }
+    .timeline-item { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+    .timeline-item:last-child { border-bottom: 0; }
+    .empty { text-align: center; color: var(--muted); padding: 28px; }
+    .login-wrap { min-height: 100vh; display: grid; place-items: center; padding: 20px; }
+    .login-box { width: min(420px, 100%); }
+    .error { background: var(--red-soft); color: var(--red); border: 1px solid var(--line); padding: 10px; border-radius: 6px; margin-bottom: 12px; }
+    .notice { background: var(--surface-soft); border: 1px solid var(--line); padding: 10px; border-radius: 6px; margin: 12px 0; color: var(--ink-soft); }
+    .share-box { display: grid; gap: 5px; margin: 12px 0 0; }
+    .share-url { display: block; overflow-wrap: anywhere; color: var(--green-dark); font-weight: 700; }
+    .report-pre {
+      margin: 12px 0 0;
+      padding: 14px;
+      max-height: 520px;
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface-soft);
+      color: var(--ink-soft);
+      white-space: pre-wrap;
+      font: 13px/1.55 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .article-points { margin: 9px 0 0; padding-left: 18px; color: var(--ink-soft); }
+    .article-points li + li { margin-top: 4px; }
+    .run-list { display: grid; gap: 10px; }
+    .run-card { padding: 14px; display: flex; justify-content: space-between; gap: 14px; align-items: flex-start; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); box-shadow: var(--shadow-soft); }
+    .run-card-main { min-width: 0; display: grid; gap: 6px; }
+    .run-title { color: var(--ink); font-weight: 820; font-size: 16px; }
+    .run-card-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 7px; }
+    @media (max-width: 900px) {
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .toolbar { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .topbar { align-items: flex-start; flex-direction: column; }
+      .top-actions { width: 100%; justify-content: space-between; }
+      .dashboard-grid, .health-grid { grid-template-columns: 1fr; }
+      .ticker-grid, .authors-grid, .source-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .article-card { grid-template-columns: 1fr; }
+      .article-side { border-left: 0; border-top: 1px solid var(--line); padding-left: 0; padding-top: 12px; }
+      .page-head { align-items: flex-start; flex-direction: column; }
+    }
+    @media (max-width: 640px) {
+      main { padding: 14px; }
+      h1 { font-size: 28px; }
+      .topbar { gap: 10px; padding: 12px 14px; }
+      nav { justify-content: flex-start; width: 100%; }
+      .top-actions { order: 3; }
+      .stats, .ticker-grid, .authors-grid, .source-grid, .metrics-row, .condition-grid { grid-template-columns: 1fr; }
+      .filter-toggle { display: inline-flex; width: auto; margin: 4px 0 10px; background: var(--green); border-color: var(--green); color: #fff; }
+      .toolbar { display: none; grid-template-columns: 1fr; margin-top: 0; }
+      .toolbar.open { display: grid; }
+      .filter-actions { grid-template-columns: 1fr; }
+      table { display: block; overflow-x: auto; }
+      .article-card { padding: 14px; }
+      .article-side { gap: 8px; }
+      .read-note.compact { -webkit-line-clamp: 2; }
+      .run-card { display: grid; }
+      .run-card-actions { justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">美股專家觀點</div>
+    <nav><a class="" href="/us-expert-dashboard-site/">今日</a><a class="active" href="/us-expert-dashboard-site/runs">每日</a><a class="" href="/us-expert-dashboard-site/articles">文章庫</a><a class="" href="/us-expert-dashboard-site/tickers">標的</a><a class="" href="/us-expert-dashboard-site/authors">作者</a><a class="" href="/us-expert-dashboard-site/sources">來源</a></nav>
+    <div class="top-actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="切換暗黑模式">
+        <span class="theme-icon" data-theme-icon>◐</span>
+        <span data-theme-label>暗黑</span>
+      </button>
+      <span class="logout">開發模式</span>
+    </div>
+  </header>
+  <main>
+    <div class="page-head">
+      <div>
+        <div class="page-kicker">每日固定頁</div>
+        <h1>2026-07-05 美股專家觀點摘要</h1>
+        <div class="page-subtitle">時間窗 2026-07-04 20:01:36 Asia/Taipei 至 2026-07-05 20:01:36 Asia/Taipei。付費牆文章只採公開可見內容，不推測隱藏段落。</div>
+        <div class="run-meta">
+          <span class="chip info">執行 2026-07-05 20:01:36 Asia/Taipei</span>
+          <span class="chip info">Slack delivered</span>
+        </div>
+        <div class="share-box">
+          <div class="side-label">固定連結</div>
+          <a class="share-url" href="https://m6ru4ul6.github.io/us-expert-dashboard-site/runs/217/">https://m6ru4ul6.github.io/us-expert-dashboard-site/runs/217/</a>
+        </div>
+      </div>
+      <div class="run-card-actions">
+        <a class="button-link" href="/us-expert-dashboard-site/runs">所有每日摘要</a>
+        <a class="button-link" href="/us-expert-dashboard-site/articles?start=2026-07-04&amp;end=2026-07-05">本輪文章</a>
+      </div>
+    </div>
+    <div class="grid stats">
+      <div class="stat-card"><div class="stat-label">本輪文章</div><div class="stat-value">3</div><div class="stat-note">3 位作者</div></div>
+      <div class="stat-card danger"><div class="stat-label">需要親讀</div><div class="stat-value">2</div><div class="stat-note">優先打開原文</div></div>
+      <div class="stat-card info"><div class="stat-label">追蹤標的</div><div class="stat-value">5</div><div class="stat-note">含市場快篩</div></div>
+      <div class="stat-card warn"><div class="stat-label">全文可讀</div><div class="stat-value">2</div><div class="stat-note">其餘只看公開面</div></div>
+    </div>
+    <section class="section-stack">
+      <div class="section-head"><div><h2>今日研究優先級</h2><div class="section-note">從本輪完整報告解析而來。</div></div></div>
+      <div class="priority-list">
+        <article class="priority-card">
+          <div class="rank">重點 1</div>
+          <h3>馬斯克 AI stack 與實體 AI 供應鏈</h3>
+          <div class="muted">Raycat 是本輪核心來源，TSLA / Optimus 線索最明確，但 SpaceX / xAI / X 多數仍是未上市資產，需從供應鏈找可交易代理。</div>
+        </article>
+        
+        <article class="priority-card">
+          <div class="rank">重點 2</div>
+          <h3>光互連路線變化</h3>
+          <div class="muted">Damnang 的 VCSEL / CPO 預覽指出 InP laser supply bottleneck 與 VCSEL 可能性，但投資清單在付費牆後，不能直接推導 COHR / LITE / AAOI 等受惠。</div>
+        </article>
+        
+        <article class="priority-card">
+          <div class="rank">重點 3</div>
+          <h3>台灣 AI 韌性與半導體地緣政治</h3>
+          <div class="muted">SEMIVISION 提供 TSM / ASML 的中長期框架，但偏政策與供應鏈韌性，不是短線買賣訊號。</div>
+        </article>
+        </div>
+      <div class="section-head"><div><h2>逐篇摘要</h2><div class="section-note">Slack 不再塞全文；完整逐篇內容集中在這裡。</div></div></div>
+      <div class="article-feed">
+            <article class="article-card danger">
+              <div class="article-main">
+                <a class="article-title" href="https://raycat.substack.com/p/ai-b85" target="_blank" rel="noreferrer">马斯克的四层AI架构，打开投资格局</a>
+                <div class="article-meta">
+                  <span>徐老猫 Raycat</span>
+                  <span>2026-07-05 16:56 Asia/Taipei</span>
+                </div>
+                <ul class="article-points"><li>作者把馬斯克體系拆成四層：X 的即時資料、SpaceX / 軌道資料中心、Grok 的低成本運算、以及 Tesla Optimus 的實體 AI 部署。</li><li>X 被視為 Grok 的專有資料護城河，因為它提供即時更新、文字密集且難以大規模複製的人類反應流。</li><li>AI 資料中心的瓶頸從晶片與資金延伸到電網、電力、冷卻與土地；作者認為 SpaceX 軌道資料中心是長期解法之一。</li><li>xAI Memphis 超級電腦以 10 萬個 NVIDIA GPU 快速組裝，被作者拿來作為馬斯克執行速度的驗證。</li><li>Optimus 被定位為讓 AI 走出螢幕的實體平台；若能規模化，作者認為 Tesla 不應只被當作電動車公司估值。</li><li>可研究的不是只有馬斯克相關公司，還包括雲基礎設施、衛星硬體、航太級晶片、太陽能陣列、雷射通訊、AI 晶片、HBM、連接半導體、視覺 / 運動控制 / 邊緣 AI / 測試設備等供應商。</li><li>文章沒有列出具體供應商股票清單，因此本輪只能把 TSLA / NVDA 做快篩，不能自行補出完整受惠股名單。</li></ul>
+              </div>
+              <aside class="article-side">
+                <div class="chips">
+                  <span class="chip good">全文</span>
+                  <span class="chip info">偏多</span>
+                  <span class="chip info">中長期</span>
+                </div>
+                <div>
+                  <div class="side-label">操作</div>
+                  <div class="side-value">觀望 / 研究供應鏈；作者未給精確買點</div>
+                </div>
+                <div>
+                  <div class="side-label">標的</div>
+                  <div class="chips"><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=AMZN">AMZN</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=NVDA">NVDA</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=TSLA">TSLA</a></div>
+                </div>
+                <div>
+                  <div class="side-label">親讀</div>
+                  <div class="chips"><span class="chip danger">需要</span></div>
+                  <div class="read-note">這篇是本輪最可行動主線，需親自看原文並追蹤後續留言 / 文章是否補出具體供應鏈名單。</div>
+                </div>
+              </aside>
+            </article>
+            
+            <article class="article-card danger">
+              <div class="article-main">
+                <a class="article-title" href="https://damnang2.substack.com/p/can-vcsel-cpo-shake-up-the-inp-optical" target="_blank" rel="noreferrer">Can VCSEL CPO Shake Up the InP Optical Order?</a>
+                <div class="article-meta">
+                  <span>Damnang</span>
+                  <span>2026-07-05 08:00 Asia/Taipei</span>
+                </div>
+                <ul class="article-points"><li>文章起點是 Ashkan Seyedi 從 NVIDIA 矽光子產品轉到 ams OSRAM 光互連，讓作者重新檢視 VCSEL 是否可能進入 CPO 主戰場。</li><li>作者指出目前 InP laser supply 是嚴重瓶頸；單一高階人才移動不能證明 VCSEL CPO 起飛，但足以讓市場重新提問。</li><li>VCSEL 是 GaAs 基板的小型雷射，可同時發光與調變，零件數較少，優勢在功耗與延遲；InP 路線零件更多，但長距可靠性較強。</li><li>VCSEL 已大量用於 Face ID、車用 LiDAR、光學滑鼠、800G SR8 transceiver 與 AOC，不是實驗室階段技術。</li><li>AI 資料中心正從 800G 走向 1.6T / 3.2T，pluggable module 在功耗與整合密度上遇到瓶頸，CPO 方向變得不可避免。</li><li>公開預覽沒有揭露後段的完整投資結論，因此不能推測 COHR / LITE / AAOI 等標的是否被作者列為受惠者。</li></ul>
+              </div>
+              <aside class="article-side">
+                <div class="chips">
+                  <span class="chip warn">公開預覽</span>
+                  <span class="chip info">觀望</span>
+                  <span class="chip info">中長期</span>
+                </div>
+                <div>
+                  <div class="side-label">操作</div>
+                  <div class="side-value">觀望；預覽段只提出技術問題與方向，未看到完整投資清單</div>
+                </div>
+                <div>
+                  <div class="side-label">標的</div>
+                  <div class="chips"><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=NVDA">NVDA</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=OSRAM">OSRAM</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=VCSEL">VCSEL</a></div>
+                </div>
+                <div>
+                  <div class="side-label">親讀</div>
+                  <div class="chips"><span class="chip danger">需要</span></div>
+                  <div class="read-note">預覽停在關鍵問題，若要找 CPO 受惠股必須看完整投資段。</div>
+                </div>
+              </aside>
+            </article>
+            
+            <article class="article-card warn">
+              <div class="article-main">
+                <a class="article-title" href="https://tspasemiconductor.substack.com/p/the-future-world-will-need-taiwan" target="_blank" rel="noreferrer">The Future World Will Need Taiwan Even More: AI Geopolitics Is Moving From Chips to National Resilience</a>
+                <div class="article-meta">
+                  <span>SEMIVISION</span>
+                  <span>2026-07-04 22:36 Asia/Taipei</span>
+                </div>
+                <ul class="article-points"><li>作者認為 AI 正把全球化從效率導向推向信任導向，供應鏈安全、合規、可追蹤與持續運作能力變成核心問題。</li><li>AI 不是單一科技產業，而是國家級基礎設施，牽涉晶片、HBM、封裝、基板、PCB、電源、散熱、光互連、伺服器、資料中心與軟體部署。</li><li>台灣不只是晶片島，也正在成為 AI 基礎設施競賽中的地緣政治節點。</li><li>傳統的 silicon shield 已不足以描述台灣價值；更重要的是台灣能否把 AI 硬體難題壓縮進高效率產業生態。</li><li>台灣在先進製程、先進封裝、AI server manufacturing、電源、散熱、PCB、連接器、測試與系統整合都有關鍵角色。</li><li>作者也強調集中度本身是雙面刃：台灣越重要，越需要證明能源、資安、物流、治理、人才與供應鏈管理能承載全球信任。</li><li>文章明確提到 TSMC 與 ASML，但沒有給財報、估值或操作建議，因此快篩應以中長期觀察框架處理。</li></ul>
+              </div>
+              <aside class="article-side">
+                <div class="chips">
+                  <span class="chip good">全文</span>
+                  <span class="chip info">偏多</span>
+                  <span class="chip info">中長期</span>
+                </div>
+                <div>
+                  <div class="side-label">操作</div>
+                  <div class="side-value">觀望；偏政策 / 產業框架，未給個股買賣建議</div>
+                </div>
+                <div>
+                  <div class="side-label">標的</div>
+                  <div class="chips"><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=ASML">ASML</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=TSM">TSM</a></div>
+                </div>
+                <div>
+                  <div class="side-label">親讀</div>
+                  <div class="chips"><span class="chip warn">可略讀</span></div>
+                  <div class="read-note">適合補產業框架，但短線交易訊號少。</div>
+                </div>
+              </aside>
+            </article>
+            </div>
+      <div class="section-head"><div><h2>標的快篩</h2><div class="section-note">研究級分類，不代表自動下單訊號。</div></div></div>
+      <div class="ticker-grid">
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=TSLA">TSLA</a>
+                  <div class="ticker-meta">市場 盤前/盤後資料不足；Nasdaq secondaryData 為空｜07/02/2026 regular close（Nasdaq historical；本輪 2026-07-05 20:01 TPE 抓取）</div>
+                </div>
+                <span class="chip good">可列入開倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$393.45</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+4.89%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-9.10%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.47</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 91%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>下一交易日先看 2026-07-02 大跌後能否止跌並重新吸引 AI / robotics 題材買盤，且 Tesla / Optimus 相關新聞沒有惡化。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若 Tesla 仍被市場只按 EV 利潤壓力定價且股價續弱，或 Optimus 量產 / 成本敘事被新消息否定，觀察失效。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=NVDA">NVDA</a>
+                  <div class="ticker-meta">市場 盤前/盤後資料不足；Nasdaq secondaryData 為空｜07/02/2026 regular close（Nasdaq historical；本輪 2026-07-05 20:01 TPE 抓取）</div>
+                </div>
+                <span class="chip good">僅適合原持股續抱或加倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$194.83</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-0.46%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-9.33%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.91</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 91%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>下一交易日需看到 AI GPU / 半導體主線止跌，並確認市場未把軌道運算或 CPO 敘事解讀為 NVIDIA 需求弱化。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若 AI 半導體持續跌破近期支撐且作者後續沒有把 NVIDIA 列為明確受惠者，降為資料不足。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=TSM">TSM</a>
+                  <div class="ticker-meta">市場 盤前/盤後資料不足；Nasdaq secondaryData 為空｜07/02/2026 regular close（Nasdaq historical；本輪 2026-07-05 20:01 TPE 抓取）</div>
+                </div>
+                <span class="chip good">僅適合原持股續抱或加倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$434.16</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-0.19%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-9.36%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.20</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 91%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>下一交易日觀察 ADR 是否在半導體回檔後穩住，並追蹤台灣 AI server / advanced packaging / power thermal 供應鏈是否延續正面消息。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若台灣地緣、能源或出口管制風險升溫並壓過 AI 韌性敘事，觀察失效。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card muted">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=AMZN">AMZN</a>
+                  <div class="ticker-meta">市場 盤前/盤後資料不足；Nasdaq secondaryData 為空｜07/02/2026 regular close（Nasdaq historical；本輪 2026-07-05 20:01 TPE 抓取）</div>
+                </div>
+                <span class="chip muted">資料不足</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$242.67</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+6.90%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-5.35%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.74</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 95%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>只有在作者後續把 Amazon 作為 AI / physical AI 類比以外的投資標的時才重新評估。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>本輪只是 Tesla 類比背景，不足以形成研究標的。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card muted">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=ASML">ASML</a>
+                  <div class="ticker-meta">市場 盤前/盤後資料不足；Nasdaq secondaryData 為空｜07/02/2026 regular close（Nasdaq historical；本輪 2026-07-05 20:01 TPE 抓取）</div>
+                </div>
+                <span class="chip muted">資料不足</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$1,769.32</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-3.90%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-11.53%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.12</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 88%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>若要升級觀察，需要原文或後續文章把 EUV / ASML 訂單、供應限制或估值重評講清楚。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若只是台灣供應鏈框架中的單句背景，維持資料不足。</div>
+              </div>
+            </article>
+            </div>
+      <div class="section-head"><div><h2>來源檢查</h2><div class="section-note">用來判斷本輪資料可信度與限制。</div></div></div>
+      <div class="source-list">
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>大叔美股筆記 Uncle Stock Notes</h3>
+            <span class="chip info">RSS HTTP 200，publication HTTP 200；本輪 24 小時窗內無新文章。</span>
+          </div>
+          <div class="muted">大叔美股筆記 Uncle Stock Notes：RSS HTTP 200，publication HTTP 200；本輪 24 小時窗內無新文章。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>Skilled Driver</h3>
+            <span class="chip info">RSS HTTP 200，publication HTTP 200；本輪 24 小時窗內無新文章。</span>
+          </div>
+          <div class="muted">Skilled Driver：RSS HTTP 200，publication HTTP 200；本輪 24 小時窗內無新文章。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>Michael M. Chang</h3>
+            <span class="chip info">RSS HTTP 200，publication HTTP 200；本輪 24 小時窗內無新文章。</span>
+          </div>
+          <div class="muted">Michael M. Chang：RSS HTTP 200，publication HTTP 200；本輪 24 小時窗內無新文章。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>Raycat</h3>
+            <span class="chip good">RSS HTTP 200，publication HTTP 200；採納 1 篇，`马斯克的四层AI架构，打开投资格局`，來源狀態 `RSS 已取得全文 / 公開頁全文`。</span>
+          </div>
+          <div class="muted">Raycat：RSS HTTP 200，publication HTTP 200；採納 1 篇，`马斯克的四层AI架构，打开投资格局`，來源狀態 `RSS 已取得全文 / 公開頁全文`。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>補充 Substack 掃描</h3>
+            <span class="chip info">michaeljburry、damnang2、fundaai、newsletter.semianalysis、qualitystocks、hightechinvesting、beatingthetide、tspasemiconductor feeds 皆 fresh 抓取；Substack top/finance 與 top/technology 也已 fresh 抓取作 discovery。</span>
+          </div>
+          <div class="muted">補充 Substack 掃描：michaeljburry、damnang2、fundaai、newsletter.semianalysis、qualitystocks、hightechinvesting、beatingthetide、tspasemiconductor feeds 皆 fresh 抓取；Substack top/finance 與 top/technology 也已 fresh 抓取作 discovery。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>補充採納</h3>
+            <span class="chip good">Damnang 1 篇（僅公開預覽）、SEMIVISION 1 篇（RSS/公開頁全文）。</span>
+          </div>
+          <div class="muted">補充採納：Damnang 1 篇（僅公開預覽）、SEMIVISION 1 篇（RSS/公開頁全文）。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>補充未採納</h3>
+            <span class="chip warn">Michael Burry `July 2026 Charity - Seva Foundation...` 在時間窗內，但主軸是慈善捐款，不屬美股研究摘要，未採納。</span>
+          </div>
+          <div class="muted">補充未採納：Michael Burry `July 2026 Charity - Seva Foundation...` 在時間窗內，但主軸是慈善捐款，不屬美股研究摘要，未採納。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>Activity 摘要</h3>
+            <span class="chip warn">本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。</span>
+          </div>
+          <div class="muted">Activity 摘要：本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>Paywall / preview</h3>
+            <span class="chip warn">未使用 archive、PDF、轉貼全文、登入 cookie、本機 Chrome、Computer Use 或非 Substack 社群來源。</span>
+          </div>
+          <div class="muted">Paywall / preview：未使用 archive、PDF、轉貼全文、登入 cookie、本機 Chrome、Computer Use 或非 Substack 社群來源。</div>
+        </article>
+        </div>
+      <details class="mini-card">
+        <summary><strong>完整 Markdown 報告</strong></summary>
+        <pre class="report-pre">美股專家觀點摘要
+
+- 執行日期：2026-07-05 20:01:36 Asia/Taipei
+- 採納時間窗：2026-07-04 20:01:36 至 2026-07-05 20:01:36 Asia/Taipei
+- 來源狀態總覽：核心來源 4 個 feed 全部 HTTP 200；採納 Raycat 1 篇，補充採納 Damnang 1 篇、SEMIVISION 1 篇；Uncle / Skilled Driver / Michael M. Chang 本輪無窗內新文。
+
+[來源檢查]
+- 大叔美股筆記 Uncle Stock Notes：RSS HTTP 200，publication HTTP 200；本輪 24 小時窗內無新文章。
+- Skilled Driver：RSS HTTP 200，publication HTTP 200；本輪 24 小時窗內無新文章。
+- Michael M. Chang：RSS HTTP 200，publication HTTP 200；本輪 24 小時窗內無新文章。
+- Raycat：RSS HTTP 200，publication HTTP 200；採納 1 篇，`马斯克的四层AI架构，打开投资格局`，來源狀態 `RSS 已取得全文 / 公開頁全文`。
+- 補充 Substack 掃描：michaeljburry、damnang2、fundaai、newsletter.semianalysis、qualitystocks、hightechinvesting、beatingthetide、tspasemiconductor feeds 皆 fresh 抓取；Substack top/finance 與 top/technology 也已 fresh 抓取作 discovery。
+- 補充採納：Damnang 1 篇（僅公開預覽）、SEMIVISION 1 篇（RSS/公開頁全文）。
+- 補充未採納：Michael Burry `July 2026 Charity - Seva Foundation...` 在時間窗內，但主軸是慈善捐款，不屬美股研究摘要，未採納。
+- Activity 摘要：本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。
+- Paywall / preview：未使用 archive、PDF、轉貼全文、登入 cookie、本機 Chrome、Computer Use 或非 Substack 社群來源。
+
+[逐篇摘要]
+1. Raycat｜马斯克的四层AI架构，打开投资格局
+- 作者：Raycat
+- 來源：Substack 文章
+- 標題：马斯克的四层AI架构，打开投资格局
+- 發布時間：2026-07-05 16:56 Asia/Taipei
+- 來源狀態：RSS 已取得全文 / 公開頁全文
+- 連結：https://raycat.substack.com/p/ai-b85
+- 立場：偏多
+- 時間框架：中長期
+- 重點 1：作者把馬斯克體系拆成四層：X 的即時資料、SpaceX / 軌道資料中心、Grok 的低成本運算、以及 Tesla Optimus 的實體 AI 部署。
+- 重點 2：X 被視為 Grok 的專有資料護城河，因為它提供即時更新、文字密集且難以大規模複製的人類反應流。
+- 重點 3：AI 資料中心的瓶頸從晶片與資金延伸到電網、電力、冷卻與土地；作者認為 SpaceX 軌道資料中心是長期解法之一。
+- 重點 4：xAI Memphis 超級電腦以 10 萬個 NVIDIA GPU 快速組裝，被作者拿來作為馬斯克執行速度的驗證。
+- 重點 5：Optimus 被定位為讓 AI 走出螢幕的實體平台；若能規模化，作者認為 Tesla 不應只被當作電動車公司估值。
+- 重點 6：可研究的不是只有馬斯克相關公司，還包括雲基礎設施、衛星硬體、航太級晶片、太陽能陣列、雷射通訊、AI 晶片、HBM、連接半導體、視覺 / 運動控制 / 邊緣 AI / 測試設備等供應商。
+- 重點 7：文章沒有列出具體供應商股票清單，因此本輪只能把 TSLA / NVDA 做快篩，不能自行補出完整受惠股名單。
+- 明確提到的標的：TSLA, NVDA, AMZN（AMZN 僅作類比背景；SpaceX / xAI / X 為未上市或無公開 ticker）
+- 明確提到的族群：AI 基礎設施、軌道資料中心、實體 AI、機器人、衛星硬體、光通訊、AI 晶片 / HBM / 連接半導體
+- 催化因素：AI 電力與冷卻瓶頸、SpaceX 軌道資料中心申請、xAI Memphis 超級電腦、Optimus 早期量產、供應鏈估值重評
+- 操作建議：觀望 / 研究供應鏈；作者未給精確買點
+- 風險或保留條件：核心資產多數未上市或被公開市場間接定價；軌道資料中心工程難度高；Optimus 量產與單價仍待驗證；供應商名單未明確列出
+- 我是否需要親自讀原文：需要，這篇是本輪最可行動主線，需親自看原文並追蹤後續留言 / 文章是否補出具體供應鏈名單。
+
+2. Damnang｜Can VCSEL CPO Shake Up the InP Optical Order?
+- 作者：Damnang
+- 來源：Substack 文章
+- 標題：Can VCSEL CPO Shake Up the InP Optical Order?
+- 發布時間：2026-07-05 08:00 Asia/Taipei
+- 來源狀態：僅公開預覽（RSS/公開頁至 Read more，未採納後段全文）
+- 連結：https://damnang2.substack.com/p/can-vcsel-cpo-shake-up-the-inp-optical
+- 立場：觀望
+- 時間框架：中長期
+- 重點 1：文章起點是 Ashkan Seyedi 從 NVIDIA 矽光子產品轉到 ams OSRAM 光互連，讓作者重新檢視 VCSEL 是否可能進入 CPO 主戰場。
+- 重點 2：作者指出目前 InP laser supply 是嚴重瓶頸；單一高階人才移動不能證明 VCSEL CPO 起飛，但足以讓市場重新提問。
+- 重點 3：VCSEL 是 GaAs 基板的小型雷射，可同時發光與調變，零件數較少，優勢在功耗與延遲；InP 路線零件更多，但長距可靠性較強。
+- 重點 4：VCSEL 已大量用於 Face ID、車用 LiDAR、光學滑鼠、800G SR8 transceiver 與 AOC，不是實驗室階段技術。
+- 重點 5：AI 資料中心正從 800G 走向 1.6T / 3.2T，pluggable module 在功耗與整合密度上遇到瓶頸，CPO 方向變得不可避免。
+- 重點 6：公開預覽沒有揭露後段的完整投資結論，因此不能推測 COHR / LITE / AAOI 等標的是否被作者列為受惠者。
+- 明確提到的標的：NVDA（ams OSRAM 為非美股主板 / ticker 未納入本輪美股快篩）
+- 明確提到的族群：CPO、VCSEL、InP 雷射、矽光子、AI 資料中心短距光互連、800G / 1.6T / 3.2T
+- 催化因素：NVIDIA 矽光子產品前主管 Ashkan Seyedi 轉任 ams OSRAM 光互連、InP laser supply bottleneck、AI cluster 傳輸速率升級
+- 操作建議：觀望；預覽段只提出技術問題與方向，未看到完整投資清單
+- 風險或保留條件：僅公開預覽；VCSEL 是否能替代 / 共存於 CPO 尚未被預覽段證明；非美股主板標的需要另查交易與流動性
+- 我是否需要親自讀原文：需要，預覽停在關鍵問題，若要找 CPO 受惠股必須看完整投資段。
+
+3. SEMIVISION｜The Future World Will Need Taiwan Even More: AI Geopolitics Is Moving From Chips to National Resilience
+- 作者：SEMIVISION
+- 來源：Substack 文章
+- 標題：The Future World Will Need Taiwan Even More: AI Geopolitics Is Moving From Chips to National Resilience
+- 發布時間：2026-07-04 22:36 Asia/Taipei
+- 來源狀態：RSS 已取得全文 / 公開頁全文
+- 連結：https://tspasemiconductor.substack.com/p/the-future-world-will-need-taiwan
+- 立場：偏多
+- 時間框架：中長期
+- 重點 1：作者認為 AI 正把全球化從效率導向推向信任導向，供應鏈安全、合規、可追蹤與持續運作能力變成核心問題。
+- 重點 2：AI 不是單一科技產業，而是國家級基礎設施，牽涉晶片、HBM、封裝、基板、PCB、電源、散熱、光互連、伺服器、資料中心與軟體部署。
+- 重點 3：台灣不只是晶片島，也正在成為 AI 基礎設施競賽中的地緣政治節點。
+- 重點 4：傳統的 silicon shield 已不足以描述台灣價值；更重要的是台灣能否把 AI 硬體難題壓縮進高效率產業生態。
+- 重點 5：台灣在先進製程、先進封裝、AI server manufacturing、電源、散熱、PCB、連接器、測試與系統整合都有關鍵角色。
+- 重點 6：作者也強調集中度本身是雙面刃：台灣越重要，越需要證明能源、資安、物流、治理、人才與供應鏈管理能承載全球信任。
+- 重點 7：文章明確提到 TSMC 與 ASML，但沒有給財報、估值或操作建議，因此快篩應以中長期觀察框架處理。
+- 明確提到的標的：TSM, ASML
+- 明確提到的族群：台灣半導體、AI 伺服器、先進封裝、HBM、PCB、電源、散熱、光互連、資料中心基礎設施、供應鏈韌性
+- 催化因素：AI 地緣政治、出口管制、供應鏈碎片化、能源壓力、SEMICON Taiwan、國家韌性與可信任供應鏈重評
+- 操作建議：觀望；偏政策 / 產業框架，未給個股買賣建議
+- 風險或保留條件：文章主軸是國家與產業韌性，不是單一公司估值；台灣集中度同時是優勢與風險；能源、資安、物流、出口管制都可能成為折價因素
+- 我是否需要親自讀原文：可略讀，適合補產業框架，但短線交易訊號少。
+
+[Activity 摘要]
+- 來源狀態：使用者設定暫停
+- 說明：本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。
+- 明確提到的標的：不適用
+- 我是否需要親自看全文：不適用
+
+[標的快篩]
+1. TSLA
+- 公司：Tesla, Inc. Common Stock
+- 最新可得價格：$393.45（07/02/2026 regular close（Nasdaq historical；本輪 2026-07-05 20:01 TPE 抓取））
+- 盤前/盤後：盤前/盤後資料不足；Nasdaq secondaryData 為空
+- 5日漲跌幅：+4.89%
+- 近20日高點：$432.86
+- 目前價格距20日高點幅度：-9.10%
+- 最新成交量與20日均量：73.92M vs 50.22M（量能比 1.47x）
+- 作者角度 - 財報趨勢：作者未明確提到
+- 作者角度 - 估值：作者認為市場仍把 Tesla 視為面臨利潤壓力與中國競爭的 EV 公司，若 Optimus 規模化，估值框架可能轉為實體 AI 平台。
+- 作者角度 - 產業趨勢：Optimus / Physical AI 是 Raycat 文章最具體的上市公司線索。
+- 作者角度 - 機構觀點：作者未明確提到
+- 研究級分類：可列入開倉觀察
+- 下一交易日確認條件：下一交易日先看 2026-07-02 大跌後能否止跌並重新吸引 AI / robotics 題材買盤，且 Tesla / Optimus 相關新聞沒有惡化。
+- 失效條件：若 Tesla 仍被市場只按 EV 利潤壓力定價且股價續弱，或 Optimus 量產 / 成本敘事被新消息否定，觀察失效。
+
+2. NVDA
+- 公司：NVIDIA Corporation Common Stock
+- 最新可得價格：$194.83（07/02/2026 regular close（Nasdaq historical；本輪 2026-07-05 20:01 TPE 抓取））
+- 盤前/盤後：盤前/盤後資料不足；Nasdaq secondaryData 為空
+- 5日漲跌幅：-0.46%
+- 近20日高點：$214.87
+- 目前價格距20日高點幅度：-9.33%
+- 最新成交量與20日均量：142.39M vs 156.72M（量能比 0.91x）
+- 作者角度 - 財報趨勢：作者未明確提到
+- 作者角度 - 估值：作者未明確提到
+- 作者角度 - 產業趨勢：Raycat 提到 xAI Memphis 以 10 萬個 NVIDIA GPU 建置；Damnang 提到 NVIDIA 矽光子產品前主管轉往 ams OSRAM。
+- 作者角度 - 機構觀點：作者未明確提到
+- 研究級分類：僅適合原持股續抱或加倉觀察
+- 下一交易日確認條件：下一交易日需看到 AI GPU / 半導體主線止跌，並確認市場未把軌道運算或 CPO 敘事解讀為 NVIDIA 需求弱化。
+- 失效條件：若 AI 半導體持續跌破近期支撐且作者後續沒有把 NVIDIA 列為明確受惠者，降為資料不足。
+
+3. TSM
+- 公司：Taiwan Semiconductor Manufacturing Company Ltd.
+- 最新可得價格：$434.16（07/02/2026 regular close（Nasdaq historical；本輪 2026-07-05 20:01 TPE 抓取））
+- 盤前/盤後：盤前/盤後資料不足；Nasdaq secondaryData 為空
+- 5日漲跌幅：-0.19%
+- 近20日高點：$479.00
+- 目前價格距20日高點幅度：-9.36%
+- 最新成交量與20日均量：18.42M vs 15.37M（量能比 1.20x）
+- 作者角度 - 財報趨勢：作者未明確提到
+- 作者角度 - 估值：作者未明確提到
+- 作者角度 - 產業趨勢：SEMIVISION 把 TSMC 放在台灣 AI 基礎設施韌性與 advanced process / packaging 核心位置。
+- 作者角度 - 機構觀點：作者未明確提到
+- 研究級分類：僅適合原持股續抱或加倉觀察
+- 下一交易日確認條件：下一交易日觀察 ADR 是否在半導體回檔後穩住，並追蹤台灣 AI server / advanced packaging / power thermal 供應鏈是否延續正面消息。
+- 失效條件：若台灣地緣、能源或出口管制風險升溫並壓過 AI 韌性敘事，觀察失效。
+
+4. ASML
+- 公司：ASML Holding N.V. New York Registry Shares
+- 最新可得價格：$1,769.32（07/02/2026 regular close（Nasdaq historical；本輪 2026-07-05 20:01 TPE 抓取））
+- 盤前/盤後：盤前/盤後資料不足；Nasdaq secondaryData 為空
+- 5日漲跌幅：-3.90%
+- 近20日高點：$1,999.96
+- 目前價格距20日高點幅度：-11.53%
+- 最新成交量與20日均量：2.70M vs 2.42M（量能比 1.12x）
+- 作者角度 - 財報趨勢：作者未明確提到
+- 作者角度 - 估值：作者未明確提到
+- 作者角度 - 產業趨勢：SEMIVISION 提到荷蘭透過 ASML 控制 EUV lithography。
+- 作者角度 - 機構觀點：作者未明確提到
+- 研究級分類：資料不足
+- 下一交易日確認條件：若要升級觀察，需要原文或後續文章把 EUV / ASML 訂單、供應限制或估值重評講清楚。
+- 失效條件：若只是台灣供應鏈框架中的單句背景，維持資料不足。
+
+5. AMZN
+- 公司：Amazon.com, Inc. Common Stock
+- 最新可得價格：$242.67（07/02/2026 regular close（Nasdaq historical；本輪 2026-07-05 20:01 TPE 抓取））
+- 盤前/盤後：盤前/盤後資料不足；Nasdaq secondaryData 為空
+- 5日漲跌幅：+6.90%
+- 近20日高點：$256.38
+- 目前價格距20日高點幅度：-5.35%
+- 最新成交量與20日均量：48.30M vs 64.94M（量能比 0.74x）
+- 作者角度 - 財報趨勢：作者未明確提到
+- 作者角度 - 估值：作者未明確提到
+- 作者角度 - 產業趨勢：Raycat 只以 2006 年 Amazon 作為 Tesla 估值定位錯誤的類比。
+- 作者角度 - 機構觀點：作者未明確提到
+- 研究級分類：資料不足
+- 下一交易日確認條件：只有在作者後續把 Amazon 作為 AI / physical AI 類比以外的投資標的時才重新評估。
+- 失效條件：本輪只是 Tesla 類比背景，不足以形成研究標的。
+
+[今日研究優先級]
+1. 馬斯克 AI stack 與實體 AI 供應鏈：Raycat 是本輪核心來源，TSLA / Optimus 線索最明確，但 SpaceX / xAI / X 多數仍是未上市資產，需從供應鏈找可交易代理。
+2. 光互連路線變化：Damnang 的 VCSEL / CPO 預覽指出 InP laser supply bottleneck 與 VCSEL 可能性，但投資清單在付費牆後，不能直接推導 COHR / LITE / AAOI 等受惠。
+3. 台灣 AI 韌性與半導體地緣政治：SEMIVISION 提供 TSM / ASML 的中長期框架，但偏政策與供應鏈韌性，不是短線買賣訊號。
+
+[值得親自讀]
+- 需要：Raycat｜马斯克的四层AI架构，打开投资格局｜https://raycat.substack.com/p/ai-b85｜補看目的：確認作者是否在全文或後續留言補出具體供應鏈公司；看完要決定 TSLA 是否列入實體 AI 觀察清單。
+- 需要：Damnang｜Can VCSEL CPO Shake Up the InP Optical Order?｜https://damnang2.substack.com/p/can-vcsel-cpo-shake-up-the-inp-optical｜補看目的：公開預覽停在 Read more，需確認後段是否給出 CPO / VCSEL 受惠標的。
+- 可略讀：SEMIVISION｜The Future World Will Need Taiwan Even More...｜https://tspasemiconductor.substack.com/p/the-future-world-will-need-taiwan｜補看目的：補 TSM / ASML 中長期風險框架，不作短線操作依據。
+
+內容僅供研究整理，不構成投資建議。
+</pre>
+      </details>
+    </section>
+    </main>
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var button = document.querySelector("[data-theme-toggle]");
+      var label = document.querySelector("[data-theme-label]");
+      var icon = document.querySelector("[data-theme-icon]");
+      function currentTheme() {
+        return root.dataset.theme === "dark" ? "dark" : "light";
+      }
+      function render() {
+        var theme = currentTheme();
+        if (label) label.textContent = theme === "dark" ? "淺色" : "暗黑";
+        if (icon) icon.textContent = theme === "dark" ? "☼" : "◐";
+        if (button) button.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
+      }
+      if (button) {
+        button.addEventListener("click", function () {
+          var next = currentTheme() === "dark" ? "light" : "dark";
+          root.dataset.theme = next;
+          try { localStorage.setItem("usExpertTheme", next); } catch (error) {}
+          render();
+        });
+      }
+      render();
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,1089 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-06-22 每日摘要｜美股專家觀點</title>
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("usExpertTheme");
+        if (saved === "dark" || saved === "light") {
+          document.documentElement.dataset.theme = saved;
+        }
+      } catch (error) {}
+    })();
+  </script>
+  <style>
+    :root {
+      --bg: #f3f5f2;
+      --surface: #ffffff;
+      --surface-soft: #f8faf7;
+      --surface-warm: #fffaf0;
+      --card-bg: rgba(255, 255, 255, 0.96);
+      --topbar-bg: rgba(255, 255, 255, 0.9);
+      --toolbar-bg: rgba(255, 255, 255, 0.92);
+      --input-bg: #ffffff;
+      --hover-bg: #fbfdfc;
+      --track: #e5e9e7;
+      --ink-soft: #2f3d39;
+      --ink: #141b1f;
+      --muted: #657177;
+      --faint: #8a969b;
+      --line: #dde3df;
+      --line-strong: #c7d0cc;
+      --green: #0f766e;
+      --green-dark: #0b5c55;
+      --green-soft: #e6f3ee;
+      --amber: #b76b11;
+      --amber-soft: #fff2c7;
+      --amber-ink: #80500c;
+      --red: #b84a3c;
+      --red-soft: #ffe9e5;
+      --red-ink: #8f382f;
+      --blue: #2e6fa3;
+      --blue-soft: #e7f0f8;
+      --blue-ink: #245a84;
+      --slate: #485763;
+      --chip: #eef2f5;
+      --shadow: 0 22px 58px rgba(29, 39, 44, 0.12);
+      --shadow-soft: 0 10px 26px rgba(29, 39, 44, 0.07);
+      --body-bg:
+        linear-gradient(180deg, rgba(231, 242, 238, 0.95) 0, rgba(246, 247, 242, 0.92) 310px, var(--bg) 100%),
+        linear-gradient(135deg, rgba(46, 111, 163, 0.10), rgba(183, 107, 17, 0.07));
+      color-scheme: light;
+    }
+    html[data-theme="dark"] {
+      --bg: #0d1315;
+      --surface: #151d20;
+      --surface-soft: #11181b;
+      --surface-warm: #221b12;
+      --card-bg: rgba(20, 29, 32, 0.96);
+      --topbar-bg: rgba(14, 20, 22, 0.9);
+      --toolbar-bg: rgba(19, 27, 30, 0.94);
+      --input-bg: #101719;
+      --hover-bg: #182224;
+      --track: #263033;
+      --ink-soft: #d1dad6;
+      --ink: #eef5f2;
+      --muted: #a5b2ad;
+      --faint: #7f8d88;
+      --line: #2b383a;
+      --line-strong: #455255;
+      --green: #3fc0ad;
+      --green-dark: #88ded2;
+      --green-soft: #15352f;
+      --amber: #f1b85d;
+      --amber-soft: #3c2b12;
+      --amber-ink: #f8d08a;
+      --red: #ef8b7b;
+      --red-soft: #3b1d19;
+      --red-ink: #ffb2a8;
+      --blue: #83bce6;
+      --blue-soft: #172b3c;
+      --blue-ink: #b8ddff;
+      --slate: #9ba8ae;
+      --chip: #202a2d;
+      --shadow: 0 22px 58px rgba(0, 0, 0, 0.36);
+      --shadow-soft: 0 10px 26px rgba(0, 0, 0, 0.28);
+      --body-bg:
+        radial-gradient(circle at top left, rgba(63, 192, 173, 0.12), transparent 280px),
+        radial-gradient(circle at 90% 8%, rgba(131, 188, 230, 0.10), transparent 260px),
+        linear-gradient(180deg, #111a1c 0, #0d1315 340px, #0b1012 100%);
+      color-scheme: dark;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--body-bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    a { color: var(--green-dark); text-decoration: none; }
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 12px 22px;
+      border-bottom: 1px solid var(--line);
+      background: var(--topbar-bg);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 10px 32px rgba(31, 44, 50, 0.07);
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-weight: 820;
+      letter-spacing: 0;
+      white-space: nowrap;
+    }
+    .brand::before {
+      content: "";
+      width: 13px;
+      height: 13px;
+      border-radius: 4px;
+      background: var(--red);
+      box-shadow: 15px 0 0 var(--green), 30px 0 0 var(--amber);
+    }
+    nav { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; }
+    nav a {
+      min-height: 34px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      color: var(--muted);
+      font-weight: 650;
+    }
+    nav a.active, nav a:hover { background: var(--green-soft); color: var(--green-dark); }
+    .top-actions { display: flex; align-items: center; gap: 10px; }
+    .theme-toggle {
+      width: auto;
+      min-height: 34px;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--ink);
+      box-shadow: none;
+      font-size: 13px;
+      font-weight: 760;
+      white-space: nowrap;
+    }
+    .theme-toggle:hover { border-color: var(--green); background: var(--surface-soft); }
+    .theme-toggle .theme-icon { width: 16px; text-align: center; }
+    .logout { color: var(--muted); font-size: 13px; }
+    main { max-width: 1240px; margin: 0 auto; padding: 28px 20px 42px; }
+    h1 { margin: 0 0 8px; font-size: 34px; line-height: 1.12; letter-spacing: 0; }
+    h2 { margin: 0; font-size: 18px; letter-spacing: 0; }
+    h3 { margin: 0; font-size: 15px; letter-spacing: 0; }
+    .muted { color: var(--muted); }
+    .faint { color: var(--faint); }
+    .grid { display: grid; gap: 12px; }
+    .stats { grid-template-columns: repeat(4, minmax(0, 1fr)); margin: 16px 0; }
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+      box-shadow: var(--shadow-soft);
+    }
+    .panel, .stat-card, .priority-card, .article-card, .ticker-card, .author-card, .source-card, .mini-card {
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow-soft);
+    }
+    .stat-card { padding: 14px; min-height: 92px; position: relative; overflow: hidden; }
+    .stat-card::after {
+      content: "";
+      position: absolute;
+      inset: auto 14px 0 14px;
+      height: 3px;
+      border-radius: 999px 999px 0 0;
+      background: var(--green);
+      opacity: 0.8;
+    }
+    .stat-card.warn::after { background: var(--amber); }
+    .stat-card.info::after { background: var(--blue); }
+    .stat-card.danger::after { background: var(--red); }
+    .stat-label { color: var(--muted); font-size: 12px; font-weight: 740; }
+    .stat-value { font-size: 28px; font-weight: 840; margin-top: 5px; letter-spacing: 0; }
+    .stat-note { color: var(--faint); font-size: 12px; margin-top: 3px; }
+    .page-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 16px;
+    }
+    .page-kicker {
+      color: var(--green-dark);
+      font-size: 12px;
+      font-weight: 820;
+      margin-bottom: 6px;
+    }
+    .page-subtitle { max-width: 760px; color: var(--muted); }
+    .run-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .count-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 6px 13px;
+      border-radius: 999px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      color: var(--green-dark);
+      font-weight: 780;
+      white-space: nowrap;
+      box-shadow: var(--shadow-soft);
+    }
+    .dashboard-grid { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(320px, 0.75fr); gap: 16px; align-items: start; }
+    .section-stack { display: grid; gap: 14px; }
+    .section-head { display: flex; justify-content: space-between; gap: 12px; align-items: center; margin: 24px 0 12px; }
+    .section-note { color: var(--muted); font-size: 13px; }
+    .priority-list { display: grid; gap: 10px; }
+    .priority-card { padding: 15px; display: grid; gap: 6px; border-left: 4px solid var(--green); }
+    .priority-card .rank { color: var(--green-dark); font-size: 12px; font-weight: 820; }
+    .queue-list, .source-list, .timeline-list { display: grid; gap: 10px; }
+    .queue-card, .mini-card { padding: 13px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); }
+    .queue-title { color: var(--ink); font-weight: 780; display: inline-block; margin-bottom: 5px; }
+    .queue-meta { display: flex; flex-wrap: wrap; gap: 7px; color: var(--muted); font-size: 13px; }
+    .queue-summary { color: var(--ink-soft); margin-top: 8px; }
+    .ticker-radar { display: grid; gap: 10px; }
+    .ticker-card { padding: 14px; display: grid; gap: 12px; position: relative; overflow: hidden; }
+    .ticker-card::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 4px; background: var(--green); }
+    .ticker-card.warn::before { background: var(--amber); }
+    .ticker-card.danger::before { background: var(--red); }
+    .ticker-card.info::before { background: var(--blue); }
+    .ticker-card.muted::before { background: var(--line-strong); }
+    .ticker-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .ticker-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+    .ticker-symbol { font-size: 20px; font-weight: 850; color: var(--ink); }
+    .ticker-meta { color: var(--muted); font-size: 12px; margin-top: 2px; }
+    .metrics-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+    .metric { border: 1px solid var(--line); border-radius: 8px; padding: 9px; background: var(--surface-soft); min-width: 0; }
+    .metric-label { color: var(--muted); font-size: 11px; font-weight: 740; }
+    .metric-value { display: block; margin-top: 3px; font-weight: 800; color: var(--ink); overflow-wrap: anywhere; }
+    .metric-value.missing { color: var(--faint); font-weight: 680; }
+    .position-track { height: 8px; border-radius: 999px; background: var(--track); overflow: hidden; }
+    .position-fill { height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--blue), var(--green)); width: var(--bar, 0%); }
+    .condition-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .condition { border-top: 1px solid var(--line); padding-top: 10px; color: var(--ink-soft); }
+    .condition-label { color: var(--muted); font-size: 11px; font-weight: 800; margin-bottom: 4px; }
+    .toolbar {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(126px, 1fr));
+      gap: 10px;
+      align-items: end;
+      margin: 12px 0 12px;
+      padding: 14px;
+      background: var(--toolbar-bg);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow-soft);
+    }
+    .filter-toggle { display: none; }
+    .filter-actions { display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: end; }
+    .quick-filters, .active-filters { display: flex; flex-wrap: wrap; gap: 7px; margin: 10px 0 14px; }
+    label { display: grid; gap: 5px; color: var(--muted); font-size: 12px; font-weight: 650; }
+    input, select, button {
+      width: 100%;
+      min-height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--input-bg);
+      color: var(--ink);
+      padding: 7px 9px;
+      font: inherit;
+    }
+    input:focus, select:focus {
+      outline: 2px solid rgba(17, 120, 111, 0.20);
+      border-color: rgba(17, 120, 111, 0.55);
+    }
+    button {
+      background: var(--green);
+      border-color: var(--green);
+      color: #fff;
+      font-weight: 720;
+      cursor: pointer;
+      box-shadow: 0 10px 22px rgba(17, 120, 111, 0.16);
+    }
+    button:hover { background: var(--green-dark); border-color: var(--green-dark); }
+    .theme-toggle {
+      width: auto;
+      min-height: 34px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--surface);
+      border-color: var(--line);
+      color: var(--ink);
+      box-shadow: none;
+    }
+    .theme-toggle:hover { background: var(--surface-soft); border-color: var(--green); }
+    .secondary-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 7px 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      color: var(--ink);
+      background: var(--surface);
+      font-weight: 650;
+    }
+    .button-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 7px 12px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      color: var(--green-dark);
+      background: var(--surface);
+      font-weight: 760;
+      white-space: nowrap;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+    }
+    th, td { padding: 10px; border-bottom: 1px solid var(--line); vertical-align: top; text-align: left; }
+    th { color: var(--muted); font-size: 12px; font-weight: 760; background: var(--surface-soft); }
+    tbody tr:hover { background: var(--hover-bg); }
+    tr:last-child td { border-bottom: 0; }
+    .chips { display: flex; flex-wrap: wrap; gap: 5px; }
+    .chip { display: inline-flex; align-items: center; min-height: 24px; border-radius: 999px; padding: 2px 8px; background: var(--chip); color: var(--ink-soft); font-size: 12px; font-weight: 720; border: 1px solid transparent; }
+    .chip.good, .chip.strong { background: var(--green-soft); color: var(--green-dark); }
+    .chip.warn { background: var(--amber-soft); color: var(--amber-ink); }
+    .chip.danger { background: var(--red-soft); color: var(--red-ink); }
+    .chip.info { background: var(--blue-soft); color: var(--blue-ink); }
+    .chip.muted { background: var(--surface-soft); color: var(--muted); }
+    .chip.ticker { background: var(--chip); color: var(--ink); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 800; }
+    a.chip:hover, .button-link:hover { border-color: var(--green); }
+    .article-title { font-weight: 800; color: var(--ink); }
+    .summary { max-width: 560px; color: var(--ink-soft); }
+    .article-feed { display: grid; gap: 12px; }
+    .article-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(250px, 0.36fr);
+      gap: 18px;
+      padding: 16px;
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+    }
+    .article-card::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 5px;
+      background: var(--green);
+    }
+    .article-card.warn::before { background: var(--amber); }
+    .article-card.danger::before { background: var(--red); }
+    .article-card.info::before { background: var(--blue); }
+    .article-card.muted::before { background: var(--line-strong); }
+    .article-card:hover {
+      border-color: rgba(17, 120, 111, 0.34);
+      box-shadow: var(--shadow);
+      transform: translateY(-1px);
+      transition: transform 140ms ease, box-shadow 140ms ease, border-color 140ms ease;
+    }
+    .article-main { min-width: 0; padding-left: 4px; }
+    .article-side {
+      display: grid;
+      align-content: start;
+      gap: 10px;
+      padding-left: 14px;
+      border-left: 1px solid var(--line);
+    }
+    .article-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 7px 0 10px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .article-summary { color: var(--ink-soft); max-width: 760px; }
+    .side-label {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 760;
+      text-transform: uppercase;
+    }
+    .side-value { font-weight: 680; }
+    .read-note { color: var(--ink-soft); font-size: 13px; }
+    .read-note.compact { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    .authors-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .author-card { padding: 15px; display: grid; gap: 12px; }
+    .author-top { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+    .author-name { font-size: 17px; font-weight: 820; color: var(--ink); }
+    .author-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+    .source-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 16px 0; }
+    .source-card { padding: 14px; display: grid; gap: 8px; }
+    .source-title { font-size: 13px; color: var(--muted); font-weight: 760; }
+    .source-value { font-size: 18px; font-weight: 840; }
+    .health-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr); gap: 16px; align-items: start; }
+    .source-item { padding: 13px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); display: grid; gap: 7px; }
+    .timeline-item { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+    .timeline-item:last-child { border-bottom: 0; }
+    .empty { text-align: center; color: var(--muted); padding: 28px; }
+    .login-wrap { min-height: 100vh; display: grid; place-items: center; padding: 20px; }
+    .login-box { width: min(420px, 100%); }
+    .error { background: var(--red-soft); color: var(--red); border: 1px solid var(--line); padding: 10px; border-radius: 6px; margin-bottom: 12px; }
+    .notice { background: var(--surface-soft); border: 1px solid var(--line); padding: 10px; border-radius: 6px; margin: 12px 0; color: var(--ink-soft); }
+    .share-box { display: grid; gap: 5px; margin: 12px 0 0; }
+    .share-url { display: block; overflow-wrap: anywhere; color: var(--green-dark); font-weight: 700; }
+    .report-pre {
+      margin: 12px 0 0;
+      padding: 14px;
+      max-height: 520px;
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface-soft);
+      color: var(--ink-soft);
+      white-space: pre-wrap;
+      font: 13px/1.55 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .article-points { margin: 9px 0 0; padding-left: 18px; color: var(--ink-soft); }
+    .article-points li + li { margin-top: 4px; }
+    .run-list { display: grid; gap: 10px; }
+    .run-card { padding: 14px; display: flex; justify-content: space-between; gap: 14px; align-items: flex-start; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); box-shadow: var(--shadow-soft); }
+    .run-card-main { min-width: 0; display: grid; gap: 6px; }
+    .run-title { color: var(--ink); font-weight: 820; font-size: 16px; }
+    .run-card-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 7px; }
+    @media (max-width: 900px) {
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .toolbar { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .topbar { align-items: flex-start; flex-direction: column; }
+      .top-actions { width: 100%; justify-content: space-between; }
+      .dashboard-grid, .health-grid { grid-template-columns: 1fr; }
+      .ticker-grid, .authors-grid, .source-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .article-card { grid-template-columns: 1fr; }
+      .article-side { border-left: 0; border-top: 1px solid var(--line); padding-left: 0; padding-top: 12px; }
+      .page-head { align-items: flex-start; flex-direction: column; }
+    }
+    @media (max-width: 640px) {
+      main { padding: 14px; }
+      h1 { font-size: 28px; }
+      .topbar { gap: 10px; padding: 12px 14px; }
+      nav { justify-content: flex-start; width: 100%; }
+      .top-actions { order: 3; }
+      .stats, .ticker-grid, .authors-grid, .source-grid, .metrics-row, .condition-grid { grid-template-columns: 1fr; }
+      .filter-toggle { display: inline-flex; width: auto; margin: 4px 0 10px; background: var(--green); border-color: var(--green); color: #fff; }
+      .toolbar { display: none; grid-template-columns: 1fr; margin-top: 0; }
+      .toolbar.open { display: grid; }
+      .filter-actions { grid-template-columns: 1fr; }
+      table { display: block; overflow-x: auto; }
+      .article-card { padding: 14px; }
+      .article-side { gap: 8px; }
+      .read-note.compact { -webkit-line-clamp: 2; }
+      .run-card { display: grid; }
+      .run-card-actions { justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">美股專家觀點</div>
+    <nav><a class="" href="/us-expert-dashboard-site/">今日</a><a class="active" href="/us-expert-dashboard-site/runs">每日</a><a class="" href="/us-expert-dashboard-site/articles">文章庫</a><a class="" href="/us-expert-dashboard-site/tickers">標的</a><a class="" href="/us-expert-dashboard-site/authors">作者</a><a class="" href="/us-expert-dashboard-site/sources">來源</a></nav>
+    <div class="top-actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="切換暗黑模式">
+        <span class="theme-icon" data-theme-icon>◐</span>
+        <span data-theme-label>暗黑</span>
+      </button>
+      <span class="logout">開發模式</span>
+    </div>
+  </header>
+  <main>
+    <div class="page-head">
+      <div>
+        <div class="page-kicker">每日固定頁</div>
+        <h1>2026-06-22 美股專家觀點摘要</h1>
+        <div class="page-subtitle">時間窗 2026-06-21 20:11:21 Asia/Taipei 至 2026-06-22 20:11:21 Asia/Taipei。付費牆文章只採公開可見內容，不推測隱藏段落。</div>
+        <div class="run-meta">
+          <span class="chip info">執行 2026-06-22 20:11:21 Asia/Taipei</span>
+          <span class="chip info">Slack delivered</span>
+        </div>
+        <div class="share-box">
+          <div class="side-label">固定連結</div>
+          <a class="share-url" href="https://m6ru4ul6.github.io/us-expert-dashboard-site/runs/202/">https://m6ru4ul6.github.io/us-expert-dashboard-site/runs/202/</a>
+        </div>
+      </div>
+      <div class="run-card-actions">
+        <a class="button-link" href="/us-expert-dashboard-site/runs">所有每日摘要</a>
+        <a class="button-link" href="/us-expert-dashboard-site/articles?start=2026-06-21&amp;end=2026-06-22">本輪文章</a>
+      </div>
+    </div>
+    <div class="grid stats">
+      <div class="stat-card"><div class="stat-label">本輪文章</div><div class="stat-value">4</div><div class="stat-note">3 位作者</div></div>
+      <div class="stat-card danger"><div class="stat-label">需要親讀</div><div class="stat-value">2</div><div class="stat-note">優先打開原文</div></div>
+      <div class="stat-card info"><div class="stat-label">追蹤標的</div><div class="stat-value">6</div><div class="stat-note">含市場快篩</div></div>
+      <div class="stat-card warn"><div class="stat-label">全文可讀</div><div class="stat-value">3</div><div class="stat-note">其餘只看公開面</div></div>
+    </div>
+    <section class="section-stack">
+      <div class="section-head"><div><h2>今日研究優先級</h2><div class="section-note">從本輪完整報告解析而來。</div></div></div>
+      <div class="priority-list">
+        <article class="priority-card">
+          <div class="rank">重點 1</div>
+          <h3>半導體上游與 TSM 的框架型多頭</h3>
+          <div class="muted">Michael 把資金面轉正、AI capex 延續與台積電稀缺性綁在一起，這是本輪最完整、可延伸到資金配置的 thesis。</div>
+        </article>
+        
+        <article class="priority-card">
+          <div class="rank">重點 2</div>
+          <h3>BROS 的高速展店能否撐住高估值</h3>
+          <div class="muted">Skilled Driver 的個股論點最完整，接下來應驗證新店節奏、walk-up 店型與直營利潤率能否同時成立。</div>
+        </article>
+        
+        <article class="priority-card">
+          <div class="rank">重點 3</div>
+          <h3>宏觀 buy-the-dip 是否仍有效</h3>
+          <div class="muted">Uncle 的季末/半年末流向框架與 Michael 的 8,600 點邏輯方向一致，但兩者都建立在地緣衝突屬暫時性衝擊。</div>
+        </article>
+        </div>
+      <div class="section-head"><div><h2>逐篇摘要</h2><div class="section-note">Slack 不再塞全文；完整逐篇內容集中在這裡。</div></div></div>
+      <div class="article-feed">
+            <article class="article-card warn">
+              <div class="article-main">
+                <a class="article-title" href="https://unclestocknotes.substack.com/p/260619-0621-substack" target="_blank" rel="noreferrer">每日重點 260619-0621 Substack 大叔留言重點</a>
+                <div class="article-meta">
+                  <span>大叔美股筆記 Uncle Stock Notes</span>
+                  <span>2026-06-22 15:34 Asia/Taipei</span>
+                </div>
+                <ul class="article-points"><li>作者明講內容來自 6/19-6/21 的聊天留言整理，沒提到的股票不做揣測。</li><li>地緣戰爭被視為短期衝擊，市場通常約一個月會逐步消化負面情緒並翻正。</li><li>作者以 2 月開戰、3 月底見底為例，認為戰爭造成的「黃金坑」往往後續會被修復。</li><li>即使戰爭延續、停滯性通膨仍可能浮現，長線方向仍偏向股市向上，但前提是先活下去。</li><li>Scott Rubner / Citadel Securities 的 GMI 報告指出，月底、季末與上半年末再平衡會讓未來兩週更受資金流主導、波動更大。</li><li>七月向來是美股偏強月份，新資金與動能重新進場後，作者認為最小阻力方向仍是震盪走高與 buy the dip。</li></ul>
+              </div>
+              <aside class="article-side">
+                <div class="chips">
+                  <span class="chip warn">付費牆預覽</span>
+                  <span class="chip info">偏多</span>
+                  <span class="chip info">波段</span>
+                </div>
+                <div>
+                  <div class="side-label">操作</div>
+                  <div class="side-value">回檔買</div>
+                </div>
+                <div>
+                  <div class="side-label">標的</div>
+                  <div class="chips"><span class="chip muted">未明確</span></div>
+                </div>
+                <div>
+                  <div class="side-label">親讀</div>
+                  <div class="chips"><span class="chip warn">可略讀</span></div>
+                  <div class="read-note">preview 已足夠掌握宏觀節奏；若你想看完整留言脈絡再補原文。</div>
+                </div>
+              </aside>
+            </article>
+            
+            <article class="article-card danger">
+              <div class="article-main">
+                <a class="article-title" href="https://skilleddriver.substack.com/p/bros" target="_blank" rel="noreferrer">BROS (增加信念）</a>
+                <div class="article-meta">
+                  <span>Skilled Driver</span>
+                  <span>2026-06-22 12:21 Asia/Taipei</span>
+                </div>
+                <ul class="article-points"><li>作者把 Dutch Bros 描述為正處於極其激進的擴張週期。</li><li>公司目標在 2029 年把店數從 2026 年初約 1,136 家拉高到 2,029 家，等於未來 3 到 4 年幾乎翻倍。</li><li>2026 全年開店目標已上修到至少 181-185 家，單是 2026 年第一季就已開出 41 家。</li><li>TAM 從原先 4,000 家大幅上修到 7,000 家，顯示管理層對長線滲透率更積極。</li><li>展店策略包含先做區域密度的堡壘策略，重點放在德州、佛州、亞利桑那與中西部。</li><li>公司正在驗證高密度城市的新店型；洛杉磯 walk-up 店帶來約 3 倍於系統平均的線上點單量。</li><li>公司提高直營比重並可能選擇性回購加盟店，希望把單店經濟和直營貢獻利潤率穩在約 30%。</li><li>風險在於量身打造租賃合約墊高前期成本、阿拉比卡原料波動與高本益比估值壓力。</li></ul>
+              </div>
+              <aside class="article-side">
+                <div class="chips">
+                  <span class="chip good">全文</span>
+                  <span class="chip info">偏多</span>
+                  <span class="chip info">中長期</span>
+                </div>
+                <div>
+                  <div class="side-label">操作</div>
+                  <div class="side-value">續抱</div>
+                </div>
+                <div>
+                  <div class="side-label">標的</div>
+                  <div class="chips"><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=BROS">BROS</a></div>
+                </div>
+                <div>
+                  <div class="side-label">親讀</div>
+                  <div class="chips"><span class="chip danger">需要</span></div>
+                  <div class="read-note">因為展店節奏、店型驗證與利潤率假設直接影響你能否承受高估值。</div>
+                </div>
+              </aside>
+            </article>
+            
+            <article class="article-card warn">
+              <div class="article-main">
+                <a class="article-title" href="https://skilleddriver.substack.com/p/vs" target="_blank" rel="noreferrer">分享 ： 貝葉斯 vs. 斯多葛</a>
+                <div class="article-meta">
+                  <span>Skilled Driver</span>
+                  <span>2026-06-22 06:01 Asia/Taipei</span>
+                </div>
+                <ul class="article-points"><li>作者主張所有投資判斷都應該像機率一樣，會隨新證據更新，而不是固定信念。</li><li>用癌症篩檢的例子說明：先驗機率、檢測準確率與偽陽性率必須一起看，不能只看單一訊號。</li><li>Bayesian 精神是「舊認知 × 新證據 -&gt; 新認知」，並持續滾動更新。</li><li>在 AI 與資訊爆炸的環境下，常見錯誤是完全不更新，或被每一則新消息拖著走。</li><li>作者認為正確做法是依證據強弱調整信心權重，而不是 0/1 式翻多翻空。</li><li>Stoicism 用來管理行動層面，聚焦能控制的判斷、態度、選擇與努力。</li><li>TTD、SMR、CAVA 被拿來當作市場噪音的例子，作者強調過程紀律比短線輿論更重要。</li></ul>
+              </div>
+              <aside class="article-side">
+                <div class="chips">
+                  <span class="chip good">全文</span>
+                  <span class="chip info">無明確立場</span>
+                  <span class="chip info">中長期</span>
+                </div>
+                <div>
+                  <div class="side-label">操作</div>
+                  <div class="side-value">觀望</div>
+                </div>
+                <div>
+                  <div class="side-label">標的</div>
+                  <div class="chips"><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=CAVA">CAVA</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=SMR">SMR</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=TTD">TTD</a></div>
+                </div>
+                <div>
+                  <div class="side-label">親讀</div>
+                  <div class="chips"><span class="chip warn">可略讀</span></div>
+                  <div class="read-note">這篇是方法論校準，摘要已覆蓋核心觀念。</div>
+                </div>
+              </aside>
+            </article>
+            
+            <article class="article-card danger">
+              <div class="article-main">
+                <a class="article-title" href="https://michaelmchang.substack.com/p/18" target="_blank" rel="noreferrer">解密投資架構：18 個字看懂市場的頂層邏輯</a>
+                <div class="article-meta">
+                  <span>Michael M. Chang</span>
+                  <span>2026-06-22 16:15 Asia/Taipei</span>
+                </div>
+                <ul class="article-points"><li>作者認為 2026 年投資結果差異主要來自投資架構，而不是事後挑到哪些好股票。</li><li>他用 2022 年台積電的例子說明：即使 EPS 成長 50%，當聯準會進入激進升息週期，股價仍可能與基本面脫鉤。</li><li>台股與美股高度連動，作者認為理解美國資本市場的運作機制，是判讀台灣與美國風險資產的根基。</li><li>他把多年方法濃縮成 18 個字：先資金、後經濟、再公司；體質好、獲利高、價格低。</li><li>「資金」代表重大事件、貨幣政策與財政政策；當資金面發威時，其他因子都要退場。</li><li>作者用 1995/2019/2024 的預防式降息經驗，支持在市場回調 3% 時逢低布局，而不是等到基本面全都看清才動手。</li><li>ISRG 被當作具安全邊際的歷史案例；AI 超級周期則被拆成電力、晶片、資料中心、模型、應用五層。</li><li>在半導體中，作者把台積電列為稀缺性高、競爭少、獲利強且價格仍合理的首選，並提到曾持續加碼。</li><li>在他看來，美伊衝突屬暫時性衝擊，AI capex 仍在，S&amp;P 500 第一季獲利高於預期，因此把未來 12 個月 S&amp;P 500 目標從 8,400 點上修到 8,600 點。</li></ul>
+              </div>
+              <aside class="article-side">
+                <div class="chips">
+                  <span class="chip good">全文</span>
+                  <span class="chip info">偏多</span>
+                  <span class="chip info">中長期</span>
+                </div>
+                <div>
+                  <div class="side-label">操作</div>
+                  <div class="side-value">續抱</div>
+                </div>
+                <div>
+                  <div class="side-label">標的</div>
+                  <div class="chips"><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=ISRG">ISRG</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=TSM">TSM</a></div>
+                </div>
+                <div>
+                  <div class="side-label">親讀</div>
+                  <div class="chips"><span class="chip danger">需要</span></div>
+                  <div class="read-note">因為這篇是完整投資框架與資金配置邏輯，會影響你接下來幾週的研究排序。</div>
+                </div>
+              </aside>
+            </article>
+            </div>
+      <div class="section-head"><div><h2>標的快篩</h2><div class="section-note">研究級分類，不代表自動下單訊號。</div></div></div>
+      <div class="ticker-grid">
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=BROS">BROS</a>
+                  <div class="ticker-meta">市場 Pre-market｜2026-06-22 19:43 Asia/Taipei</div>
+                </div>
+                <span class="chip good">僅適合原持股續抱或加倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$70.50</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+7.33%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-1.70%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.59</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 98%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>開盤後若仍能守住 6/18 regular close $70.72 附近，代表高估值擴張敘事尚未被市場否定。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>失守 6/18 低點 $66.87 並伴隨量增，代表市場開始重新定價展店與利潤率風險。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=TSM">TSM</a>
+                  <div class="ticker-meta">市場 Pre-market｜2026-06-22 20:03 Asia/Taipei</div>
+                </div>
+                <span class="chip good">僅適合原持股續抱或加倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$474.05</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+9.01%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">+1.90%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">2.00</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 100%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>若開盤後仍能站穩 6/18 高點 $465.22 上方，代表盤前突破被市場接受。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若開盤後跌回 6/18 regular close $462.12 下方且走勢轉弱，代表追價動能不足。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card muted">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=CAVA">CAVA</a>
+                  <div class="ticker-meta">市場 Pre-market｜2026-06-22 19:47 Asia/Taipei</div>
+                </div>
+                <span class="chip muted">資料不足</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$89.09</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-1.99%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-3.50%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.00</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 96%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>不適用；作者僅把 CAVA 當作市場噪音案例，沒有提供公司層 thesis。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>不適用；需先補齊基本面與催化研究。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card muted">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=ISRG">ISRG</a>
+                  <div class="ticker-meta">市場 Pre-market｜2026-06-22 19:48 Asia/Taipei</div>
+                </div>
+                <span class="chip muted">資料不足</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$404.11</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-1.04%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-9.71%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.65</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 90%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>不適用；本篇只把 ISRG 當作歷史案例，未提供當前 thesis。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>不適用；需先補齊最新公司研究與催化。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card muted">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=SMR">SMR</a>
+                  <div class="ticker-meta">市場 Pre-market｜2026-06-22 20:04 Asia/Taipei</div>
+                </div>
+                <span class="chip muted">資料不足</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$11.62</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+18.71%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-18.74%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.65</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 81%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>不適用；作者僅把 SMR 當作市場噪音案例，沒有提供公司層 thesis。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>不適用；需先補齊基本面與催化研究。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card muted">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=TTD">TTD</a>
+                  <div class="ticker-meta">市場 Pre-market｜2026-06-22 20:01 Asia/Taipei</div>
+                </div>
+                <span class="chip muted">資料不足</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$18.46</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-3.99%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-21.68%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">2.22</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 78%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>不適用；作者僅把 TTD 當作市場噪音案例，沒有提供公司層 thesis。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>不適用；需先補齊基本面與催化研究。</div>
+              </div>
+            </article>
+            </div>
+      <div class="section-head"><div><h2>來源檢查</h2><div class="section-note">用來判斷本輪資料可信度與限制。</div></div></div>
+      <div class="source-list">
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>大叔美股筆記 Uncle Stock Notes</h3>
+            <span class="chip warn">feed fresh 抓取成功（HTTP 200）；過去 24 小時 1 篇窗內文章，公開頁與 RSS 皆只看到 preview，標示付費牆/僅公開預覽。</span>
+          </div>
+          <div class="muted">大叔美股筆記 Uncle Stock Notes：feed fresh 抓取成功（HTTP 200）；過去 24 小時 1 篇窗內文章，公開頁與 RSS 皆只看到 preview，標示付費牆/僅公開預覽。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>Skilled Driver</h3>
+            <span class="chip good">feed fresh 抓取成功（HTTP 200）；過去 24 小時 2 篇窗內文章，兩篇皆已取得全文。</span>
+          </div>
+          <div class="muted">Skilled Driver：feed fresh 抓取成功（HTTP 200）；過去 24 小時 2 篇窗內文章，兩篇皆已取得全文。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>Michael M. Chang</h3>
+            <span class="chip good">feed fresh 抓取成功（HTTP 200）；過去 24 小時 1 篇窗內文章，已取得全文。</span>
+          </div>
+          <div class="muted">Michael M. Chang：feed fresh 抓取成功（HTTP 200）；過去 24 小時 1 篇窗內文章，已取得全文。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>Raycat</h3>
+            <span class="chip good">feed fresh 抓取成功（HTTP 200）；過去 24 小時無新內容。</span>
+          </div>
+          <div class="muted">Raycat：feed fresh 抓取成功（HTTP 200）；過去 24 小時無新內容。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>補充公開搜尋</h3>
+            <span class="chip info">以 Bing RSS 對 Substack 做 fresh 搜尋，但回傳結果以噪音頁與非 Substack 站點為主，未找到可高信度採納的額外美股向 Substack 文章。</span>
+          </div>
+          <div class="muted">補充公開搜尋：以 Bing RSS 對 Substack 做 fresh 搜尋，但回傳結果以噪音頁與非 Substack 站點為主，未找到可高信度採納的額外美股向 Substack 文章。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>市場資料</h3>
+            <span class="chip info">以 StockAnalysis overview/history（fresh 2026-06-22） fresh 抓取；最新 regular session 公開資料時間為 2026-06-18 EDT（2026-06-19 04:00 Asia/Taipei），盤前資料時間介於 2026-06-22 19:43-20:04 Asia/Taipei。</span>
+          </div>
+          <div class="muted">市場資料：以 StockAnalysis overview/history（fresh 2026-06-22） fresh 抓取；最新 regular session 公開資料時間為 2026-06-18 EDT（2026-06-19 04:00 Asia/Taipei），盤前資料時間介於 2026-06-22 19:43-20:04 Asia/Taipei。</div>
+        </article>
+        </div>
+      <details class="mini-card">
+        <summary><strong>完整 Markdown 報告</strong></summary>
+        <pre class="report-pre">[來源檢查]
+- 大叔美股筆記 Uncle Stock Notes：feed fresh 抓取成功（HTTP 200）；過去 24 小時 1 篇窗內文章，公開頁與 RSS 皆只看到 preview，標示付費牆/僅公開預覽。
+- Skilled Driver：feed fresh 抓取成功（HTTP 200）；過去 24 小時 2 篇窗內文章，兩篇皆已取得全文。
+- Michael M. Chang：feed fresh 抓取成功（HTTP 200）；過去 24 小時 1 篇窗內文章，已取得全文。
+- Raycat：feed fresh 抓取成功（HTTP 200）；過去 24 小時無新內容。
+- 補充公開搜尋：以 Bing RSS 對 Substack 做 fresh 搜尋，但回傳結果以噪音頁與非 Substack 站點為主，未找到可高信度採納的額外美股向 Substack 文章。
+- 市場資料：以 StockAnalysis overview/history（fresh 2026-06-22） fresh 抓取；最新 regular session 公開資料時間為 2026-06-18 EDT（2026-06-19 04:00 Asia/Taipei），盤前資料時間介於 2026-06-22 19:43-20:04 Asia/Taipei。
+
+[逐篇摘要]
+1. 大叔美股筆記 Uncle Stock Notes｜每日重點 260619-0621 Substack 大叔留言重點
+- 作者：大叔美股筆記 Uncle Stock Notes
+- 來源：Substack 文章
+- 標題：每日重點 260619-0621 Substack 大叔留言重點
+- 發布時間：2026-06-22 15:34 Asia/Taipei
+- 來源狀態：付費牆/僅公開預覽
+- 連結：https://unclestocknotes.substack.com/p/260619-0621-substack
+- 立場：偏多
+- 時間框架：波段
+- 摘要：
+1. 作者明講內容來自 6/19-6/21 的聊天留言整理，沒提到的股票不做揣測。
+2. 地緣戰爭被視為短期衝擊，市場通常約一個月會逐步消化負面情緒並翻正。
+3. 作者以 2 月開戰、3 月底見底為例，認為戰爭造成的「黃金坑」往往後續會被修復。
+4. 即使戰爭延續、停滯性通膨仍可能浮現，長線方向仍偏向股市向上，但前提是先活下去。
+5. Scott Rubner / Citadel Securities 的 GMI 報告指出，月底、季末與上半年末再平衡會讓未來兩週更受資金流主導、波動更大。
+6. 七月向來是美股偏強月份，新資金與動能重新進場後，作者認為最小阻力方向仍是震盪走高與 buy the dip。
+- 明確提到的標的：未明確
+- 明確提到的族群：大盤、資金流、地緣風險
+- 催化因素：地緣衝突、月底/季末/半年末再平衡、7 月季節性資金回流
+- 操作建議：回檔買
+- 風險或保留條件：若戰事升級、停滯性通膨惡化，流向主導的短多節奏可能被打斷。
+- 我是否需要親自讀原文：可略讀，preview 已足夠掌握宏觀節奏；若你想看完整留言脈絡再補原文。
+
+2. Skilled Driver｜BROS (增加信念）
+- 作者：Skilled Driver
+- 來源：Substack 文章
+- 標題：BROS (增加信念）
+- 發布時間：2026-06-22 12:21 Asia/Taipei
+- 來源狀態：已取得全文
+- 連結：https://skilleddriver.substack.com/p/bros
+- 立場：偏多
+- 時間框架：中長期
+- 摘要：
+1. 作者把 Dutch Bros 描述為正處於極其激進的擴張週期。
+2. 公司目標在 2029 年把店數從 2026 年初約 1,136 家拉高到 2,029 家，等於未來 3 到 4 年幾乎翻倍。
+3. 2026 全年開店目標已上修到至少 181-185 家，單是 2026 年第一季就已開出 41 家。
+4. TAM 從原先 4,000 家大幅上修到 7,000 家，顯示管理層對長線滲透率更積極。
+5. 展店策略包含先做區域密度的堡壘策略，重點放在德州、佛州、亞利桑那與中西部。
+6. 公司正在驗證高密度城市的新店型；洛杉磯 walk-up 店帶來約 3 倍於系統平均的線上點單量。
+7. 公司提高直營比重並可能選擇性回購加盟店，希望把單店經濟和直營貢獻利潤率穩在約 30%。
+8. 風險在於量身打造租賃合約墊高前期成本、阿拉比卡原料波動與高本益比估值壓力。
+- 明確提到的標的：BROS
+- 明確提到的族群：餐飲連鎖、消費成長股
+- 催化因素：新店數上修、walk-up 店型驗證、AUV 提升、直營店利潤率改善
+- 操作建議：續抱
+- 風險或保留條件：展店執行若失速、原料成本續揚或高估值被重估，股價容易劇烈修正。
+- 我是否需要親自讀原文：需要，因為展店節奏、店型驗證與利潤率假設直接影響你能否承受高估值。
+
+3. Skilled Driver｜分享 ： 貝葉斯 vs. 斯多葛
+- 作者：Skilled Driver
+- 來源：Substack 文章
+- 標題：分享 ： 貝葉斯 vs. 斯多葛
+- 發布時間：2026-06-22 06:01 Asia/Taipei
+- 來源狀態：已取得全文
+- 連結：https://skilleddriver.substack.com/p/vs
+- 立場：無明確立場
+- 時間框架：中長期
+- 摘要：
+1. 作者主張所有投資判斷都應該像機率一樣，會隨新證據更新，而不是固定信念。
+2. 用癌症篩檢的例子說明：先驗機率、檢測準確率與偽陽性率必須一起看，不能只看單一訊號。
+3. Bayesian 精神是「舊認知 × 新證據 -&gt; 新認知」，並持續滾動更新。
+4. 在 AI 與資訊爆炸的環境下，常見錯誤是完全不更新，或被每一則新消息拖著走。
+5. 作者認為正確做法是依證據強弱調整信心權重，而不是 0/1 式翻多翻空。
+6. Stoicism 用來管理行動層面，聚焦能控制的判斷、態度、選擇與努力。
+7. TTD、SMR、CAVA 被拿來當作市場噪音的例子，作者強調過程紀律比短線輿論更重要。
+- 明確提到的標的：TTD, SMR, CAVA
+- 明確提到的族群：投資方法論、情緒管理
+- 催化因素：新證據、新聞流、情緒波動
+- 操作建議：觀望
+- 風險或保留條件：若只有哲學框架、沒有回到公司與產業研究，容易把紀律誤用成固執。
+- 我是否需要親自讀原文：可略讀，這篇是方法論校準，摘要已覆蓋核心觀念。
+
+4. Michael M. Chang｜解密投資架構：18 個字看懂市場的頂層邏輯
+- 作者：Michael M. Chang
+- 來源：Substack 文章
+- 標題：解密投資架構：18 個字看懂市場的頂層邏輯
+- 發布時間：2026-06-22 16:15 Asia/Taipei
+- 來源狀態：已取得全文
+- 連結：https://michaelmchang.substack.com/p/18
+- 立場：偏多
+- 時間框架：中長期
+- 摘要：
+1. 作者認為 2026 年投資結果差異主要來自投資架構，而不是事後挑到哪些好股票。
+2. 他用 2022 年台積電的例子說明：即使 EPS 成長 50%，當聯準會進入激進升息週期，股價仍可能與基本面脫鉤。
+3. 台股與美股高度連動，作者認為理解美國資本市場的運作機制，是判讀台灣與美國風險資產的根基。
+4. 他把多年方法濃縮成 18 個字：先資金、後經濟、再公司；體質好、獲利高、價格低。
+5. 「資金」代表重大事件、貨幣政策與財政政策；當資金面發威時，其他因子都要退場。
+6. 作者用 1995/2019/2024 的預防式降息經驗，支持在市場回調 3% 時逢低布局，而不是等到基本面全都看清才動手。
+7. ISRG 被當作具安全邊際的歷史案例；AI 超級周期則被拆成電力、晶片、資料中心、模型、應用五層。
+8. 在半導體中，作者把台積電列為稀缺性高、競爭少、獲利強且價格仍合理的首選，並提到曾持續加碼。
+9. 在他看來，美伊衝突屬暫時性衝擊，AI capex 仍在，S&amp;P 500 第一季獲利高於預期，因此把未來 12 個月 S&amp;P 500 目標從 8,400 點上修到 8,600 點。
+- 明確提到的標的：TSM, ISRG
+- 明確提到的族群：半導體、AI 基礎設施、醫療器械、大盤
+- 催化因素：聯準會政策、財政政策、S&amp;P 500 獲利超預期、AI 資本支出延續
+- 操作建議：續抱
+- 風險或保留條件：若資金面重新轉負、戰事持續擴散或企業獲利動能不如預期，整套框架會先從資金面被推翻。
+- 我是否需要親自讀原文：需要，因為這篇是完整投資框架與資金配置邏輯，會影響你接下來幾週的研究排序。
+
+[Activity 摘要]
+- 本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。
+- 來源狀態：使用者設定暫停
+- 明確提到的標的：不適用
+- 我是否需要親自看全文：不適用
+
+[標的快篩]
+1. BROS
+- 盤前/盤後：盤前 $70.50（2026-06-22 19:43 Asia/Taipei，較 2026-06-19 04:00 Asia/Taipei regular close $70.72 -0.31%）
+- 5日漲跌：+7.33%
+- 20日高點 / 目前價格距高點：$71.72 / -1.70%
+- 量能：06/18 regular 5.70M，20日均量 3.58M，量能比 1.59x
+- 作者角度-財報趨勢：2026 年開店目標上修到 181-185 家，第一季已開 41 家，營運仍處加速擴張期。
+- 作者角度-估值：作者明確提醒 P/E 仍在相對高位，估值耐受度是核心風險。
+- 作者角度-產業趨勢：連鎖咖啡仍在做密度擴張與城市 walk-up 店型驗證，TAM 由 4,000 提到 7,000 家。
+- 作者角度-機構觀點：作者未明確提到。
+- 研究級分類：僅適合原持股續抱或加倉觀察
+- 下一交易日確認條件：開盤後若仍能守住 6/18 regular close $70.72 附近，代表高估值擴張敘事尚未被市場否定。
+- 失效條件：失守 6/18 低點 $66.87 並伴隨量增，代表市場開始重新定價展店與利潤率風險。
+
+2. TSM
+- 盤前/盤後：盤前 $474.05（2026-06-22 20:03 Asia/Taipei，較 2026-06-19 04:00 Asia/Taipei regular close $462.12 +2.58%）
+- 5日漲跌：+9.01%
+- 20日高點 / 目前價格距高點：$465.22 / +1.90%
+- 量能：06/18 regular 25.71M，20日均量 12.85M，量能比 2.00x
+- 作者角度-財報趨勢：作者把半導體列為今年 S&amp;P 500 獲利最強板塊，並把台積電視為獲利與稀缺性兼具的代表。
+- 作者角度-估值：作者把台積電歸類為「價格低」與具安全邊際的股票，曾在過去數月持續加碼。
+- 作者角度-產業趨勢：AI capex 仍延續，資金配置重新回到半導體上游，台積電被視為最核心受益者之一。
+- 作者角度-機構觀點：作者未明確引用外部機構觀點。
+- 研究級分類：僅適合原持股續抱或加倉觀察
+- 下一交易日確認條件：若開盤後仍能站穩 6/18 高點 $465.22 上方，代表盤前突破被市場接受。
+- 失效條件：若開盤後跌回 6/18 regular close $462.12 下方且走勢轉弱，代表追價動能不足。
+
+3. ISRG
+- 盤前/盤後：盤前 $404.11（2026-06-22 19:48 Asia/Taipei，較 2026-06-19 04:00 Asia/Taipei regular close $406.78 -0.66%）
+- 5日漲跌：-1.04%
+- 20日高點 / 目前價格距高點：$447.57 / -9.71%
+- 量能：06/18 regular 4.16M，20日均量 2.52M，量能比 1.65x
+- 作者角度-財報趨勢：作者未明確提到。
+- 作者角度-估值：作者把 ISRG 當作「具有安全邊際」的歷史案例，但本篇沒有更新當前估值框架。
+- 作者角度-產業趨勢：作者未明確提到。
+- 作者角度-機構觀點：作者未明確提到。
+- 研究級分類：資料不足
+- 下一交易日確認條件：不適用；本篇只把 ISRG 當作歷史案例，未提供當前 thesis。
+- 失效條件：不適用；需先補齊最新公司研究與催化。
+
+4. TTD
+- 盤前/盤後：盤前 $18.46（2026-06-22 20:01 Asia/Taipei，較 2026-06-19 04:00 Asia/Taipei regular close $18.51 -0.27%）
+- 5日漲跌：-3.99%
+- 20日高點 / 目前價格距高點：$23.57 / -21.68%
+- 量能：06/18 regular 50.65M，20日均量 22.81M，量能比 2.22x
+- 作者角度-財報趨勢：作者未明確提到。
+- 作者角度-估值：作者未明確提到。
+- 作者角度-產業趨勢：作者未明確提到。
+- 作者角度-機構觀點：作者未明確提到。
+- 研究級分類：資料不足
+- 下一交易日確認條件：不適用；作者僅把 TTD 當作市場噪音案例，沒有提供公司層 thesis。
+- 失效條件：不適用；需先補齊基本面與催化研究。
+
+5. SMR
+- 盤前/盤後：盤前 $11.62（2026-06-22 20:04 Asia/Taipei，較 2026-06-19 04:00 Asia/Taipei regular close $11.74 -1.02%）
+- 5日漲跌：+18.71%
+- 20日高點 / 目前價格距高點：$14.30 / -18.74%
+- 量能：06/18 regular 62.85M，20日均量 38.12M，量能比 1.65x
+- 作者角度-財報趨勢：作者未明確提到。
+- 作者角度-估值：作者未明確提到。
+- 作者角度-產業趨勢：作者未明確提到。
+- 作者角度-機構觀點：作者未明確提到。
+- 研究級分類：資料不足
+- 下一交易日確認條件：不適用；作者僅把 SMR 當作市場噪音案例，沒有提供公司層 thesis。
+- 失效條件：不適用；需先補齊基本面與催化研究。
+
+6. CAVA
+- 盤前/盤後：盤前 $89.09（2026-06-22 19:47 Asia/Taipei，較 2026-06-19 04:00 Asia/Taipei regular close $89.18 -0.10%）
+- 5日漲跌：-1.99%
+- 20日高點 / 目前價格距高點：$92.32 / -3.50%
+- 量能：06/18 regular 2.91M，20日均量 2.92M，量能比 1.00x
+- 作者角度-財報趨勢：作者未明確提到。
+- 作者角度-估值：作者未明確提到。
+- 作者角度-產業趨勢：作者未明確提到。
+- 作者角度-機構觀點：作者未明確提到。
+- 研究級分類：資料不足
+- 下一交易日確認條件：不適用；作者僅把 CAVA 當作市場噪音案例，沒有提供公司層 thesis。
+- 失效條件：不適用；需先補齊基本面與催化研究。
+
+[今日研究優先級]
+1. 半導體上游與 TSM 的框架型多頭：Michael 把資金面轉正、AI capex 延續與台積電稀缺性綁在一起，這是本輪最完整、可延伸到資金配置的 thesis。
+2. BROS 的高速展店能否撐住高估值：Skilled Driver 的個股論點最完整，接下來應驗證新店節奏、walk-up 店型與直營利潤率能否同時成立。
+3. 宏觀 buy-the-dip 是否仍有效：Uncle 的季末/半年末流向框架與 Michael 的 8,600 點邏輯方向一致，但兩者都建立在地緣衝突屬暫時性衝擊。
+
+[值得親自讀]
+1. BROS (增加信念）：確認 2029 店數目標、城市新店型與直營利潤率假設，決定是否把 BROS 放入中長期消費成長觀察名單。
+2. 解密投資架構：18 個字看懂市場的頂層邏輯：確認作者對資金/經濟/公司排序與 AI 配置轉向，決定本週是否提高半導體研究優先級。
+3. 每日重點 260619-0621 Substack 大叔留言重點：若你今天要做大盤節奏判斷，可補看 preview 與 Scott Rubner 引用段落，決定是否接受短線 buy-the-dip 前提。
+
+內容僅供研究整理，不構成投資建議。
+</pre>
+      </details>
+    </section>
+    </main>
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var button = document.querySelector("[data-theme-toggle]");
+      var label = document.querySelector("[data-theme-label]");
+      var icon = document.querySelector("[data-theme-icon]");
+      function currentTheme() {
+        return root.dataset.theme === "dark" ? "dark" : "light";
+      }
+      function render() {
+        var theme = currentTheme();
+        if (label) label.textContent = theme === "dark" ? "淺色" : "暗黑";
+        if (icon) icon.textContent = theme === "dark" ? "☼" : "◐";
+        if (button) button.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
+      }
+      if (button) {
+        button.addEventListener("click", function () {
+          var next = currentTheme() === "dark" ? "light" : "dark";
+          root.dataset.theme = next;
+          try { localStorage.setItem("usExpertTheme", next); } catch (error) {}
+          render();
+        });
+      }
+      render();
+    })();
+  </script>
+</body>
+</html>

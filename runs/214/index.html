@@ -1,0 +1,1652 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-07-03 每日摘要｜美股專家觀點</title>
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("usExpertTheme");
+        if (saved === "dark" || saved === "light") {
+          document.documentElement.dataset.theme = saved;
+        }
+      } catch (error) {}
+    })();
+  </script>
+  <style>
+    :root {
+      --bg: #f3f5f2;
+      --surface: #ffffff;
+      --surface-soft: #f8faf7;
+      --surface-warm: #fffaf0;
+      --card-bg: rgba(255, 255, 255, 0.96);
+      --topbar-bg: rgba(255, 255, 255, 0.9);
+      --toolbar-bg: rgba(255, 255, 255, 0.92);
+      --input-bg: #ffffff;
+      --hover-bg: #fbfdfc;
+      --track: #e5e9e7;
+      --ink-soft: #2f3d39;
+      --ink: #141b1f;
+      --muted: #657177;
+      --faint: #8a969b;
+      --line: #dde3df;
+      --line-strong: #c7d0cc;
+      --green: #0f766e;
+      --green-dark: #0b5c55;
+      --green-soft: #e6f3ee;
+      --amber: #b76b11;
+      --amber-soft: #fff2c7;
+      --amber-ink: #80500c;
+      --red: #b84a3c;
+      --red-soft: #ffe9e5;
+      --red-ink: #8f382f;
+      --blue: #2e6fa3;
+      --blue-soft: #e7f0f8;
+      --blue-ink: #245a84;
+      --slate: #485763;
+      --chip: #eef2f5;
+      --shadow: 0 22px 58px rgba(29, 39, 44, 0.12);
+      --shadow-soft: 0 10px 26px rgba(29, 39, 44, 0.07);
+      --body-bg:
+        linear-gradient(180deg, rgba(231, 242, 238, 0.95) 0, rgba(246, 247, 242, 0.92) 310px, var(--bg) 100%),
+        linear-gradient(135deg, rgba(46, 111, 163, 0.10), rgba(183, 107, 17, 0.07));
+      color-scheme: light;
+    }
+    html[data-theme="dark"] {
+      --bg: #0d1315;
+      --surface: #151d20;
+      --surface-soft: #11181b;
+      --surface-warm: #221b12;
+      --card-bg: rgba(20, 29, 32, 0.96);
+      --topbar-bg: rgba(14, 20, 22, 0.9);
+      --toolbar-bg: rgba(19, 27, 30, 0.94);
+      --input-bg: #101719;
+      --hover-bg: #182224;
+      --track: #263033;
+      --ink-soft: #d1dad6;
+      --ink: #eef5f2;
+      --muted: #a5b2ad;
+      --faint: #7f8d88;
+      --line: #2b383a;
+      --line-strong: #455255;
+      --green: #3fc0ad;
+      --green-dark: #88ded2;
+      --green-soft: #15352f;
+      --amber: #f1b85d;
+      --amber-soft: #3c2b12;
+      --amber-ink: #f8d08a;
+      --red: #ef8b7b;
+      --red-soft: #3b1d19;
+      --red-ink: #ffb2a8;
+      --blue: #83bce6;
+      --blue-soft: #172b3c;
+      --blue-ink: #b8ddff;
+      --slate: #9ba8ae;
+      --chip: #202a2d;
+      --shadow: 0 22px 58px rgba(0, 0, 0, 0.36);
+      --shadow-soft: 0 10px 26px rgba(0, 0, 0, 0.28);
+      --body-bg:
+        radial-gradient(circle at top left, rgba(63, 192, 173, 0.12), transparent 280px),
+        radial-gradient(circle at 90% 8%, rgba(131, 188, 230, 0.10), transparent 260px),
+        linear-gradient(180deg, #111a1c 0, #0d1315 340px, #0b1012 100%);
+      color-scheme: dark;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--body-bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    a { color: var(--green-dark); text-decoration: none; }
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 12px 22px;
+      border-bottom: 1px solid var(--line);
+      background: var(--topbar-bg);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 10px 32px rgba(31, 44, 50, 0.07);
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-weight: 820;
+      letter-spacing: 0;
+      white-space: nowrap;
+    }
+    .brand::before {
+      content: "";
+      width: 13px;
+      height: 13px;
+      border-radius: 4px;
+      background: var(--red);
+      box-shadow: 15px 0 0 var(--green), 30px 0 0 var(--amber);
+    }
+    nav { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; }
+    nav a {
+      min-height: 34px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      color: var(--muted);
+      font-weight: 650;
+    }
+    nav a.active, nav a:hover { background: var(--green-soft); color: var(--green-dark); }
+    .top-actions { display: flex; align-items: center; gap: 10px; }
+    .theme-toggle {
+      width: auto;
+      min-height: 34px;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--ink);
+      box-shadow: none;
+      font-size: 13px;
+      font-weight: 760;
+      white-space: nowrap;
+    }
+    .theme-toggle:hover { border-color: var(--green); background: var(--surface-soft); }
+    .theme-toggle .theme-icon { width: 16px; text-align: center; }
+    .logout { color: var(--muted); font-size: 13px; }
+    main { max-width: 1240px; margin: 0 auto; padding: 28px 20px 42px; }
+    h1 { margin: 0 0 8px; font-size: 34px; line-height: 1.12; letter-spacing: 0; }
+    h2 { margin: 0; font-size: 18px; letter-spacing: 0; }
+    h3 { margin: 0; font-size: 15px; letter-spacing: 0; }
+    .muted { color: var(--muted); }
+    .faint { color: var(--faint); }
+    .grid { display: grid; gap: 12px; }
+    .stats { grid-template-columns: repeat(4, minmax(0, 1fr)); margin: 16px 0; }
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+      box-shadow: var(--shadow-soft);
+    }
+    .panel, .stat-card, .priority-card, .article-card, .ticker-card, .author-card, .source-card, .mini-card {
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow-soft);
+    }
+    .stat-card { padding: 14px; min-height: 92px; position: relative; overflow: hidden; }
+    .stat-card::after {
+      content: "";
+      position: absolute;
+      inset: auto 14px 0 14px;
+      height: 3px;
+      border-radius: 999px 999px 0 0;
+      background: var(--green);
+      opacity: 0.8;
+    }
+    .stat-card.warn::after { background: var(--amber); }
+    .stat-card.info::after { background: var(--blue); }
+    .stat-card.danger::after { background: var(--red); }
+    .stat-label { color: var(--muted); font-size: 12px; font-weight: 740; }
+    .stat-value { font-size: 28px; font-weight: 840; margin-top: 5px; letter-spacing: 0; }
+    .stat-note { color: var(--faint); font-size: 12px; margin-top: 3px; }
+    .page-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 16px;
+    }
+    .page-kicker {
+      color: var(--green-dark);
+      font-size: 12px;
+      font-weight: 820;
+      margin-bottom: 6px;
+    }
+    .page-subtitle { max-width: 760px; color: var(--muted); }
+    .run-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .count-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 6px 13px;
+      border-radius: 999px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      color: var(--green-dark);
+      font-weight: 780;
+      white-space: nowrap;
+      box-shadow: var(--shadow-soft);
+    }
+    .dashboard-grid { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(320px, 0.75fr); gap: 16px; align-items: start; }
+    .section-stack { display: grid; gap: 14px; }
+    .section-head { display: flex; justify-content: space-between; gap: 12px; align-items: center; margin: 24px 0 12px; }
+    .section-note { color: var(--muted); font-size: 13px; }
+    .priority-list { display: grid; gap: 10px; }
+    .priority-card { padding: 15px; display: grid; gap: 6px; border-left: 4px solid var(--green); }
+    .priority-card .rank { color: var(--green-dark); font-size: 12px; font-weight: 820; }
+    .queue-list, .source-list, .timeline-list { display: grid; gap: 10px; }
+    .queue-card, .mini-card { padding: 13px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); }
+    .queue-title { color: var(--ink); font-weight: 780; display: inline-block; margin-bottom: 5px; }
+    .queue-meta { display: flex; flex-wrap: wrap; gap: 7px; color: var(--muted); font-size: 13px; }
+    .queue-summary { color: var(--ink-soft); margin-top: 8px; }
+    .ticker-radar { display: grid; gap: 10px; }
+    .ticker-card { padding: 14px; display: grid; gap: 12px; position: relative; overflow: hidden; }
+    .ticker-card::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 4px; background: var(--green); }
+    .ticker-card.warn::before { background: var(--amber); }
+    .ticker-card.danger::before { background: var(--red); }
+    .ticker-card.info::before { background: var(--blue); }
+    .ticker-card.muted::before { background: var(--line-strong); }
+    .ticker-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .ticker-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+    .ticker-symbol { font-size: 20px; font-weight: 850; color: var(--ink); }
+    .ticker-meta { color: var(--muted); font-size: 12px; margin-top: 2px; }
+    .metrics-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+    .metric { border: 1px solid var(--line); border-radius: 8px; padding: 9px; background: var(--surface-soft); min-width: 0; }
+    .metric-label { color: var(--muted); font-size: 11px; font-weight: 740; }
+    .metric-value { display: block; margin-top: 3px; font-weight: 800; color: var(--ink); overflow-wrap: anywhere; }
+    .metric-value.missing { color: var(--faint); font-weight: 680; }
+    .position-track { height: 8px; border-radius: 999px; background: var(--track); overflow: hidden; }
+    .position-fill { height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--blue), var(--green)); width: var(--bar, 0%); }
+    .condition-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .condition { border-top: 1px solid var(--line); padding-top: 10px; color: var(--ink-soft); }
+    .condition-label { color: var(--muted); font-size: 11px; font-weight: 800; margin-bottom: 4px; }
+    .toolbar {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(126px, 1fr));
+      gap: 10px;
+      align-items: end;
+      margin: 12px 0 12px;
+      padding: 14px;
+      background: var(--toolbar-bg);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow-soft);
+    }
+    .filter-toggle { display: none; }
+    .filter-actions { display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: end; }
+    .quick-filters, .active-filters { display: flex; flex-wrap: wrap; gap: 7px; margin: 10px 0 14px; }
+    label { display: grid; gap: 5px; color: var(--muted); font-size: 12px; font-weight: 650; }
+    input, select, button {
+      width: 100%;
+      min-height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--input-bg);
+      color: var(--ink);
+      padding: 7px 9px;
+      font: inherit;
+    }
+    input:focus, select:focus {
+      outline: 2px solid rgba(17, 120, 111, 0.20);
+      border-color: rgba(17, 120, 111, 0.55);
+    }
+    button {
+      background: var(--green);
+      border-color: var(--green);
+      color: #fff;
+      font-weight: 720;
+      cursor: pointer;
+      box-shadow: 0 10px 22px rgba(17, 120, 111, 0.16);
+    }
+    button:hover { background: var(--green-dark); border-color: var(--green-dark); }
+    .theme-toggle {
+      width: auto;
+      min-height: 34px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--surface);
+      border-color: var(--line);
+      color: var(--ink);
+      box-shadow: none;
+    }
+    .theme-toggle:hover { background: var(--surface-soft); border-color: var(--green); }
+    .secondary-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 7px 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      color: var(--ink);
+      background: var(--surface);
+      font-weight: 650;
+    }
+    .button-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 7px 12px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      color: var(--green-dark);
+      background: var(--surface);
+      font-weight: 760;
+      white-space: nowrap;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+    }
+    th, td { padding: 10px; border-bottom: 1px solid var(--line); vertical-align: top; text-align: left; }
+    th { color: var(--muted); font-size: 12px; font-weight: 760; background: var(--surface-soft); }
+    tbody tr:hover { background: var(--hover-bg); }
+    tr:last-child td { border-bottom: 0; }
+    .chips { display: flex; flex-wrap: wrap; gap: 5px; }
+    .chip { display: inline-flex; align-items: center; min-height: 24px; border-radius: 999px; padding: 2px 8px; background: var(--chip); color: var(--ink-soft); font-size: 12px; font-weight: 720; border: 1px solid transparent; }
+    .chip.good, .chip.strong { background: var(--green-soft); color: var(--green-dark); }
+    .chip.warn { background: var(--amber-soft); color: var(--amber-ink); }
+    .chip.danger { background: var(--red-soft); color: var(--red-ink); }
+    .chip.info { background: var(--blue-soft); color: var(--blue-ink); }
+    .chip.muted { background: var(--surface-soft); color: var(--muted); }
+    .chip.ticker { background: var(--chip); color: var(--ink); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 800; }
+    a.chip:hover, .button-link:hover { border-color: var(--green); }
+    .article-title { font-weight: 800; color: var(--ink); }
+    .summary { max-width: 560px; color: var(--ink-soft); }
+    .article-feed { display: grid; gap: 12px; }
+    .article-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(250px, 0.36fr);
+      gap: 18px;
+      padding: 16px;
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+    }
+    .article-card::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 5px;
+      background: var(--green);
+    }
+    .article-card.warn::before { background: var(--amber); }
+    .article-card.danger::before { background: var(--red); }
+    .article-card.info::before { background: var(--blue); }
+    .article-card.muted::before { background: var(--line-strong); }
+    .article-card:hover {
+      border-color: rgba(17, 120, 111, 0.34);
+      box-shadow: var(--shadow);
+      transform: translateY(-1px);
+      transition: transform 140ms ease, box-shadow 140ms ease, border-color 140ms ease;
+    }
+    .article-main { min-width: 0; padding-left: 4px; }
+    .article-side {
+      display: grid;
+      align-content: start;
+      gap: 10px;
+      padding-left: 14px;
+      border-left: 1px solid var(--line);
+    }
+    .article-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 7px 0 10px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .article-summary { color: var(--ink-soft); max-width: 760px; }
+    .side-label {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 760;
+      text-transform: uppercase;
+    }
+    .side-value { font-weight: 680; }
+    .read-note { color: var(--ink-soft); font-size: 13px; }
+    .read-note.compact { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    .authors-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .author-card { padding: 15px; display: grid; gap: 12px; }
+    .author-top { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+    .author-name { font-size: 17px; font-weight: 820; color: var(--ink); }
+    .author-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+    .source-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 16px 0; }
+    .source-card { padding: 14px; display: grid; gap: 8px; }
+    .source-title { font-size: 13px; color: var(--muted); font-weight: 760; }
+    .source-value { font-size: 18px; font-weight: 840; }
+    .health-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr); gap: 16px; align-items: start; }
+    .source-item { padding: 13px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); display: grid; gap: 7px; }
+    .timeline-item { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+    .timeline-item:last-child { border-bottom: 0; }
+    .empty { text-align: center; color: var(--muted); padding: 28px; }
+    .login-wrap { min-height: 100vh; display: grid; place-items: center; padding: 20px; }
+    .login-box { width: min(420px, 100%); }
+    .error { background: var(--red-soft); color: var(--red); border: 1px solid var(--line); padding: 10px; border-radius: 6px; margin-bottom: 12px; }
+    .notice { background: var(--surface-soft); border: 1px solid var(--line); padding: 10px; border-radius: 6px; margin: 12px 0; color: var(--ink-soft); }
+    .share-box { display: grid; gap: 5px; margin: 12px 0 0; }
+    .share-url { display: block; overflow-wrap: anywhere; color: var(--green-dark); font-weight: 700; }
+    .report-pre {
+      margin: 12px 0 0;
+      padding: 14px;
+      max-height: 520px;
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface-soft);
+      color: var(--ink-soft);
+      white-space: pre-wrap;
+      font: 13px/1.55 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .article-points { margin: 9px 0 0; padding-left: 18px; color: var(--ink-soft); }
+    .article-points li + li { margin-top: 4px; }
+    .run-list { display: grid; gap: 10px; }
+    .run-card { padding: 14px; display: flex; justify-content: space-between; gap: 14px; align-items: flex-start; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); box-shadow: var(--shadow-soft); }
+    .run-card-main { min-width: 0; display: grid; gap: 6px; }
+    .run-title { color: var(--ink); font-weight: 820; font-size: 16px; }
+    .run-card-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 7px; }
+    @media (max-width: 900px) {
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .toolbar { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .topbar { align-items: flex-start; flex-direction: column; }
+      .top-actions { width: 100%; justify-content: space-between; }
+      .dashboard-grid, .health-grid { grid-template-columns: 1fr; }
+      .ticker-grid, .authors-grid, .source-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .article-card { grid-template-columns: 1fr; }
+      .article-side { border-left: 0; border-top: 1px solid var(--line); padding-left: 0; padding-top: 12px; }
+      .page-head { align-items: flex-start; flex-direction: column; }
+    }
+    @media (max-width: 640px) {
+      main { padding: 14px; }
+      h1 { font-size: 28px; }
+      .topbar { gap: 10px; padding: 12px 14px; }
+      nav { justify-content: flex-start; width: 100%; }
+      .top-actions { order: 3; }
+      .stats, .ticker-grid, .authors-grid, .source-grid, .metrics-row, .condition-grid { grid-template-columns: 1fr; }
+      .filter-toggle { display: inline-flex; width: auto; margin: 4px 0 10px; background: var(--green); border-color: var(--green); color: #fff; }
+      .toolbar { display: none; grid-template-columns: 1fr; margin-top: 0; }
+      .toolbar.open { display: grid; }
+      .filter-actions { grid-template-columns: 1fr; }
+      table { display: block; overflow-x: auto; }
+      .article-card { padding: 14px; }
+      .article-side { gap: 8px; }
+      .read-note.compact { -webkit-line-clamp: 2; }
+      .run-card { display: grid; }
+      .run-card-actions { justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">美股專家觀點</div>
+    <nav><a class="" href="/us-expert-dashboard-site/">今日</a><a class="active" href="/us-expert-dashboard-site/runs">每日</a><a class="" href="/us-expert-dashboard-site/articles">文章庫</a><a class="" href="/us-expert-dashboard-site/tickers">標的</a><a class="" href="/us-expert-dashboard-site/authors">作者</a><a class="" href="/us-expert-dashboard-site/sources">來源</a></nav>
+    <div class="top-actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="切換暗黑模式">
+        <span class="theme-icon" data-theme-icon>◐</span>
+        <span data-theme-label>暗黑</span>
+      </button>
+      <span class="logout">開發模式</span>
+    </div>
+  </header>
+  <main>
+    <div class="page-head">
+      <div>
+        <div class="page-kicker">每日固定頁</div>
+        <h1>2026-07-03 美股專家觀點摘要</h1>
+        <div class="page-subtitle">時間窗 2026-07-02 20:02:15 Asia/Taipei 至 2026-07-03 20:02:15 Asia/Taipei。付費牆文章只採公開可見內容，不推測隱藏段落。</div>
+        <div class="run-meta">
+          <span class="chip info">執行 2026-07-03 20:02:15 Asia/Taipei</span>
+          <span class="chip info">Slack delivered</span>
+        </div>
+        <div class="share-box">
+          <div class="side-label">固定連結</div>
+          <a class="share-url" href="https://m6ru4ul6.github.io/us-expert-dashboard-site/runs/214/">https://m6ru4ul6.github.io/us-expert-dashboard-site/runs/214/</a>
+        </div>
+      </div>
+      <div class="run-card-actions">
+        <a class="button-link" href="/us-expert-dashboard-site/runs">所有每日摘要</a>
+        <a class="button-link" href="/us-expert-dashboard-site/articles?start=2026-07-02&amp;end=2026-07-03">本輪文章</a>
+      </div>
+    </div>
+    <div class="grid stats">
+      <div class="stat-card"><div class="stat-label">本輪文章</div><div class="stat-value">7</div><div class="stat-note">5 位作者</div></div>
+      <div class="stat-card danger"><div class="stat-label">需要親讀</div><div class="stat-value">5</div><div class="stat-note">優先打開原文</div></div>
+      <div class="stat-card info"><div class="stat-label">追蹤標的</div><div class="stat-value">16</div><div class="stat-note">含市場快篩</div></div>
+      <div class="stat-card warn"><div class="stat-label">全文可讀</div><div class="stat-value">0</div><div class="stat-note">其餘只看公開面</div></div>
+    </div>
+    <section class="section-stack">
+      <div class="section-head"><div><h2>今日研究優先級</h2><div class="section-note">從本輪完整報告解析而來。</div></div></div>
+      <div class="priority-list">
+        <article class="priority-card">
+          <div class="rank">重點 1</div>
+          <h3>AI compute / neocloud 賣壓是否誤讀</h3>
+          <div class="muted">大叔把本輪 AI / SOX 調整連到 Meta neo-cloud 言論，SemiAnalysis 則反駁 overcapacity 與採購放緩敘事；優先追蹤 META、CRWV、NBIS 與 ORCL 的下一交易日反應。</div>
+        </article>
+        
+        <article class="priority-card">
+          <div class="rank">重點 2</div>
+          <h3>先進封裝、HBM4E、液冷與 CPO</h3>
+          <div class="muted">SemiAnalysis ECTC 與 SEMIVISION 都把 AI package / optical interconnect 推成中長期硬體瓶頸；優先更新 INTC、MRVL、TSM、NVDA、MSFT 的技術地圖。</div>
+        </article>
+        
+        <article class="priority-card">
+          <div class="rank">重點 3</div>
+          <h3>Physical AI / edge AI 併購與軟體現金流股</h3>
+          <div class="muted">大叔 ON / SYNA 是 edge AI 併購線索，High Tech 的 ZM 是 cash-flow + AI optionality 線索；兩者都需要補全文後再進入操作層。</div>
+        </article>
+        </div>
+      <div class="section-head"><div><h2>逐篇摘要</h2><div class="section-note">Slack 不再塞全文；完整逐篇內容集中在這裡。</div></div></div>
+      <div class="article-feed">
+            <article class="article-card danger">
+              <div class="article-main">
+                <a class="article-title" href="https://unclestocknotes.substack.com/p/260702-substack" target="_blank" rel="noreferrer">每日重點 260702 Substack 大叔留言重點</a>
+                <div class="article-meta">
+                  <span>大叔美股筆記 Uncle Stock Notes</span>
+                  <span>2026-07-03 14:21 Asia/Taipei</span>
+                </div>
+                <ul class="article-points"><li>這篇是大叔最高優先級來源的當日留言重點，但公開頁只露出半導體回調段落。</li><li>作者明確提醒不要急著看壞 AI，也不要急著抄底，較安全的做法是等 AI 與 SOX 站穩。</li><li>他把近期下跌歸因於市場把 Meta 計畫做 neo-cloud 算力出租的說法當作調整事件。</li><li>作者觀察到上週資金往其他板塊 rebalancing，下一步要看幾個大型龍頭是否能站穩。</li><li>可行動重點不是買點，而是把 AI / 半導體反彈先視為確認等待狀態。</li></ul>
+              </div>
+              <aside class="article-side">
+                <div class="chips">
+                  <span class="chip warn">付費牆預覽</span>
+                  <span class="chip info">觀望</span>
+                  <span class="chip info">短線</span>
+                </div>
+                <div>
+                  <div class="side-label">操作</div>
+                  <div class="side-value">觀望</div>
+                </div>
+                <div>
+                  <div class="side-label">標的</div>
+                  <div class="chips"><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=META">META</a></div>
+                </div>
+                <div>
+                  <div class="side-label">親讀</div>
+                  <div class="chips"><span class="chip danger">需要</span></div>
+                  <div class="read-note">最高優先級來源且直接涉及 AI / SOX 回調判斷；若使用者有權限，需補看隱藏段落確認是否有個股名單。</div>
+                </div>
+              </aside>
+            </article>
+            
+            <article class="article-card danger">
+              <div class="article-main">
+                <a class="article-title" href="https://unclestocknotes.substack.com/p/onsemi-synaptics" target="_blank" rel="noreferrer">Onsemi 併購 Synaptics</a>
+                <div class="article-meta">
+                  <span>大叔美股筆記 Uncle Stock Notes</span>
+                  <span>2026-07-03 13:03 Asia/Taipei</span>
+                </div>
+                <ul class="article-points"><li>作者把 Onsemi 併購 Synaptics 解讀為打開 Physical AI 入口，而不只是一般半導體併購。</li><li>核心論點是下一波 AI 會進入車、機器人、工廠感測器與家電，決策需要在設備端完成。</li><li>Onsemi 的既有強項被描述為電源、SiC、高壓功率元件與車用電源管理。</li><li>若 AI 從雲端搬到 edge，功率控制與感測/邊緣運算的組合會變得更重要。</li><li>公開預覽只露出戰略框架，未看到價格、整合、稀釋或客戶驗證等關鍵細節。</li></ul>
+              </div>
+              <aside class="article-side">
+                <div class="chips">
+                  <span class="chip warn">付費牆預覽</span>
+                  <span class="chip info">偏多</span>
+                  <span class="chip info">中長期</span>
+                </div>
+                <div>
+                  <div class="side-label">操作</div>
+                  <div class="side-value">觀望</div>
+                </div>
+                <div>
+                  <div class="side-label">標的</div>
+                  <div class="chips"><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=ON">ON</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=SYNA">SYNA</a></div>
+                </div>
+                <div>
+                  <div class="side-label">親讀</div>
+                  <div class="chips"><span class="chip danger">需要</span></div>
+                  <div class="read-note">大叔個股文且明確點名 ON / SYNA；需看完整論證後才能決定是否進入事件研究。</div>
+                </div>
+              </aside>
+            </article>
+            
+            <article class="article-card warn">
+              <div class="article-main">
+                <a class="article-title" href="https://michaeljburry.substack.com/p/trading-post-july-2-2026" target="_blank" rel="noreferrer">Trading Post July 2, 2026</a>
+                <div class="article-meta">
+                  <span>Michael Burry</span>
+                  <span>2026-07-03 04:53 Asia/Taipei</span>
+                </div>
+                <ul class="article-points"><li>Burry 公開預覽只說他昨日放空一檔股票，理由是認為結果如何收斂相當清楚。</li><li>他同時加碼五個部位，但沒有在公開內容中列出任何 ticker。</li><li>一句「這次可能不同，但沒有不同到那個程度」呈現偏懷疑、偏逆勢的風格。</li><li>因為沒有標的，本篇不能進入市場快篩，也不能轉成可執行個股清單。</li><li>本篇只適合作為風險情緒旁證，不適合作為本輪操作依據。</li></ul>
+              </div>
+              <aside class="article-side">
+                <div class="chips">
+                  <span class="chip warn">付費牆預覽</span>
+                  <span class="chip info">偏空</span>
+                  <span class="chip info">短線</span>
+                </div>
+                <div>
+                  <div class="side-label">操作</div>
+                  <div class="side-value">無明確建議</div>
+                </div>
+                <div>
+                  <div class="side-label">標的</div>
+                  <div class="chips"><span class="chip muted">未明確</span></div>
+                </div>
+                <div>
+                  <div class="side-label">親讀</div>
+                  <div class="chips"><span class="chip warn">可略讀</span></div>
+                  <div class="read-note">除非使用者付費可見具名部位，否則公開內容不足以支撐美股研究決策。</div>
+                </div>
+              </aside>
+            </article>
+            
+            <article class="article-card danger">
+              <div class="article-main">
+                <a class="article-title" href="https://newsletter.semianalysis.com/p/meta-compute-everyone-wants-to-be" target="_blank" rel="noreferrer">Meta Compute: Everyone Wants To Be A Neocloud</a>
+                <div class="article-meta">
+                  <span>SemiAnalysis</span>
+                  <span>2026-07-03 06:18 Asia/Taipei</span>
+                </div>
+                <ul class="article-points"><li>文章反駁市場把 Meta 可能變成 neocloud 解讀成 overcapacity 與採購放緩的說法。</li><li>SemiAnalysis 認為 Meta 的資料中心與 compute 採購會加速，2027 capex 可能很高。</li><li>公開內容稱 Meta 2026 上半年已簽下超過 5GW cloud / colo 容量，且兩個大型園區就代表 2.5GW 建設中容量。</li><li>Meta compute 的用途被拆成 frontier model、RecSys、類 Bedrock token-as-a-service，以及高溢價的 SpaceX-type compute deal。</li><li>作者認為 Meta 仍可能是 CoreWeave、Nebius 等第三方容量供應商的巨大 RPO 來源。</li><li>Oracle 被文章放在相對負面的對照位置：可商業化 gigawatt compute 的能力與 SpaceX / Meta 相比被質疑。</li><li>對 META 是需求與 monetization optionality 的偏多框架；對 CRWV / NBIS 是賣壓可能過度的反身性研究題。</li></ul>
+              </div>
+              <aside class="article-side">
+                <div class="chips">
+                  <span class="chip warn">付費牆預覽</span>
+                  <span class="chip info">偏多</span>
+                  <span class="chip info">中長期</span>
+                </div>
+                <div>
+                  <div class="side-label">操作</div>
+                  <div class="side-value">觀望</div>
+                </div>
+                <div>
+                  <div class="side-label">標的</div>
+                  <div class="chips"><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=AMZN">AMZN</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=CRWV">CRWV</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=GOOGL">GOOGL</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=META">META</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=MSFT">MSFT</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=NBIS">NBIS</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=ORCL">ORCL</a></div>
+                </div>
+                <div>
+                  <div class="side-label">親讀</div>
+                  <div class="chips"><span class="chip danger">需要</span></div>
+                  <div class="read-note">這篇直接影響 AI compute / neocloud selloff 的解讀，且與大叔日更中的 Meta 事件互相呼應。</div>
+                </div>
+              </aside>
+            </article>
+            
+            <article class="article-card danger">
+              <div class="article-main">
+                <a class="article-title" href="https://newsletter.semianalysis.com/p/ectc2026" target="_blank" rel="noreferrer">EMIB-T Roadmap, Custom HBM, HBM4 Packaging Challenges, Microfluidic Cooling, Photonic Interconnects, and More</a>
+                <div class="article-meta">
+                  <span>SemiAnalysis</span>
+                  <span>2026-07-03 01:25 Asia/Taipei</span>
+                </div>
+                <ul class="article-points"><li>文章把先進封裝定位為 transistor density 放緩後的主要 scaling vector。</li><li>Intel EMIB-T 的重點是 TSV、MIM 電容與更大封裝，作者認為可縮小與 TSMC CoWoS 的差距，但仍在追趕。</li><li>Marvell custom HBM 讓部分 HBM 介面邏輯移到 base die，公開內容稱可釋放 host ASIC 面積並改善頻寬/功耗。</li><li>文章把 Nvidia Feynman custom HBM 與 AMD MI450 / MI500 的記憶體擴展需求放入同一條技術脈絡。</li><li>TSMC direct-to-silicon cooling 在大型 GPU-like test vehicle 上展現高散熱能力，凸顯高功耗 AI package 的熱瓶頸。</li><li>Microsoft 在 Nvidia GH200 上測 microfluidic cooling，作者引用 51-60% GPU thermal resistance reduction 與初步可靠度資料。</li><li>Marvell optical interconnect 與 OMIB 段落把 CPO / photonic interconnect 納入未來 AI package 的高權重研究方向。</li></ul>
+              </div>
+              <aside class="article-side">
+                <div class="chips">
+                  <span class="chip warn">付費牆預覽</span>
+                  <span class="chip info">偏多</span>
+                  <span class="chip info">中長期</span>
+                </div>
+                <div>
+                  <div class="side-label">操作</div>
+                  <div class="side-value">觀望</div>
+                </div>
+                <div>
+                  <div class="side-label">標的</div>
+                  <div class="chips"><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=AMD">AMD</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=EMIB">EMIB</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=HBM4">HBM4</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=INTC">INTC</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=MRVL">MRVL</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=MSFT">MSFT</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=MU">MU</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=NVDA">NVDA</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=TSM">TSM</a></div>
+                </div>
+                <div>
+                  <div class="side-label">親讀</div>
+                  <div class="chips"><span class="chip danger">需要</span></div>
+                  <div class="read-note">本篇是本輪最完整的 AI hardware supply-chain 技術圖譜，適合做中長期標的池更新。</div>
+                </div>
+              </aside>
+            </article>
+            
+            <article class="article-card danger">
+              <div class="article-main">
+                <a class="article-title" href="https://hightechinvesting.substack.com/p/zoom-stock-is-it-time-for-me-to-buy" target="_blank" rel="noreferrer">Zoom Stock: Is It Time for Me to Buy Back In?</a>
+                <div class="article-meta">
+                  <span>High Tech Investing</span>
+                  <span>2026-07-02 21:25 Asia/Taipei</span>
+                </div>
+                <ul class="article-points"><li>作者重新檢視 Zoom，背景是 2022 年曾以約 87 美元賣出並實現虧損，現在股價又回到相近區間。</li><li>Zoom 已從疫情受惠視訊工具轉型為 enterprise software platform，涵蓋 Workplace、Phone、Contact Center、Workvivo 等產品。</li><li>競爭壓力來自 Microsoft / Google bundled products，也來自 Cisco、RingCentral、Genesys、NICE、Five9 等 contact-center 競爭者。</li><li>AI Companion 被定位為選擇權：大型新客戶合約採用率高，但許多功能包含在既有方案中，還未直接變成可量化成長。</li><li>FY2026 revenue 成長 4.4% 至 48.7 億美元，FCF 約 19.2 億美元、FCF margin 接近 40%。</li><li>Q1 enterprise revenue 成長 7.2%，RPO 成長 11%，大客戶數成長 8%，但 enterprise NDR 仍低於 100%。</li><li>負面保留是 online churn 升到 3.0%，且股價先前受 Anthropic IPO 傳聞推升後回落；作者最終是否買回需看完整文。</li></ul>
+              </div>
+              <aside class="article-side">
+                <div class="chips">
+                  <span class="chip warn">付費牆預覽</span>
+                  <span class="chip info">觀望</span>
+                  <span class="chip info">中長期</span>
+                </div>
+                <div>
+                  <div class="side-label">操作</div>
+                  <div class="side-value">觀望</div>
+                </div>
+                <div>
+                  <div class="side-label">標的</div>
+                  <div class="chips"><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=ZM">ZM</a></div>
+                </div>
+                <div>
+                  <div class="side-label">親讀</div>
+                  <div class="chips"><span class="chip danger">需要</span></div>
+                  <div class="read-note">公開內容足夠建立 ZM 研究框架，但買回/不買回結論被截斷。</div>
+                </div>
+              </aside>
+            </article>
+            
+            <article class="article-card warn">
+              <div class="article-main">
+                <a class="article-title" href="https://tspasemiconductor.substack.com/p/intels-cpo-packaging-roadmap-from" target="_blank" rel="noreferrer">Intel’s CPO Packaging Roadmap: From Glass Couplers to Pluggable Optical Connectors</a>
+                <div class="article-meta">
+                  <span>SEMIVISION</span>
+                  <span>2026-07-03 11:48 Asia/Taipei</span>
+                </div>
+                <ul class="article-points"><li>文章聚焦 Intel 兩篇 CPO optical coupling packaging paper，主題是 glass coupler 與 detachable connector。</li><li>作者認為 CPO 對 AI datacenter / HPC 重要，因 scale-up bandwidth 提高後，傳統銅互連在距離、功耗、密度上逼近限制。</li><li>CPO 的核心是把 E/O conversion module 更靠近 switch ASIC、GPU、XPU 或 accelerator package。</li><li>可行性不只在光能否接上 PIC，而是要做到可製造、可測試、可維修、低損耗且可靠。</li><li>第一篇 paper 建立 glass coupler attachment process；第二篇把 glass coupler 接到 expanded-beam connector，形成可拆式 edge-coupling 架構。</li><li>這是 INTC 先進封裝 / optical I/O road map 的技術佐證，但公開內容沒有直接投資建議。</li></ul>
+              </div>
+              <aside class="article-side">
+                <div class="chips">
+                  <span class="chip warn">付費牆預覽</span>
+                  <span class="chip info">偏多</span>
+                  <span class="chip info">中長期</span>
+                </div>
+                <div>
+                  <div class="side-label">操作</div>
+                  <div class="side-value">觀望</div>
+                </div>
+                <div>
+                  <div class="side-label">標的</div>
+                  <div class="chips"><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=INTC">INTC</a></div>
+                </div>
+                <div>
+                  <div class="side-label">親讀</div>
+                  <div class="chips"><span class="chip warn">可略讀</span></div>
+                  <div class="read-note">可作為 SemiAnalysis ECTC 文章的技術補充；若時間有限先讀 ECTC。</div>
+                </div>
+              </aside>
+            </article>
+            </div>
+      <div class="section-head"><div><h2>標的快篩</h2><div class="section-note">研究級分類，不代表自動下單訊號。</div></div></div>
+      <div class="ticker-grid">
+            <article class="ticker-card danger">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=ORCL">ORCL</a>
+                  <div class="ticker-meta">市場 Closed / 2026-07-03 美股休市｜2026-07-02 regular close（Nasdaq historical）</div>
+                </div>
+                <span class="chip danger">先避開</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$140.27</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-8.00%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-41.30%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.37</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 59%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>不適用；需等作者或市場重新確認 Oracle compute monetization。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若後續揭露無法證明 Oracle 在高溢價短約 compute 上有競爭力。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=CRWV">CRWV</a>
+                  <div class="ticker-meta">市場 Closed / 2026-07-03 美股休市｜2026-07-02 regular close（Nasdaq historical）</div>
+                </div>
+                <span class="chip good">可列入開倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$81.75</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-17.23%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-33.00%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.05</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 67%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>下一交易日 CRWV 不再放量破底，且 neocloud 類股能出現同步止跌。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若 Meta 相關新聞繼續被解讀成取代第三方 cloud，CRWV 再破 20 日低檔。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=INTC">INTC</a>
+                  <div class="ticker-meta">市場 Closed / 2026-07-03 美股休市｜2026-07-02 regular close（Nasdaq historical）</div>
+                </div>
+                <span class="chip good">可列入開倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$120.35</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-9.42%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-15.45%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.95</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 85%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>下一交易日 INTC 能在半導體賣壓中率先止跌，且封裝/CPO news flow 沒被市場忽略。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若 INTC 跟隨半導體繼續破底，或市場只看 foundry 執行風險。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=MRVL">MRVL</a>
+                  <div class="ticker-meta">市場 Closed / 2026-07-03 美股休市｜2026-07-02 regular close（Nasdaq historical）</div>
+                </div>
+                <span class="chip good">可列入開倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$245.29</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-12.79%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-25.64%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.60</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 74%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>下一交易日 MRVL 止跌並跟隨 AI optical / packaging proxy 反彈。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若 AI optical / custom silicon 族群繼續弱於半導體指數。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=NBIS">NBIS</a>
+                  <div class="ticker-meta">市場 Closed / 2026-07-03 美股休市｜2026-07-02 regular close（Nasdaq historical）</div>
+                </div>
+                <span class="chip good">可列入開倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$215.62</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-15.98%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-28.09%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.35</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 72%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>下一交易日 NBIS 與 CRWV 同步止跌，且量能回到接近 20 日均量以下。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若 NBIS 繼續高量下殺，代表市場仍不接受 RPO 反論。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=ON">ON</a>
+                  <div class="ticker-meta">市場 Closed / 2026-07-03 美股休市｜2026-07-02 regular close（Nasdaq historical）</div>
+                </div>
+                <span class="chip good">可列入開倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$91.22</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-23.18%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-32.17%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.05</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 68%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>下一交易日併購消息後賣壓收斂，ON 能站回 07/02 收盤上方且量能不再放大下殺。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若交易條件或市場反應繼續否定併購策略，ON 跌破 07/02 regular low。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=META">META</a>
+                  <div class="ticker-meta">市場 Closed / 2026-07-03 美股休市｜2026-07-02 regular close（Nasdaq historical）</div>
+                </div>
+                <span class="chip good">僅適合原持股續抱或加倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$582.90</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+7.37%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-9.26%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.10</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 91%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>下一交易日 AI / mega-cap 資金回穩，META 不再放量跌破 07/02 regular low。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若 Meta headline 繼續壓低 neocloud / AI capex proxy，且 META 再創短線新低。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=NVDA">NVDA</a>
+                  <div class="ticker-meta">市場 Closed / 2026-07-03 美股休市｜2026-07-02 regular close（Nasdaq historical）</div>
+                </div>
+                <span class="chip good">僅適合原持股續抱或加倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$194.83</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-0.46%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-12.08%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.90</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 88%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>下一交易日 NVDA 不再拖累 AI accelerator / packaging 族群，並守住 07/02 低點。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若 NVDA 繼續弱於半導體指數，先不把技術文章轉成加碼理由。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=TSM">TSM</a>
+                  <div class="ticker-meta">市場 Closed / 2026-07-03 美股休市｜2026-07-02 regular close（Nasdaq historical）</div>
+                </div>
+                <span class="chip good">僅適合原持股續抱或加倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$434.16</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-0.19%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-9.36%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.22</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 91%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>下一交易日 TSM 守住 07/02 regular low，且 AI packaging 類股同步止跌。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若 CoWoS / AI capex proxy 繼續被壓低，TSM 跌破短線區間。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card muted">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=AMD">AMD</a>
+                  <div class="ticker-meta">市場 Closed / 2026-07-03 美股休市｜2026-07-02 regular close（Nasdaq historical）</div>
+                </div>
+                <span class="chip muted">資料不足</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$517.82</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-2.77%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-11.44%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.88</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 89%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>不適用；本輪沒有 AMD 個股 thesis。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若沒有 MI450 / MI500 商用與客戶證據，維持資料不足。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card muted">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=AMZN">AMZN</a>
+                  <div class="ticker-meta">市場 Closed / 2026-07-03 美股休市｜2026-07-02 regular close（Nasdaq historical）</div>
+                </div>
+                <span class="chip muted">資料不足</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$242.67</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+6.90%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-5.35%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.76</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 95%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>不適用；本輪沒有 AMZN 個股 thesis。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若沒有新增 Bedrock / Trainium 驗證，維持資料不足。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card muted">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=GOOGL">GOOGL</a>
+                  <div class="ticker-meta">市場 Closed / 2026-07-03 美股休市｜2026-07-02 regular close（Nasdaq historical）</div>
+                </div>
+                <span class="chip muted">資料不足</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$359.91</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+4.71%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-4.28%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.68</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 96%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>不適用；本輪沒有 GOOGL 個股 thesis。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若沒有新增 Gemini / TPU revenue 驗證，維持資料不足。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card muted">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=MSFT">MSFT</a>
+                  <div class="ticker-meta">市場 Closed / 2026-07-03 美股休市｜2026-07-02 regular close（Nasdaq historical）</div>
+                </div>
+                <span class="chip muted">資料不足</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$390.49</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+10.67%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-10.47%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.86</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 90%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>不適用；文章沒有把 MSFT 轉成操作建議。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若只把 MSFT 當技術供應鏈旁證，缺乏個股催化。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card muted">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=MU">MU</a>
+                  <div class="ticker-meta">市場 Closed / 2026-07-03 美股休市｜2026-07-02 regular close（Nasdaq historical）</div>
+                </div>
+                <span class="chip muted">資料不足</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$975.56</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-19.61%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-22.27%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.04</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 78%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>不適用；本輪只提供技術背景，沒有 MU 個股結論。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若沒有 DRAM / HBM 價格或客戶驗證，維持資料不足。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card muted">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=SYNA">SYNA</a>
+                  <div class="ticker-meta">市場 Closed / 2026-07-03 美股休市｜2026-07-02 regular close（Nasdaq historical）</div>
+                </div>
+                <span class="chip muted">資料不足</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$119.52</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-4.86%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-18.60%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.46</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 81%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>不適用；先補完整文章與併購條件。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若完整文無法確認 Synaptics 在 edge AI 中的明確角色，維持資料不足。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card muted">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=ZM">ZM</a>
+                  <div class="ticker-meta">市場 Closed / 2026-07-03 美股休市｜2026-07-02 regular close（Nasdaq historical）</div>
+                </div>
+                <span class="chip muted">資料不足</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$87.14</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+5.15%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-18.43%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.85</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 82%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>不適用；公開內容未揭露作者是否買回。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若完整文沒有明確估值安全邊際或 retention 改善，維持資料不足。</div>
+              </div>
+            </article>
+            </div>
+      <div class="section-head"><div><h2>來源檢查</h2><div class="section-note">用來判斷本輪資料可信度與限制。</div></div></div>
+      <div class="source-list">
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>執行時間</h3>
+            <span class="chip info">2026-07-03 20:02:15 Asia/Taipei</span>
+          </div>
+          <div class="muted">執行時間：2026-07-03 20:02:15 Asia/Taipei</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>採納時間窗</h3>
+            <span class="chip info">2026-07-02 20:02:15 至 2026-07-03 20:02:15 Asia/Taipei。</span>
+          </div>
+          <div class="muted">採納時間窗：2026-07-02 20:02:15 至 2026-07-03 20:02:15 Asia/Taipei。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>大叔美股筆記 Uncle Stock Notes RSS</h3>
+            <span class="chip warn">HTTP 200；時間窗內 2 篇，皆補抓公開頁 HTTP 200，來源狀態為付費牆/僅公開預覽。</span>
+          </div>
+          <div class="muted">大叔美股筆記 Uncle Stock Notes RSS：HTTP 200；時間窗內 2 篇，皆補抓公開頁 HTTP 200，來源狀態為付費牆/僅公開預覽。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>Skilled Driver RSS</h3>
+            <span class="chip info">HTTP 200；過去 24 小時無新內容；publication page HTTP 200。</span>
+          </div>
+          <div class="muted">Skilled Driver RSS：HTTP 200；過去 24 小時無新內容；publication page HTTP 200。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>Michael M. Chang RSS</h3>
+            <span class="chip info">HTTP 200；過去 24 小時無新內容；publication page HTTP 200。</span>
+          </div>
+          <div class="muted">Michael M. Chang RSS：HTTP 200；過去 24 小時無新內容；publication page HTTP 200。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>Raycat RSS</h3>
+            <span class="chip info">HTTP 200；過去 24 小時無新內容；publication page HTTP 200。</span>
+          </div>
+          <div class="muted">Raycat RSS：HTTP 200；過去 24 小時無新內容；publication page HTTP 200。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>補充 Substack public feeds</h3>
+            <span class="chip info">Michael Burry、SemiAnalysis、High Tech Investing、SEMIVISION 有時間窗內可採納文章；Damnang、FundaAI、Quality Stocks 本輪沒有時間窗內新文；Beating The Tide feed HTTP 200 但沒有可解析新文章。</span>
+          </div>
+          <div class="muted">補充 Substack public feeds：Michael Burry、SemiAnalysis、High Tech Investing、SEMIVISION 有時間窗內可採納文章；Damnang、FundaAI、Quality Stocks 本輪沒有時間窗內新文；Beating The Tide feed HTTP 200 但沒有可解析新文章。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>補充 discovery</h3>
+            <span class="chip info">Substack top/finance 與 top/technology fresh 抓取 HTTP 200；未新增比上述 feeds 更高信度且公開可讀的美股向新文。</span>
+          </div>
+          <div class="muted">補充 discovery：Substack top/finance 與 top/technology fresh 抓取 HTTP 200；未新增比上述 feeds 更高信度且公開可讀的美股向新文。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>未命名來源</h3>
+            <span class="chip warn">High Tech Investing 德文 Zoom 文章為同題雙語版本，本輪採納英文版，德文版列為重複版本不另做第二篇摘要。</span>
+          </div>
+          <div class="muted">High Tech Investing 德文 Zoom 文章為同題雙語版本，本輪採納英文版，德文版列為重複版本不另做第二篇摘要。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>Activity / Notes</h3>
+            <span class="chip info">本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。</span>
+          </div>
+          <div class="muted">Activity / Notes：本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>市場資料</h3>
+            <span class="chip info">Nasdaq public API info + historical fresh 抓取；2026-07-03 美國股市因 Independence Day observed 休市，最新 regular-session 日線為 2026-07-02；secondaryData 無盤前/盤後資料。</span>
+          </div>
+          <div class="muted">市場資料：Nasdaq public API info + historical fresh 抓取；2026-07-03 美國股市因 Independence Day observed 休市，最新 regular-session 日線為 2026-07-02；secondaryData 無盤前/盤後資料。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>合規限制</h3>
+            <span class="chip warn">未使用 paywall bypass、archive、第三方重刊、Facebook、Chrome session、cookie、Computer Use 或 Substack Notes / Activity fallback。</span>
+          </div>
+          <div class="muted">合規限制：未使用 paywall bypass、archive、第三方重刊、Facebook、Chrome session、cookie、Computer Use 或 Substack Notes / Activity fallback。</div>
+        </article>
+        </div>
+      <details class="mini-card">
+        <summary><strong>完整 Markdown 報告</strong></summary>
+        <pre class="report-pre">[來源檢查]
+- 執行時間：2026-07-03 20:02:15 Asia/Taipei
+- 採納時間窗：2026-07-02 20:02:15 至 2026-07-03 20:02:15 Asia/Taipei。
+- 大叔美股筆記 Uncle Stock Notes RSS：HTTP 200；時間窗內 2 篇，皆補抓公開頁 HTTP 200，來源狀態為付費牆/僅公開預覽。
+- Skilled Driver RSS：HTTP 200；過去 24 小時無新內容；publication page HTTP 200。
+- Michael M. Chang RSS：HTTP 200；過去 24 小時無新內容；publication page HTTP 200。
+- Raycat RSS：HTTP 200；過去 24 小時無新內容；publication page HTTP 200。
+- 補充 Substack public feeds：Michael Burry、SemiAnalysis、High Tech Investing、SEMIVISION 有時間窗內可採納文章；Damnang、FundaAI、Quality Stocks 本輪沒有時間窗內新文；Beating The Tide feed HTTP 200 但沒有可解析新文章。
+- 補充 discovery：Substack top/finance 與 top/technology fresh 抓取 HTTP 200；未新增比上述 feeds 更高信度且公開可讀的美股向新文。
+- High Tech Investing 德文 Zoom 文章為同題雙語版本，本輪採納英文版，德文版列為重複版本不另做第二篇摘要。
+- Activity / Notes：本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。
+- 市場資料：Nasdaq public API info + historical fresh 抓取；2026-07-03 美國股市因 Independence Day observed 休市，最新 regular-session 日線為 2026-07-02；secondaryData 無盤前/盤後資料。
+- 合規限制：未使用 paywall bypass、archive、第三方重刊、Facebook、Chrome session、cookie、Computer Use 或 Substack Notes / Activity fallback。
+
+[逐篇摘要]
+1. 大叔美股筆記 Uncle Stock Notes｜每日重點 260702 Substack 大叔留言重點
+- 作者：大叔美股筆記 Uncle Stock Notes
+- 來源：Substack 文章
+- 標題：每日重點 260702 Substack 大叔留言重點
+- 發布時間：2026-07-03 14:21 Asia/Taipei
+- 來源狀態：付費牆/僅公開預覽
+- 連結：https://unclestocknotes.substack.com/p/260702-substack
+- 立場：觀望
+- 時間框架：短線
+- 重點 1：這篇是大叔最高優先級來源的當日留言重點，但公開頁只露出半導體回調段落。
+- 重點 2：作者明確提醒不要急著看壞 AI，也不要急著抄底，較安全的做法是等 AI 與 SOX 站穩。
+- 重點 3：他把近期下跌歸因於市場把 Meta 計畫做 neo-cloud 算力出租的說法當作調整事件。
+- 重點 4：作者觀察到上週資金往其他板塊 rebalancing，下一步要看幾個大型龍頭是否能站穩。
+- 重點 5：可行動重點不是買點，而是把 AI / 半導體反彈先視為確認等待狀態。
+- 明確提到的標的：META
+- 明確提到的族群：AI、半導體、SOX、大型科技股
+- 催化因素：Meta neo-cloud 言論、AI / SOX 回調、資金 rebalancing
+- 操作建議：觀望
+- 風險或保留條件：公開內容只到 preview；若 AI / SOX 未站穩，作者明確不建議急著炒底。
+- 我是否需要親自讀原文：需要，最高優先級來源且直接涉及 AI / SOX 回調判斷；若使用者有權限，需補看隱藏段落確認是否有個股名單。
+
+2. 大叔美股筆記 Uncle Stock Notes｜Onsemi 併購 Synaptics
+- 作者：大叔美股筆記 Uncle Stock Notes
+- 來源：Substack 文章
+- 標題：Onsemi 併購 Synaptics
+- 發布時間：2026-07-03 13:03 Asia/Taipei
+- 來源狀態：付費牆/僅公開預覽
+- 連結：https://unclestocknotes.substack.com/p/onsemi-synaptics
+- 立場：偏多
+- 時間框架：中長期
+- 重點 1：作者把 Onsemi 併購 Synaptics 解讀為打開 Physical AI 入口，而不只是一般半導體併購。
+- 重點 2：核心論點是下一波 AI 會進入車、機器人、工廠感測器與家電，決策需要在設備端完成。
+- 重點 3：Onsemi 的既有強項被描述為電源、SiC、高壓功率元件與車用電源管理。
+- 重點 4：若 AI 從雲端搬到 edge，功率控制與感測/邊緣運算的組合會變得更重要。
+- 重點 5：公開預覽只露出戰略框架，未看到價格、整合、稀釋或客戶驗證等關鍵細節。
+- 明確提到的標的：ON, SYNA
+- 明確提到的族群：Physical AI、Edge AI、功率半導體、車用半導體、感測器/邊緣運算
+- 催化因素：Onsemi 併購 Synaptics、AI 從雲端往邊緣裝置移動、車用與工業感測器需求
+- 操作建議：觀望
+- 風險或保留條件：公開預覽未揭露交易條件、整合風險與財務影響；不能推測付費牆後的投資結論。
+- 我是否需要親自讀原文：需要，大叔個股文且明確點名 ON / SYNA；需看完整論證後才能決定是否進入事件研究。
+
+3. Michael Burry｜Trading Post July 2, 2026
+- 作者：Michael Burry
+- 來源：Substack 文章
+- 標題：Trading Post July 2, 2026
+- 發布時間：2026-07-03 04:53 Asia/Taipei
+- 來源狀態：付費牆未採納全文
+- 連結：https://michaeljburry.substack.com/p/trading-post-july-2-2026
+- 立場：偏空
+- 時間框架：短線
+- 重點 1：Burry 公開預覽只說他昨日放空一檔股票，理由是認為結果如何收斂相當清楚。
+- 重點 2：他同時加碼五個部位，但沒有在公開內容中列出任何 ticker。
+- 重點 3：一句「這次可能不同，但沒有不同到那個程度」呈現偏懷疑、偏逆勢的風格。
+- 重點 4：因為沒有標的，本篇不能進入市場快篩，也不能轉成可執行個股清單。
+- 重點 5：本篇只適合作為風險情緒旁證，不適合作為本輪操作依據。
+- 明確提到的標的：未明確
+- 明確提到的族群：未明確
+- 催化因素：未公開具名標的；僅公開一筆新空單與五筆加倉資訊
+- 操作建議：無明確建議
+- 風險或保留條件：公開預覽沒有標的、方向細節或部位大小；不可推測付費內容。
+- 我是否需要親自讀原文：可略讀，除非使用者付費可見具名部位，否則公開內容不足以支撐美股研究決策。
+
+4. SemiAnalysis｜Meta Compute: Everyone Wants To Be A Neocloud
+- 作者：SemiAnalysis
+- 來源：Substack 文章
+- 標題：Meta Compute: Everyone Wants To Be A Neocloud
+- 發布時間：2026-07-03 06:18 Asia/Taipei
+- 來源狀態：付費牆未採納全文（RSS/公開頁取得長預覽）
+- 連結：https://newsletter.semianalysis.com/p/meta-compute-everyone-wants-to-be
+- 立場：偏多
+- 時間框架：中長期
+- 重點 1：文章反駁市場把 Meta 可能變成 neocloud 解讀成 overcapacity 與採購放緩的說法。
+- 重點 2：SemiAnalysis 認為 Meta 的資料中心與 compute 採購會加速，2027 capex 可能很高。
+- 重點 3：公開內容稱 Meta 2026 上半年已簽下超過 5GW cloud / colo 容量，且兩個大型園區就代表 2.5GW 建設中容量。
+- 重點 4：Meta compute 的用途被拆成 frontier model、RecSys、類 Bedrock token-as-a-service，以及高溢價的 SpaceX-type compute deal。
+- 重點 5：作者認為 Meta 仍可能是 CoreWeave、Nebius 等第三方容量供應商的巨大 RPO 來源。
+- 重點 6：Oracle 被文章放在相對負面的對照位置：可商業化 gigawatt compute 的能力與 SpaceX / Meta 相比被質疑。
+- 重點 7：對 META 是需求與 monetization optionality 的偏多框架；對 CRWV / NBIS 是賣壓可能過度的反身性研究題。
+- 明確提到的標的：META, CRWV, NBIS, ORCL, MSFT, AMZN, GOOGL
+- 明確提到的族群：AI compute、Neocloud、超大規模雲端、GPU cloud、廣告推薦系統
+- 催化因素：Meta compute capex、Anthropic / OpenAI 模型合作、SpaceX-type compute deal、RecSys scaling、RPO 成長
+- 操作建議：觀望
+- 風險或保留條件：深度 RecSys / MSL 展望在付費牆後；公開預覽雖長，但仍不能補推隱藏段落結論。
+- 我是否需要親自讀原文：需要，這篇直接影響 AI compute / neocloud selloff 的解讀，且與大叔日更中的 Meta 事件互相呼應。
+
+5. SemiAnalysis｜EMIB-T Roadmap, Custom HBM, HBM4 Packaging Challenges, Microfluidic Cooling, Photonic Interconnects, and More
+- 作者：SemiAnalysis
+- 來源：Substack 文章
+- 標題：EMIB-T Roadmap, Custom HBM, HBM4 Packaging Challenges, Microfluidic Cooling, Photonic Interconnects, and More
+- 發布時間：2026-07-03 01:25 Asia/Taipei
+- 來源狀態：付費牆未採納全文（RSS/公開頁取得長預覽）
+- 連結：https://newsletter.semianalysis.com/p/ectc2026
+- 立場：偏多
+- 時間框架：中長期
+- 重點 1：文章把先進封裝定位為 transistor density 放緩後的主要 scaling vector。
+- 重點 2：Intel EMIB-T 的重點是 TSV、MIM 電容與更大封裝，作者認為可縮小與 TSMC CoWoS 的差距，但仍在追趕。
+- 重點 3：Marvell custom HBM 讓部分 HBM 介面邏輯移到 base die，公開內容稱可釋放 host ASIC 面積並改善頻寬/功耗。
+- 重點 4：文章把 Nvidia Feynman custom HBM 與 AMD MI450 / MI500 的記憶體擴展需求放入同一條技術脈絡。
+- 重點 5：TSMC direct-to-silicon cooling 在大型 GPU-like test vehicle 上展現高散熱能力，凸顯高功耗 AI package 的熱瓶頸。
+- 重點 6：Microsoft 在 Nvidia GH200 上測 microfluidic cooling，作者引用 51-60% GPU thermal resistance reduction 與初步可靠度資料。
+- 重點 7：Marvell optical interconnect 與 OMIB 段落把 CPO / photonic interconnect 納入未來 AI package 的高權重研究方向。
+- 明確提到的標的：INTC, MRVL, TSM, MSFT, MU, NVDA, AMD
+- 明確提到的族群：先進封裝、HBM4E、CoWoS、EMIB-T、液冷、CPO、光互連
+- 催化因素：ECTC 2026 技術揭露、HBM4E I/O 增加、AI accelerator package power、液冷與光互連路線
+- 操作建議：觀望
+- 風險或保留條件：技術路線與商用量產時程不同步；Intel 追趕 TSMC 生態系仍有執行風險。
+- 我是否需要親自讀原文：需要，本篇是本輪最完整的 AI hardware supply-chain 技術圖譜，適合做中長期標的池更新。
+
+6. High Tech Investing｜Zoom Stock: Is It Time for Me to Buy Back In?
+- 作者：High Tech Investing
+- 來源：Substack 文章
+- 標題：Zoom Stock: Is It Time for Me to Buy Back In?
+- 發布時間：2026-07-02 21:25 Asia/Taipei
+- 來源狀態：付費牆/僅公開預覽（RSS/公開頁取得長預覽；可 claim free post 但本輪未登入）
+- 連結：https://hightechinvesting.substack.com/p/zoom-stock-is-it-time-for-me-to-buy
+- 立場：觀望
+- 時間框架：中長期
+- 重點 1：作者重新檢視 Zoom，背景是 2022 年曾以約 87 美元賣出並實現虧損，現在股價又回到相近區間。
+- 重點 2：Zoom 已從疫情受惠視訊工具轉型為 enterprise software platform，涵蓋 Workplace、Phone、Contact Center、Workvivo 等產品。
+- 重點 3：競爭壓力來自 Microsoft / Google bundled products，也來自 Cisco、RingCentral、Genesys、NICE、Five9 等 contact-center 競爭者。
+- 重點 4：AI Companion 被定位為選擇權：大型新客戶合約採用率高，但許多功能包含在既有方案中，還未直接變成可量化成長。
+- 重點 5：FY2026 revenue 成長 4.4% 至 48.7 億美元，FCF 約 19.2 億美元、FCF margin 接近 40%。
+- 重點 6：Q1 enterprise revenue 成長 7.2%，RPO 成長 11%，大客戶數成長 8%，但 enterprise NDR 仍低於 100%。
+- 重點 7：負面保留是 online churn 升到 3.0%，且股價先前受 Anthropic IPO 傳聞推升後回落；作者最終是否買回需看完整文。
+- 明確提到的標的：ZM
+- 明確提到的族群：SaaS、視訊協作、contact center、AI productivity、enterprise software
+- 催化因素：Zoom AI Companion 採用、RPO 成長、Anthropic IPO option、FCF margin、企業客戶 retention
+- 操作建議：觀望
+- 風險或保留條件：作者的最終買回結論在隱藏段落後；公開內容顯示 retention / churn 仍是保留條件。
+- 我是否需要親自讀原文：需要，公開內容足夠建立 ZM 研究框架，但買回/不買回結論被截斷。
+
+7. SEMIVISION｜Intel’s CPO Packaging Roadmap: From Glass Couplers to Pluggable Optical Connectors
+- 作者：SEMIVISION
+- 來源：Substack 文章
+- 標題：Intel’s CPO Packaging Roadmap: From Glass Couplers to Pluggable Optical Connectors
+- 發布時間：2026-07-03 11:48 Asia/Taipei
+- 來源狀態：付費牆/僅公開預覽（RSS/公開頁取得長預覽；可 claim free post 但本輪未登入）
+- 連結：https://tspasemiconductor.substack.com/p/intels-cpo-packaging-roadmap-from
+- 立場：偏多
+- 時間框架：中長期
+- 重點 1：文章聚焦 Intel 兩篇 CPO optical coupling packaging paper，主題是 glass coupler 與 detachable connector。
+- 重點 2：作者認為 CPO 對 AI datacenter / HPC 重要，因 scale-up bandwidth 提高後，傳統銅互連在距離、功耗、密度上逼近限制。
+- 重點 3：CPO 的核心是把 E/O conversion module 更靠近 switch ASIC、GPU、XPU 或 accelerator package。
+- 重點 4：可行性不只在光能否接上 PIC，而是要做到可製造、可測試、可維修、低損耗且可靠。
+- 重點 5：第一篇 paper 建立 glass coupler attachment process；第二篇把 glass coupler 接到 expanded-beam connector，形成可拆式 edge-coupling 架構。
+- 重點 6：這是 INTC 先進封裝 / optical I/O road map 的技術佐證，但公開內容沒有直接投資建議。
+- 明確提到的標的：INTC
+- 明確提到的族群：CPO、silicon photonics、AI datacenter interconnect、advanced packaging
+- 催化因素：Intel CPO papers、glass coupler、expanded-beam detachable connector、AI scale-up bandwidth bottleneck
+- 操作建議：觀望
+- 風險或保留條件：公開預覽停在流程細節前；CPO 是否量產仍取決於插拔、測試、良率與可靠度。
+- 我是否需要親自讀原文：可略讀，可作為 SemiAnalysis ECTC 文章的技術補充；若時間有限先讀 ECTC。
+
+[Activity 摘要]
+- 說明：本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。
+- 來源狀態：使用者設定暫停
+- 明確提到的標的：不適用
+- 我是否需要親自看全文：不適用
+
+[標的快篩]
+1. META
+- 盤前/盤後：盤前/盤後資料不足（Nasdaq secondaryData 為 null；2026-07-03 美股休市）
+- 最新價格：$582.90（2026-07-02 regular close（Nasdaq historical））
+- 5日漲跌：+7.37%
+- 20日高點 / 目前價格距20日高點：$642.40 / -9.26%
+- 量能：07/02 regular 21.75M，20日均量 19.71M，量能比 1.10x
+- 作者角度-財報趨勢：SemiAnalysis 指出 RecSys / MSL / token-as-a-service 都需要更多 compute，並把 GPU 投資連到 revenue acceleration。
+- 作者角度-估值：作者未給 META 目標價；但把 compute optionality 描述為可支撐高價值變現。
+- 作者角度-產業趨勢：AI compute procurement 加速、Meta 可能用自建與第三方容量同時推進。
+- 作者角度-機構觀點：作者提到市場因 Meta neo-cloud headline 殺 neoclouds；其反駁偏向與市場短線反應相反。
+- 研究級分類：僅適合原持股續抱或加倉觀察
+- 下一交易日確認條件：下一交易日 AI / mega-cap 資金回穩，META 不再放量跌破 07/02 regular low。
+- 失效條件：若 Meta headline 繼續壓低 neocloud / AI capex proxy，且 META 再創短線新低。
+
+2. ON
+- 盤前/盤後：盤前/盤後資料不足（Nasdaq secondaryData 為 null；2026-07-03 美股休市）
+- 最新價格：$91.22（2026-07-02 regular close（Nasdaq historical））
+- 5日漲跌：-23.18%
+- 20日高點 / 目前價格距20日高點：$134.49 / -32.17%
+- 量能：07/02 regular 16.10M，20日均量 15.27M，量能比 1.05x
+- 作者角度-財報趨勢：大叔未揭露財報數字；只提 Onsemi 的電源、SiC、高壓功率與車用電源管理既有強項。
+- 作者角度-估值：作者未明確提到估值。
+- 作者角度-產業趨勢：Physical AI 往 edge 移動，使功率半導體、車用與工業端控制更重要。
+- 作者角度-機構觀點：作者未明確提到機構觀點。
+- 研究級分類：可列入開倉觀察
+- 下一交易日確認條件：下一交易日併購消息後賣壓收斂，ON 能站回 07/02 收盤上方且量能不再放大下殺。
+- 失效條件：若交易條件或市場反應繼續否定併購策略，ON 跌破 07/02 regular low。
+
+3. SYNA
+- 盤前/盤後：盤前/盤後資料不足（Nasdaq secondaryData 為 null；2026-07-03 美股休市）
+- 最新價格：$119.52（2026-07-02 regular close（Nasdaq historical））
+- 5日漲跌：-4.86%
+- 20日高點 / 目前價格距20日高點：$146.83 / -18.60%
+- 量能：07/02 regular 2.10M，20日均量 1.43M，量能比 1.46x
+- 作者角度-財報趨勢：作者未明確提到 Synaptics 財報趨勢。
+- 作者角度-估值：作者未明確提到估值。
+- 作者角度-產業趨勢：Synaptics 在公開預覽中被放入 Onsemi 打開 Physical AI / edge AI 入口的併購脈絡。
+- 作者角度-機構觀點：作者未明確提到機構觀點。
+- 研究級分類：資料不足
+- 下一交易日確認條件：不適用；先補完整文章與併購條件。
+- 失效條件：若完整文無法確認 Synaptics 在 edge AI 中的明確角色，維持資料不足。
+
+4. CRWV
+- 盤前/盤後：盤前/盤後資料不足（Nasdaq secondaryData 為 null；2026-07-03 美股休市）
+- 最新價格：$81.745（2026-07-02 regular close（Nasdaq historical））
+- 5日漲跌：-17.23%
+- 20日高點 / 目前價格距20日高點：$122.00 / -33.00%
+- 量能：07/02 regular 32.79M，20日均量 31.23M，量能比 1.05x
+- 作者角度-財報趨勢：SemiAnalysis 以 RPO 角度說 Meta 仍可能推動第三方 neocloud 容量需求。
+- 作者角度-估值：作者未給估值；短線大跌後只提供需求反駁，不等於低估結論。
+- 作者角度-產業趨勢：Meta 需求可能不是 overcapacity，而是自建與第三方採購同時加速。
+- 作者角度-機構觀點：文章反駁市場 aggressive sell-off 的解讀。
+- 研究級分類：可列入開倉觀察
+- 下一交易日確認條件：下一交易日 CRWV 不再放量破底，且 neocloud 類股能出現同步止跌。
+- 失效條件：若 Meta 相關新聞繼續被解讀成取代第三方 cloud，CRWV 再破 20 日低檔。
+
+5. NBIS
+- 盤前/盤後：盤前/盤後資料不足（Nasdaq secondaryData 為 null；2026-07-03 美股休市）
+- 最新價格：$215.62（2026-07-02 regular close（Nasdaq historical））
+- 5日漲跌：-15.98%
+- 20日高點 / 目前價格距20日高點：$299.86 / -28.09%
+- 量能：07/02 regular 24.90M，20日均量 18.41M，量能比 1.35x
+- 作者角度-財報趨勢：SemiAnalysis 同樣把 Nebius 放在 Meta 可能推動 RPO 成長的供應商例子。
+- 作者角度-估值：作者未給估值。
+- 作者角度-產業趨勢：AI compute 需求若加速，neocloud 仍可能受益於 Meta 第三方容量採購。
+- 作者角度-機構觀點：文章明確指出市場對 Nebius 類股的 sell-off 可能誤讀。
+- 研究級分類：可列入開倉觀察
+- 下一交易日確認條件：下一交易日 NBIS 與 CRWV 同步止跌，且量能回到接近 20 日均量以下。
+- 失效條件：若 NBIS 繼續高量下殺，代表市場仍不接受 RPO 反論。
+
+6. ORCL
+- 盤前/盤後：盤前/盤後資料不足（Nasdaq secondaryData 為 null；2026-07-03 美股休市）
+- 最新價格：$140.27（2026-07-02 regular close（Nasdaq historical））
+- 5日漲跌：-8.00%
+- 20日高點 / 目前價格距20日高點：$238.95 / -41.30%
+- 量能：07/02 regular 44.27M，20日均量 32.27M，量能比 1.37x
+- 作者角度-財報趨勢：作者未討論 Oracle 財報；只說 Oracle 在 gigawatt compute monetization 上相對失分。
+- 作者角度-估值：文章把 Oracle vs SpaceX 的 valuation trajectory 作負面對照。
+- 作者角度-產業趨勢：Oracle 可能具備大型 compute 商業化條件，但作者認為執行與 monetization 不如 SpaceX / Meta。
+- 作者角度-機構觀點：作者引用公開資料作對照，但沒有機構評級。
+- 研究級分類：先避開
+- 下一交易日確認條件：不適用；需等作者或市場重新確認 Oracle compute monetization。
+- 失效條件：若後續揭露無法證明 Oracle 在高溢價短約 compute 上有競爭力。
+
+7. MSFT
+- 盤前/盤後：盤前/盤後資料不足（Nasdaq secondaryData 為 null；2026-07-03 美股休市）
+- 最新價格：$390.49（2026-07-02 regular close（Nasdaq historical））
+- 5日漲跌：+10.67%
+- 20日高點 / 目前價格距20日高點：$436.15 / -10.47%
+- 量能：07/02 regular 42.19M，20日均量 48.93M，量能比 0.86x
+- 作者角度-財報趨勢：SemiAnalysis ECTC 提到 Microsoft 在 GH200 microfluidic cooling 上的實測改善；Meta 文提到 Microsoft 與 OpenAI 的高價值 compute / IP 交換模式。
+- 作者角度-估值：作者未明確提到估值。
+- 作者角度-產業趨勢：微流道液冷與 OpenAI compute allocation 都支持 Microsoft 的 AI infrastructure depth。
+- 作者角度-機構觀點：作者未明確提到機構觀點。
+- 研究級分類：資料不足
+- 下一交易日確認條件：不適用；文章沒有把 MSFT 轉成操作建議。
+- 失效條件：若只把 MSFT 當技術供應鏈旁證，缺乏個股催化。
+
+8. AMZN
+- 盤前/盤後：盤前/盤後資料不足（Nasdaq secondaryData 為 null；2026-07-03 美股休市）
+- 最新價格：$242.67（2026-07-02 regular close（Nasdaq historical））
+- 5日漲跌：+6.90%
+- 20日高點 / 目前價格距20日高點：$256.38 / -5.35%
+- 量能：07/02 regular 48.30M，20日均量 63.47M，量能比 0.76x
+- 作者角度-財報趨勢：Meta 文只提 Amazon 選擇把 compute 放在 Bedrock / Trainium adoption。
+- 作者角度-估值：作者未明確提到估值。
+- 作者角度-產業趨勢：Bedrock 是 Meta 可能仿效的 token-as-a-service 參照。
+- 作者角度-機構觀點：作者未明確提到機構觀點。
+- 研究級分類：資料不足
+- 下一交易日確認條件：不適用；本輪沒有 AMZN 個股 thesis。
+- 失效條件：若沒有新增 Bedrock / Trainium 驗證，維持資料不足。
+
+9. GOOGL
+- 盤前/盤後：盤前/盤後資料不足（Nasdaq secondaryData 為 null；2026-07-03 美股休市）
+- 最新價格：$359.91（2026-07-02 regular close（Nasdaq historical））
+- 5日漲跌：+4.71%
+- 20日高點 / 目前價格距20日高點：$376.00 / -4.28%
+- 量能：07/02 regular 26.00M，20日均量 38.33M，量能比 0.68x
+- 作者角度-財報趨勢：Meta 文只把 Google / TPUs / Vertex 作為 hyperscaler 高價值替代選項。
+- 作者角度-估值：作者未明確提到估值。
+- 作者角度-產業趨勢：Google TPUs / Vertex 是與 Meta compute monetization 對照的產業架構。
+- 作者角度-機構觀點：作者未明確提到機構觀點。
+- 研究級分類：資料不足
+- 下一交易日確認條件：不適用；本輪沒有 GOOGL 個股 thesis。
+- 失效條件：若沒有新增 Gemini / TPU revenue 驗證，維持資料不足。
+
+10. INTC
+- 盤前/盤後：盤前/盤後資料不足（Nasdaq secondaryData 為 null；2026-07-03 美股休市）
+- 最新價格：$120.35（2026-07-02 regular close（Nasdaq historical））
+- 5日漲跌：-9.42%
+- 20日高點 / 目前價格距20日高點：$142.35 / -15.45%
+- 量能：07/02 regular 125.02M，20日均量 131.89M，量能比 0.95x
+- 作者角度-財報趨勢：SemiAnalysis 指出 Intel EMIB-T road map、HBM4E power delivery 與 CPO paper；但也說仍追趕 TSMC 生態。
+- 作者角度-估值：作者未給估值。
+- 作者角度-產業趨勢：EMIB-T、glass core、CPO coupling 都是 Intel 先進封裝重新取得敘事權的技術證據。
+- 作者角度-機構觀點：作者未明確提到機構觀點。
+- 研究級分類：可列入開倉觀察
+- 下一交易日確認條件：下一交易日 INTC 能在半導體賣壓中率先止跌，且封裝/CPO news flow 沒被市場忽略。
+- 失效條件：若 INTC 跟隨半導體繼續破底，或市場只看 foundry 執行風險。
+
+11. MRVL
+- 盤前/盤後：盤前/盤後資料不足（Nasdaq secondaryData 為 null；2026-07-03 美股休市）
+- 最新價格：$245.29（2026-07-02 regular close（Nasdaq historical））
+- 5日漲跌：-12.79%
+- 20日高點 / 目前價格距20日高點：$329.88 / -25.64%
+- 量能：07/02 regular 38.58M，20日均量 64.19M，量能比 0.60x
+- 作者角度-財報趨勢：SemiAnalysis 描述 Marvell custom HBM 可降低 host ASIC HBM PHY 面積並改善封裝 routing。
+- 作者角度-估值：作者未明確提到估值。
+- 作者角度-產業趨勢：Custom HBM、OMIB、Photonic Fabric 都讓 MRVL 出現在 AI package / optical interconnect 核心鏈。
+- 作者角度-機構觀點：作者未明確提到機構觀點。
+- 研究級分類：可列入開倉觀察
+- 下一交易日確認條件：下一交易日 MRVL 止跌並跟隨 AI optical / packaging proxy 反彈。
+- 失效條件：若 AI optical / custom silicon 族群繼續弱於半導體指數。
+
+12. TSM
+- 盤前/盤後：盤前/盤後資料不足（Nasdaq secondaryData 為 null；2026-07-03 美股休市）
+- 最新價格：$434.16（2026-07-02 regular close（Nasdaq historical））
+- 5日漲跌：-0.19%
+- 20日高點 / 目前價格距20日高點：$479.00 / -9.36%
+- 量能：07/02 regular 18.42M，20日均量 15.15M，量能比 1.22x
+- 作者角度-財報趨勢：SemiAnalysis 說 TSMC CoWoS 生態仍領先，direct-to-silicon cooling 展示高散熱能力。
+- 作者角度-估值：作者未明確提到估值。
+- 作者角度-產業趨勢：CoWoS、CoWoS-R、micropillar cooling 仍是 AI package 商業化核心。
+- 作者角度-機構觀點：作者未明確提到機構觀點。
+- 研究級分類：僅適合原持股續抱或加倉觀察
+- 下一交易日確認條件：下一交易日 TSM 守住 07/02 regular low，且 AI packaging 類股同步止跌。
+- 失效條件：若 CoWoS / AI capex proxy 繼續被壓低，TSM 跌破短線區間。
+
+13. MU
+- 盤前/盤後：盤前/盤後資料不足（Nasdaq secondaryData 為 null；2026-07-03 美股休市）
+- 最新價格：$975.56（2026-07-02 regular close（Nasdaq historical））
+- 5日漲跌：-19.61%
+- 20日高點 / 目前價格距20日高點：$1,255.00 / -22.27%
+- 量能：07/02 regular 61.84M，20日均量 59.25M，量能比 1.04x
+- 作者角度-財報趨勢：SemiAnalysis ECTC 標題含 Micron / HBM，正文主軸是 HBM4E 封裝與熱管理；未提供 MU 財報趨勢。
+- 作者角度-估值：作者未明確提到估值。
+- 作者角度-產業趨勢：HBM4E I/O 與 thermals 提高記憶體封裝重要性。
+- 作者角度-機構觀點：作者未明確提到機構觀點。
+- 研究級分類：資料不足
+- 下一交易日確認條件：不適用；本輪只提供技術背景，沒有 MU 個股結論。
+- 失效條件：若沒有 DRAM / HBM 價格或客戶驗證，維持資料不足。
+
+14. NVDA
+- 盤前/盤後：盤前/盤後資料不足（Nasdaq secondaryData 為 null；2026-07-03 美股休市）
+- 最新價格：$194.83（2026-07-02 regular close（Nasdaq historical））
+- 5日漲跌：-0.46%
+- 20日高點 / 目前價格距20日高點：$221.60 / -12.08%
+- 量能：07/02 regular 142.39M，20日均量 157.34M，量能比 0.90x
+- 作者角度-財報趨勢：SemiAnalysis 以 Nvidia Rubin / Feynman custom HBM、GH200 cooling 作技術參照，未討論 NVDA 財報。
+- 作者角度-估值：作者未明確提到估值。
+- 作者角度-產業趨勢：Custom HBM、GH200 liquid cooling、AI package power 都是 NVDA 平台演進背景。
+- 作者角度-機構觀點：作者未明確提到機構觀點。
+- 研究級分類：僅適合原持股續抱或加倉觀察
+- 下一交易日確認條件：下一交易日 NVDA 不再拖累 AI accelerator / packaging 族群，並守住 07/02 低點。
+- 失效條件：若 NVDA 繼續弱於半導體指數，先不把技術文章轉成加碼理由。
+
+15. AMD
+- 盤前/盤後：盤前/盤後資料不足（Nasdaq secondaryData 為 null；2026-07-03 美股休市）
+- 最新價格：$517.82（2026-07-02 regular close（Nasdaq historical））
+- 5日漲跌：-2.77%
+- 20日高點 / 目前價格距20日高點：$584.73 / -11.44%
+- 量能：07/02 regular 28.23M，20日均量 32.09M，量能比 0.88x
+- 作者角度-財報趨勢：SemiAnalysis 只提 AMD MI450 / MI500 將支援 LPDDR 以提高記憶體容量。
+- 作者角度-估值：作者未明確提到估值。
+- 作者角度-產業趨勢：AMD 只作為 future GPU memory capacity 路線的例子。
+- 作者角度-機構觀點：作者未明確提到機構觀點。
+- 研究級分類：資料不足
+- 下一交易日確認條件：不適用；本輪沒有 AMD 個股 thesis。
+- 失效條件：若沒有 MI450 / MI500 商用與客戶證據，維持資料不足。
+
+16. ZM
+- 盤前/盤後：盤前/盤後資料不足（Nasdaq secondaryData 為 null；2026-07-03 美股休市）
+- 最新價格：$87.145（2026-07-02 regular close（Nasdaq historical））
+- 5日漲跌：+5.15%
+- 20日高點 / 目前價格距20日高點：$106.83 / -18.43%
+- 量能：07/02 regular 3.51M，20日均量 4.12M，量能比 0.85x
+- 作者角度-財報趨勢：High Tech Investing 詳列 FY2026 revenue +4.4%、FCF margin 近 40%、Q1 RPO +11%，但 NDR 99 與 online churn 3.0% 是保留。
+- 作者角度-估值：作者指出市值約 250 億美元與 FCF 強，但最終估值結論在隱藏段落。
+- 作者角度-產業趨勢：Zoom 從 video meeting 轉成 enterprise software / contact center / AI productivity platform。
+- 作者角度-機構觀點：作者未明確提到機構觀點。
+- 研究級分類：資料不足
+- 下一交易日確認條件：不適用；公開內容未揭露作者是否買回。
+- 失效條件：若完整文沒有明確估值安全邊際或 retention 改善，維持資料不足。
+
+[今日研究優先級]
+1. AI compute / neocloud 賣壓是否誤讀：大叔把本輪 AI / SOX 調整連到 Meta neo-cloud 言論，SemiAnalysis 則反駁 overcapacity 與採購放緩敘事；優先追蹤 META、CRWV、NBIS 與 ORCL 的下一交易日反應。
+2. 先進封裝、HBM4E、液冷與 CPO：SemiAnalysis ECTC 與 SEMIVISION 都把 AI package / optical interconnect 推成中長期硬體瓶頸；優先更新 INTC、MRVL、TSM、NVDA、MSFT 的技術地圖。
+3. Physical AI / edge AI 併購與軟體現金流股：大叔 ON / SYNA 是 edge AI 併購線索，High Tech 的 ZM 是 cash-flow + AI optionality 線索；兩者都需要補全文後再進入操作層。
+
+[值得親自讀]
+- 需要：大叔《每日重點 260702 Substack 大叔留言重點》；補看目的：確認是否有 AI / SOX 站穩的具體判斷與個股名單；看完決策：是否把 META / 半導體加入下週觀察清單。
+- 需要：大叔《Onsemi 併購 Synaptics》；補看目的：確認 ON / SYNA 併購的財務與整合風險；看完決策：是否建立 Physical AI / edge AI 事件研究卡。
+- 需要：SemiAnalysis《Meta Compute: Everyone Wants To Be A Neocloud》；補看目的：驗證 Meta 需求是否真的支撐 neocloud RPO；看完決策：CRWV / NBIS 是止跌觀察還是先避開。
+- 需要：SemiAnalysis《EMIB-T Roadmap, Custom HBM...》；補看目的：更新 AI package、HBM4E、液冷與光互連供應鏈；看完決策：INTC / MRVL / TSM / NVDA 哪些值得列入中長期追蹤。
+- 需要：High Tech Investing《Zoom Stock: Is It Time for Me to Buy Back In?》；補看目的：公開預覽停在 Anthropic option 前；看完決策：ZM 是否有足夠估值安全邊際與 retention 改善。
+- 可略讀：Michael Burry《Trading Post July 2, 2026》；補看目的：若有付費可見具名部位，可作市場風險參考；公開內容不足以直接操作。
+- 可略讀：SEMIVISION《Intel’s CPO Packaging Roadmap...》；補看目的：作為 INTC CPO 技術補充；若時間有限先讀 SemiAnalysis ECTC。
+
+內容僅供研究整理，不構成投資建議。
+</pre>
+      </details>
+    </section>
+    </main>
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var button = document.querySelector("[data-theme-toggle]");
+      var label = document.querySelector("[data-theme-label]");
+      var icon = document.querySelector("[data-theme-icon]");
+      function currentTheme() {
+        return root.dataset.theme === "dark" ? "dark" : "light";
+      }
+      function render() {
+        var theme = currentTheme();
+        if (label) label.textContent = theme === "dark" ? "淺色" : "暗黑";
+        if (icon) icon.textContent = theme === "dark" ? "☼" : "◐";
+        if (button) button.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
+      }
+      if (button) {
+        button.addEventListener("click", function () {
+          var next = currentTheme() === "dark" ? "light" : "dark";
+          root.dataset.theme = next;
+          try { localStorage.setItem("usExpertTheme", next); } catch (error) {}
+          render();
+        });
+      }
+      render();
+    })();
+  </script>
+</body>
+</html>
