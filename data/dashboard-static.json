@@ -1,9 +1,23 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-07T22:41:40+08:00",
+  "generated_at": "2026-07-08T22:17:45+08:00",
   "base_url": "https://m6ru4ul6.github.io/us-expert-dashboard-site",
-  "latest_run_id": 225,
+  "latest_run_id": 226,
   "runs": [
+    {
+      "id": 226,
+      "run_key": "2026-07-08 22:16:54 Asia/Taipei|2026-07-07 22:16:54 Asia/Taipei|2026-07-08 22:16:54 Asia/Taipei",
+      "run_time": "2026-07-08 22:16:54 Asia/Taipei",
+      "window_start": "2026-07-07 22:16:54 Asia/Taipei",
+      "window_end": "2026-07-08 22:16:54 Asia/Taipei",
+      "adopted_count": 3,
+      "paused_activity": "本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。",
+      "market_data_source_json": "{\"primary\": \"Nasdaq public API\", \"prepost\": \"盤前/盤後資料不足\", \"ticker_count\": 3}",
+      "slack_status": null,
+      "slack_http_code": null,
+      "report_md": "[來源檢查]\n- 大叔美股筆記 Uncle Stock Notes：大叔美股筆記 Uncle Stock Notes RSS https://unclestocknotes.substack.com/feed 失敗：HTTP 403；archive https://unclestocknotes.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 失敗：HTTP 403；改用 Jina Reader 讀公開 archive API 成功，解析 20 篇。\n- Skilled Driver：Skilled Driver RSS https://skilleddriver.substack.com/feed 失敗：HTTP 403；archive https://skilleddriver.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 失敗：HTTP 403；改用 Jina Reader 讀公開 archive API 成功，解析 20 篇。\n- Michael M. Chang：Michael M. Chang RSS https://michaelmchang.substack.com/feed 失敗：HTTP 403；archive https://michaelmchang.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 失敗：HTTP 403；改用 Jina Reader 讀公開 archive API 成功，解析 20 篇。\n- 徐老猫 Raycat：徐老猫 Raycat RSS https://raycat.substack.com/feed 失敗：HTTP 403；archive https://raycat.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 失敗：HTTP 403；改用 Jina Reader 讀公開 archive API 成功，解析 20 篇。\n- Activity 摘要：本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。\n- 市場資料：Nasdaq public API fresh 抓取；盤前/盤後資料不足時明確標示。\n\n[逐篇摘要]\n1. 大叔美股筆記 Uncle Stock Notes｜AeroVironment Inc. #AVAV 2026 第四季財務報告\n- 作者：大叔美股筆記 Uncle Stock Notes\n- 來源：Substack 文章\n- 標題：AeroVironment Inc. #AVAV 2026 第四季財務報告\n- 發布時間：2026-07-07 23:08 Asia/Taipei\n- 來源狀態：付費牆/僅公開預覽\n- 連結：https://unclestocknotes.substack.com/p/aerovironment-inc-avav-2026\n- 立場：無明確立場\n- 時間框架：未明確\n- 重點 1：解碼 133% 併購幻術、SCAR 減損暴雷、SCDE 虧損，以及股價反噴 35% This post is for paid subscribers; public preview only.\n- 明確提到的標的：AVAV, SCAR, SCDE\n- 明確提到的族群：作者未明確提到\n- 催化因素：作者未明確提到\n- 操作建議：無明確建議\n- 風險或保留條件：公開可見內容有限，需避免推測未公開正文。\n- 我是否需要親自讀原文：需要：文章明確提到標的，適合補看原文確認作者脈絡。\n\n2. 大叔美股筆記 Uncle Stock Notes｜每日重點 260707 Substack 大叔留言重點\n- 作者：大叔美股筆記 Uncle Stock Notes\n- 來源：Substack 文章\n- 標題：每日重點 260707 Substack 大叔留言重點\n- 發布時間：2026-07-08 15:05 Asia/Taipei\n- 來源狀態：付費牆/僅公開預覽\n- 連結：https://unclestocknotes.substack.com/p/260707-substack\n- 立場：無明確立場\n- 時間框架：未明確\n- 重點 1：✨提醒 【倉位控制 / 操作紀律】 倍數ETF、槓桿一定要設停損，正股成本若比較高也是，不要硬凹，否則對自己倉位很傷。\n- 重點 2：【後續佈局方向】 回調轉強時，就是汰弱換強（調倉）的機會，要把握。坦白說，我還是看好先進封裝跟設備。\n- 重點 3：This post is for paid subscribers; public preview only.\n- 明確提到的標的：未明確\n- 明確提到的族群：作者未明確提到\n- 催化因素：作者未明確提到\n- 操作建議：無明確建議\n- 風險或保留條件：公開可見內容有限，需避免推測未公開正文。\n- 我是否需要親自讀原文：不必：本輪公開內容有限或未出現可操作標的。\n\n3. 徐老猫 Raycat｜三星没给答案，市场在期待7月下旬的一个验证\n- 作者：徐老猫 Raycat\n- 來源：Substack 文章\n- 標題：三星没给答案，市场在期待7月下旬的一个验证\n- 發布時間：2026-07-08 10:51 Asia/Taipei\n- 來源狀態：付費牆/僅公開預覽\n- 連結：https://raycat.substack.com/p/7-453\n- 立場：無明確立場\n- 時間框架：未明確\n- 重點 1：无论如何，让刻意制造恐惧的标题左右你的投资决策，永远都是错误的。市场惩罚的恰恰是对波动做出的冲动、本能的反应。\n- 重點 2：This post is for paid subscribers; public preview only.\n- 明確提到的標的：未明確\n- 明確提到的族群：作者未明確提到\n- 催化因素：作者未明確提到\n- 操作建議：無明確建議\n- 風險或保留條件：公開可見內容有限，需避免推測未公開正文。\n- 我是否需要親自讀原文：不必：本輪公開內容有限或未出現可操作標的。\n\n[Activity 摘要]\n- 來源狀態：使用者設定暫停\n- 摘要：本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。\n- 明確提到的標的：不適用\n- 我是否需要親自看全文：不適用\n\n[標的快篩]\n1. AVAV\n- 盤前：盤前/盤後資料不足；最新收盤 資料不足（資料時間不足）\n- 5日漲跌：資料不足\n- 20日高點 / 目前價格距高點：資料不足 / 資料不足\n- 量能：最新 資料不足，20日均量 資料不足，量能比 資料不足x\n- 作者角度：財報趨勢、估值、產業趨勢、機構觀點僅整理自本輪公開文章；未明確提到者不補論點。\n- 研究級分類：資料不足\n- 下一交易日確認條件：觀察是否延續作者提到的催化方向，且價格不出現明顯放量轉弱。\n- 失效條件：跌破近期支撐或公開文章中的核心催化被後續資料否定。\n\n2. SCAR\n- 盤前：盤前/盤後資料不足；最新收盤 資料不足（資料時間不足）\n- 5日漲跌：資料不足\n- 20日高點 / 目前價格距高點：資料不足 / 資料不足\n- 量能：最新 資料不足，20日均量 資料不足，量能比 資料不足x\n- 作者角度：財報趨勢、估值、產業趨勢、機構觀點僅整理自本輪公開文章；未明確提到者不補論點。\n- 研究級分類：資料不足\n- 下一交易日確認條件：觀察是否延續作者提到的催化方向，且價格不出現明顯放量轉弱。\n- 失效條件：跌破近期支撐或公開文章中的核心催化被後續資料否定。\n\n3. SCDE\n- 盤前：盤前/盤後資料不足；最新收盤 資料不足（資料時間不足）\n- 5日漲跌：資料不足\n- 20日高點 / 目前價格距高點：資料不足 / 資料不足\n- 量能：最新 資料不足，20日均量 資料不足，量能比 資料不足x\n- 作者角度：財報趨勢、估值、產業趨勢、機構觀點僅整理自本輪公開文章；未明確提到者不補論點。\n- 研究級分類：資料不足\n- 下一交易日確認條件：觀察是否延續作者提到的催化方向，且價格不出現明顯放量轉弱。\n- 失效條件：跌破近期支撐或公開文章中的核心催化被後續資料否定。\n\n[今日研究優先級]\n1. AVAV 後續追蹤：本輪 1 篇公開文章提到，先確認作者論點與價格位置是否互相支持。\n2. SCAR 後續追蹤：本輪 1 篇公開文章提到，先確認作者論點與價格位置是否互相支持。\n3. SCDE 後續追蹤：本輪 1 篇公開文章提到，先確認作者論點與價格位置是否互相支持。\n\n[值得親自讀]\n- AeroVironment Inc. #AVAV 2026 第四季財務報告：補看作者對 AVAV, SCAR, SCDE 的原始脈絡與限制條件。\n\n內容僅供研究整理，不構成投資建議。\n",
+      "imported_at": "2026-07-08 14:17:45"
+    },
     {
       "id": 225,
       "run_key": "2026-07-07 22:40:33 Asia/Taipei|2026-07-06 22:40:33 Asia/Taipei|2026-07-07 22:40:33 Asia/Taipei",
@@ -1903,6 +1917,96 @@
       "created_at": "2026-06-17 12:46:21",
       "author_name": "大叔美股筆記 Uncle Stock Notes",
       "tickers": "NFLX"
+    },
+    {
+      "id": 439,
+      "run_id": 226,
+      "author_id": 1,
+      "article_number": 2,
+      "title": "每日重點 260707 Substack 大叔留言重點",
+      "link": "https://unclestocknotes.substack.com/p/260707-substack",
+      "feed": "https://unclestocknotes.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20",
+      "source": "Substack 文章",
+      "published_at_tpe": "2026-07-08 15:05 Asia/Taipei",
+      "source_status": "付費牆/僅公開預覽",
+      "access_level": "付費牆預覽",
+      "stance": "無明確立場",
+      "time_frame": "未明確",
+      "operation_advice": "無明確建議",
+      "read_recommendation": "不必：本輪公開內容有限或未出現可操作標的。",
+      "tickers_text": "未明確",
+      "groups_text": "作者未明確提到",
+      "catalyst_text": "作者未明確提到",
+      "risk_text": "公開可見內容有限，需避免推測未公開正文。",
+      "summary_text": "✨提醒 【倉位控制 / 操作紀律】 倍數ETF、槓桿一定要設停損，正股成本若比較高也是，不要硬凹，否則對自己倉位很傷。\n【後續佈局方向】 回調轉強時，就是汰弱換強（調倉）的機會，要把握。坦白說，我還是看好先進封裝跟設備。\nThis post is for paid subscribers; public preview only.",
+      "excerpt_head": "✨提醒\n【倉位控制 / 操作紀律】\n倍數ETF、槓桿一定要設停損，正股成本若比較高也是，不要硬凹，否則對自己倉位很傷。\n高位時適時套利，遇到下跌才有底氣。\n【後續佈局方向】\n回調轉強時，就是汰弱換強（調倉）的機會，要把握。坦白說，我還是看好先進封裝跟設備。\nThis post is for paid subscribers; public preview only.",
+      "excerpt_tail": "✨提醒\n【倉位控制 / 操作紀律】\n倍數ETF、槓桿一定要設停損，正股成本若比較高也是，不要硬凹，否則對自己倉位很傷。\n高位時適時套利，遇到下跌才有底氣。\n【後續佈局方向】\n回調轉強時，就是汰弱換強（調倉）的機會，要把握。坦白說，我還是看好先進封裝跟設備。\nThis post is for paid subscribers; public preview only.",
+      "text_chars": 184,
+      "in_window": 1,
+      "contains_paid": 1,
+      "created_at": "2026-07-08 14:17:45",
+      "author_name": "大叔美股筆記 Uncle Stock Notes",
+      "tickers": null
+    },
+    {
+      "id": 440,
+      "run_id": 226,
+      "author_id": 5,
+      "article_number": 3,
+      "title": "三星没给答案，市场在期待7月下旬的一个验证",
+      "link": "https://raycat.substack.com/p/7-453",
+      "feed": "https://raycat.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20",
+      "source": "Substack 文章",
+      "published_at_tpe": "2026-07-08 10:51 Asia/Taipei",
+      "source_status": "付費牆/僅公開預覽",
+      "access_level": "付費牆預覽",
+      "stance": "無明確立場",
+      "time_frame": "未明確",
+      "operation_advice": "無明確建議",
+      "read_recommendation": "不必：本輪公開內容有限或未出現可操作標的。",
+      "tickers_text": "未明確",
+      "groups_text": "作者未明確提到",
+      "catalyst_text": "作者未明確提到",
+      "risk_text": "公開可見內容有限，需避免推測未公開正文。",
+      "summary_text": "无论如何，让刻意制造恐惧的标题左右你的投资决策，永远都是错误的。市场惩罚的恰恰是对波动做出的冲动、本能的反应。\nThis post is for paid subscribers; public preview only.",
+      "excerpt_head": "无论如何，让刻意制造恐惧的标题左右你的投资决策，永远都是错误的。市场惩罚的恰恰是对波动做出的冲动、本能的反应。\nThis post is for paid subscribers; public preview only.",
+      "excerpt_tail": "无论如何，让刻意制造恐惧的标题左右你的投资决策，永远都是错误的。市场惩罚的恰恰是对波动做出的冲动、本能的反应。\nThis post is for paid subscribers; public preview only.",
+      "text_chars": 111,
+      "in_window": 1,
+      "contains_paid": 1,
+      "created_at": "2026-07-08 14:17:45",
+      "author_name": "徐老猫 Raycat",
+      "tickers": null
+    },
+    {
+      "id": 438,
+      "run_id": 226,
+      "author_id": 1,
+      "article_number": 1,
+      "title": "AeroVironment Inc. #AVAV 2026 第四季財務報告",
+      "link": "https://unclestocknotes.substack.com/p/aerovironment-inc-avav-2026",
+      "feed": "https://unclestocknotes.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20",
+      "source": "Substack 文章",
+      "published_at_tpe": "2026-07-07 23:08 Asia/Taipei",
+      "source_status": "付費牆/僅公開預覽",
+      "access_level": "付費牆預覽",
+      "stance": "無明確立場",
+      "time_frame": "未明確",
+      "operation_advice": "無明確建議",
+      "read_recommendation": "需要：文章明確提到標的，適合補看原文確認作者脈絡。",
+      "tickers_text": "AVAV, SCAR, SCDE",
+      "groups_text": "作者未明確提到",
+      "catalyst_text": "作者未明確提到",
+      "risk_text": "公開可見內容有限，需避免推測未公開正文。",
+      "summary_text": "解碼 133% 併購幻術、SCAR 減損暴雷、SCDE 虧損，以及股價反噴 35% This post is for paid subscribers; public preview only.",
+      "excerpt_head": "解碼 133% 併購幻術、SCAR 減損暴雷、SCDE 虧損，以及股價反噴 35%\nThis post is for paid subscribers; public preview only.",
+      "excerpt_tail": "解碼 133% 併購幻術、SCAR 減損暴雷、SCDE 虧損，以及股價反噴 35%\nThis post is for paid subscribers; public preview only.",
+      "text_chars": 97,
+      "in_window": 1,
+      "contains_paid": 1,
+      "created_at": "2026-07-08 14:17:45",
+      "author_name": "大叔美股筆記 Uncle Stock Notes",
+      "tickers": "AVAV, SCAR, SCDE"
     },
     {
       "id": 436,
@@ -6983,6 +7087,10 @@
       "ticker": "AVAV"
     },
     {
+      "article_id": 438,
+      "ticker": "AVAV"
+    },
+    {
       "article_id": 309,
       "ticker": "AVEX"
     },
@@ -7891,6 +7999,14 @@
       "ticker": "RKLB"
     },
     {
+      "article_id": 438,
+      "ticker": "SCAR"
+    },
+    {
+      "article_id": 438,
+      "ticker": "SCDE"
+    },
+    {
       "article_id": 305,
       "ticker": "SIVE"
     },
@@ -8104,6 +8220,72 @@
     }
   ],
   "market_snapshots": [
+    {
+      "id": 372,
+      "run_id": 226,
+      "ticker": "AVAV",
+      "market_status": "盤前/盤後資料不足",
+      "current": null,
+      "current_ts": null,
+      "prior": null,
+      "pct_pre": null,
+      "pct5": null,
+      "hi20": null,
+      "dist20": null,
+      "latest_vol": null,
+      "avg20": null,
+      "rel_vol": null,
+      "source": "Nasdaq public API",
+      "research_class": "資料不足",
+      "next_condition": "觀察是否延續作者提到的催化方向，且價格不出現明顯放量轉弱。",
+      "invalid_condition": "跌破近期支撐或公開文章中的核心催化被後續資料否定。",
+      "notes_json": "{\"market_data\": {\"market_status\": \"盤前/盤後資料不足\", \"current\": null, \"current_ts\": null, \"prior\": null, \"pct_pre\": null, \"pct5\": null, \"hi20\": null, \"dist20\": null, \"latest_vol\": null, \"avg20\": null, \"rel_vol\": null, \"source\": \"Nasdaq public API\", \"error\": \"Nasdaq info=curl: (28) Operation timed out after 8002 milliseconds with 0 bytes received; historical=curl: (28) Operation timed out after 8002 milliseconds with 0 bytes received\"}, \"report_fields\": {\"盤前\": \"盤前/盤後資料不足；最新收盤 資料不足（資料時間不足）\", \"5日漲跌\": \"資料不足\", \"20日高點 / 目前價格距高點\": \"資料不足 / 資料不足\", \"量能\": \"最新 資料不足，20日均量 資料不足，量能比 資料不足x\", \"作者角度\": \"財報趨勢、估值、產業趨勢、機構觀點僅整理自本輪公開文章；未明確提到者不補論點。\", \"研究級分類\": \"資料不足\", \"下一交易日確認條件\": \"觀察是否延續作者提到的催化方向，且價格不出現明顯放量轉弱。\", \"失效條件\": \"跌破近期支撐或公開文章中的核心催化被後續資料否定。\"}}",
+      "created_at": "2026-07-08 14:17:45"
+    },
+    {
+      "id": 373,
+      "run_id": 226,
+      "ticker": "SCAR",
+      "market_status": "盤前/盤後資料不足",
+      "current": null,
+      "current_ts": null,
+      "prior": null,
+      "pct_pre": null,
+      "pct5": null,
+      "hi20": null,
+      "dist20": null,
+      "latest_vol": null,
+      "avg20": null,
+      "rel_vol": null,
+      "source": "Nasdaq public API",
+      "research_class": "資料不足",
+      "next_condition": "觀察是否延續作者提到的催化方向，且價格不出現明顯放量轉弱。",
+      "invalid_condition": "跌破近期支撐或公開文章中的核心催化被後續資料否定。",
+      "notes_json": "{\"market_data\": {\"market_status\": \"盤前/盤後資料不足\", \"current\": null, \"current_ts\": null, \"prior\": null, \"pct_pre\": null, \"pct5\": null, \"hi20\": null, \"dist20\": null, \"latest_vol\": null, \"avg20\": null, \"rel_vol\": null, \"source\": \"Nasdaq public API\", \"error\": \"Nasdaq info=curl: (28) Operation timed out after 8002 milliseconds with 0 bytes received; historical=curl: (28) Operation timed out after 8002 milliseconds with 0 bytes received\"}, \"report_fields\": {\"盤前\": \"盤前/盤後資料不足；最新收盤 資料不足（資料時間不足）\", \"5日漲跌\": \"資料不足\", \"20日高點 / 目前價格距高點\": \"資料不足 / 資料不足\", \"量能\": \"最新 資料不足，20日均量 資料不足，量能比 資料不足x\", \"作者角度\": \"財報趨勢、估值、產業趨勢、機構觀點僅整理自本輪公開文章；未明確提到者不補論點。\", \"研究級分類\": \"資料不足\", \"下一交易日確認條件\": \"觀察是否延續作者提到的催化方向，且價格不出現明顯放量轉弱。\", \"失效條件\": \"跌破近期支撐或公開文章中的核心催化被後續資料否定。\"}}",
+      "created_at": "2026-07-08 14:17:45"
+    },
+    {
+      "id": 374,
+      "run_id": 226,
+      "ticker": "SCDE",
+      "market_status": "盤前/盤後資料不足",
+      "current": null,
+      "current_ts": null,
+      "prior": null,
+      "pct_pre": null,
+      "pct5": null,
+      "hi20": null,
+      "dist20": null,
+      "latest_vol": null,
+      "avg20": null,
+      "rel_vol": null,
+      "source": "Nasdaq public API",
+      "research_class": "資料不足",
+      "next_condition": "觀察是否延續作者提到的催化方向，且價格不出現明顯放量轉弱。",
+      "invalid_condition": "跌破近期支撐或公開文章中的核心催化被後續資料否定。",
+      "notes_json": "{\"market_data\": {\"market_status\": \"盤前/盤後資料不足\", \"current\": null, \"current_ts\": null, \"prior\": null, \"pct_pre\": null, \"pct5\": null, \"hi20\": null, \"dist20\": null, \"latest_vol\": null, \"avg20\": null, \"rel_vol\": null, \"source\": \"Nasdaq public API\", \"error\": \"Nasdaq info=curl: (28) Operation timed out after 8002 milliseconds with 0 bytes received; historical=curl: (28) Operation timed out after 8002 milliseconds with 0 bytes received\"}, \"report_fields\": {\"盤前\": \"盤前/盤後資料不足；最新收盤 資料不足（資料時間不足）\", \"5日漲跌\": \"資料不足\", \"20日高點 / 目前價格距高點\": \"資料不足 / 資料不足\", \"量能\": \"最新 資料不足，20日均量 資料不足，量能比 資料不足x\", \"作者角度\": \"財報趨勢、估值、產業趨勢、機構觀點僅整理自本輪公開文章；未明確提到者不補論點。\", \"研究級分類\": \"資料不足\", \"下一交易日確認條件\": \"觀察是否延續作者提到的催化方向，且價格不出現明顯放量轉弱。\", \"失效條件\": \"跌破近期支撐或公開文章中的核心催化被後續資料否定。\"}}",
+      "created_at": "2026-07-08 14:17:45"
+    },
     {
       "id": 368,
       "run_id": 225,
@@ -12463,6 +12645,48 @@
   ],
   "source_health": [
     {
+      "id": 412,
+      "run_id": 226,
+      "source_name": "大叔美股筆記 Uncle Stock Notes",
+      "status": "大叔美股筆記 Uncle Stock Notes RSS https://unclestocknotes.substack.com/feed 失敗：HTTP 403；archive https://unclestocknotes.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 失敗：HTTP 403；改用 Jina Reader 讀公開 archive API 成功，解析 20 篇。",
+      "details": "大叔美股筆記 Uncle Stock Notes：大叔美股筆記 Uncle Stock Notes RSS https://unclestocknotes.substack.com/feed 失敗：HTTP 403；archive https://unclestocknotes.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 失敗：HTTP 403；改用 Jina Reader 讀公開 archive API 成功，解析 20 篇。"
+    },
+    {
+      "id": 413,
+      "run_id": 226,
+      "source_name": "Skilled Driver",
+      "status": "Skilled Driver RSS https://skilleddriver.substack.com/feed 失敗：HTTP 403；archive https://skilleddriver.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 失敗：HTTP 403；改用 Jina Reader 讀公開 archive API 成功，解析 20 篇。",
+      "details": "Skilled Driver：Skilled Driver RSS https://skilleddriver.substack.com/feed 失敗：HTTP 403；archive https://skilleddriver.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 失敗：HTTP 403；改用 Jina Reader 讀公開 archive API 成功，解析 20 篇。"
+    },
+    {
+      "id": 414,
+      "run_id": 226,
+      "source_name": "Michael M. Chang",
+      "status": "Michael M. Chang RSS https://michaelmchang.substack.com/feed 失敗：HTTP 403；archive https://michaelmchang.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 失敗：HTTP 403；改用 Jina Reader 讀公開 archive API 成功，解析 20 篇。",
+      "details": "Michael M. Chang：Michael M. Chang RSS https://michaelmchang.substack.com/feed 失敗：HTTP 403；archive https://michaelmchang.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 失敗：HTTP 403；改用 Jina Reader 讀公開 archive API 成功，解析 20 篇。"
+    },
+    {
+      "id": 415,
+      "run_id": 226,
+      "source_name": "徐老猫 Raycat",
+      "status": "徐老猫 Raycat RSS https://raycat.substack.com/feed 失敗：HTTP 403；archive https://raycat.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 失敗：HTTP 403；改用 Jina Reader 讀公開 archive API 成功，解析 20 篇。",
+      "details": "徐老猫 Raycat：徐老猫 Raycat RSS https://raycat.substack.com/feed 失敗：HTTP 403；archive https://raycat.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 失敗：HTTP 403；改用 Jina Reader 讀公開 archive API 成功，解析 20 篇。"
+    },
+    {
+      "id": 416,
+      "run_id": 226,
+      "source_name": "Activity 摘要",
+      "status": "本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。",
+      "details": "Activity 摘要：本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。"
+    },
+    {
+      "id": 417,
+      "run_id": 226,
+      "source_name": "市場資料",
+      "status": "Nasdaq public API fresh 抓取；盤前/盤後資料不足時明確標示。",
+      "details": "市場資料：Nasdaq public API fresh 抓取；盤前/盤後資料不足時明確標示。"
+    },
+    {
       "id": 406,
       "run_id": 225,
       "source_name": "大叔美股筆記 Uncle Stock Notes",
@@ -14082,6 +14306,27 @@
   ],
   "daily_themes": [
     {
+      "id": 137,
+      "run_id": 226,
+      "theme_order": 1,
+      "title": "AVAV 後續追蹤",
+      "details": "本輪 1 篇公開文章提到，先確認作者論點與價格位置是否互相支持。"
+    },
+    {
+      "id": 138,
+      "run_id": 226,
+      "theme_order": 2,
+      "title": "SCAR 後續追蹤",
+      "details": "本輪 1 篇公開文章提到，先確認作者論點與價格位置是否互相支持。"
+    },
+    {
+      "id": 139,
+      "run_id": 226,
+      "theme_order": 3,
+      "title": "SCDE 後續追蹤",
+      "details": "本輪 1 篇公開文章提到，先確認作者論點與價格位置是否互相支持。"
+    },
+    {
       "id": 134,
       "run_id": 225,
       "theme_order": 1,
@@ -14657,6 +14902,249 @@
     }
   ],
   "run_details": {
+    "226": {
+      "run": {
+        "id": 226,
+        "run_key": "2026-07-08 22:16:54 Asia/Taipei|2026-07-07 22:16:54 Asia/Taipei|2026-07-08 22:16:54 Asia/Taipei",
+        "run_time": "2026-07-08 22:16:54 Asia/Taipei",
+        "window_start": "2026-07-07 22:16:54 Asia/Taipei",
+        "window_end": "2026-07-08 22:16:54 Asia/Taipei",
+        "adopted_count": 3,
+        "paused_activity": "本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。",
+        "market_data_source_json": "{\"primary\": \"Nasdaq public API\", \"prepost\": \"盤前/盤後資料不足\", \"ticker_count\": 3}",
+        "slack_status": null,
+        "slack_http_code": null,
+        "report_md": "[來源檢查]\n- 大叔美股筆記 Uncle Stock Notes：大叔美股筆記 Uncle Stock Notes RSS https://unclestocknotes.substack.com/feed 失敗：HTTP 403；archive https://unclestocknotes.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 失敗：HTTP 403；改用 Jina Reader 讀公開 archive API 成功，解析 20 篇。\n- Skilled Driver：Skilled Driver RSS https://skilleddriver.substack.com/feed 失敗：HTTP 403；archive https://skilleddriver.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 失敗：HTTP 403；改用 Jina Reader 讀公開 archive API 成功，解析 20 篇。\n- Michael M. Chang：Michael M. Chang RSS https://michaelmchang.substack.com/feed 失敗：HTTP 403；archive https://michaelmchang.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 失敗：HTTP 403；改用 Jina Reader 讀公開 archive API 成功，解析 20 篇。\n- 徐老猫 Raycat：徐老猫 Raycat RSS https://raycat.substack.com/feed 失敗：HTTP 403；archive https://raycat.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 失敗：HTTP 403；改用 Jina Reader 讀公開 archive API 成功，解析 20 篇。\n- Activity 摘要：本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。\n- 市場資料：Nasdaq public API fresh 抓取；盤前/盤後資料不足時明確標示。\n\n[逐篇摘要]\n1. 大叔美股筆記 Uncle Stock Notes｜AeroVironment Inc. #AVAV 2026 第四季財務報告\n- 作者：大叔美股筆記 Uncle Stock Notes\n- 來源：Substack 文章\n- 標題：AeroVironment Inc. #AVAV 2026 第四季財務報告\n- 發布時間：2026-07-07 23:08 Asia/Taipei\n- 來源狀態：付費牆/僅公開預覽\n- 連結：https://unclestocknotes.substack.com/p/aerovironment-inc-avav-2026\n- 立場：無明確立場\n- 時間框架：未明確\n- 重點 1：解碼 133% 併購幻術、SCAR 減損暴雷、SCDE 虧損，以及股價反噴 35% This post is for paid subscribers; public preview only.\n- 明確提到的標的：AVAV, SCAR, SCDE\n- 明確提到的族群：作者未明確提到\n- 催化因素：作者未明確提到\n- 操作建議：無明確建議\n- 風險或保留條件：公開可見內容有限，需避免推測未公開正文。\n- 我是否需要親自讀原文：需要：文章明確提到標的，適合補看原文確認作者脈絡。\n\n2. 大叔美股筆記 Uncle Stock Notes｜每日重點 260707 Substack 大叔留言重點\n- 作者：大叔美股筆記 Uncle Stock Notes\n- 來源：Substack 文章\n- 標題：每日重點 260707 Substack 大叔留言重點\n- 發布時間：2026-07-08 15:05 Asia/Taipei\n- 來源狀態：付費牆/僅公開預覽\n- 連結：https://unclestocknotes.substack.com/p/260707-substack\n- 立場：無明確立場\n- 時間框架：未明確\n- 重點 1：✨提醒 【倉位控制 / 操作紀律】 倍數ETF、槓桿一定要設停損，正股成本若比較高也是，不要硬凹，否則對自己倉位很傷。\n- 重點 2：【後續佈局方向】 回調轉強時，就是汰弱換強（調倉）的機會，要把握。坦白說，我還是看好先進封裝跟設備。\n- 重點 3：This post is for paid subscribers; public preview only.\n- 明確提到的標的：未明確\n- 明確提到的族群：作者未明確提到\n- 催化因素：作者未明確提到\n- 操作建議：無明確建議\n- 風險或保留條件：公開可見內容有限，需避免推測未公開正文。\n- 我是否需要親自讀原文：不必：本輪公開內容有限或未出現可操作標的。\n\n3. 徐老猫 Raycat｜三星没给答案，市场在期待7月下旬的一个验证\n- 作者：徐老猫 Raycat\n- 來源：Substack 文章\n- 標題：三星没给答案，市场在期待7月下旬的一个验证\n- 發布時間：2026-07-08 10:51 Asia/Taipei\n- 來源狀態：付費牆/僅公開預覽\n- 連結：https://raycat.substack.com/p/7-453\n- 立場：無明確立場\n- 時間框架：未明確\n- 重點 1：无论如何，让刻意制造恐惧的标题左右你的投资决策，永远都是错误的。市场惩罚的恰恰是对波动做出的冲动、本能的反应。\n- 重點 2：This post is for paid subscribers; public preview only.\n- 明確提到的標的：未明確\n- 明確提到的族群：作者未明確提到\n- 催化因素：作者未明確提到\n- 操作建議：無明確建議\n- 風險或保留條件：公開可見內容有限，需避免推測未公開正文。\n- 我是否需要親自讀原文：不必：本輪公開內容有限或未出現可操作標的。\n\n[Activity 摘要]\n- 來源狀態：使用者設定暫停\n- 摘要：本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。\n- 明確提到的標的：不適用\n- 我是否需要親自看全文：不適用\n\n[標的快篩]\n1. AVAV\n- 盤前：盤前/盤後資料不足；最新收盤 資料不足（資料時間不足）\n- 5日漲跌：資料不足\n- 20日高點 / 目前價格距高點：資料不足 / 資料不足\n- 量能：最新 資料不足，20日均量 資料不足，量能比 資料不足x\n- 作者角度：財報趨勢、估值、產業趨勢、機構觀點僅整理自本輪公開文章；未明確提到者不補論點。\n- 研究級分類：資料不足\n- 下一交易日確認條件：觀察是否延續作者提到的催化方向，且價格不出現明顯放量轉弱。\n- 失效條件：跌破近期支撐或公開文章中的核心催化被後續資料否定。\n\n2. SCAR\n- 盤前：盤前/盤後資料不足；最新收盤 資料不足（資料時間不足）\n- 5日漲跌：資料不足\n- 20日高點 / 目前價格距高點：資料不足 / 資料不足\n- 量能：最新 資料不足，20日均量 資料不足，量能比 資料不足x\n- 作者角度：財報趨勢、估值、產業趨勢、機構觀點僅整理自本輪公開文章；未明確提到者不補論點。\n- 研究級分類：資料不足\n- 下一交易日確認條件：觀察是否延續作者提到的催化方向，且價格不出現明顯放量轉弱。\n- 失效條件：跌破近期支撐或公開文章中的核心催化被後續資料否定。\n\n3. SCDE\n- 盤前：盤前/盤後資料不足；最新收盤 資料不足（資料時間不足）\n- 5日漲跌：資料不足\n- 20日高點 / 目前價格距高點：資料不足 / 資料不足\n- 量能：最新 資料不足，20日均量 資料不足，量能比 資料不足x\n- 作者角度：財報趨勢、估值、產業趨勢、機構觀點僅整理自本輪公開文章；未明確提到者不補論點。\n- 研究級分類：資料不足\n- 下一交易日確認條件：觀察是否延續作者提到的催化方向，且價格不出現明顯放量轉弱。\n- 失效條件：跌破近期支撐或公開文章中的核心催化被後續資料否定。\n\n[今日研究優先級]\n1. AVAV 後續追蹤：本輪 1 篇公開文章提到，先確認作者論點與價格位置是否互相支持。\n2. SCAR 後續追蹤：本輪 1 篇公開文章提到，先確認作者論點與價格位置是否互相支持。\n3. SCDE 後續追蹤：本輪 1 篇公開文章提到，先確認作者論點與價格位置是否互相支持。\n\n[值得親自讀]\n- AeroVironment Inc. #AVAV 2026 第四季財務報告：補看作者對 AVAV, SCAR, SCDE 的原始脈絡與限制條件。\n\n內容僅供研究整理，不構成投資建議。\n",
+        "imported_at": "2026-07-08 14:17:45"
+      },
+      "articles": [
+        {
+          "id": 439,
+          "run_id": 226,
+          "author_id": 1,
+          "article_number": 2,
+          "title": "每日重點 260707 Substack 大叔留言重點",
+          "link": "https://unclestocknotes.substack.com/p/260707-substack",
+          "feed": "https://unclestocknotes.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20",
+          "source": "Substack 文章",
+          "published_at_tpe": "2026-07-08 15:05 Asia/Taipei",
+          "source_status": "付費牆/僅公開預覽",
+          "access_level": "付費牆預覽",
+          "stance": "無明確立場",
+          "time_frame": "未明確",
+          "operation_advice": "無明確建議",
+          "read_recommendation": "不必：本輪公開內容有限或未出現可操作標的。",
+          "tickers_text": "未明確",
+          "groups_text": "作者未明確提到",
+          "catalyst_text": "作者未明確提到",
+          "risk_text": "公開可見內容有限，需避免推測未公開正文。",
+          "summary_text": "✨提醒 【倉位控制 / 操作紀律】 倍數ETF、槓桿一定要設停損，正股成本若比較高也是，不要硬凹，否則對自己倉位很傷。\n【後續佈局方向】 回調轉強時，就是汰弱換強（調倉）的機會，要把握。坦白說，我還是看好先進封裝跟設備。\nThis post is for paid subscribers; public preview only.",
+          "excerpt_head": "✨提醒\n【倉位控制 / 操作紀律】\n倍數ETF、槓桿一定要設停損，正股成本若比較高也是，不要硬凹，否則對自己倉位很傷。\n高位時適時套利，遇到下跌才有底氣。\n【後續佈局方向】\n回調轉強時，就是汰弱換強（調倉）的機會，要把握。坦白說，我還是看好先進封裝跟設備。\nThis post is for paid subscribers; public preview only.",
+          "excerpt_tail": "✨提醒\n【倉位控制 / 操作紀律】\n倍數ETF、槓桿一定要設停損，正股成本若比較高也是，不要硬凹，否則對自己倉位很傷。\n高位時適時套利，遇到下跌才有底氣。\n【後續佈局方向】\n回調轉強時，就是汰弱換強（調倉）的機會，要把握。坦白說，我還是看好先進封裝跟設備。\nThis post is for paid subscribers; public preview only.",
+          "text_chars": 184,
+          "in_window": 1,
+          "contains_paid": 1,
+          "created_at": "2026-07-08 14:17:45",
+          "author_name": "大叔美股筆記 Uncle Stock Notes",
+          "tickers": null
+        },
+        {
+          "id": 440,
+          "run_id": 226,
+          "author_id": 5,
+          "article_number": 3,
+          "title": "三星没给答案，市场在期待7月下旬的一个验证",
+          "link": "https://raycat.substack.com/p/7-453",
+          "feed": "https://raycat.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20",
+          "source": "Substack 文章",
+          "published_at_tpe": "2026-07-08 10:51 Asia/Taipei",
+          "source_status": "付費牆/僅公開預覽",
+          "access_level": "付費牆預覽",
+          "stance": "無明確立場",
+          "time_frame": "未明確",
+          "operation_advice": "無明確建議",
+          "read_recommendation": "不必：本輪公開內容有限或未出現可操作標的。",
+          "tickers_text": "未明確",
+          "groups_text": "作者未明確提到",
+          "catalyst_text": "作者未明確提到",
+          "risk_text": "公開可見內容有限，需避免推測未公開正文。",
+          "summary_text": "无论如何，让刻意制造恐惧的标题左右你的投资决策，永远都是错误的。市场惩罚的恰恰是对波动做出的冲动、本能的反应。\nThis post is for paid subscribers; public preview only.",
+          "excerpt_head": "无论如何，让刻意制造恐惧的标题左右你的投资决策，永远都是错误的。市场惩罚的恰恰是对波动做出的冲动、本能的反应。\nThis post is for paid subscribers; public preview only.",
+          "excerpt_tail": "无论如何，让刻意制造恐惧的标题左右你的投资决策，永远都是错误的。市场惩罚的恰恰是对波动做出的冲动、本能的反应。\nThis post is for paid subscribers; public preview only.",
+          "text_chars": 111,
+          "in_window": 1,
+          "contains_paid": 1,
+          "created_at": "2026-07-08 14:17:45",
+          "author_name": "徐老猫 Raycat",
+          "tickers": null
+        },
+        {
+          "id": 438,
+          "run_id": 226,
+          "author_id": 1,
+          "article_number": 1,
+          "title": "AeroVironment Inc. #AVAV 2026 第四季財務報告",
+          "link": "https://unclestocknotes.substack.com/p/aerovironment-inc-avav-2026",
+          "feed": "https://unclestocknotes.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20",
+          "source": "Substack 文章",
+          "published_at_tpe": "2026-07-07 23:08 Asia/Taipei",
+          "source_status": "付費牆/僅公開預覽",
+          "access_level": "付費牆預覽",
+          "stance": "無明確立場",
+          "time_frame": "未明確",
+          "operation_advice": "無明確建議",
+          "read_recommendation": "需要：文章明確提到標的，適合補看原文確認作者脈絡。",
+          "tickers_text": "AVAV, SCAR, SCDE",
+          "groups_text": "作者未明確提到",
+          "catalyst_text": "作者未明確提到",
+          "risk_text": "公開可見內容有限，需避免推測未公開正文。",
+          "summary_text": "解碼 133% 併購幻術、SCAR 減損暴雷、SCDE 虧損，以及股價反噴 35% This post is for paid subscribers; public preview only.",
+          "excerpt_head": "解碼 133% 併購幻術、SCAR 減損暴雷、SCDE 虧損，以及股價反噴 35%\nThis post is for paid subscribers; public preview only.",
+          "excerpt_tail": "解碼 133% 併購幻術、SCAR 減損暴雷、SCDE 虧損，以及股價反噴 35%\nThis post is for paid subscribers; public preview only.",
+          "text_chars": 97,
+          "in_window": 1,
+          "contains_paid": 1,
+          "created_at": "2026-07-08 14:17:45",
+          "author_name": "大叔美股筆記 Uncle Stock Notes",
+          "tickers": "AVAV, SCAR, SCDE"
+        }
+      ],
+      "market_snapshots": [
+        {
+          "id": 372,
+          "run_id": 226,
+          "ticker": "AVAV",
+          "market_status": "盤前/盤後資料不足",
+          "current": null,
+          "current_ts": null,
+          "prior": null,
+          "pct_pre": null,
+          "pct5": null,
+          "hi20": null,
+          "dist20": null,
+          "latest_vol": null,
+          "avg20": null,
+          "rel_vol": null,
+          "source": "Nasdaq public API",
+          "research_class": "資料不足",
+          "next_condition": "觀察是否延續作者提到的催化方向，且價格不出現明顯放量轉弱。",
+          "invalid_condition": "跌破近期支撐或公開文章中的核心催化被後續資料否定。",
+          "notes_json": "{\"market_data\": {\"market_status\": \"盤前/盤後資料不足\", \"current\": null, \"current_ts\": null, \"prior\": null, \"pct_pre\": null, \"pct5\": null, \"hi20\": null, \"dist20\": null, \"latest_vol\": null, \"avg20\": null, \"rel_vol\": null, \"source\": \"Nasdaq public API\", \"error\": \"Nasdaq info=curl: (28) Operation timed out after 8002 milliseconds with 0 bytes received; historical=curl: (28) Operation timed out after 8002 milliseconds with 0 bytes received\"}, \"report_fields\": {\"盤前\": \"盤前/盤後資料不足；最新收盤 資料不足（資料時間不足）\", \"5日漲跌\": \"資料不足\", \"20日高點 / 目前價格距高點\": \"資料不足 / 資料不足\", \"量能\": \"最新 資料不足，20日均量 資料不足，量能比 資料不足x\", \"作者角度\": \"財報趨勢、估值、產業趨勢、機構觀點僅整理自本輪公開文章；未明確提到者不補論點。\", \"研究級分類\": \"資料不足\", \"下一交易日確認條件\": \"觀察是否延續作者提到的催化方向，且價格不出現明顯放量轉弱。\", \"失效條件\": \"跌破近期支撐或公開文章中的核心催化被後續資料否定。\"}}",
+          "created_at": "2026-07-08 14:17:45"
+        },
+        {
+          "id": 373,
+          "run_id": 226,
+          "ticker": "SCAR",
+          "market_status": "盤前/盤後資料不足",
+          "current": null,
+          "current_ts": null,
+          "prior": null,
+          "pct_pre": null,
+          "pct5": null,
+          "hi20": null,
+          "dist20": null,
+          "latest_vol": null,
+          "avg20": null,
+          "rel_vol": null,
+          "source": "Nasdaq public API",
+          "research_class": "資料不足",
+          "next_condition": "觀察是否延續作者提到的催化方向，且價格不出現明顯放量轉弱。",
+          "invalid_condition": "跌破近期支撐或公開文章中的核心催化被後續資料否定。",
+          "notes_json": "{\"market_data\": {\"market_status\": \"盤前/盤後資料不足\", \"current\": null, \"current_ts\": null, \"prior\": null, \"pct_pre\": null, \"pct5\": null, \"hi20\": null, \"dist20\": null, \"latest_vol\": null, \"avg20\": null, \"rel_vol\": null, \"source\": \"Nasdaq public API\", \"error\": \"Nasdaq info=curl: (28) Operation timed out after 8002 milliseconds with 0 bytes received; historical=curl: (28) Operation timed out after 8002 milliseconds with 0 bytes received\"}, \"report_fields\": {\"盤前\": \"盤前/盤後資料不足；最新收盤 資料不足（資料時間不足）\", \"5日漲跌\": \"資料不足\", \"20日高點 / 目前價格距高點\": \"資料不足 / 資料不足\", \"量能\": \"最新 資料不足，20日均量 資料不足，量能比 資料不足x\", \"作者角度\": \"財報趨勢、估值、產業趨勢、機構觀點僅整理自本輪公開文章；未明確提到者不補論點。\", \"研究級分類\": \"資料不足\", \"下一交易日確認條件\": \"觀察是否延續作者提到的催化方向，且價格不出現明顯放量轉弱。\", \"失效條件\": \"跌破近期支撐或公開文章中的核心催化被後續資料否定。\"}}",
+          "created_at": "2026-07-08 14:17:45"
+        },
+        {
+          "id": 374,
+          "run_id": 226,
+          "ticker": "SCDE",
+          "market_status": "盤前/盤後資料不足",
+          "current": null,
+          "current_ts": null,
+          "prior": null,
+          "pct_pre": null,
+          "pct5": null,
+          "hi20": null,
+          "dist20": null,
+          "latest_vol": null,
+          "avg20": null,
+          "rel_vol": null,
+          "source": "Nasdaq public API",
+          "research_class": "資料不足",
+          "next_condition": "觀察是否延續作者提到的催化方向，且價格不出現明顯放量轉弱。",
+          "invalid_condition": "跌破近期支撐或公開文章中的核心催化被後續資料否定。",
+          "notes_json": "{\"market_data\": {\"market_status\": \"盤前/盤後資料不足\", \"current\": null, \"current_ts\": null, \"prior\": null, \"pct_pre\": null, \"pct5\": null, \"hi20\": null, \"dist20\": null, \"latest_vol\": null, \"avg20\": null, \"rel_vol\": null, \"source\": \"Nasdaq public API\", \"error\": \"Nasdaq info=curl: (28) Operation timed out after 8002 milliseconds with 0 bytes received; historical=curl: (28) Operation timed out after 8002 milliseconds with 0 bytes received\"}, \"report_fields\": {\"盤前\": \"盤前/盤後資料不足；最新收盤 資料不足（資料時間不足）\", \"5日漲跌\": \"資料不足\", \"20日高點 / 目前價格距高點\": \"資料不足 / 資料不足\", \"量能\": \"最新 資料不足，20日均量 資料不足，量能比 資料不足x\", \"作者角度\": \"財報趨勢、估值、產業趨勢、機構觀點僅整理自本輪公開文章；未明確提到者不補論點。\", \"研究級分類\": \"資料不足\", \"下一交易日確認條件\": \"觀察是否延續作者提到的催化方向，且價格不出現明顯放量轉弱。\", \"失效條件\": \"跌破近期支撐或公開文章中的核心催化被後續資料否定。\"}}",
+          "created_at": "2026-07-08 14:17:45"
+        }
+      ],
+      "source_health": [
+        {
+          "id": 412,
+          "run_id": 226,
+          "source_name": "大叔美股筆記 Uncle Stock Notes",
+          "status": "大叔美股筆記 Uncle Stock Notes RSS https://unclestocknotes.substack.com/feed 失敗：HTTP 403；archive https://unclestocknotes.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 失敗：HTTP 403；改用 Jina Reader 讀公開 archive API 成功，解析 20 篇。",
+          "details": "大叔美股筆記 Uncle Stock Notes：大叔美股筆記 Uncle Stock Notes RSS https://unclestocknotes.substack.com/feed 失敗：HTTP 403；archive https://unclestocknotes.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 失敗：HTTP 403；改用 Jina Reader 讀公開 archive API 成功，解析 20 篇。"
+        },
+        {
+          "id": 413,
+          "run_id": 226,
+          "source_name": "Skilled Driver",
+          "status": "Skilled Driver RSS https://skilleddriver.substack.com/feed 失敗：HTTP 403；archive https://skilleddriver.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 失敗：HTTP 403；改用 Jina Reader 讀公開 archive API 成功，解析 20 篇。",
+          "details": "Skilled Driver：Skilled Driver RSS https://skilleddriver.substack.com/feed 失敗：HTTP 403；archive https://skilleddriver.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 失敗：HTTP 403；改用 Jina Reader 讀公開 archive API 成功，解析 20 篇。"
+        },
+        {
+          "id": 414,
+          "run_id": 226,
+          "source_name": "Michael M. Chang",
+          "status": "Michael M. Chang RSS https://michaelmchang.substack.com/feed 失敗：HTTP 403；archive https://michaelmchang.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 失敗：HTTP 403；改用 Jina Reader 讀公開 archive API 成功，解析 20 篇。",
+          "details": "Michael M. Chang：Michael M. Chang RSS https://michaelmchang.substack.com/feed 失敗：HTTP 403；archive https://michaelmchang.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 失敗：HTTP 403；改用 Jina Reader 讀公開 archive API 成功，解析 20 篇。"
+        },
+        {
+          "id": 415,
+          "run_id": 226,
+          "source_name": "徐老猫 Raycat",
+          "status": "徐老猫 Raycat RSS https://raycat.substack.com/feed 失敗：HTTP 403；archive https://raycat.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 失敗：HTTP 403；改用 Jina Reader 讀公開 archive API 成功，解析 20 篇。",
+          "details": "徐老猫 Raycat：徐老猫 Raycat RSS https://raycat.substack.com/feed 失敗：HTTP 403；archive https://raycat.substack.com/api/v1/archive?sort=new&search=&offset=0&limit=20 失敗：HTTP 403；改用 Jina Reader 讀公開 archive API 成功，解析 20 篇。"
+        },
+        {
+          "id": 416,
+          "run_id": 226,
+          "source_name": "Activity 摘要",
+          "status": "本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。",
+          "details": "Activity 摘要：本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。"
+        },
+        {
+          "id": 417,
+          "run_id": 226,
+          "source_name": "市場資料",
+          "status": "Nasdaq public API fresh 抓取；盤前/盤後資料不足時明確標示。",
+          "details": "市場資料：Nasdaq public API fresh 抓取；盤前/盤後資料不足時明確標示。"
+        }
+      ],
+      "daily_themes": [
+        {
+          "id": 137,
+          "run_id": 226,
+          "theme_order": 1,
+          "title": "AVAV 後續追蹤",
+          "details": "本輪 1 篇公開文章提到，先確認作者論點與價格位置是否互相支持。"
+        },
+        {
+          "id": 138,
+          "run_id": 226,
+          "theme_order": 2,
+          "title": "SCAR 後續追蹤",
+          "details": "本輪 1 篇公開文章提到，先確認作者論點與價格位置是否互相支持。"
+        },
+        {
+          "id": 139,
+          "run_id": 226,
+          "theme_order": 3,
+          "title": "SCDE 後續追蹤",
+          "details": "本輪 1 篇公開文章提到，先確認作者論點與價格位置是否互相支持。"
+        }
+      ]
+    },
     "225": {
       "run": {
         "id": 225,
