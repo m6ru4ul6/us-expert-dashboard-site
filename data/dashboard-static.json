@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-09T20:07:48+08:00",
+  "generated_at": "2026-07-09T20:10:58+08:00",
   "base_url": "https://m6ru4ul6.github.io/us-expert-dashboard-site",
   "latest_run_id": 228,
   "runs": [
@@ -13,10 +13,10 @@
       "adopted_count": 3,
       "paused_activity": "本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。",
       "market_data_source_json": "{\"primary\": \"Nasdaq public API\", \"prepost\": \"盤前/盤後資料不足\", \"ticker_count\": 0}",
-      "slack_status": null,
+      "slack_status": "delivered",
       "slack_http_code": null,
       "report_md": "[來源檢查]\n- 大叔美股筆記 Uncle Stock Notes：大叔美股筆記 Uncle Stock Notes RSS fresh 抓取成功，解析 20 篇。\n- Skilled Driver：Skilled Driver RSS fresh 抓取成功，解析 20 篇。\n- Michael M. Chang：Michael M. Chang RSS fresh 抓取成功，解析 20 篇。\n- 徐老猫 Raycat：徐老猫 Raycat RSS fresh 抓取成功，解析 20 篇。\n- Activity 摘要：本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。\n- 市場資料：本輪採納內容未出現可確認 ticker，略過市場快篩。\n\n[逐篇摘要]\n1. 大叔美股筆記 Uncle Stock Notes｜FOMC 6月會議紀要\n- 作者：大叔美股筆記 Uncle Stock Notes\n- 來源：Substack 文章\n- 標題：FOMC 6月會議紀要\n- 發布時間：2026-07-09 09:13 Asia/Taipei\n- 來源狀態：付費牆/僅公開預覽\n- 連結：https://unclestocknotes.substack.com/p/fomc-6\n- 立場：無明確立場\n- 時間框架：未明確\n- 重點 1：把所有人都拿來引用的 3.8％ 市場一直把 SEP 點陣圖的 3.8% 中位數，解讀成 Fed 已經準備升息一碼。但如果你把每一位與會者的點真正攤開來看，就會發現： 行動上是全票一致，路徑上卻是對半劈開。\n- 重點 2：投票的是 12 位有投票權的委員；提交點的是 18 位與會者（含無投票權的地方聯準銀行行長）。\n- 重點 3：這是兩群人，所以「全票通過」跟「沒有共識」並不矛盾，前者講今天做什麼，後者講接下來往哪走。\n- 重點 4：Kevin Warsh 沒有放自己的點 這份被市場稱為近年最鷹派的 SEP，主席 Kevin Warsh 自己，沒有在點陣圖留下預測。市場現在交易的，不一定是主席的想法，而是委員會平均之後的一個統計結果。\n- 明確提到的標的：未明確\n- 明確提到的族群：總經 / 利率\n- 催化因素：政策 / 利率\n- 操作建議：無明確建議\n- 風險或保留條件：公開可見內容有限，需避免推測未公開正文。\n- 我是否需要親自讀原文：需要：大叔為最高優先級來源，且公開預覽涉及 FOMC / SEP 利率路徑判讀，需看完原文確認作者對股市與殖利率的推導。\n\n2. 大叔美股筆記 Uncle Stock Notes｜每日重點 260708 Substack 大叔留言重點\n- 作者：大叔美股筆記 Uncle Stock Notes\n- 來源：Substack 文章\n- 標題：每日重點 260708 Substack 大叔留言重點\n- 發布時間：2026-07-09 14:22 Asia/Taipei\n- 來源狀態：付費牆/僅公開預覽\n- 連結：https://unclestocknotes.substack.com/p/260708-substack\n- 立場：無明確立場\n- 時間框架：未明確\n- 重點 1：​ 下半年到明年 DDR5 跟 LPDDR5 會爆缺。原因是機器人跟手機拉貨。所以蘋果才不爽，因為我給錢但我沒有長約。\n- 重點 2：​ 蘋果認為今年新機他可以賣很好，但沒 LPDDR5 所以他們不能賣。\n- 明確提到的標的：未明確\n- 明確提到的族群：記憶體 / HBM\n- 催化因素：產業趨勢、AI 基礎設施\n- 操作建議：無明確建議\n- 風險或保留條件：公開可見內容有限，需避免推測未公開正文。\n- 我是否需要親自讀原文：需要：大叔為最高優先級來源，且公開預覽涉及 DDR5 / LPDDR5 供給緊縮，需看完原文確認是否有具名記憶體或蘋果鏈標的。\n\n3. 徐老猫 Raycat｜估值合理性和现状，31只AI基建股短评(上)\n- 作者：徐老猫 Raycat\n- 來源：Substack 文章\n- 標題：估值合理性和现状，31只AI基建股短评(上)\n- 發布時間：2026-07-09 16:36 Asia/Taipei\n- 來源狀態：付費牆/僅公開預覽\n- 連結：https://raycat.substack.com/p/31ai\n- 立場：無明確立場\n- 時間框架：未明確\n- 重點 1：有关估值的合理性和业务近况，这里只做简短的评论。由于过去持续跟踪，本文就不做展开，希望帮助大家能对个股目前的站位有个大致了解。\n- 重點 2：需要强调的是， 这些股票并没有涵盖所有我认为重要的AI个股。\n- 重點 3：过往文章的链接我就不一一罗列了，有兴趣的朋友可以在Substack专栏里通过关键词搜索。\n- 重點 4：本文分两篇发出。距离收集资料和撰写已有数日，考虑到一夕多变的市场节奏，有些数据未免陈旧。\n- 重點 5：This post is for paid subscribers Subscribe Already a paid subscriber?\n- 明確提到的標的：未明確\n- 明確提到的族群：作者未明確提到\n- 催化因素：估值重評\n- 操作建議：無明確建議\n- 風險或保留條件：公開可見內容有限，需避免推測未公開正文。\n- 我是否需要親自讀原文：可略讀：公開預覽未列出 31 檔 AI 基建個股名稱，除非你持有相關 AI 基建股或想補估值框架。\n\n[Activity 摘要]\n- 來源狀態：使用者設定暫停\n- 摘要：本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。\n- 明確提到的標的：不適用\n- 我是否需要親自看全文：不適用\n\n[標的快篩]\n- 本輪採納內容未出現可確認美股 ticker，略過市場快篩。\n[今日研究優先級]\n1. FOMC / 利率路徑：大叔把全票決議與 SEP 點陣圖分歧拆開，研究重點是市場是否過度解讀 3.8% 中位數。\n2. DDR5 / LPDDR5 供給緊縮：大叔公開預覽提到機器人與手機拉貨造成缺貨，下一步是確認是否延伸到記憶體、蘋果鏈具名標的。\n3. AI 基建估值框架：Raycat 只公開預覽，列為候選研究方向；未取得付費正文前，不形成 31 檔個股結論。\n\n[值得親自讀]\n- FOMC 6月會議紀要：補看目的為確認大叔對 Fed 路徑分歧、主席缺席點陣圖與市場定價的完整推論；看完後決定是否調整美股利率敏感族群觀察。\n- 每日重點 260708 Substack 大叔留言重點：補看目的為確認 DDR5 / LPDDR5 供給緊縮是否有具名標的或供應鏈線索；看完後決定是否建立記憶體與蘋果鏈追蹤清單。\n\n內容僅供研究整理，不構成投資建議。\n",
-      "imported_at": "2026-07-09 12:07:02"
+      "imported_at": "2026-07-09 12:10:52"
     },
     {
       "id": 227,
@@ -13265,42 +13265,42 @@
   ],
   "source_health": [
     {
-      "id": 443,
+      "id": 449,
       "run_id": 228,
       "source_name": "大叔美股筆記 Uncle Stock Notes",
       "status": "大叔美股筆記 Uncle Stock Notes RSS fresh 抓取成功，解析 20 篇。",
       "details": "大叔美股筆記 Uncle Stock Notes：大叔美股筆記 Uncle Stock Notes RSS fresh 抓取成功，解析 20 篇。"
     },
     {
-      "id": 444,
+      "id": 450,
       "run_id": 228,
       "source_name": "Skilled Driver",
       "status": "Skilled Driver RSS fresh 抓取成功，解析 20 篇。",
       "details": "Skilled Driver：Skilled Driver RSS fresh 抓取成功，解析 20 篇。"
     },
     {
-      "id": 445,
+      "id": 451,
       "run_id": 228,
       "source_name": "Michael M. Chang",
       "status": "Michael M. Chang RSS fresh 抓取成功，解析 20 篇。",
       "details": "Michael M. Chang：Michael M. Chang RSS fresh 抓取成功，解析 20 篇。"
     },
     {
-      "id": 446,
+      "id": 452,
       "run_id": 228,
       "source_name": "徐老猫 Raycat",
       "status": "徐老猫 Raycat RSS fresh 抓取成功，解析 20 篇。",
       "details": "徐老猫 Raycat：徐老猫 Raycat RSS fresh 抓取成功，解析 20 篇。"
     },
     {
-      "id": 447,
+      "id": 453,
       "run_id": 228,
       "source_name": "Activity 摘要",
       "status": "本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。",
       "details": "Activity 摘要：本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。"
     },
     {
-      "id": 448,
+      "id": 454,
       "run_id": 228,
       "source_name": "市場資料",
       "status": "本輪採納內容未出現可確認 ticker，略過市場快篩。",
@@ -15038,21 +15038,21 @@
   ],
   "daily_themes": [
     {
-      "id": 143,
+      "id": 146,
       "run_id": 228,
       "theme_order": 1,
       "title": "FOMC / 利率路徑",
       "details": "大叔把全票決議與 SEP 點陣圖分歧拆開，研究重點是市場是否過度解讀 3.8% 中位數。"
     },
     {
-      "id": 144,
+      "id": 147,
       "run_id": 228,
       "theme_order": 2,
       "title": "DDR5 / LPDDR5 供給緊縮",
       "details": "大叔公開預覽提到機器人與手機拉貨造成缺貨，下一步是確認是否延伸到記憶體、蘋果鏈具名標的。"
     },
     {
-      "id": 145,
+      "id": 148,
       "run_id": 228,
       "theme_order": 3,
       "title": "AI 基建估值框架",
@@ -15665,10 +15665,10 @@
         "adopted_count": 3,
         "paused_activity": "本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。",
         "market_data_source_json": "{\"primary\": \"Nasdaq public API\", \"prepost\": \"盤前/盤後資料不足\", \"ticker_count\": 0}",
-        "slack_status": null,
+        "slack_status": "delivered",
         "slack_http_code": null,
         "report_md": "[來源檢查]\n- 大叔美股筆記 Uncle Stock Notes：大叔美股筆記 Uncle Stock Notes RSS fresh 抓取成功，解析 20 篇。\n- Skilled Driver：Skilled Driver RSS fresh 抓取成功，解析 20 篇。\n- Michael M. Chang：Michael M. Chang RSS fresh 抓取成功，解析 20 篇。\n- 徐老猫 Raycat：徐老猫 Raycat RSS fresh 抓取成功，解析 20 篇。\n- Activity 摘要：本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。\n- 市場資料：本輪採納內容未出現可確認 ticker，略過市場快篩。\n\n[逐篇摘要]\n1. 大叔美股筆記 Uncle Stock Notes｜FOMC 6月會議紀要\n- 作者：大叔美股筆記 Uncle Stock Notes\n- 來源：Substack 文章\n- 標題：FOMC 6月會議紀要\n- 發布時間：2026-07-09 09:13 Asia/Taipei\n- 來源狀態：付費牆/僅公開預覽\n- 連結：https://unclestocknotes.substack.com/p/fomc-6\n- 立場：無明確立場\n- 時間框架：未明確\n- 重點 1：把所有人都拿來引用的 3.8％ 市場一直把 SEP 點陣圖的 3.8% 中位數，解讀成 Fed 已經準備升息一碼。但如果你把每一位與會者的點真正攤開來看，就會發現： 行動上是全票一致，路徑上卻是對半劈開。\n- 重點 2：投票的是 12 位有投票權的委員；提交點的是 18 位與會者（含無投票權的地方聯準銀行行長）。\n- 重點 3：這是兩群人，所以「全票通過」跟「沒有共識」並不矛盾，前者講今天做什麼，後者講接下來往哪走。\n- 重點 4：Kevin Warsh 沒有放自己的點 這份被市場稱為近年最鷹派的 SEP，主席 Kevin Warsh 自己，沒有在點陣圖留下預測。市場現在交易的，不一定是主席的想法，而是委員會平均之後的一個統計結果。\n- 明確提到的標的：未明確\n- 明確提到的族群：總經 / 利率\n- 催化因素：政策 / 利率\n- 操作建議：無明確建議\n- 風險或保留條件：公開可見內容有限，需避免推測未公開正文。\n- 我是否需要親自讀原文：需要：大叔為最高優先級來源，且公開預覽涉及 FOMC / SEP 利率路徑判讀，需看完原文確認作者對股市與殖利率的推導。\n\n2. 大叔美股筆記 Uncle Stock Notes｜每日重點 260708 Substack 大叔留言重點\n- 作者：大叔美股筆記 Uncle Stock Notes\n- 來源：Substack 文章\n- 標題：每日重點 260708 Substack 大叔留言重點\n- 發布時間：2026-07-09 14:22 Asia/Taipei\n- 來源狀態：付費牆/僅公開預覽\n- 連結：https://unclestocknotes.substack.com/p/260708-substack\n- 立場：無明確立場\n- 時間框架：未明確\n- 重點 1：​ 下半年到明年 DDR5 跟 LPDDR5 會爆缺。原因是機器人跟手機拉貨。所以蘋果才不爽，因為我給錢但我沒有長約。\n- 重點 2：​ 蘋果認為今年新機他可以賣很好，但沒 LPDDR5 所以他們不能賣。\n- 明確提到的標的：未明確\n- 明確提到的族群：記憶體 / HBM\n- 催化因素：產業趨勢、AI 基礎設施\n- 操作建議：無明確建議\n- 風險或保留條件：公開可見內容有限，需避免推測未公開正文。\n- 我是否需要親自讀原文：需要：大叔為最高優先級來源，且公開預覽涉及 DDR5 / LPDDR5 供給緊縮，需看完原文確認是否有具名記憶體或蘋果鏈標的。\n\n3. 徐老猫 Raycat｜估值合理性和现状，31只AI基建股短评(上)\n- 作者：徐老猫 Raycat\n- 來源：Substack 文章\n- 標題：估值合理性和现状，31只AI基建股短评(上)\n- 發布時間：2026-07-09 16:36 Asia/Taipei\n- 來源狀態：付費牆/僅公開預覽\n- 連結：https://raycat.substack.com/p/31ai\n- 立場：無明確立場\n- 時間框架：未明確\n- 重點 1：有关估值的合理性和业务近况，这里只做简短的评论。由于过去持续跟踪，本文就不做展开，希望帮助大家能对个股目前的站位有个大致了解。\n- 重點 2：需要强调的是， 这些股票并没有涵盖所有我认为重要的AI个股。\n- 重點 3：过往文章的链接我就不一一罗列了，有兴趣的朋友可以在Substack专栏里通过关键词搜索。\n- 重點 4：本文分两篇发出。距离收集资料和撰写已有数日，考虑到一夕多变的市场节奏，有些数据未免陈旧。\n- 重點 5：This post is for paid subscribers Subscribe Already a paid subscriber?\n- 明確提到的標的：未明確\n- 明確提到的族群：作者未明確提到\n- 催化因素：估值重評\n- 操作建議：無明確建議\n- 風險或保留條件：公開可見內容有限，需避免推測未公開正文。\n- 我是否需要親自讀原文：可略讀：公開預覽未列出 31 檔 AI 基建個股名稱，除非你持有相關 AI 基建股或想補估值框架。\n\n[Activity 摘要]\n- 來源狀態：使用者設定暫停\n- 摘要：本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。\n- 明確提到的標的：不適用\n- 我是否需要親自看全文：不適用\n\n[標的快篩]\n- 本輪採納內容未出現可確認美股 ticker，略過市場快篩。\n[今日研究優先級]\n1. FOMC / 利率路徑：大叔把全票決議與 SEP 點陣圖分歧拆開，研究重點是市場是否過度解讀 3.8% 中位數。\n2. DDR5 / LPDDR5 供給緊縮：大叔公開預覽提到機器人與手機拉貨造成缺貨，下一步是確認是否延伸到記憶體、蘋果鏈具名標的。\n3. AI 基建估值框架：Raycat 只公開預覽，列為候選研究方向；未取得付費正文前，不形成 31 檔個股結論。\n\n[值得親自讀]\n- FOMC 6月會議紀要：補看目的為確認大叔對 Fed 路徑分歧、主席缺席點陣圖與市場定價的完整推論；看完後決定是否調整美股利率敏感族群觀察。\n- 每日重點 260708 Substack 大叔留言重點：補看目的為確認 DDR5 / LPDDR5 供給緊縮是否有具名標的或供應鏈線索；看完後決定是否建立記憶體與蘋果鏈追蹤清單。\n\n內容僅供研究整理，不構成投資建議。\n",
-        "imported_at": "2026-07-09 12:07:02"
+        "imported_at": "2026-07-09 12:10:52"
       },
       "articles": [
         {
@@ -15765,42 +15765,42 @@
       "market_snapshots": [],
       "source_health": [
         {
-          "id": 443,
+          "id": 449,
           "run_id": 228,
           "source_name": "大叔美股筆記 Uncle Stock Notes",
           "status": "大叔美股筆記 Uncle Stock Notes RSS fresh 抓取成功，解析 20 篇。",
           "details": "大叔美股筆記 Uncle Stock Notes：大叔美股筆記 Uncle Stock Notes RSS fresh 抓取成功，解析 20 篇。"
         },
         {
-          "id": 444,
+          "id": 450,
           "run_id": 228,
           "source_name": "Skilled Driver",
           "status": "Skilled Driver RSS fresh 抓取成功，解析 20 篇。",
           "details": "Skilled Driver：Skilled Driver RSS fresh 抓取成功，解析 20 篇。"
         },
         {
-          "id": 445,
+          "id": 451,
           "run_id": 228,
           "source_name": "Michael M. Chang",
           "status": "Michael M. Chang RSS fresh 抓取成功，解析 20 篇。",
           "details": "Michael M. Chang：Michael M. Chang RSS fresh 抓取成功，解析 20 篇。"
         },
         {
-          "id": 446,
+          "id": 452,
           "run_id": 228,
           "source_name": "徐老猫 Raycat",
           "status": "徐老猫 Raycat RSS fresh 抓取成功，解析 20 篇。",
           "details": "徐老猫 Raycat：徐老猫 Raycat RSS fresh 抓取成功，解析 20 篇。"
         },
         {
-          "id": 447,
+          "id": 453,
           "run_id": 228,
           "source_name": "Activity 摘要",
           "status": "本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。",
           "details": "Activity 摘要：本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。"
         },
         {
-          "id": 448,
+          "id": 454,
           "run_id": 228,
           "source_name": "市場資料",
           "status": "本輪採納內容未出現可確認 ticker，略過市場快篩。",
@@ -15809,21 +15809,21 @@
       ],
       "daily_themes": [
         {
-          "id": 143,
+          "id": 146,
           "run_id": 228,
           "theme_order": 1,
           "title": "FOMC / 利率路徑",
           "details": "大叔把全票決議與 SEP 點陣圖分歧拆開，研究重點是市場是否過度解讀 3.8% 中位數。"
         },
         {
-          "id": 144,
+          "id": 147,
           "run_id": 228,
           "theme_order": 2,
           "title": "DDR5 / LPDDR5 供給緊縮",
           "details": "大叔公開預覽提到機器人與手機拉貨造成缺貨，下一步是確認是否延伸到記憶體、蘋果鏈具名標的。"
         },
         {
-          "id": 145,
+          "id": 148,
           "run_id": 228,
           "theme_order": 3,
           "title": "AI 基建估值框架",
