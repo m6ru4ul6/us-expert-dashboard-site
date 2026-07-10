@@ -2,10 +2,10 @@
   "ok": true,
   "output": "/home/runner/work/us-expert-dashboard/us-expert-dashboard/public",
   "db": "/home/runner/work/us-expert-dashboard/us-expert-dashboard/data/us_expert_dashboard.sqlite3",
-  "generated_at": "2026-07-09T23:15:29+08:00",
+  "generated_at": "2026-07-10T22:32:08+08:00",
   "base_url": "https://m6ru4ul6.github.io/us-expert-dashboard-site",
-  "latest_run_id": 227,
-  "run_count": 90,
-  "article_count": 191,
-  "market_snapshot_count": 203
+  "latest_run_id": 228,
+  "run_count": 91,
+  "article_count": 193,
+  "market_snapshot_count": 204
 }
