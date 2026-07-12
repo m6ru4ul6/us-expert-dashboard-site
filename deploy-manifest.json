@@ -1,11 +1,11 @@
 {
   "ok": true,
-  "output": "public",
-  "db": "/Users/dwaynemacpro/Documents/美股分析師專家建議/data/us_expert_dashboard.sqlite3",
-  "generated_at": "2026-07-11T21:51:40+08:00",
+  "output": "/home/runner/work/us-expert-dashboard/us-expert-dashboard/public",
+  "db": "/home/runner/work/us-expert-dashboard/us-expert-dashboard/data/us_expert_dashboard.sqlite3",
+  "generated_at": "2026-07-12T21:24:23+08:00",
   "base_url": "https://m6ru4ul6.github.io/us-expert-dashboard-site",
-  "latest_run_id": 232,
-  "run_count": 92,
-  "article_count": 202,
-  "market_snapshot_count": 229
+  "latest_run_id": 230,
+  "run_count": 93,
+  "article_count": 196,
+  "market_snapshot_count": 206
 }
