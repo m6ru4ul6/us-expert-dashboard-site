@@ -505,30 +505,30 @@
         <div class="page-kicker">信任儀表板</div>
         <h1>來源健康</h1>
         <div class="page-subtitle">確認文章抓取、行情來源、匯入流程與通知流程是否可信。</div>
-        <div class="run-meta"><span class="chip info">最新執行 2026-07-18 20:00:28 Asia/Taipei</span></div>
+        <div class="run-meta"><span class="chip info">最新執行 2026-07-19 20:02:34 Asia/Taipei</span></div>
       </div>
-      <div class="count-pill">2 項需留意</div>
+      <div class="count-pill">3 項需留意</div>
     </div>
     <section class="source-grid">
       <div class="source-card">
         <div class="source-title">文章來源</div>
-        <div class="source-value">8 項</div>
+        <div class="source-value">10 項</div>
         <span class="chip warn">需留意</span>
       </div>
       <div class="source-card">
         <div class="source-title">行情來源</div>
-        <div class="source-value">Nasdaq public API with Yahoo Finance chart fresh fallback</div>
-        <span class="chip good">已記錄</span>
+        <div class="source-value">Yahoo Finance chart fresh fallback</div>
+        <span class="chip warn">有 fallback</span>
       </div>
       <div class="source-card">
         <div class="source-title">匯入流程</div>
-        <div class="source-value">4 篇</div>
+        <div class="source-value">2 篇</div>
         <span class="chip good">SQLite 已更新</span>
       </div>
       <div class="source-card">
         <div class="source-title">通知流程</div>
-        <div class="source-value">delivered</div>
-        <span class="chip good">送達</span>
+        <div class="source-value">未知</div>
+        <span class="chip warn">需確認</span>
       </div>
     </section>
     <div class="health-grid">
@@ -539,10 +539,18 @@
         <div class="source-list">
         <article class="source-item">
           <div class="ticker-head">
-            <h3>大叔美股筆記 Uncle Stock Notes</h3>
-            <span class="chip info">RSS fresh HTTP 200，結構化解析 20 篇；時間窗內採納 2 篇，兩篇公開文章頁均 fresh HTTP 200。</span>
+            <h3>採納時間窗</h3>
+            <span class="chip info">2026-07-18 20:02:34 至 2026-07-19 20:02:34 Asia/Taipei。</span>
           </div>
-          <div class="muted">大叔美股筆記 Uncle Stock Notes：RSS fresh HTTP 200，結構化解析 20 篇；時間窗內採納 2 篇，兩篇公開文章頁均 fresh HTTP 200。</div>
+          <div class="muted">採納時間窗：2026-07-18 20:02:34 至 2026-07-19 20:02:34 Asia/Taipei。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>大叔美股筆記 Uncle Stock Notes</h3>
+            <span class="chip info">RSS fresh HTTP 200，結構化解析 20 篇；時間窗內無新文章。</span>
+          </div>
+          <div class="muted">大叔美股筆記 Uncle Stock Notes：RSS fresh HTTP 200，結構化解析 20 篇；時間窗內無新文章。</div>
         </article>
         
         <article class="source-item">
@@ -564,25 +572,33 @@
         <article class="source-item">
           <div class="ticker-head">
             <h3>徐老猫 Raycat</h3>
-            <span class="chip info">RSS fresh HTTP 200，結構化解析 20 篇；時間窗內無新文章。</span>
+            <span class="chip warn">RSS fresh HTTP 200，結構化解析 20 篇；時間窗內 1 篇，公開文章頁 fresh HTTP 200，確認為付費牆／僅公開預覽。</span>
           </div>
-          <div class="muted">徐老猫 Raycat：RSS fresh HTTP 200，結構化解析 20 篇；時間窗內無新文章。</div>
+          <div class="muted">徐老猫 Raycat：RSS fresh HTTP 200，結構化解析 20 篇；時間窗內 1 篇，公開文章頁 fresh HTTP 200，確認為付費牆／僅公開預覽。</div>
         </article>
         
         <article class="source-item">
           <div class="ticker-head">
             <h3>其他美股向 Substack</h3>
-            <span class="chip info">Michael J. Burry、Damnang、FundaAI、SemiAnalysis、Quality Stocks、High Growth Investing、SEMIVISION 的 RSS 均 fresh HTTP 200 且各解析 20 篇；採納 Michael J. Burry 與 SEMIVISION 各 1 篇。Beating The Tide RSS fresh HTTP 200，但結構化解析 0 篇，未用舊資料補判定。</span>
+            <span class="chip info">fresh 檢查 Michael J. Burry、Damnang、FundaAI、SemiAnalysis、Quality Stocks、High Growth Investing、Beating The Tide、SEMIVISION 的 public RSS，並 fresh 檢查 Substack finance／technology discovery 頁。</span>
           </div>
-          <div class="muted">其他美股向 Substack：Michael J. Burry、Damnang、FundaAI、SemiAnalysis、Quality Stocks、High Growth Investing、SEMIVISION 的 RSS 均 fresh HTTP 200 且各解析 20 篇；採納 Michael J. Burry 與 SEMIVISION 各 1 篇。Beating The Tide RSS fresh HTTP 200，但結構化解析 0 篇，未用舊資料補判定。</div>
+          <div class="muted">其他美股向 Substack：fresh 檢查 Michael J. Burry、Damnang、FundaAI、SemiAnalysis、Quality Stocks、High Growth Investing、Beating The Tide、SEMIVISION 的 public RSS，並 fresh 檢查 Substack finance／technology discovery 頁。</div>
         </article>
         
         <article class="source-item">
           <div class="ticker-head">
-            <h3>採納時間窗</h3>
-            <span class="chip info">2026-07-17 20:00:28 至 2026-07-18 20:00:28 Asia/Taipei。</span>
+            <h3>補充掃描結果</h3>
+            <span class="chip good">Quality Stocks 有 1 篇時間窗內公開全文；其餘補充 feeds 無時間窗內新文。Beating The Tide RSS HTTP 200 但結構化解析 0 篇，未用舊資料補判定。</span>
           </div>
-          <div class="muted">採納時間窗：2026-07-17 20:00:28 至 2026-07-18 20:00:28 Asia/Taipei。</div>
+          <div class="muted">補充掃描結果：Quality Stocks 有 1 篇時間窗內公開全文；其餘補充 feeds 無時間窗內新文。Beating The Tide RSS HTTP 200 但結構化解析 0 篇，未用舊資料補判定。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>Quality Stocks 文章</h3>
+            <span class="chip good">RSS 已取得約 5,000 字公開正文，公開文章頁 fresh HTTP 200 且正文一致，來源狀態判定為 RSS 已取得全文／公開頁全文。</span>
+          </div>
+          <div class="muted">Quality Stocks 文章：RSS 已取得約 5,000 字公開正文，公開文章頁 fresh HTTP 200 且正文一致，來源狀態判定為 RSS 已取得全文／公開頁全文。</div>
         </article>
         
         <article class="source-item">
@@ -596,19 +612,30 @@
         <article class="source-item">
           <div class="ticker-head">
             <h3>市場資料</h3>
-            <span class="chip warn">TSM、NFLX 的 Nasdaq public API fresh 請求逾時，改用 Yahoo Finance chart fresh fallback；最新可得資料為 2026-07-18 04:00 Asia/Taipei regular session，盤前/盤後資料不足。</span>
+            <span class="chip warn">Nasdaq public API 對首批補充標的逾時，改用 Yahoo Finance chart fresh fallback；12 檔均取得 5 日、20 日高點與量能資料。因目前為週末，最新可得資料是美股 2026-07-17 regular session，盤前／盤後資料不足。</span>
           </div>
-          <div class="muted">市場資料：TSM、NFLX 的 Nasdaq public API fresh 請求逾時，改用 Yahoo Finance chart fresh fallback；最新可得資料為 2026-07-18 04:00 Asia/Taipei regular session，盤前/盤後資料不足。</div>
+          <div class="muted">市場資料：Nasdaq public API 對首批補充標的逾時，改用 Yahoo Finance chart fresh fallback；12 檔均取得 5 日、20 日高點與量能資料。因目前為週末，最新可得資料是美股 2026-07-17 regular session，盤前／盤後資料不足。</div>
         </article>
         </div>
         <div class="mini-card">
           <h3>市場資料來源細節</h3>
-          <div class="quick-filters"><span class="chip info">primary: Nasdaq public API with Yahoo Finance chart fresh fallback</span><span class="chip info">prepost: 盤前/盤後資料不足</span><span class="chip info">ticker_count: 2</span></div>
+          <div class="quick-filters"><span class="chip info">primary: Yahoo Finance chart fresh fallback</span><span class="chip info">failed_source: Nasdaq public API timeout on initial supplemental batch</span><span class="chip info">prepost: 盤前/盤後資料不足；週末最新可得為 2026-07-17 regular session</span><span class="chip info">ticker_count: 12</span></div>
         </div>
       </section>
       <aside class="mini-card">
         <h2>最近幾輪狀態</h2>
         <div class="timeline-list">
+        <div class="timeline-item">
+          <div>
+            <strong>2026-07-19 20:02:34 Asia/Taipei</strong>
+            <div class="ticker-meta">採納 2 篇｜檢查 10 項</div>
+          </div>
+          <div class="chips">
+            <span class="chip warn">需留意</span>
+            <span class="chip warn">Slack 未知</span>
+          </div>
+        </div>
+        
         <div class="timeline-item">
           <div>
             <strong>2026-07-18 20:00:28 Asia/Taipei</strong>
@@ -679,17 +706,6 @@
           <div>
             <strong>2026-07-12 20:02:39 Asia/Taipei</strong>
             <div class="ticker-meta">採納 0 篇｜檢查 6 項</div>
-          </div>
-          <div class="chips">
-            <span class="chip warn">需留意</span>
-            <span class="chip info">Slack delivered</span>
-          </div>
-        </div>
-        
-        <div class="timeline-item">
-          <div>
-            <strong>2026-07-11 21:46:14 Asia/Taipei</strong>
-            <div class="ticker-meta">採納 3 篇｜檢查 6 項</div>
           </div>
           <div class="chips">
             <span class="chip warn">需留意</span>

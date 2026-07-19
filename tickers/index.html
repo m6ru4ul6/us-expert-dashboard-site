@@ -506,13 +506,13 @@
         <h1>標的快篩</h1>
         <div class="page-subtitle">分類為研究級整理，不構成投資建議，也不代表自動下單訊號。</div>
       </div>
-      <div class="count-pill">111 檔</div>
+      <div class="count-pill">119 檔</div>
     </div>
     <div class="grid stats">
-      <div class="stat-card"><div class="stat-label">可研究標的</div><div class="stat-value">57</div><div class="stat-note">含觀察與等待確認</div></div>
-      <div class="stat-card danger"><div class="stat-label">風險優先</div><div class="stat-value">13</div><div class="stat-note">需先避開或失效</div></div>
-      <div class="stat-card info"><div class="stat-label">總標的</div><div class="stat-value">111</div><div class="stat-note">已清理 ticker 顯示</div></div>
-      <div class="stat-card warn"><div class="stat-label">資料不足</div><div class="stat-value">54</div><div class="stat-note">保留但降低視覺權重</div></div>
+      <div class="stat-card"><div class="stat-label">可研究標的</div><div class="stat-value">60</div><div class="stat-note">含觀察與等待確認</div></div>
+      <div class="stat-card danger"><div class="stat-label">風險優先</div><div class="stat-value">14</div><div class="stat-note">需先避開或失效</div></div>
+      <div class="stat-card info"><div class="stat-label">總標的</div><div class="stat-value">119</div><div class="stat-note">已清理 ticker 顯示</div></div>
+      <div class="stat-card warn"><div class="stat-label">資料不足</div><div class="stat-value">59</div><div class="stat-note">保留但降低視覺權重</div></div>
     </div>
     <div class="quick-filters"><a class="chip good" href="/us-expert-dashboard-site/tickers?sort=priority">優先級</a><a class="chip muted" href="/us-expert-dashboard-site/tickers?sort=mentions">提及次數</a><a class="chip muted" href="/us-expert-dashboard-site/tickers?sort=pct5">5日強度</a><a class="chip muted" href="/us-expert-dashboard-site/tickers?sort=distance">離高點</a><a class="chip muted" href="/us-expert-dashboard-site/tickers?sort=volume">量能</a></div>
     <section class="ticker-grid">
@@ -687,6 +687,27 @@
             <article class="ticker-card danger">
               <div class="ticker-head">
                 <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=APP">APP</a>
+                  <div class="ticker-meta">文章提及 1 次｜2026-07-18 04:00 Asia/Taipei</div>
+                </div>
+                <span class="chip danger">先避開</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$424.54</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-16.26%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-26.35%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.98</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 74%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>先等待大幅回撤後的 EPS／FCF 預估與估值重新可驗證，再談觀察</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若只是價格反彈、沒有基本面與估值支持，維持避開</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card danger">
+              <div class="ticker-head">
+                <div>
                   <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=CELH">CELH</a>
                   <div class="ticker-meta">文章提及 1 次｜Jun 16, 2026 8:07 AM ET</div>
                 </div>
@@ -793,7 +814,7 @@
               <div class="ticker-head">
                 <div>
                   <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=TSM">TSM</a>
-                  <div class="ticker-meta">文章提及 23 次｜2026-07-18 04:00 Asia/Taipei</div>
+                  <div class="ticker-meta">文章提及 24 次｜2026-07-18 04:00 Asia/Taipei</div>
                 </div>
                 <span class="chip good">僅適合原持股續抱或加倉觀察</span>
               </div>
@@ -805,8 +826,8 @@
               </div>
               <div class="position-track"><div class="position-fill" style="--bar: 83%"></div></div>
               <div class="condition-grid">
-                <div class="condition"><div class="condition-label">確認條件</div>觀察財報後賣壓是否停止擴大、量能回落且市場開始用經常性獲利而非一次性利益重新定價。</div>
-                <div class="condition"><div class="condition-label">失效條件</div>若持續放量創低，或後續法說資料顯示經常性獲利與毛利率無法支撐作者的財報品質框架，暫停加倉研究。</div>
+                <div class="condition"><div class="condition-label">確認條件</div>高於均量的回檔先止穩，且 EPS／毛利與資本支出趨勢沒有再下修</div>
+                <div class="condition"><div class="condition-label">失效條件</div>獲利或毛利預估持續下修，且回檔轉為基本面重估</div>
               </div>
             </article>
             
@@ -1017,27 +1038,6 @@
               <div class="condition-grid">
                 <div class="condition"><div class="condition-label">確認條件</div>若回測 6/23 區間低點不破、相對大盤續強，可視為既有主題趨勢仍健康。</div>
                 <div class="condition"><div class="condition-label">失效條件</div>若失守 6/23 低點且相對強弱轉差，代表主題資金並未擴散到個股層級。</div>
-              </div>
-            </article>
-            
-            <article class="ticker-card good">
-              <div class="ticker-head">
-                <div>
-                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=GEV">GEV</a>
-                  <div class="ticker-meta">文章提及 2 次｜Jun 23, 2026, 4:00 PM EDT</div>
-                </div>
-                <span class="chip good">可列入開倉觀察</span>
-              </div>
-              <div class="metrics-row">
-                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$1,034.98</span></div>
-                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+5.36%</span></div>
-                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-9.37%</span></div>
-                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.14</span></div>
-              </div>
-              <div class="position-track"><div class="position-fill" style="--bar: 91%"></div></div>
-              <div class="condition-grid">
-                <div class="condition"><div class="condition-label">確認條件</div>下一交易日若能延續盤前強勢、守住 6/23 日內低點，且量能不弱於近 20 日均量，可視為 AI 電力鏈主線仍在擴散。</div>
-                <div class="condition"><div class="condition-label">失效條件</div>若盤前走強後開高走低，並跌破 6/23 低點或整個能源鏈同步轉弱，則本輪結構性主線暫不成立。</div>
               </div>
             </article>
             
@@ -1527,27 +1527,6 @@
             <article class="ticker-card good">
               <div class="ticker-head">
                 <div>
-                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=UBER">UBER</a>
-                  <div class="ticker-meta">文章提及 1 次｜Jul 7, 2026 8:09 AM ET</div>
-                </div>
-                <span class="chip good">可列入開倉觀察</span>
-              </div>
-              <div class="metrics-row">
-                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$72.99</span></div>
-                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-4.96%</span></div>
-                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-6.14%</span></div>
-                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.68</span></div>
-              </div>
-              <div class="position-track"><div class="position-fill" style="--bar: 94%"></div></div>
-              <div class="condition-grid">
-                <div class="condition"><div class="condition-label">確認條件</div>觀察 Waymo 合作結束 headline 是否被市場消化，且股價能否守住 20 日區間下緣。</div>
-                <div class="condition"><div class="condition-label">失效條件</div>若 robotaxi 敘事壓倒 compounder thesis，或原文 TSR 假設不成立，取消觀察。</div>
-              </div>
-            </article>
-            
-            <article class="ticker-card good">
-              <div class="ticker-head">
-                <div>
                   <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=VRT">VRT</a>
                   <div class="ticker-meta">文章提及 1 次｜Jun 23, 2026, 4:00 PM EDT</div>
                 </div>
@@ -1587,6 +1566,27 @@
               </div>
             </article>
             
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=ZTS">ZTS</a>
+                  <div class="ticker-meta">文章提及 1 次｜2026-07-18 04:01 Asia/Taipei</div>
+                </div>
+                <span class="chip good">可列入開倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$76.56</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+1.32%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-4.19%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.07</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 96%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>確認營運問題屬短期、EPS 預估不再下修，且價格在量能正常下止穩</div>
+                <div class="condition"><div class="condition-label">失效條件</div>營運問題轉為結構性、公司下修中期指引，或 12 倍估值口徑無法由原始資料驗證</div>
+              </div>
+            </article>
+            
             <article class="ticker-card warn">
               <div class="ticker-head">
                 <div>
@@ -1605,6 +1605,27 @@
               <div class="condition-grid">
                 <div class="condition"><div class="condition-label">確認條件</div>先看價格能否在近期快速上漲後維持量價穩定，並等待後續財報回答巨額 Capex 是否轉成可驗證的需求與回報。</div>
                 <div class="condition"><div class="condition-label">失效條件</div>Capex 持續上升但後續財報無法支持需求或報酬，或價格出現明顯放量轉弱。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card warn">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=GEV">GEV</a>
+                  <div class="ticker-meta">文章提及 3 次｜2026-07-18 04:00 Asia/Taipei</div>
+                </div>
+                <span class="chip warn">等回檔，不追高</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$1,057.84</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-3.09%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-11.55%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.11</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 88%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>等待 EPS／FCF 成長能支持估值，並觀察回檔後價格與量能是否穩定</div>
+                <div class="condition"><div class="condition-label">失效條件</div>獲利預估下修同時估值仍偏高，或資本支出週期轉弱</div>
               </div>
             </article>
             
@@ -1647,6 +1668,27 @@
               <div class="condition-grid">
                 <div class="condition"><div class="condition-label">確認條件</div>確認 PayPal 董事會回應、融資承諾與是否出現加價／競標，而非只追逐新聞溢價。</div>
                 <div class="condition"><div class="condition-label">失效條件</div>報價撤回、融資條件惡化、監管阻力升高，或市場價格開始反映交易失敗情境。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card warn">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=UBER">UBER</a>
+                  <div class="ticker-meta">文章提及 2 次｜2026-07-18 04:00 Asia/Taipei</div>
+                </div>
+                <span class="chip warn">等回檔，不追高</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$72.46</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-2.79%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-6.82%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.89</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 93%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>等待 EPS／FCF 成長與估值相互支持，且價格回檔後止穩</div>
+                <div class="condition"><div class="condition-label">失效條件</div>成長或獲利預估下修，市場仍只靠動能定價</div>
               </div>
             </article>
             
@@ -1713,24 +1755,45 @@
               </div>
             </article>
             
+            <article class="ticker-card warn">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=NXT">NXT</a>
+                  <div class="ticker-meta">文章提及 1 次｜2026-07-18 04:00 Asia/Taipei</div>
+                </div>
+                <span class="chip warn">等回檔，不追高</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$103.10</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-7.53%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-20.69%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.66</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 79%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>高於均量的下跌先停止，且訂單／毛利與 EPS 預估維持</div>
+                <div class="condition"><div class="condition-label">失效條件</div>高量續跌伴隨指引或需求下修</div>
+              </div>
+            </article>
+            
             <article class="ticker-card muted">
               <div class="ticker-head">
                 <div>
                   <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=NVDA">NVDA</a>
-                  <div class="ticker-meta">文章提及 26 次｜2026-07-16 20:05 Asia/Taipei</div>
+                  <div class="ticker-meta">文章提及 27 次｜2026-07-18 04:00 Asia/Taipei</div>
                 </div>
                 <span class="chip muted">資料不足</span>
               </div>
               <div class="metrics-row">
-                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$208.99</span></div>
-                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+4.11%</span></div>
-                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-2.34%</span></div>
-                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.86</span></div>
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$202.81</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-3.86%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-5.22%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.99</span></div>
               </div>
-              <div class="position-track"><div class="position-fill" style="--bar: 98%"></div></div>
+              <div class="position-track"><div class="position-fill" style="--bar: 95%"></div></div>
               <div class="condition-grid">
-                <div class="condition"><div class="condition-label">確認條件</div>需有直接針對 NVDA 的新訂單、財報或估值論點，才可從背景標的升級為開倉觀察。</div>
-                <div class="condition"><div class="condition-label">失效條件</div>本輪若僅是產業歷史背景，不能當作 NVDA 新交易訊號。</div>
+                <div class="condition"><div class="condition-label">確認條件</div>先確認 AI 基建股賣壓是否止穩，以及是否出現實際資本支出下修證據</div>
+                <div class="condition"><div class="condition-label">失效條件</div>若作者完整論證並非針對 NVDA，則不得把預覽的產業判斷直接轉為 NVDA 個股交易</div>
               </div>
             </article>
             
@@ -2619,6 +2682,27 @@
             <article class="ticker-card muted">
               <div class="ticker-head">
                 <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=LGRDY">LGRDY</a>
+                  <div class="ticker-meta">文章提及 1 次｜2026-07-18 04:00 Asia/Taipei</div>
+                </div>
+                <span class="chip muted">資料不足</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$30.98</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-3.25%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-12.52%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.76</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 87%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>先補 EPS／FCF、估值與流動性資料</div>
+                <div class="condition"><div class="condition-label">失效條件</div>不適用；作者論證不足且 OTC 流動性較低</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card muted">
+              <div class="ticker-head">
+                <div>
                   <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=LMT">LMT</a>
                   <div class="ticker-meta">文章提及 1 次｜Jun 26, 2026 8:05 AM ET</div>
                 </div>
@@ -2634,6 +2718,27 @@
               <div class="condition-grid">
                 <div class="condition"><div class="condition-label">確認條件</div>不適用。</div>
                 <div class="condition"><div class="condition-label">失效條件</div>不適用。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card muted">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=LVMUY">LVMUY</a>
+                  <div class="ticker-meta">文章提及 1 次｜2026-07-18 04:00 Asia/Taipei</div>
+                </div>
+                <span class="chip muted">資料不足</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$113.17</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+1.31%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-4.63%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.27</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 95%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>先補精品需求、區域成長、匯率與 EPS 趨勢；另注意 OTC 流動性</div>
+                <div class="condition"><div class="condition-label">失效條件</div>不適用；目前只有持倉變動，沒有作者個股論證</div>
               </div>
             </article>
             
@@ -2682,6 +2787,27 @@
             <article class="ticker-card muted">
               <div class="ticker-head">
                 <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=NKE">NKE</a>
+                  <div class="ticker-meta">文章提及 1 次｜2026-07-18 04:00 Asia/Taipei</div>
+                </div>
+                <span class="chip muted">資料不足</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$43.76</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-1.37%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-4.27%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.55</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 96%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>先補營收、毛利率、庫存與指引趨勢</div>
+                <div class="condition"><div class="condition-label">失效條件</div>不適用；目前只有持倉變動，沒有作者個股論證</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card muted">
+              <div class="ticker-head">
+                <div>
                   <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=NOC">NOC</a>
                   <div class="ticker-meta">文章提及 1 次｜Jun 26, 2026 8:05 AM ET</div>
                 </div>
@@ -2697,6 +2823,27 @@
               <div class="condition-grid">
                 <div class="condition"><div class="condition-label">確認條件</div>不適用。</div>
                 <div class="condition"><div class="condition-label">失效條件</div>不適用。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card muted">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=NVO">NVO</a>
+                  <div class="ticker-meta">文章提及 1 次｜2026-07-18 04:00 Asia/Taipei</div>
+                </div>
+                <span class="chip muted">資料不足</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$50.32</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+1.70%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-2.80%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.86</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 97%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>先補藥品需求、供應、競爭與 EPS 指引</div>
+                <div class="condition"><div class="condition-label">失效條件</div>不適用；目前只有持倉變動，沒有作者個股論證</div>
               </div>
             </article>
             
@@ -2760,6 +2907,27 @@
               <div class="condition-grid">
                 <div class="condition"><div class="condition-label">確認條件</div>不適用；作者僅把 TTD 當作市場噪音案例，沒有提供公司層 thesis。</div>
                 <div class="condition"><div class="condition-label">失效條件</div>不適用；需先補齊基本面與催化研究。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card muted">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=UL">UL</a>
+                  <div class="ticker-meta">文章提及 1 次｜2026-07-18 04:00 Asia/Taipei</div>
+                </div>
+                <span class="chip muted">資料不足</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$62.39</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+1.09%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-2.16%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.85</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 98%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>先補原始半年報、處分進度與 EPS／FCF 趨勢</div>
+                <div class="condition"><div class="condition-label">失效條件</div>不適用；目前沒有足夠的作者個股論證</div>
               </div>
             </article>
             
