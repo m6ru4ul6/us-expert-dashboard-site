@@ -1,0 +1,1399 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2026-07-15 每日摘要｜美股專家觀點</title>
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("usExpertTheme");
+        if (saved === "dark" || saved === "light") {
+          document.documentElement.dataset.theme = saved;
+        }
+      } catch (error) {}
+    })();
+  </script>
+  <style>
+    :root {
+      --bg: #f3f5f2;
+      --surface: #ffffff;
+      --surface-soft: #f8faf7;
+      --surface-warm: #fffaf0;
+      --card-bg: rgba(255, 255, 255, 0.96);
+      --topbar-bg: rgba(255, 255, 255, 0.9);
+      --toolbar-bg: rgba(255, 255, 255, 0.92);
+      --input-bg: #ffffff;
+      --hover-bg: #fbfdfc;
+      --track: #e5e9e7;
+      --ink-soft: #2f3d39;
+      --ink: #141b1f;
+      --muted: #657177;
+      --faint: #8a969b;
+      --line: #dde3df;
+      --line-strong: #c7d0cc;
+      --green: #0f766e;
+      --green-dark: #0b5c55;
+      --green-soft: #e6f3ee;
+      --amber: #b76b11;
+      --amber-soft: #fff2c7;
+      --amber-ink: #80500c;
+      --red: #b84a3c;
+      --red-soft: #ffe9e5;
+      --red-ink: #8f382f;
+      --blue: #2e6fa3;
+      --blue-soft: #e7f0f8;
+      --blue-ink: #245a84;
+      --slate: #485763;
+      --chip: #eef2f5;
+      --shadow: 0 22px 58px rgba(29, 39, 44, 0.12);
+      --shadow-soft: 0 10px 26px rgba(29, 39, 44, 0.07);
+      --body-bg:
+        linear-gradient(180deg, rgba(231, 242, 238, 0.95) 0, rgba(246, 247, 242, 0.92) 310px, var(--bg) 100%),
+        linear-gradient(135deg, rgba(46, 111, 163, 0.10), rgba(183, 107, 17, 0.07));
+      color-scheme: light;
+    }
+    html[data-theme="dark"] {
+      --bg: #0d1315;
+      --surface: #151d20;
+      --surface-soft: #11181b;
+      --surface-warm: #221b12;
+      --card-bg: rgba(20, 29, 32, 0.96);
+      --topbar-bg: rgba(14, 20, 22, 0.9);
+      --toolbar-bg: rgba(19, 27, 30, 0.94);
+      --input-bg: #101719;
+      --hover-bg: #182224;
+      --track: #263033;
+      --ink-soft: #d1dad6;
+      --ink: #eef5f2;
+      --muted: #a5b2ad;
+      --faint: #7f8d88;
+      --line: #2b383a;
+      --line-strong: #455255;
+      --green: #3fc0ad;
+      --green-dark: #88ded2;
+      --green-soft: #15352f;
+      --amber: #f1b85d;
+      --amber-soft: #3c2b12;
+      --amber-ink: #f8d08a;
+      --red: #ef8b7b;
+      --red-soft: #3b1d19;
+      --red-ink: #ffb2a8;
+      --blue: #83bce6;
+      --blue-soft: #172b3c;
+      --blue-ink: #b8ddff;
+      --slate: #9ba8ae;
+      --chip: #202a2d;
+      --shadow: 0 22px 58px rgba(0, 0, 0, 0.36);
+      --shadow-soft: 0 10px 26px rgba(0, 0, 0, 0.28);
+      --body-bg:
+        radial-gradient(circle at top left, rgba(63, 192, 173, 0.12), transparent 280px),
+        radial-gradient(circle at 90% 8%, rgba(131, 188, 230, 0.10), transparent 260px),
+        linear-gradient(180deg, #111a1c 0, #0d1315 340px, #0b1012 100%);
+      color-scheme: dark;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--body-bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    a { color: var(--green-dark); text-decoration: none; }
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 12px 22px;
+      border-bottom: 1px solid var(--line);
+      background: var(--topbar-bg);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 10px 32px rgba(31, 44, 50, 0.07);
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-weight: 820;
+      letter-spacing: 0;
+      white-space: nowrap;
+    }
+    .brand::before {
+      content: "";
+      width: 13px;
+      height: 13px;
+      border-radius: 4px;
+      background: var(--red);
+      box-shadow: 15px 0 0 var(--green), 30px 0 0 var(--amber);
+    }
+    nav { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; }
+    nav a {
+      min-height: 34px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      color: var(--muted);
+      font-weight: 650;
+    }
+    nav a.active, nav a:hover { background: var(--green-soft); color: var(--green-dark); }
+    .top-actions { display: flex; align-items: center; gap: 10px; }
+    .theme-toggle {
+      width: auto;
+      min-height: 34px;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--ink);
+      box-shadow: none;
+      font-size: 13px;
+      font-weight: 760;
+      white-space: nowrap;
+    }
+    .theme-toggle:hover { border-color: var(--green); background: var(--surface-soft); }
+    .theme-toggle .theme-icon { width: 16px; text-align: center; }
+    .logout { color: var(--muted); font-size: 13px; }
+    main { max-width: 1240px; margin: 0 auto; padding: 28px 20px 42px; }
+    h1 { margin: 0 0 8px; font-size: 34px; line-height: 1.12; letter-spacing: 0; }
+    h2 { margin: 0; font-size: 18px; letter-spacing: 0; }
+    h3 { margin: 0; font-size: 15px; letter-spacing: 0; }
+    .muted { color: var(--muted); }
+    .faint { color: var(--faint); }
+    .grid { display: grid; gap: 12px; }
+    .stats { grid-template-columns: repeat(4, minmax(0, 1fr)); margin: 16px 0; }
+    .panel {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px;
+      box-shadow: var(--shadow-soft);
+    }
+    .panel, .stat-card, .priority-card, .article-card, .ticker-card, .author-card, .source-card, .mini-card {
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow-soft);
+    }
+    .stat-card { padding: 14px; min-height: 92px; position: relative; overflow: hidden; }
+    .stat-card::after {
+      content: "";
+      position: absolute;
+      inset: auto 14px 0 14px;
+      height: 3px;
+      border-radius: 999px 999px 0 0;
+      background: var(--green);
+      opacity: 0.8;
+    }
+    .stat-card.warn::after { background: var(--amber); }
+    .stat-card.info::after { background: var(--blue); }
+    .stat-card.danger::after { background: var(--red); }
+    .stat-label { color: var(--muted); font-size: 12px; font-weight: 740; }
+    .stat-value { font-size: 28px; font-weight: 840; margin-top: 5px; letter-spacing: 0; }
+    .stat-note { color: var(--faint); font-size: 12px; margin-top: 3px; }
+    .page-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 16px;
+    }
+    .page-kicker {
+      color: var(--green-dark);
+      font-size: 12px;
+      font-weight: 820;
+      margin-bottom: 6px;
+    }
+    .page-subtitle { max-width: 760px; color: var(--muted); }
+    .run-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .count-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 6px 13px;
+      border-radius: 999px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      color: var(--green-dark);
+      font-weight: 780;
+      white-space: nowrap;
+      box-shadow: var(--shadow-soft);
+    }
+    .dashboard-grid { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(320px, 0.75fr); gap: 16px; align-items: start; }
+    .section-stack { display: grid; gap: 14px; }
+    .section-head { display: flex; justify-content: space-between; gap: 12px; align-items: center; margin: 24px 0 12px; }
+    .section-note { color: var(--muted); font-size: 13px; }
+    .priority-list { display: grid; gap: 10px; }
+    .priority-card { padding: 15px; display: grid; gap: 6px; border-left: 4px solid var(--green); }
+    .priority-card .rank { color: var(--green-dark); font-size: 12px; font-weight: 820; }
+    .queue-list, .source-list, .timeline-list { display: grid; gap: 10px; }
+    .queue-card, .mini-card { padding: 13px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); }
+    .queue-title { color: var(--ink); font-weight: 780; display: inline-block; margin-bottom: 5px; }
+    .queue-meta { display: flex; flex-wrap: wrap; gap: 7px; color: var(--muted); font-size: 13px; }
+    .queue-summary { color: var(--ink-soft); margin-top: 8px; }
+    .ticker-radar { display: grid; gap: 10px; }
+    .ticker-card { padding: 14px; display: grid; gap: 12px; position: relative; overflow: hidden; }
+    .ticker-card::before { content: ""; position: absolute; inset: 0 auto 0 0; width: 4px; background: var(--green); }
+    .ticker-card.warn::before { background: var(--amber); }
+    .ticker-card.danger::before { background: var(--red); }
+    .ticker-card.info::before { background: var(--blue); }
+    .ticker-card.muted::before { background: var(--line-strong); }
+    .ticker-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .ticker-head { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+    .ticker-symbol { font-size: 20px; font-weight: 850; color: var(--ink); }
+    .ticker-meta { color: var(--muted); font-size: 12px; margin-top: 2px; }
+    .metrics-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+    .metric { border: 1px solid var(--line); border-radius: 8px; padding: 9px; background: var(--surface-soft); min-width: 0; }
+    .metric-label { color: var(--muted); font-size: 11px; font-weight: 740; }
+    .metric-value { display: block; margin-top: 3px; font-weight: 800; color: var(--ink); overflow-wrap: anywhere; }
+    .metric-value.missing { color: var(--faint); font-weight: 680; }
+    .position-track { height: 8px; border-radius: 999px; background: var(--track); overflow: hidden; }
+    .position-fill { height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--blue), var(--green)); width: var(--bar, 0%); }
+    .condition-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .condition { border-top: 1px solid var(--line); padding-top: 10px; color: var(--ink-soft); }
+    .condition-label { color: var(--muted); font-size: 11px; font-weight: 800; margin-bottom: 4px; }
+    .toolbar {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(126px, 1fr));
+      gap: 10px;
+      align-items: end;
+      margin: 12px 0 12px;
+      padding: 14px;
+      background: var(--toolbar-bg);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow-soft);
+    }
+    .filter-toggle { display: none; }
+    .filter-actions { display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: end; }
+    .quick-filters, .active-filters { display: flex; flex-wrap: wrap; gap: 7px; margin: 10px 0 14px; }
+    label { display: grid; gap: 5px; color: var(--muted); font-size: 12px; font-weight: 650; }
+    input, select, button {
+      width: 100%;
+      min-height: 36px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--input-bg);
+      color: var(--ink);
+      padding: 7px 9px;
+      font: inherit;
+    }
+    input:focus, select:focus {
+      outline: 2px solid rgba(17, 120, 111, 0.20);
+      border-color: rgba(17, 120, 111, 0.55);
+    }
+    button {
+      background: var(--green);
+      border-color: var(--green);
+      color: #fff;
+      font-weight: 720;
+      cursor: pointer;
+      box-shadow: 0 10px 22px rgba(17, 120, 111, 0.16);
+    }
+    button:hover { background: var(--green-dark); border-color: var(--green-dark); }
+    .theme-toggle {
+      width: auto;
+      min-height: 34px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--surface);
+      border-color: var(--line);
+      color: var(--ink);
+      box-shadow: none;
+    }
+    .theme-toggle:hover { background: var(--surface-soft); border-color: var(--green); }
+    .secondary-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 7px 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      color: var(--ink);
+      background: var(--surface);
+      font-weight: 650;
+    }
+    .button-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      padding: 7px 12px;
+      border-radius: 6px;
+      border: 1px solid var(--line);
+      color: var(--green-dark);
+      background: var(--surface);
+      font-weight: 760;
+      white-space: nowrap;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+    }
+    th, td { padding: 10px; border-bottom: 1px solid var(--line); vertical-align: top; text-align: left; }
+    th { color: var(--muted); font-size: 12px; font-weight: 760; background: var(--surface-soft); }
+    tbody tr:hover { background: var(--hover-bg); }
+    tr:last-child td { border-bottom: 0; }
+    .chips { display: flex; flex-wrap: wrap; gap: 5px; }
+    .chip { display: inline-flex; align-items: center; min-height: 24px; border-radius: 999px; padding: 2px 8px; background: var(--chip); color: var(--ink-soft); font-size: 12px; font-weight: 720; border: 1px solid transparent; }
+    .chip.good, .chip.strong { background: var(--green-soft); color: var(--green-dark); }
+    .chip.warn { background: var(--amber-soft); color: var(--amber-ink); }
+    .chip.danger { background: var(--red-soft); color: var(--red-ink); }
+    .chip.info { background: var(--blue-soft); color: var(--blue-ink); }
+    .chip.muted { background: var(--surface-soft); color: var(--muted); }
+    .chip.ticker { background: var(--chip); color: var(--ink); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-weight: 800; }
+    a.chip:hover, .button-link:hover { border-color: var(--green); }
+    .article-title { font-weight: 800; color: var(--ink); }
+    .summary { max-width: 560px; color: var(--ink-soft); }
+    .article-feed { display: grid; gap: 12px; }
+    .article-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(250px, 0.36fr);
+      gap: 18px;
+      padding: 16px;
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+    }
+    .article-card::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 5px;
+      background: var(--green);
+    }
+    .article-card.warn::before { background: var(--amber); }
+    .article-card.danger::before { background: var(--red); }
+    .article-card.info::before { background: var(--blue); }
+    .article-card.muted::before { background: var(--line-strong); }
+    .article-card:hover {
+      border-color: rgba(17, 120, 111, 0.34);
+      box-shadow: var(--shadow);
+      transform: translateY(-1px);
+      transition: transform 140ms ease, box-shadow 140ms ease, border-color 140ms ease;
+    }
+    .article-main { min-width: 0; padding-left: 4px; }
+    .article-side {
+      display: grid;
+      align-content: start;
+      gap: 10px;
+      padding-left: 14px;
+      border-left: 1px solid var(--line);
+    }
+    .article-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 7px 0 10px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .article-summary { color: var(--ink-soft); max-width: 760px; }
+    .side-label {
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 760;
+      text-transform: uppercase;
+    }
+    .side-value { font-weight: 680; }
+    .read-note { color: var(--ink-soft); font-size: 13px; }
+    .read-note.compact { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    .authors-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+    .author-card { padding: 15px; display: grid; gap: 12px; }
+    .author-top { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+    .author-name { font-size: 17px; font-weight: 820; color: var(--ink); }
+    .author-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+    .source-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 16px 0; }
+    .source-card { padding: 14px; display: grid; gap: 8px; }
+    .source-title { font-size: 13px; color: var(--muted); font-weight: 760; }
+    .source-value { font-size: 18px; font-weight: 840; }
+    .health-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr); gap: 16px; align-items: start; }
+    .source-item { padding: 13px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); display: grid; gap: 7px; }
+    .timeline-item { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+    .timeline-item:last-child { border-bottom: 0; }
+    .empty { text-align: center; color: var(--muted); padding: 28px; }
+    .login-wrap { min-height: 100vh; display: grid; place-items: center; padding: 20px; }
+    .login-box { width: min(420px, 100%); }
+    .error { background: var(--red-soft); color: var(--red); border: 1px solid var(--line); padding: 10px; border-radius: 6px; margin-bottom: 12px; }
+    .notice { background: var(--surface-soft); border: 1px solid var(--line); padding: 10px; border-radius: 6px; margin: 12px 0; color: var(--ink-soft); }
+    .share-box { display: grid; gap: 5px; margin: 12px 0 0; }
+    .share-url { display: block; overflow-wrap: anywhere; color: var(--green-dark); font-weight: 700; }
+    .report-pre {
+      margin: 12px 0 0;
+      padding: 14px;
+      max-height: 520px;
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--surface-soft);
+      color: var(--ink-soft);
+      white-space: pre-wrap;
+      font: 13px/1.55 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .article-points { margin: 9px 0 0; padding-left: 18px; color: var(--ink-soft); }
+    .article-points li + li { margin-top: 4px; }
+    .run-list { display: grid; gap: 10px; }
+    .run-card { padding: 14px; display: flex; justify-content: space-between; gap: 14px; align-items: flex-start; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); box-shadow: var(--shadow-soft); }
+    .run-card-main { min-width: 0; display: grid; gap: 6px; }
+    .run-title { color: var(--ink); font-weight: 820; font-size: 16px; }
+    .run-card-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 7px; }
+    @media (max-width: 900px) {
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .toolbar { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .topbar { align-items: flex-start; flex-direction: column; }
+      .top-actions { width: 100%; justify-content: space-between; }
+      .dashboard-grid, .health-grid { grid-template-columns: 1fr; }
+      .ticker-grid, .authors-grid, .source-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .article-card { grid-template-columns: 1fr; }
+      .article-side { border-left: 0; border-top: 1px solid var(--line); padding-left: 0; padding-top: 12px; }
+      .page-head { align-items: flex-start; flex-direction: column; }
+    }
+    @media (max-width: 640px) {
+      main { padding: 14px; }
+      h1 { font-size: 28px; }
+      .topbar { gap: 10px; padding: 12px 14px; }
+      nav { justify-content: flex-start; width: 100%; }
+      .top-actions { order: 3; }
+      .stats, .ticker-grid, .authors-grid, .source-grid, .metrics-row, .condition-grid { grid-template-columns: 1fr; }
+      .filter-toggle { display: inline-flex; width: auto; margin: 4px 0 10px; background: var(--green); border-color: var(--green); color: #fff; }
+      .toolbar { display: none; grid-template-columns: 1fr; margin-top: 0; }
+      .toolbar.open { display: grid; }
+      .filter-actions { grid-template-columns: 1fr; }
+      table { display: block; overflow-x: auto; }
+      .article-card { padding: 14px; }
+      .article-side { gap: 8px; }
+      .read-note.compact { -webkit-line-clamp: 2; }
+      .run-card { display: grid; }
+      .run-card-actions { justify-content: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">美股專家觀點</div>
+    <nav><a class="" href="/us-expert-dashboard-site/">今日</a><a class="active" href="/us-expert-dashboard-site/runs">每日</a><a class="" href="/us-expert-dashboard-site/articles">文章庫</a><a class="" href="/us-expert-dashboard-site/tickers">標的</a><a class="" href="/us-expert-dashboard-site/authors">作者</a><a class="" href="/us-expert-dashboard-site/sources">來源</a></nav>
+    <div class="top-actions">
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="切換暗黑模式">
+        <span class="theme-icon" data-theme-icon>◐</span>
+        <span data-theme-label>暗黑</span>
+      </button>
+      <span class="logout">開發模式</span>
+    </div>
+  </header>
+  <main>
+    <div class="page-head">
+      <div>
+        <div class="page-kicker">每日固定頁</div>
+        <h1>2026-07-15 美股專家觀點摘要</h1>
+        <div class="page-subtitle">時間窗 2026-07-14 20:02:21 Asia/Taipei 至 2026-07-15 20:02:21 Asia/Taipei。付費牆文章只採公開可見內容，不推測隱藏段落。</div>
+        <div class="run-meta">
+          <span class="chip info">執行 2026-07-15 20:02:21 Asia/Taipei</span>
+          <span class="chip info">Slack delivered</span>
+        </div>
+        <div class="share-box">
+          <div class="side-label">固定連結</div>
+          <a class="share-url" href="https://m6ru4ul6.github.io/us-expert-dashboard-site/runs/241/">https://m6ru4ul6.github.io/us-expert-dashboard-site/runs/241/</a>
+        </div>
+      </div>
+      <div class="run-card-actions">
+        <a class="button-link" href="/us-expert-dashboard-site/runs">所有每日摘要</a>
+        <a class="button-link" href="/us-expert-dashboard-site/articles?start=2026-07-14&amp;end=2026-07-15">本輪文章</a>
+      </div>
+    </div>
+    <div class="grid stats">
+      <div class="stat-card"><div class="stat-label">本輪文章</div><div class="stat-value">7</div><div class="stat-note">6 位作者</div></div>
+      <div class="stat-card danger"><div class="stat-label">需要親讀</div><div class="stat-value">4</div><div class="stat-note">優先打開原文</div></div>
+      <div class="stat-card info"><div class="stat-label">追蹤標的</div><div class="stat-value">10</div><div class="stat-note">含市場快篩</div></div>
+      <div class="stat-card warn"><div class="stat-label">全文可讀</div><div class="stat-value">1</div><div class="stat-note">其餘只看公開面</div></div>
+    </div>
+    <section class="section-stack">
+      <div class="section-head"><div><h2>今日研究優先級</h2><div class="section-note">從本輪完整報告解析而來。</div></div></div>
+      <div class="priority-list">
+        <article class="priority-card">
+          <div class="rank">重點 1</div>
+          <h3>AI 光互連由題材走向設備與晶圓量產</h3>
+          <div class="muted">Raycat、Damnang、SEMIVISION 三個來源分別從 ETF 回檔、AEHR 訂單／毛利與 UMC 首批量產佐證同一方向；優先驗證 AEHR backlog 轉營收、UMC 客戶擴張，以及 SMH／SOXX 是否止穩。</div>
+        </article>
+        
+        <article class="priority-card">
+          <div class="rank">重點 2</div>
+          <h3>PYPL 事件驅動價值差</h3>
+          <div class="muted">Burry 對收購價、控制權溢價與自身估值的立場最明確；先確認正式提案與條款，再決定只續抱、加倉觀察或放棄事件交易。</div>
+        </article>
+        
+        <article class="priority-card">
+          <div class="rank">重點 3</div>
+          <h3>Fed 反應函數換框架</h3>
+          <div class="muted">最高優先級作者認為 Warsh 的五個任務小組會降低前瞻指引、改變資產負債表與政策溝通；下一步是重估利率敏感資產的波動與風險管理假設，而不是直接猜單次升降息。</div>
+        </article>
+        </div>
+      <div class="section-head"><div><h2>逐篇摘要</h2><div class="section-note">Slack 不再塞全文；完整逐篇內容集中在這裡。</div></div></div>
+      <div class="article-feed">
+            <article class="article-card danger">
+              <div class="article-main">
+                <a class="article-title" href="https://unclestocknotes.substack.com/p/warsh-fed" target="_blank" rel="noreferrer">Warsh 的五個 Fed 任務小組</a>
+                <div class="article-meta">
+                  <span>大叔美股筆記 Uncle Stock Notes</span>
+                  <span>2026-07-14 22:22 Asia/Taipei</span>
+                </div>
+                <ul class="article-points"><li>作者認為重點不是任務小組的人事名單，而是 Kevin Warsh 正把聯準會的政策框架、反應函數與溝通方式改造成新的 regime。</li><li>改革方向包含減少 Powell 時代的前瞻指引與「市場保姆式」溝通、檢討資產負債表、重估通膨框架，以及重新衡量 AI 對生產力、就業和中性利率的影響。</li><li>Communications 小組若讓 Fed 更少提前放風向，市場會失去政策劇透機制，利率敏感資產的短線波動與誤判成本可能上升。</li><li>資料與研究改革的意義，在於改善對通膨、勞動市場與生產力的即時判讀；但框架切換期間，新舊模型可能同時失準。</li><li>監理與金融條件的調整可能改變銀行資本、流動性及信用供給，影響不只政策利率，也會沿著金融條件傳到資產價格。</li><li>資產負債表與市場運作小組值得持續追蹤，因 Fed 的資產組成、規模與市場流動性管理方式都可能改變。</li><li>研究上的可行動訊號不是猜下一次升降息，而是追蹤 Fed 官員訊息分散度、實質利率、資產負債表措辭，以及 AI 生產力假設是否正式進入政策框架。</li></ul>
+              </div>
+              <aside class="article-side">
+                <div class="chips">
+                  <span class="chip good">全文</span>
+                  <span class="chip info">中性</span>
+                  <span class="chip info">中長期</span>
+                </div>
+                <div>
+                  <div class="side-label">操作</div>
+                  <div class="side-value">觀望</div>
+                </div>
+                <div>
+                  <div class="side-label">標的</div>
+                  <div class="chips"><span class="chip muted">未明確</span></div>
+                </div>
+                <div>
+                  <div class="side-label">親讀</div>
+                  <div class="chips"><span class="chip danger">需要</span></div>
+                  <div class="read-note">這是最高優先級作者的完整公開文章，應確認五個任務小組各自影響哪些利率敏感資產與風險管理假設。</div>
+                </div>
+              </aside>
+            </article>
+            
+            <article class="article-card muted">
+              <div class="article-main">
+                <a class="article-title" href="https://unclestocknotes.substack.com/p/260714-substack" target="_blank" rel="noreferrer">每日重點 260714 Substack 大叔留言重點</a>
+                <div class="article-meta">
+                  <span>大叔美股筆記 Uncle Stock Notes</span>
+                  <span>2026-07-15 13:51 Asia/Taipei</span>
+                </div>
+                <ul class="article-points"><li>公開預覽只露出 Fed／宏觀段落，沒有公開完整留言清單，因此不能把未顯示的個股內容納入摘要。</li><li>作者引用的新聞數據是美國六月 CPI 年增 3.5%、核心 CPI 2.6%，兩者皆低於預期。</li><li>作者的可見判讀是核心價格壓力開始鬆動，短線有利於緩和市場對通膨與利率的擔憂。</li><li>作者同時用戲謔語氣提醒，若川普政策再度刺激價格，通膨緩和可能被打斷；這是明確的政策保留條件。</li><li>公開預覽沒有可確認的股票、ETF、公司或買賣建議；「AVAVAVAV」只依上下文視為語氣表達，不判成 AVAV ticker。</li></ul>
+              </div>
+              <aside class="article-side">
+                <div class="chips">
+                  <span class="chip warn">付費牆預覽</span>
+                  <span class="chip info">中性</span>
+                  <span class="chip info">短線</span>
+                </div>
+                <div>
+                  <div class="side-label">操作</div>
+                  <div class="side-value">無明確建議</div>
+                </div>
+                <div>
+                  <div class="side-label">標的</div>
+                  <div class="chips"><span class="chip muted">未明確</span></div>
+                </div>
+                <div>
+                  <div class="side-label">親讀</div>
+                  <div class="chips"><span class="chip muted">不必</span></div>
+                  <div class="read-note">本輪免費可見內容有限，且沒有可操作標的。</div>
+                </div>
+              </aside>
+            </article>
+            
+            <article class="article-card warn">
+              <div class="article-main">
+                <a class="article-title" href="https://raycat.substack.com/p/aiai-796" target="_blank" rel="noreferrer">三大原因继续看涨AI牛市｜这个AI股布局光互连</a>
+                <div class="article-meta">
+                  <span>徐老猫 Raycat</span>
+                  <span>2026-07-15 14:28 Asia/Taipei</span>
+                </div>
+                <ul class="article-points"><li>作者指出 AI 基礎設施近期遭遇 2022 年底以來最艱難的一段，SMH、SOXX 自近期高點回落約 15%，SOX 自六月高峰回落近 20%。</li><li>過去三年 AI 供應鏈的主要特徵是 GPU、HBM、先進封裝、機架與電力基礎設施的稀缺，這讓關鍵供應商擁有強定價權和高利潤。</li><li>作者承認供給過剩的擔憂有基本面依據：高報酬會吸引資本投入晶圓廠、先進封裝、組裝測試與資料中心新產能。</li><li>多數新增產能預計未來一至兩年上線；若供給大增而需求增速放緩，短缺可能轉成過剩，壓縮毛利率、定價權與股價。</li><li>作者的核心立場仍是「現在下結論還太早」，並表示仍可看好本輪 AI 牛市；這是偏多產業論點，不等於對所有 AI 個股全面買進。</li><li>公開預覽只明確揭露 SMH、SOXX 與整體供需框架；標題所稱「布局光互連的 AI 股」名稱位於付費區，不能推測或新增 ticker。</li></ul>
+              </div>
+              <aside class="article-side">
+                <div class="chips">
+                  <span class="chip warn">付費牆預覽</span>
+                  <span class="chip info">偏多</span>
+                  <span class="chip info">中長期</span>
+                </div>
+                <div>
+                  <div class="side-label">操作</div>
+                  <div class="side-value">觀望</div>
+                </div>
+                <div>
+                  <div class="side-label">標的</div>
+                  <div class="chips"><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=SMH">SMH</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=SOXX">SOXX</a></div>
+                </div>
+                <div>
+                  <div class="side-label">親讀</div>
+                  <div class="chips"><span class="chip warn">可略讀</span></div>
+                  <div class="read-note">公開預覽已足以掌握供需框架，但個股名稱與完整三個原因仍在付費牆後。</div>
+                </div>
+              </aside>
+            </article>
+            
+            <article class="article-card danger">
+              <div class="article-main">
+                <a class="article-title" href="https://michaeljburry.substack.com/p/short-thoughts-july-15-2026-pyplibmhcamore" target="_blank" rel="noreferrer">Short Thoughts July 15, 2026 PYPL/IBM/HCA/More</a>
+                <div class="article-meta">
+                  <span>Michael J. Burry</span>
+                  <span>2026-07-15 17:12 Asia/Taipei</span>
+                </div>
+                <ul class="article-points"><li>作者稱 Stripe 與 Advent 對 PayPal 提出每股 60.50 美元的收購價，而 PYPL 當日收 47.37 美元；此事件是本篇最明確、也最需核實的催化。</li><li>作者認為 60.50 美元只相當於其 IV15 的 1.21 倍，沒有充分反映控制權溢價，因此是過低的開價。</li><li>作者把 PayPal 稱為投資組合中最便宜的高品質公司之一，認為競價需要上升，並明確表示不賣出、把目前出價視為開局價。</li><li>依作者自身估值法，IV10 約 75～80 美元、IV8 約 110～115 美元；加上控制權溢價後，他認為得標價約 100 美元才較合理。這些都是作者模型，不是外部目標價。</li><li>IBM 部分聚焦 7 月 14 日盤中一度跌 26%、創至少 1968 年以來最劇烈單日跌幅的歷史對照；作者沒有在公開區給出明確買賣建議。</li><li>作者回顧 IBM 從硬體轉向軟體／顧問的長期轉型，並指出近年表現與毛利率由疫情前約 47% 升至近期約 60%、估值倍數擴張有關。</li><li>HCA 只在公開標題與副標題中出現「swoon」，付費牆前沒有公開個股分析，不能推測作者對 HCA 的立場或操作。</li><li>研究上應把 PYPL 視為待核實的事件驅動案例，把 IBM、HCA 視為高波動事件觀察，而不是把三檔都解讀成作者買進名單。</li></ul>
+              </div>
+              <aside class="article-side">
+                <div class="chips">
+                  <span class="chip warn">付費牆預覽</span>
+                  <span class="chip info">偏多（PYPL）；IBM、HCA 無明確方向</span>
+                  <span class="chip info">事件驅動／中期</span>
+                </div>
+                <div>
+                  <div class="side-label">操作</div>
+                  <div class="side-value">續抱（僅 PYPL；IBM、HCA 無明確建議）</div>
+                </div>
+                <div>
+                  <div class="side-label">標的</div>
+                  <div class="chips"><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=HCA">HCA</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=IBM">IBM</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=PYPL">PYPL</a></div>
+                </div>
+                <div>
+                  <div class="side-label">親讀</div>
+                  <div class="chips"><span class="chip danger">需要</span></div>
+                  <div class="read-note">應核對 PYPL 收購條件、作者 IV 方法與 IBM 暴跌脈絡；HCA 付費區不可據此補論點。</div>
+                </div>
+              </aside>
+            </article>
+            
+            <article class="article-card danger">
+              <div class="article-main">
+                <a class="article-title" href="https://damnang2.substack.com/p/optical-investing-act-two-three-signals" target="_blank" rel="noreferrer">Optical Investing, Act Two: Three Signals From AEHR’s Earnings</a>
+                <div class="article-meta">
+                  <span>Damnang</span>
+                  <span>2026-07-15 14:48 Asia/Taipei</span>
+                </div>
+                <ul class="article-points"><li>作者用三項檢驗追蹤 AEHR 論點：bookings 是否轉成營收、毛利率是否恢復、評估中的客戶是否進入量產。</li><li>2026 財年第四季 bookings 為 6,070 萬美元，年末 backlog 8,060 萬美元，加上期末後新增訂單後的有效 backlog 為 1.006 億美元，約為前一財年營收兩倍。</li><li>公司給出 2027 財年營收 1.3～1.5 億美元指引，對應年增 160%～200%；管理層稱即使在 1.5 億美元水準也沒有產能限制，並保留隨訂單確定上修的空間。</li><li>第四季非 GAAP 毛利率回升至 45%，較去年同期 35% 改善 10 個百分點；但全年毛利率仍只有 38.5%，單季改善尚不足以證明全年穩態。</li><li>新矽光子客戶從接觸到下單只花數月，且 AI 處理器客戶的晶圓級 burn-in benchmark 超預期，顯示評估案正在轉成量產設備需求。</li><li>作者把 AEHR 訂單視為整條光學供應鏈的領先指標：800G 已進入量產、1.6T 開始切換，CPO 與 optical I/O 仍在試點，但測試設備訂單已先發生。</li><li>主要風險是執行仍跨越完整年度、營收具波動與循環性、三個客戶各占第四季營收超過 10%，且 hyperscale 客戶第二個 device 曾延後。</li></ul>
+              </div>
+              <aside class="article-side">
+                <div class="chips">
+                  <span class="chip warn">付費牆預覽</span>
+                  <span class="chip info">偏多</span>
+                  <span class="chip info">波段</span>
+                </div>
+                <div>
+                  <div class="side-label">操作</div>
+                  <div class="side-value">無明確建議</div>
+                </div>
+                <div>
+                  <div class="side-label">標的</div>
+                  <div class="chips"><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=AEHR">AEHR</a></div>
+                </div>
+                <div>
+                  <div class="side-label">親讀</div>
+                  <div class="chips"><span class="chip danger">需要</span></div>
+                  <div class="read-note">要確認 backlog 轉營收、毛利率持續性與客戶集中度，才能決定是否把 AEHR 納入開倉觀察。</div>
+                </div>
+              </aside>
+            </article>
+            
+            <article class="article-card danger">
+              <div class="article-main">
+                <a class="article-title" href="https://fundaai.substack.com/p/deepati-the-materials-chokepoint" target="_blank" rel="noreferrer">Deep|ATI: The Materials Chokepoint of the Starship Era; Superalloy Content Per Vehicle Is 25-30x a Falcon 9</a>
+                <div class="article-meta">
+                  <span>FundaAI</span>
+                  <span>2026-07-14 23:11 Asia/Taipei</span>
+                </div>
+                <ul class="article-points"><li>作者把 ATI 定位為 Starship 時代超合金需求的公開市場瓶頸，主張單一 Starship stack 的超合金用量約為 Falcon 9 的 25～30 倍。</li><li>依作者估算，太空超合金需求可能在 2028 年達 900～1,100 噸／年、2030 年達 2,300～2,900 噸／年；這些是作者模型，需以實際發射與翻修節奏驗證。</li><li>作者認為特種熔煉是少數 SpaceX 無法快速內製的供應鏈層級，因旋轉級材料資格認證需多年累積，形成資本無法壓縮的時間護城河。</li><li>ATI 位於 specialty alloy melting 層，作者稱鎳圓坯市場約九成由 ATI、Carpenter 與 PCC 三家掌握，最高規格旋轉級材料只有少數美國廠能供應。</li><li>作者引用 7 月 10 日資料，ATI trailing EV/EBITDA 31.9 倍，低於 CRS 38.4 倍與 HWM 43.3 倍，認為深護城河資產出現 15%～30% 相對折價。</li><li>多重需求來源包含商用航太、MRO、太空、AI 資料中心燃氣渦輪，以及核能用鋯／鉿；因此論點不是只押單一火箭計畫。</li><li>作者指出 VIM 產能吃緊，新產能要到 2028～2029 才有合格產出；10～12 年長約與續約調價可能帶來市場模型尚未反映的獲利上修。</li><li>主要風險是作者需求量、供給缺口、長約調價與相對估值都屬模型假設；若 Starship 節奏、航太需求或資格認證進度不如預期，重評空間會縮小。</li></ul>
+              </div>
+              <aside class="article-side">
+                <div class="chips">
+                  <span class="chip warn">付費牆預覽</span>
+                  <span class="chip info">偏多</span>
+                  <span class="chip info">中長期</span>
+                </div>
+                <div>
+                  <div class="side-label">操作</div>
+                  <div class="side-value">無明確建議</div>
+                </div>
+                <div>
+                  <div class="side-label">標的</div>
+                  <div class="chips"><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=ATI">ATI</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=CRS">CRS</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=HWM">HWM</a></div>
+                </div>
+                <div>
+                  <div class="side-label">親讀</div>
+                  <div class="chips"><span class="chip danger">需要</span></div>
+                  <div class="read-note">應核對 ATI 的需求模型、CRS／HWM 估值比較與長約調價假設，再決定是否建立航太材料研究部位。</div>
+                </div>
+              </aside>
+            </article>
+            
+            <article class="article-card warn">
+              <div class="article-main">
+                <a class="article-title" href="https://tspasemiconductor.substack.com/p/umc-and-silith-bring-12-inch-silicon" target="_blank" rel="noreferrer">UMC and SILITH Bring 12-Inch Silicon Photonics to Mass Production as AI Interconnect Competition Enters the Industrial Scale-Up Era</a>
+                <div class="article-meta">
+                  <span>SEMIVISION</span>
+                  <span>2026-07-15 16:03 Asia/Taipei</span>
+                </div>
+                <ul class="article-points"><li>UMC 與新加坡矽光子公司 SILITH 宣布，已從 UMC 新加坡 12 吋廠交付首批量產矽光子晶圓，代表專案從展示與開發走向商業製造。</li><li>作者認為真正的重要性不是單一 1.6Tbps 規格，而是製程開始具備可預測的成本、良率、可靠性與交付時程。</li><li>合作案結合 SILITH 的矽光子架構與 UMC 的 12 吋製程整合能力，18 個月內從平台開發推進到量產導入。</li><li>平台已達商業製造所需的良率與可靠性，並通過一家全球領先雲端基礎設施客戶的資格認證；這是需求從實驗室走向供應鏈驗證的關鍵訊號。</li><li>UMC 計畫 2027 年正式推出自有 12 吋矽光子平台，開放更多客戶做產品開發與量產，開始從成熟製程代工擴張到 AI 光互連製造。</li><li>矽光子商業化的難點在跨晶圓光學一致性、耦合效率、插入損耗、偏振敏感度、波長漂移，以及與 driver、DSP、laser、fiber 組裝後的模組總良率。</li><li>研究上應追蹤首批量產後的客戶擴張、良率與成本曲線、1.6T 導入速度，以及 2027 平台能否帶來可辨識營收；公開預覽未提供財務量化指引。</li></ul>
+              </div>
+              <aside class="article-side">
+                <div class="chips">
+                  <span class="chip warn">付費牆預覽</span>
+                  <span class="chip info">偏多</span>
+                  <span class="chip info">中長期</span>
+                </div>
+                <div>
+                  <div class="side-label">操作</div>
+                  <div class="side-value">無明確建議</div>
+                </div>
+                <div>
+                  <div class="side-label">標的</div>
+                  <div class="chips"><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=SILITH">SILITH</a><a class="chip ticker" href="/us-expert-dashboard-site/articles?ticker=UMC">UMC</a></div>
+                </div>
+                <div>
+                  <div class="side-label">親讀</div>
+                  <div class="chips"><span class="chip warn">可略讀</span></div>
+                  <div class="read-note">公開預覽已說明量產里程碑，後續更重要的是用 UMC 財報與客戶擴張驗證營收貢獻。</div>
+                </div>
+              </aside>
+            </article>
+            </div>
+      <div class="section-head"><div><h2>標的快篩</h2><div class="section-note">研究級分類，不代表自動下單訊號。</div></div></div>
+      <div class="ticker-grid">
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=AEHR">AEHR</a>
+                  <div class="ticker-meta">市場 Yahoo regular｜2026-07-15 04:00 Asia/Taipei</div>
+                </div>
+                <span class="chip good">可列入開倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$72.01</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-5.96%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-43.13%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.85</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 57%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>財報後價格能承接、公司指引與 backlog 未被修正，且市場開始用成交量確認客戶轉量產的可持續性。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>backlog 無法轉營收、毛利率回落、客戶集中或第二個 device 延後導致指引下修。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=ATI">ATI</a>
+                  <div class="ticker-meta">市場 Yahoo regular｜2026-07-15 04:00 Asia/Taipei</div>
+                </div>
+                <span class="chip good">可列入開倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$189.44</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-4.33%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-7.73%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.65</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 92%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>股價相對 CRS／HWM 止穩，且後續公司／客戶資料支持長約調價、VIM 產能吃緊與太空需求增加。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>太空或航太需求時程延後、擴產提前緩解瓶頸，或估值折價源自獲利品質而非市場錯價。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=SMH">SMH</a>
+                  <div class="ticker-meta">市場 Yahoo regular｜2026-07-15 04:00 Asia/Taipei</div>
+                </div>
+                <span class="chip good">可列入開倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$600.31</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-3.09%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-10.65%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.76</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 89%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>半導體 ETF 回檔止穩、未出現放量續跌，且新的 AI 需求／供給資料未顯示過剩提前發生。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>價格再度放量轉弱，或實際產能、訂單與毛利資料確認供給成長明顯快於需求。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=SOXX">SOXX</a>
+                  <div class="ticker-meta">市場 Yahoo regular｜2026-07-15 04:00 Asia/Taipei</div>
+                </div>
+                <span class="chip good">可列入開倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$567.92</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-4.80%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-13.42%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.83</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 87%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>ETF 不再放量破低，且 AI 資本支出與半導體訂單資料仍支持需求韌性。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>擴產導致價格、毛利或訂單同步惡化，確認作者所說的過剩風險提前落地。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=UMC">UMC</a>
+                  <div class="ticker-meta">市場 Yahoo regular｜2026-07-15 04:00 Asia/Taipei</div>
+                </div>
+                <span class="chip good">可列入開倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$23.84</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-9.18%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-17.68%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.18</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 82%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>股價在放量回檔後止穩，且 UMC 後續揭露量產客戶、良率、訂單或 2027 平台的可辨識財務貢獻。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>量產里程碑無法轉成客戶擴張與營收，或良率、成本與模組整合問題延後商業化。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card good">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=PYPL">PYPL</a>
+                  <div class="ticker-meta">市場 Yahoo regular｜2026-07-15 04:00 Asia/Taipei</div>
+                </div>
+                <span class="chip good">僅適合原持股續抱或加倉觀察</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$47.37</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">+3.77%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-2.19%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.58</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 98%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>先確認正式收購提案、融資與監管條款，並觀察價格是否能在事件量能支持下維持，而非只交易未證實消息。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>提案未獲正式確認、競價未提高、交易條件惡化或價格迅速回吐事件溢價。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card muted">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=CRS">CRS</a>
+                  <div class="ticker-meta">市場 Yahoo regular｜2026-07-15 04:00 Asia/Taipei</div>
+                </div>
+                <span class="chip muted">資料不足</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$576.87</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-8.46%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-7.85%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.53</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 92%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>需先找到作者對 CRS 本身的財務、產能與估值論點，而不是只把同業比較當成買進理由。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>後續資料無法支持相對估值可比性，或 CRS 基本面與 ATI 並不具可比性。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card muted">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=HCA">HCA</a>
+                  <div class="ticker-meta">市場 Yahoo regular｜2026-07-15 04:00 Asia/Taipei</div>
+                </div>
+                <span class="chip muted">資料不足</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$363.60</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-6.31%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-15.35%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">1.49</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 85%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>先補齊公開事件、財報或監管原因，確認高於均量的下跌是否出現基本面可驗證訊號。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>無法取得作者公開論點，或公司事件持續惡化而沒有可驗證的反轉條件。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card muted">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=HWM">HWM</a>
+                  <div class="ticker-meta">市場 Yahoo regular｜2026-07-15 04:00 Asia/Taipei</div>
+                </div>
+                <span class="chip muted">資料不足</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$276.78</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-2.39%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-4.77%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.45</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 95%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>需補足 HWM 自身訂單、產能、獲利與估值資料，確認與 ATI 比較是否同口徑。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>相對估值差異由產品組合、成長或資本報酬差異合理解釋，不能再把高倍數視為 ATI 重評保證。</div>
+              </div>
+            </article>
+            
+            <article class="ticker-card muted">
+              <div class="ticker-head">
+                <div>
+                  <a class="ticker-symbol" href="/us-expert-dashboard-site/articles?ticker=IBM">IBM</a>
+                  <div class="ticker-meta">市場 Yahoo regular｜2026-07-15 04:00 Asia/Taipei</div>
+                </div>
+                <span class="chip muted">資料不足</span>
+              </div>
+              <div class="metrics-row">
+                <div class="metric"><div class="metric-label">目前</div><span class="metric-value ">$217.07</span></div>
+                <div class="metric"><div class="metric-label">5日</div><span class="metric-value ">-3.10%</span></div>
+                <div class="metric"><div class="metric-label">距20日高</div><span class="metric-value ">-30.38%</span></div>
+                <div class="metric"><div class="metric-label">量能比</div><span class="metric-value">0.62</span></div>
+              </div>
+              <div class="position-track"><div class="position-fill" style="--bar: 70%"></div></div>
+              <div class="condition-grid">
+                <div class="condition"><div class="condition-label">確認條件</div>先釐清 26% 盤中跌幅的事件原因、公司基本面更新與賣壓是否止穩，再決定是否進入研究名單。</div>
+                <div class="condition"><div class="condition-label">失效條件</div>基本面或指引惡化證明毛利改善不可持續，或高波動持續而作者仍未提出可驗證的正向論點。</div>
+              </div>
+            </article>
+            </div>
+      <div class="section-head"><div><h2>來源檢查</h2><div class="section-note">用來判斷本輪資料可信度與限制。</div></div></div>
+      <div class="source-list">
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>大叔美股筆記 Uncle Stock Notes</h3>
+            <span class="chip good">RSS fresh 抓取成功，解析 20 篇；時間窗內 2 篇，兩篇公開文章頁皆 fresh HTTP 200。</span>
+          </div>
+          <div class="muted">大叔美股筆記 Uncle Stock Notes：RSS fresh 抓取成功，解析 20 篇；時間窗內 2 篇，兩篇公開文章頁皆 fresh HTTP 200。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>Skilled Driver</h3>
+            <span class="chip good">RSS fresh 抓取成功，解析 20 篇；時間窗內無新文章。</span>
+          </div>
+          <div class="muted">Skilled Driver：RSS fresh 抓取成功，解析 20 篇；時間窗內無新文章。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>Michael M. Chang</h3>
+            <span class="chip good">RSS fresh 抓取成功，解析 20 篇；時間窗內無新文章。</span>
+          </div>
+          <div class="muted">Michael M. Chang：RSS fresh 抓取成功，解析 20 篇；時間窗內無新文章。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>徐老猫 Raycat</h3>
+            <span class="chip good">RSS fresh 抓取成功，解析 20 篇；時間窗內 1 篇，公開文章頁 fresh HTTP 200。</span>
+          </div>
+          <div class="muted">徐老猫 Raycat：RSS fresh 抓取成功，解析 20 篇；時間窗內 1 篇，公開文章頁 fresh HTTP 200。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>補充 Substack 掃描</h3>
+            <span class="chip info">fresh 檢查 Michael J. Burry、Damnang、FundaAI、SemiAnalysis、Quality Stocks、High Tech Investing、Beating The Tide、SEMIVISION；時間窗內採納 4 篇。SemiAnalysis、Quality Stocks、High Tech Investing 無時間窗內新文；Beating The Tide feed HTTP 200 但解析 0 篇。</span>
+          </div>
+          <div class="muted">補充 Substack 掃描：fresh 檢查 Michael J. Burry、Damnang、FundaAI、SemiAnalysis、Quality Stocks、High Tech Investing、Beating The Tide、SEMIVISION；時間窗內採納 4 篇。SemiAnalysis、Quality Stocks、High Tech Investing 無時間窗內新文；Beating The Tide feed HTTP 200 但解析 0 篇。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>公開內容限制</h3>
+            <span class="chip warn">採納 7 篇中 1 篇已取得公開全文，6 篇為付費牆／僅公開預覽；只整理 RSS 與公開頁可見內容，未推測付費區。</span>
+          </div>
+          <div class="muted">公開內容限制：採納 7 篇中 1 篇已取得公開全文，6 篇為付費牆／僅公開預覽；只整理 RSS 與公開頁可見內容，未推測付費區。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>Activity 摘要</h3>
+            <span class="chip warn">本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。</span>
+          </div>
+          <div class="muted">Activity 摘要：本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。</div>
+        </article>
+        
+        <article class="source-item">
+          <div class="ticker-head">
+            <h3>市場資料</h3>
+            <span class="chip warn">對 10 檔明確標的 fresh 查詢；Nasdaq public API 逾時後使用 Yahoo Finance chart fallback。最新可得資料為 2026-07-15 04:00 Asia/Taipei regular session；盤前／盤後資料不足。</span>
+          </div>
+          <div class="muted">市場資料：對 10 檔明確標的 fresh 查詢；Nasdaq public API 逾時後使用 Yahoo Finance chart fallback。最新可得資料為 2026-07-15 04:00 Asia/Taipei regular session；盤前／盤後資料不足。</div>
+        </article>
+        </div>
+      <details class="mini-card">
+        <summary><strong>完整 Markdown 報告</strong></summary>
+        <pre class="report-pre">[來源檢查]
+- 大叔美股筆記 Uncle Stock Notes：RSS fresh 抓取成功，解析 20 篇；時間窗內 2 篇，兩篇公開文章頁皆 fresh HTTP 200。
+- Skilled Driver：RSS fresh 抓取成功，解析 20 篇；時間窗內無新文章。
+- Michael M. Chang：RSS fresh 抓取成功，解析 20 篇；時間窗內無新文章。
+- 徐老猫 Raycat：RSS fresh 抓取成功，解析 20 篇；時間窗內 1 篇，公開文章頁 fresh HTTP 200。
+- 補充 Substack 掃描：fresh 檢查 Michael J. Burry、Damnang、FundaAI、SemiAnalysis、Quality Stocks、High Tech Investing、Beating The Tide、SEMIVISION；時間窗內採納 4 篇。SemiAnalysis、Quality Stocks、High Tech Investing 無時間窗內新文；Beating The Tide feed HTTP 200 但解析 0 篇。
+- 公開內容限制：採納 7 篇中 1 篇已取得公開全文，6 篇為付費牆／僅公開預覽；只整理 RSS 與公開頁可見內容，未推測付費區。
+- Activity 摘要：本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。
+- 市場資料：對 10 檔明確標的 fresh 查詢；Nasdaq public API 逾時後使用 Yahoo Finance chart fallback。最新可得資料為 2026-07-15 04:00 Asia/Taipei regular session；盤前／盤後資料不足。
+
+[逐篇摘要]
+1. 大叔美股筆記 Uncle Stock Notes｜Warsh 的五個 Fed 任務小組
+- 作者：大叔美股筆記 Uncle Stock Notes
+- 來源：Substack 文章
+- 標題：Warsh 的五個 Fed 任務小組
+- 發布時間：2026-07-14 22:22 Asia/Taipei
+- 來源狀態：已取得全文
+- 連結：https://unclestocknotes.substack.com/p/warsh-fed
+- 立場：中性
+- 時間框架：中長期
+- 重點 1：作者認為重點不是任務小組的人事名單，而是 Kevin Warsh 正把聯準會的政策框架、反應函數與溝通方式改造成新的 regime。
+- 重點 2：改革方向包含減少 Powell 時代的前瞻指引與「市場保姆式」溝通、檢討資產負債表、重估通膨框架，以及重新衡量 AI 對生產力、就業和中性利率的影響。
+- 重點 3：Communications 小組若讓 Fed 更少提前放風向，市場會失去政策劇透機制，利率敏感資產的短線波動與誤判成本可能上升。
+- 重點 4：資料與研究改革的意義，在於改善對通膨、勞動市場與生產力的即時判讀；但框架切換期間，新舊模型可能同時失準。
+- 重點 5：監理與金融條件的調整可能改變銀行資本、流動性及信用供給，影響不只政策利率，也會沿著金融條件傳到資產價格。
+- 重點 6：資產負債表與市場運作小組值得持續追蹤，因 Fed 的資產組成、規模與市場流動性管理方式都可能改變。
+- 重點 7：研究上的可行動訊號不是猜下一次升降息，而是追蹤 Fed 官員訊息分散度、實質利率、資產負債表措辭，以及 AI 生產力假設是否正式進入政策框架。
+- 明確提到的標的：未明確
+- 明確提到的族群：總經／利率敏感資產、銀行／金融條件、AI 生產力議題
+- 催化因素：政策、利率、聯準會溝通框架、資產負債表改革
+- 操作建議：觀望
+- 風險或保留條件：任務小組仍是政策框架改革工具，不等於既定的升降息路徑；最終建議、落地時間與市場反應仍有高度不確定性。
+- 我是否需要親自讀原文：需要：這是最高優先級作者的完整公開文章，應確認五個任務小組各自影響哪些利率敏感資產與風險管理假設。
+
+2. 大叔美股筆記 Uncle Stock Notes｜每日重點 260714 Substack 大叔留言重點
+- 作者：大叔美股筆記 Uncle Stock Notes
+- 來源：Substack 文章
+- 標題：每日重點 260714 Substack 大叔留言重點
+- 發布時間：2026-07-15 13:51 Asia/Taipei
+- 來源狀態：付費牆/僅公開預覽
+- 連結：https://unclestocknotes.substack.com/p/260714-substack
+- 立場：中性
+- 時間框架：短線
+- 重點 1：公開預覽只露出 Fed／宏觀段落，沒有公開完整留言清單，因此不能把未顯示的個股內容納入摘要。
+- 重點 2：作者引用的新聞數據是美國六月 CPI 年增 3.5%、核心 CPI 2.6%，兩者皆低於預期。
+- 重點 3：作者的可見判讀是核心價格壓力開始鬆動，短線有利於緩和市場對通膨與利率的擔憂。
+- 重點 4：作者同時用戲謔語氣提醒，若川普政策再度刺激價格，通膨緩和可能被打斷；這是明確的政策保留條件。
+- 重點 5：公開預覽沒有可確認的股票、ETF、公司或買賣建議；「AVAVAVAV」只依上下文視為語氣表達，不判成 AVAV ticker。
+- 明確提到的標的：未明確
+- 明確提到的族群：總經／利率敏感資產
+- 催化因素：CPI、政策、利率預期
+- 操作建議：無明確建議
+- 風險或保留條件：正文受付費牆限制；公開預覽只有一則宏觀留言，不足以推導個股或完整操作結論。
+- 我是否需要親自讀原文：不必：本輪免費可見內容有限，且沒有可操作標的。
+
+3. 徐老猫 Raycat｜三大原因继续看涨AI牛市｜这个AI股布局光互连
+- 作者：徐老猫 Raycat
+- 來源：Substack 文章
+- 標題：三大原因继续看涨AI牛市｜这个AI股布局光互连
+- 發布時間：2026-07-15 14:28 Asia/Taipei
+- 來源狀態：付費牆/僅公開預覽
+- 連結：https://raycat.substack.com/p/aiai-796
+- 立場：偏多
+- 時間框架：中長期
+- 重點 1：作者指出 AI 基礎設施近期遭遇 2022 年底以來最艱難的一段，SMH、SOXX 自近期高點回落約 15%，SOX 自六月高峰回落近 20%。
+- 重點 2：過去三年 AI 供應鏈的主要特徵是 GPU、HBM、先進封裝、機架與電力基礎設施的稀缺，這讓關鍵供應商擁有強定價權和高利潤。
+- 重點 3：作者承認供給過剩的擔憂有基本面依據：高報酬會吸引資本投入晶圓廠、先進封裝、組裝測試與資料中心新產能。
+- 重點 4：多數新增產能預計未來一至兩年上線；若供給大增而需求增速放緩，短缺可能轉成過剩，壓縮毛利率、定價權與股價。
+- 重點 5：作者的核心立場仍是「現在下結論還太早」，並表示仍可看好本輪 AI 牛市；這是偏多產業論點，不等於對所有 AI 個股全面買進。
+- 重點 6：公開預覽只明確揭露 SMH、SOXX 與整體供需框架；標題所稱「布局光互連的 AI 股」名稱位於付費區，不能推測或新增 ticker。
+- 明確提到的標的：SMH、SOXX
+- 明確提到的族群：AI 基礎設施、半導體、GPU、HBM、先進封裝、光互連
+- 催化因素：供應鏈擴產、AI 資本支出、估值重評、產能利用率
+- 操作建議：觀望
+- 風險或保留條件：若未來一至兩年新增產能快於需求、短缺轉成過剩，作者的 AI 多頭論點會面臨毛利與估值雙重壓力。
+- 我是否需要親自讀原文：可略讀：公開預覽已足以掌握供需框架，但個股名稱與完整三個原因仍在付費牆後。
+
+4. Michael J. Burry｜Short Thoughts July 15, 2026 PYPL/IBM/HCA/More
+- 作者：Michael J. Burry
+- 來源：Substack 文章
+- 標題：Short Thoughts July 15, 2026 PYPL/IBM/HCA/More
+- 發布時間：2026-07-15 17:12 Asia/Taipei
+- 來源狀態：付費牆/僅公開預覽
+- 連結：https://michaeljburry.substack.com/p/short-thoughts-july-15-2026-pyplibmhcamore
+- 立場：偏多（PYPL）；IBM、HCA 無明確方向
+- 時間框架：事件驅動／中期
+- 重點 1：作者稱 Stripe 與 Advent 對 PayPal 提出每股 60.50 美元的收購價，而 PYPL 當日收 47.37 美元；此事件是本篇最明確、也最需核實的催化。
+- 重點 2：作者認為 60.50 美元只相當於其 IV15 的 1.21 倍，沒有充分反映控制權溢價，因此是過低的開價。
+- 重點 3：作者把 PayPal 稱為投資組合中最便宜的高品質公司之一，認為競價需要上升，並明確表示不賣出、把目前出價視為開局價。
+- 重點 4：依作者自身估值法，IV10 約 75～80 美元、IV8 約 110～115 美元；加上控制權溢價後，他認為得標價約 100 美元才較合理。這些都是作者模型，不是外部目標價。
+- 重點 5：IBM 部分聚焦 7 月 14 日盤中一度跌 26%、創至少 1968 年以來最劇烈單日跌幅的歷史對照；作者沒有在公開區給出明確買賣建議。
+- 重點 6：作者回顧 IBM 從硬體轉向軟體／顧問的長期轉型，並指出近年表現與毛利率由疫情前約 47% 升至近期約 60%、估值倍數擴張有關。
+- 重點 7：HCA 只在公開標題與副標題中出現「swoon」，付費牆前沒有公開個股分析，不能推測作者對 HCA 的立場或操作。
+- 重點 8：研究上應把 PYPL 視為待核實的事件驅動案例，把 IBM、HCA 視為高波動事件觀察，而不是把三檔都解讀成作者買進名單。
+- 明確提到的標的：PYPL、IBM、HCA
+- 明確提到的族群：支付／金融科技、企業軟體與顧問、醫療服務
+- 催化因素：併購、控制權溢價、估值重評、單日大幅波動
+- 操作建議：續抱（僅 PYPL；IBM、HCA 無明確建議）
+- 風險或保留條件：收購提案與條款需獨立確認；競價、監管、融資與交易失敗風險都可能使價差快速逆轉。HCA 正文不可見。
+- 我是否需要親自讀原文：需要：應核對 PYPL 收購條件、作者 IV 方法與 IBM 暴跌脈絡；HCA 付費區不可據此補論點。
+
+5. Damnang｜Optical Investing, Act Two: Three Signals From AEHR’s Earnings
+- 作者：Damnang
+- 來源：Substack 文章
+- 標題：Optical Investing, Act Two: Three Signals From AEHR’s Earnings
+- 發布時間：2026-07-15 14:48 Asia/Taipei
+- 來源狀態：付費牆/僅公開預覽
+- 連結：https://damnang2.substack.com/p/optical-investing-act-two-three-signals
+- 立場：偏多
+- 時間框架：波段
+- 重點 1：作者用三項檢驗追蹤 AEHR 論點：bookings 是否轉成營收、毛利率是否恢復、評估中的客戶是否進入量產。
+- 重點 2：2026 財年第四季 bookings 為 6,070 萬美元，年末 backlog 8,060 萬美元，加上期末後新增訂單後的有效 backlog 為 1.006 億美元，約為前一財年營收兩倍。
+- 重點 3：公司給出 2027 財年營收 1.3～1.5 億美元指引，對應年增 160%～200%；管理層稱即使在 1.5 億美元水準也沒有產能限制，並保留隨訂單確定上修的空間。
+- 重點 4：第四季非 GAAP 毛利率回升至 45%，較去年同期 35% 改善 10 個百分點；但全年毛利率仍只有 38.5%，單季改善尚不足以證明全年穩態。
+- 重點 5：新矽光子客戶從接觸到下單只花數月，且 AI 處理器客戶的晶圓級 burn-in benchmark 超預期，顯示評估案正在轉成量產設備需求。
+- 重點 6：作者把 AEHR 訂單視為整條光學供應鏈的領先指標：800G 已進入量產、1.6T 開始切換，CPO 與 optical I/O 仍在試點，但測試設備訂單已先發生。
+- 重點 7：主要風險是執行仍跨越完整年度、營收具波動與循環性、三個客戶各占第四季營收超過 10%，且 hyperscale 客戶第二個 device 曾延後。
+- 明確提到的標的：AEHR
+- 明確提到的族群：矽光子、burn-in 測試、AI 處理器、先進封裝、光互連
+- 催化因素：財報、營收指引、backlog、客戶轉量產、800G／1.6T／CPO 部署
+- 操作建議：無明確建議
+- 風險或保留條件：訂單到營收仍需執行，客戶集中、時程延後與景氣循環都可能讓季度表現劇烈波動。
+- 我是否需要親自讀原文：需要：要確認 backlog 轉營收、毛利率持續性與客戶集中度，才能決定是否把 AEHR 納入開倉觀察。
+
+6. FundaAI｜Deep|ATI: The Materials Chokepoint of the Starship Era; Superalloy Content Per Vehicle Is 25-30x a Falcon 9
+- 作者：FundaAI
+- 來源：Substack 文章
+- 標題：Deep|ATI: The Materials Chokepoint of the Starship Era; Superalloy Content Per Vehicle Is 25-30x a Falcon 9
+- 發布時間：2026-07-14 23:11 Asia/Taipei
+- 來源狀態：付費牆/僅公開預覽
+- 連結：https://fundaai.substack.com/p/deepati-the-materials-chokepoint
+- 立場：偏多
+- 時間框架：中長期
+- 重點 1：作者把 ATI 定位為 Starship 時代超合金需求的公開市場瓶頸，主張單一 Starship stack 的超合金用量約為 Falcon 9 的 25～30 倍。
+- 重點 2：依作者估算，太空超合金需求可能在 2028 年達 900～1,100 噸／年、2030 年達 2,300～2,900 噸／年；這些是作者模型，需以實際發射與翻修節奏驗證。
+- 重點 3：作者認為特種熔煉是少數 SpaceX 無法快速內製的供應鏈層級，因旋轉級材料資格認證需多年累積，形成資本無法壓縮的時間護城河。
+- 重點 4：ATI 位於 specialty alloy melting 層，作者稱鎳圓坯市場約九成由 ATI、Carpenter 與 PCC 三家掌握，最高規格旋轉級材料只有少數美國廠能供應。
+- 重點 5：作者引用 7 月 10 日資料，ATI trailing EV/EBITDA 31.9 倍，低於 CRS 38.4 倍與 HWM 43.3 倍，認為深護城河資產出現 15%～30% 相對折價。
+- 重點 6：多重需求來源包含商用航太、MRO、太空、AI 資料中心燃氣渦輪，以及核能用鋯／鉿；因此論點不是只押單一火箭計畫。
+- 重點 7：作者指出 VIM 產能吃緊，新產能要到 2028～2029 才有合格產出；10～12 年長約與續約調價可能帶來市場模型尚未反映的獲利上修。
+- 重點 8：主要風險是作者需求量、供給缺口、長約調價與相對估值都屬模型假設；若 Starship 節奏、航太需求或資格認證進度不如預期，重評空間會縮小。
+- 明確提到的標的：ATI、CRS、HWM
+- 明確提到的族群：航太材料、鎳基超合金、MRO、燃氣渦輪、核能材料
+- 催化因素：長約重訂價、產能瓶頸、新產能投產、太空發射／翻修、航太與 AI 電力需求
+- 操作建議：無明確建議
+- 風險或保留條件：核心數據來自作者估算與 channel checks；需驗證需求量、供給缺口、資格認證和相對估值口徑。
+- 我是否需要親自讀原文：需要：應核對 ATI 的需求模型、CRS／HWM 估值比較與長約調價假設，再決定是否建立航太材料研究部位。
+
+7. SEMIVISION｜UMC and SILITH Bring 12-Inch Silicon Photonics to Mass Production as AI Interconnect Competition Enters the Industrial Scale-Up Era
+- 作者：SEMIVISION
+- 來源：Substack 文章
+- 標題：UMC and SILITH Bring 12-Inch Silicon Photonics to Mass Production as AI Interconnect Competition Enters the Industrial Scale-Up Era
+- 發布時間：2026-07-15 16:03 Asia/Taipei
+- 來源狀態：付費牆/僅公開預覽
+- 連結：https://tspasemiconductor.substack.com/p/umc-and-silith-bring-12-inch-silicon
+- 立場：偏多
+- 時間框架：中長期
+- 重點 1：UMC 與新加坡矽光子公司 SILITH 宣布，已從 UMC 新加坡 12 吋廠交付首批量產矽光子晶圓，代表專案從展示與開發走向商業製造。
+- 重點 2：作者認為真正的重要性不是單一 1.6Tbps 規格，而是製程開始具備可預測的成本、良率、可靠性與交付時程。
+- 重點 3：合作案結合 SILITH 的矽光子架構與 UMC 的 12 吋製程整合能力，18 個月內從平台開發推進到量產導入。
+- 重點 4：平台已達商業製造所需的良率與可靠性，並通過一家全球領先雲端基礎設施客戶的資格認證；這是需求從實驗室走向供應鏈驗證的關鍵訊號。
+- 重點 5：UMC 計畫 2027 年正式推出自有 12 吋矽光子平台，開放更多客戶做產品開發與量產，開始從成熟製程代工擴張到 AI 光互連製造。
+- 重點 6：矽光子商業化的難點在跨晶圓光學一致性、耦合效率、插入損耗、偏振敏感度、波長漂移，以及與 driver、DSP、laser、fiber 組裝後的模組總良率。
+- 重點 7：研究上應追蹤首批量產後的客戶擴張、良率與成本曲線、1.6T 導入速度，以及 2027 平台能否帶來可辨識營收；公開預覽未提供財務量化指引。
+- 明確提到的標的：UMC
+- 明確提到的族群：矽光子、12 吋晶圓代工、1.6T 光互連、AI 資料中心
+- 催化因素：客戶認證、首批量產、2027 平台推出、良率與成本改善
+- 操作建議：無明確建議
+- 風險或保留條件：公開預覽沒有訂單、營收、毛利或客戶名稱；量產里程碑不等於已形成可觀財務貢獻。
+- 我是否需要親自讀原文：可略讀：公開預覽已說明量產里程碑，後續更重要的是用 UMC 財報與客戶擴張驗證營收貢獻。
+
+[Activity 摘要]
+- 來源狀態：使用者設定暫停
+- 摘要：本輪依使用者設定暫停 Notes / Activity 抓取，未檢查 Substack notes、restacks、reply、profile activity。
+- 明確提到的標的：不適用
+- 我是否需要親自看全文：不適用
+
+[標的快篩]
+1. SMH
+- 盤前/盤後：資料不足；最新可得價格 $600.31（2026-07-15 04:00 Asia/Taipei，regular，Yahoo Finance chart）
+- 5日漲跌：-3.09%
+- 20日高點 / 目前價格距高點：$671.83 / -10.65%
+- 量能：最新 8.74M，20日均量 11.55M，量能比 0.76x
+- 作者角度—財報趨勢：作者未明確提到。
+- 作者角度—估值：Raycat 只指出多年大漲後回檔並不意外，未提供 SMH 估值倍數。
+- 作者角度—產業趨勢：AI 供應鏈仍受稀缺支撐，但未來一至兩年擴產可能帶來過剩風險；作者認為現在判定牛市結束仍太早。
+- 作者角度—機構觀點：作者未明確提到。
+- 研究級分類：可列入開倉觀察
+- 下一交易日確認條件：半導體 ETF 回檔止穩、未出現放量續跌，且新的 AI 需求／供給資料未顯示過剩提前發生。
+- 失效條件：價格再度放量轉弱，或實際產能、訂單與毛利資料確認供給成長明顯快於需求。
+
+2. SOXX
+- 盤前/盤後：資料不足；最新可得價格 $567.92（2026-07-15 04:00 Asia/Taipei，regular，Yahoo Finance chart）
+- 5日漲跌：-4.80%
+- 20日高點 / 目前價格距高點：$655.95 / -13.42%
+- 量能：最新 8.31M，20日均量 10.03M，量能比 0.83x
+- 作者角度—財報趨勢：作者未明確提到。
+- 作者角度—估值：Raycat 未提供 SOXX 估值；只把約 15% 回檔放在多年上漲與供給擔憂背景下解讀。
+- 作者角度—產業趨勢：稀缺仍支撐 AI 半導體供應鏈，但新增晶圓、封裝與測試產能在未來一至兩年形成供給壓力。
+- 作者角度—機構觀點：作者未明確提到。
+- 研究級分類：可列入開倉觀察
+- 下一交易日確認條件：ETF 不再放量破低，且 AI 資本支出與半導體訂單資料仍支持需求韌性。
+- 失效條件：擴產導致價格、毛利或訂單同步惡化，確認作者所說的過剩風險提前落地。
+
+3. PYPL
+- 盤前/盤後：資料不足；最新可得價格 $47.37（2026-07-15 04:00 Asia/Taipei，regular，Yahoo Finance chart）
+- 5日漲跌：+3.77%
+- 20日高點 / 目前價格距高點：$48.43 / -2.19%
+- 量能：最新 9.41M，20日均量 16.20M，量能比 0.58x
+- 作者角度—財報趨勢：作者未明確提到。
+- 作者角度—估值：Burry 認為 PYPL 是投資組合中最便宜的高品質公司之一；其 IV10 約 75～80 美元、IV8 約 110～115 美元，並認為控制權溢價後約 100 美元才較合理。
+- 作者角度—產業趨勢：只提到支付業併購與控制權價值，未展開產業成長趨勢。
+- 作者角度—機構觀點：作者稱 Stripe 與 Advent 提出每股 60.50 美元收購價，並判斷出價可能需要提高；此事件需獨立核實。
+- 研究級分類：僅適合原持股續抱或加倉觀察
+- 下一交易日確認條件：先確認正式收購提案、融資與監管條款，並觀察價格是否能在事件量能支持下維持，而非只交易未證實消息。
+- 失效條件：提案未獲正式確認、競價未提高、交易條件惡化或價格迅速回吐事件溢價。
+
+4. IBM
+- 盤前/盤後：資料不足；最新可得價格 $217.07（2026-07-15 04:00 Asia/Taipei，regular，Yahoo Finance chart）
+- 5日漲跌：-3.10%
+- 20日高點 / 目前價格距高點：$311.80 / -30.38%
+- 量能：最新 5.02M，20日均量 8.06M，量能比 0.62x
+- 作者角度—財報趨勢：作者只指出近年毛利率由疫情前約 47% 升至近期約 60%，未提供本季財報趨勢。
+- 作者角度—估值：作者認為近年股價受毛利與估值倍數擴張支撐，也提醒 IBM 歷史上曾多次成為昂貴的「永遠持有」大型科技股。
+- 作者角度—產業趨勢：聚焦 IBM 從硬體轉向軟體／顧問的長期轉型與科技龍頭競爭優勢衰退風險。
+- 作者角度—機構觀點：作者未明確提到。
+- 研究級分類：資料不足
+- 下一交易日確認條件：先釐清 26% 盤中跌幅的事件原因、公司基本面更新與賣壓是否止穩，再決定是否進入研究名單。
+- 失效條件：基本面或指引惡化證明毛利改善不可持續，或高波動持續而作者仍未提出可驗證的正向論點。
+
+5. HCA
+- 盤前/盤後：資料不足；最新可得價格 $363.60（2026-07-15 04:00 Asia/Taipei，regular，Yahoo Finance chart）
+- 5日漲跌：-6.31%
+- 20日高點 / 目前價格距高點：$429.54 / -15.35%
+- 量能：最新 2.34M，20日均量 1.57M，量能比 1.49x
+- 作者角度—財報趨勢：作者未在公開預覽中明確提到。
+- 作者角度—估值：作者未在公開預覽中明確提到。
+- 作者角度—產業趨勢：作者未在公開預覽中明確提到。
+- 作者角度—機構觀點：作者未在公開預覽中明確提到。
+- 研究級分類：資料不足
+- 下一交易日確認條件：先補齊公開事件、財報或監管原因，確認高於均量的下跌是否出現基本面可驗證訊號。
+- 失效條件：無法取得作者公開論點，或公司事件持續惡化而沒有可驗證的反轉條件。
+
+6. AEHR
+- 盤前/盤後：資料不足；最新可得價格 $72.01（2026-07-15 04:00 Asia/Taipei，regular，Yahoo Finance chart）
+- 5日漲跌：-5.96%
+- 20日高點 / 目前價格距高點：$126.62 / -43.13%
+- 量能：最新 1.44M，20日均量 1.70M，量能比 0.85x
+- 作者角度—財報趨勢：bookings 6,070 萬美元、有效 backlog 1.006 億美元、2027 財年營收指引 1.3～1.5 億美元，第四季非 GAAP 毛利率回升至 45%。
+- 作者角度—估值：作者未明確提供估值倍數或目標價。
+- 作者角度—產業趨勢：AI 處理器功率密度、矽光子穩定化與 hybrid bonding 推動 burn-in 測試價值提升；800G 量產、1.6T 切換，CPO／optical I/O 仍在早期部署。
+- 作者角度—機構觀點：作者未引述外部機構評級；公司客戶與 hyperscaler 的量產行為是主要證據。
+- 研究級分類：可列入開倉觀察
+- 下一交易日確認條件：財報後價格能承接、公司指引與 backlog 未被修正，且市場開始用成交量確認客戶轉量產的可持續性。
+- 失效條件：backlog 無法轉營收、毛利率回落、客戶集中或第二個 device 延後導致指引下修。
+
+7. ATI
+- 盤前/盤後：資料不足；最新可得價格 $189.44（2026-07-15 04:00 Asia/Taipei，regular，Yahoo Finance chart）
+- 5日漲跌：-4.33%
+- 20日高點 / 目前價格距高點：$205.31 / -7.73%
+- 量能：最新 1.16M，20日均量 1.78M，量能比 0.65x
+- 作者角度—財報趨勢：作者未提供本季財報趨勢，但主張長約重訂價與供給缺口可能帶來市場模型未納入的獲利上修。
+- 作者角度—估值：作者引用 trailing EV/EBITDA 31.9 倍，低於 CRS 38.4 倍與 HWM 43.3 倍，判斷 ATI 有 15%～30% 相對折價。
+- 作者角度—產業趨勢：Starship、商用航太、MRO、AI 資料中心燃氣渦輪與核能材料共同推升超合金需求，資格認證與 VIM 產能形成長週期瓶頸。
+- 作者角度—機構觀點：作者提到 OEM 轉向 10～12 年固定量長約與 channel checks，但未列外部券商評級。
+- 研究級分類：可列入開倉觀察
+- 下一交易日確認條件：股價相對 CRS／HWM 止穩，且後續公司／客戶資料支持長約調價、VIM 產能吃緊與太空需求增加。
+- 失效條件：太空或航太需求時程延後、擴產提前緩解瓶頸，或估值折價源自獲利品質而非市場錯價。
+
+8. CRS
+- 盤前/盤後：資料不足；最新可得價格 $576.87（2026-07-15 04:00 Asia/Taipei，regular，Yahoo Finance chart）
+- 5日漲跌：-8.46%
+- 20日高點 / 目前價格距高點：$625.99 / -7.85%
+- 量能：最新 487.30K，20日均量 912.83K，量能比 0.53x
+- 作者角度—財報趨勢：作者未明確提到。
+- 作者角度—估值：FundaAI 只把 CRS trailing EV/EBITDA 38.4 倍當作 ATI 的相對估值比較。
+- 作者角度—產業趨勢：與 ATI 共享航太與特種熔煉供應鏈背景，但本輪沒有 CRS 個股論點。
+- 作者角度—機構觀點：作者未明確提到。
+- 研究級分類：資料不足
+- 下一交易日確認條件：需先找到作者對 CRS 本身的財務、產能與估值論點，而不是只把同業比較當成買進理由。
+- 失效條件：後續資料無法支持相對估值可比性，或 CRS 基本面與 ATI 並不具可比性。
+
+9. HWM
+- 盤前/盤後：資料不足；最新可得價格 $276.78（2026-07-15 04:00 Asia/Taipei，regular，Yahoo Finance chart）
+- 5日漲跌：-2.39%
+- 20日高點 / 目前價格距高點：$290.63 / -4.77%
+- 量能：最新 1.57M，20日均量 3.49M，量能比 0.45x
+- 作者角度—財報趨勢：作者未明確提到。
+- 作者角度—估值：FundaAI 只把 HWM trailing EV/EBITDA 43.3 倍當作 ATI 相對折價的比較基準。
+- 作者角度—產業趨勢：作者把 HWM 放在航太特種材料／鑄造比較組，未提出 HWM 獨立成長論點。
+- 作者角度—機構觀點：作者未明確提到。
+- 研究級分類：資料不足
+- 下一交易日確認條件：需補足 HWM 自身訂單、產能、獲利與估值資料，確認與 ATI 比較是否同口徑。
+- 失效條件：相對估值差異由產品組合、成長或資本報酬差異合理解釋，不能再把高倍數視為 ATI 重評保證。
+
+10. UMC
+- 盤前/盤後：資料不足；最新可得價格 $23.84（2026-07-15 04:00 Asia/Taipei，regular，Yahoo Finance chart）
+- 5日漲跌：-9.18%
+- 20日高點 / 目前價格距高點：$28.96 / -17.68%
+- 量能：最新 21.66M，20日均量 18.43M，量能比 1.18x
+- 作者角度—財報趨勢：公開預覽未提供營收、訂單、毛利或 EPS 影響。
+- 作者角度—估值：作者未明確提到。
+- 作者角度—產業趨勢：首批 12 吋矽光子晶圓交付、1.6T 客戶資格認證與 2027 平台開放，顯示矽光子從展示進入工業化量產。
+- 作者角度—機構觀點：沒有外部券商觀點；領先全球雲端基礎設施客戶完成資格認證是主要需求證據，但客戶未具名。
+- 研究級分類：可列入開倉觀察
+- 下一交易日確認條件：股價在放量回檔後止穩，且 UMC 後續揭露量產客戶、良率、訂單或 2027 平台的可辨識財務貢獻。
+- 失效條件：量產里程碑無法轉成客戶擴張與營收，或良率、成本與模組整合問題延後商業化。
+
+[今日研究優先級]
+1. AI 光互連由題材走向設備與晶圓量產：Raycat、Damnang、SEMIVISION 三個來源分別從 ETF 回檔、AEHR 訂單／毛利與 UMC 首批量產佐證同一方向；優先驗證 AEHR backlog 轉營收、UMC 客戶擴張，以及 SMH／SOXX 是否止穩。
+2. PYPL 事件驅動價值差：Burry 對收購價、控制權溢價與自身估值的立場最明確；先確認正式提案與條款，再決定只續抱、加倉觀察或放棄事件交易。
+3. Fed 反應函數換框架：最高優先級作者認為 Warsh 的五個任務小組會降低前瞻指引、改變資產負債表與政策溝通；下一步是重估利率敏感資產的波動與風險管理假設，而不是直接猜單次升降息。
+
+[值得親自讀]
+- Warsh 的五個 Fed 任務小組：補看五個小組的完整分工，決定是否要調整利率敏感資產的情境與風險參數。
+- Short Thoughts July 15, 2026 PYPL/IBM/HCA/More：核對 PYPL 收購事件、IV 方法與控制權溢價，決定是否只續抱或進一步建立事件追蹤；HCA 不可用付費區外推。
+- Optical Investing, Act Two: Three Signals From AEHR’s Earnings：核對 backlog、毛利率、客戶集中與量產時程，決定 AEHR 是否進入開倉觀察清單。
+- Deep|ATI: The Materials Chokepoint of the Starship Era：核對超合金需求模型、長約調價與 CRS／HWM 比較口徑，決定 ATI 是否值得建立中長期研究部位。
+
+內容僅供研究整理，不構成投資建議。
+</pre>
+      </details>
+    </section>
+    </main>
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var button = document.querySelector("[data-theme-toggle]");
+      var label = document.querySelector("[data-theme-label]");
+      var icon = document.querySelector("[data-theme-icon]");
+      function currentTheme() {
+        return root.dataset.theme === "dark" ? "dark" : "light";
+      }
+      function render() {
+        var theme = currentTheme();
+        if (label) label.textContent = theme === "dark" ? "淺色" : "暗黑";
+        if (icon) icon.textContent = theme === "dark" ? "☼" : "◐";
+        if (button) button.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
+      }
+      if (button) {
+        button.addEventListener("click", function () {
+          var next = currentTheme() === "dark" ? "light" : "dark";
+          root.dataset.theme = next;
+          try { localStorage.setItem("usExpertTheme", next); } catch (error) {}
+          render();
+        });
+      }
+      render();
+    })();
+  </script>
+</body>
+</html>
